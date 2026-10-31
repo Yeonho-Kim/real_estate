@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>아파트 실거래 지도</title>
+  <meta name="description" content="마포·서대문·염창·양평·동작 300세대 이상 단지의 59~84㎡ 실거래가 지도와 신규 거래 알림">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <meta name="theme-color" content="#2a78d6">
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>아파트 실거래 지도</h1>
+    <div class="seg" id="typeSeg" role="group" aria-label="평형">
+      <button data-type="59" class="on">59㎡</button>
+      <button data-type="70">70㎡대</button>
+      <button data-type="84">84㎡</button>
+    </div>
+    <button class="chip" id="newOnly" aria-pressed="false">신규 거래만</button>
+    <button class="btn" id="pushBtn">🔔 알림 받기</button>
+    <span class="meta" id="meta"></span>
+  </header>
+
+  <div id="map"></div>
+  <div class="notice" id="notice" hidden><div class="box" id="noticeBox"></div></div>
+
+  <aside id="changes" class="collapsed">
+    <div class="head" id="changesHead"><span>최근 변화 <span class="badge" id="changesCount">0</span></span><span>▲</span></div>
+    <div class="list" id="changesList"></div>
+  </aside>
+
+  <aside id="panel" aria-live="polite">
+    <button class="close" id="panelClose" aria-label="닫기">×</button>
+    <div class="inner" id="panelBody"></div>
+  </aside>
+
+  <div class="modal" id="pushModal">
+    <div class="box">
+      <h2>웹 푸시 알림 등록</h2>
+      <div id="pushStatus"></div>
+      <ol>
+        <li>아래 구독 정보(JSON)를 복사합니다.</li>
+        <li>GitHub 저장소 → Settings → Secrets and variables → Actions → <code>PUSH_SUBSCRIPTIONS</code> 에 붙여 넣습니다. 여러 기기는 <code>[ {...}, {...} ]</code> 처럼 배열로 넣습니다.</li>
+        <li>다음 수집 실행부터 이 브라우저로 알림이 옵니다. 알림 규칙은 <code>watchlist.json</code> 에서 바꿉니다.</li>
+      </ol>
+      <textarea id="subJson" readonly></textarea>
+      <div style="display:flex;gap:8px;margin-top:10px;justify-content:flex-end">
+        <button class="btn" id="testPush">테스트 알림 표시</button>
+        <button class="btn primary" id="copySub">복사</button>
+        <button class="btn" id="closeModal">닫기</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="./config.js"></script>
+<script src="./push.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

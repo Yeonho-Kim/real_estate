@@ -1,0 +1,95 @@
+"""실행 진입점.
+
+  python -m collector.main complexes   # 단지 마스터 생성/갱신
+  python -m collector.main collect     # 실거래 수집 + 변화 감지 + 요약
+  python -m collector.main notify      # 최근 변화를 웹 푸시로 발송
+  python -m collector.main all         # collect + notify (단지 마스터 없으면 complexes 먼저)
+"""
+from __future__ import annotations
+
+import argparse
+import logging
+import sys
+
+from . import config
+from .store import read_json, write_json
+
+log = logging.getLogger("collector")
+
+
+def _require(name: str) -> str:
+    value = config.env(name)
+    if not value:
+        sys.exit(f"환경변수 {name} 가 필요합니다.")
+    return value
+
+
+def cmd_complexes(args) -> None:
+    from .build_complexes import build
+
+    build(_require("DATA_GO_KR_KEY"), config.env("KAKAO_REST_KEY"), geocode=not args.no_geocode)
+
+
+def cmd_collect(args) -> None:
+    from .collect_trades import collect, load_complexes
+    from .diff import compute_events, load_state, save_changes, update_state
+    from .summary import build_summary
+
+    first_run = not config.STATE_FILE.exists()
+    state = load_state()
+    months = args.months.split(",") if args.months else None
+    result = collect(_require("DATA_GO_KR_KEY"), months)
+    complexes = load_complexes()
+    events = [] if first_run else compute_events(state, result["sales_by"], result["rents_by"], complexes)
+    save_changes(events, first_run)
+    write_json(config.STATE_FILE, update_state(state, result["sales_by"], result["rents_by"]), compact=True)
+    build_summary(complexes, events)
+    log.info("변화 %d건 (첫 실행=%s)", len(events), first_run)
+
+
+def cmd_notify(args) -> None:
+    from .notify_push import send_for_changes
+
+    changes = read_json(config.LATEST_CHANGES_FILE, {"events": [], "first_run": True})
+    if changes.get("first_run"):
+        log.info("첫 실행이라 알림을 보내지 않습니다.")
+        return
+    send_for_changes(changes.get("events", []), dry_run=args.dry_run)
+
+
+def cmd_all(args) -> None:
+    if not config.COMPLEXES_FILE.exists():
+        cmd_complexes(args)
+    cmd_collect(args)
+    cmd_notify(args)
+
+
+def main(argv=None) -> None:
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    sub = parser.add_subparsers(dest="command", required=True)
+
+    p = sub.add_parser("complexes")
+    p.add_argument("--no-geocode", action="store_true")
+    p.set_defaults(func=cmd_complexes)
+
+    p = sub.add_parser("collect")
+    p.add_argument("--months", help="YYYYMM 를 쉼표로 (기본: 첫 실행 24개월, 이후 6개월)")
+    p.set_defaults(func=cmd_collect)
+
+    p = sub.add_parser("notify")
+    p.add_argument("--dry-run", action="store_true")
+    p.set_defaults(func=cmd_notify)
+
+    p = sub.add_parser("all")
+    p.add_argument("--no-geocode", action="store_true")
+    p.add_argument("--months")
+    p.add_argument("--dry-run", action="store_true")
+    p.set_defaults(func=cmd_all)
+
+    args = parser.parse_args(argv)
+    args.func(args)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,17 @@
+{
+  "_설명": "알림 규칙. complexes 가 비어 있으면 수집 대상 전체 단지에 규칙을 적용한다. 가격 단위는 만원.",
+  "notify_new_sales": true,
+  "notify_new_rents": false,
+  "notify_cancelled": true,
+  "types": ["59", "70", "84"],
+  "max_price": null,
+  "complexes": [
+    {
+      "_예시": "특정 단지만 받고 싶을 때. kapt_code 는 data/complexes.json 참고",
+      "kapt_code": "",
+      "types": ["84"],
+      "max_price": null,
+      "rents": true
+    }
+  ]
+}
