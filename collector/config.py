@@ -67,6 +67,8 @@ REFRESH_MONTHS = int(os.environ.get("REFRESH_MONTHS", "6"))
 SUMMARY_WINDOW_MONTHS = 3
 
 # ---- API 주소 (공공데이터포털 명세가 바뀌면 여기만 수정) ----
+# K-apt 두 서비스는 2026-08 개편으로 목록 4판, 기본정보 V5 가 되었고 응답이 JSON 이다.
+# 버전이 또 오르면 "해당 오픈API 서비스가 없거나 폐기됨" 오류가 난다. 그때 아래 두 주소의 숫자를 올린다.
 MOLIT_SALE_URL = os.environ.get(
     "MOLIT_SALE_URL",
     "https://apis.data.go.kr/1613000/RTMSDataSvcAptTradeDev/getRTMSDataSvcAptTradeDev",
@@ -77,11 +79,11 @@ MOLIT_RENT_URL = os.environ.get(
 )
 KAPT_LIST_URL = os.environ.get(
     "KAPT_LIST_URL",
-    "https://apis.data.go.kr/1613000/AptListService3/getSigunguAptList3",
+    "https://apis.data.go.kr/1613000/AptListService4/getSigunguAptList4",
 )
 KAPT_BASIS_URL = os.environ.get(
     "KAPT_BASIS_URL",
-    "https://apis.data.go.kr/1613000/AptBasisInfoServiceV3/getAphusBassInfoV3",
+    "https://apis.data.go.kr/1613000/AptBasisInfoServiceV5/getAphusBassInfoV5",
 )
 KAKAO_ADDRESS_URL = "https://dapi.kakao.com/v2/local/search/address.json"
 KAKAO_KEYWORD_URL = "https://dapi.kakao.com/v2/local/search/keyword.json"
@@ -95,6 +97,18 @@ REQUEST_SLEEP = 0.2  # 호출 사이 대기(초)
 def env(name: str, default: str | None = None) -> str | None:
     value = os.environ.get(name, default)
     return value if value else default
+
+
+def clean_service_key(key: str) -> str:
+    """공공데이터포털 인증키 정리.
+
+    포털은 같은 키를 Encoding(%2B, %3D 포함)과 Decoding 두 형태로 보여 준다.
+    요청 라이브러리가 한 번 인코딩하므로 Decoding 형태로 맞춘다. 앞뒤 공백·줄바꿈도 없앤다.
+    """
+    from urllib.parse import unquote
+
+    key = (key or "").strip()
+    return unquote(key) if "%" in key else key
 
 
 def type_bucket(area: float) -> str | None:

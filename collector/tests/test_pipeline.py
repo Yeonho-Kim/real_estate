@@ -116,3 +116,57 @@ def test_vapid_key_roundtrip():
     v = Vapid.from_string(priv)
     assert v.private_key is not None
     assert len(pub) == 87
+
+
+def test_build_complexes_end_to_end_with_json_api(monkeypatch, tmp_data_dir):
+    """HTTP 만 가짜로 바꿔 단지 마스터 생성 전체를 돌린다 (목록 페이징, 세대수·동 필터, 좌표)."""
+    from collector import build_complexes, http
+
+    from .test_parsing import KAPT_BASIC_JSON
+
+    calls = []
+
+    class Resp:
+        def __init__(self, text, status=200, payload=None):
+            self.text, self.status_code, self._payload = text, status, payload
+
+        def json(self):
+            return self._payload
+
+    def listing(rows, total):
+        return json.dumps({"response": {"header": {"resultCode": "00"}, "body": {"items": rows, "totalCount": total}}})
+
+    def fake_get(url, params=None, headers=None, timeout=None):
+        calls.append((url.rsplit("/", 1)[-1], dict(params)))
+        if "getSigunguAptList4" in url:
+            assert params["serviceKey"] == "KEY"
+            if params["sigunguCode"] == "11440":
+                # 서버가 한 번에 1건만 주는 경우의 페이징
+                rows = [{"kaptCode": "A13376001", "kaptName": "마포래미안푸르지오", "as3": "아현동"},
+                        {"kaptCode": "A13300001", "kaptName": "작은단지", "as3": "공덕동"}]
+                page = params["pageNo"]
+                return Resp(listing(rows[page - 1:page], 2))
+            if params["sigunguCode"] == "11500":
+                return Resp(listing([{"kaptCode": "G1", "kaptName": "화곡단지", "as3": "화곡동"}], 1))
+            return Resp(listing([], 0))
+        if "getAphusBassInfoV5" in url:
+            if params["kaptCode"] == "A13300001":
+                small = json.loads(KAPT_BASIC_JSON)
+                small["response"]["body"]["item"].update(kaptCode="A13300001", kaptName="작은단지", kaptdaCnt=120)
+                return Resp(json.dumps(small))
+            return Resp(KAPT_BASIC_JSON)
+        if "address.json" in url:
+            assert headers["Authorization"] == "KakaoAK REST"
+            return Resp("", payload={"documents": [{"x": "126.9561", "y": "37.5541"}]})
+        raise AssertionError(url)
+
+    monkeypatch.setattr(http.requests, "get", fake_get)
+    result = build_complexes.build("KEY", "REST")
+
+    assert [c["kapt_code"] for c in result] == ["A13376001"]      # 120세대 단지 제외
+    assert result[0]["lat"] == 37.5541 and result[0]["lng"] == 126.9561 and result[0]["sgg_name"] == "마포구"
+    saved = json.loads(config.COMPLEXES_FILE.read_text())
+    assert saved["count"] == 1 and saved["skipped"]["households"] == 1 and saved["skipped"]["umd"] == 1
+    # 화곡동 단지는 기본정보를 부르지 않고 목록 단계에서 걸러진다
+    assert not any(name == "getAphusBassInfoV5" and p.get("kaptCode") == "G1" for name, p in calls)
+    assert sum(1 for name, p in calls if name == "getSigunguAptList4" and p["sigunguCode"] == "11440") == 2

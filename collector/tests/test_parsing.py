@@ -65,3 +65,58 @@ def test_region_umd_filter():
     assert gangseo.accepts_umd("염창동") and not gangseo.accepts_umd("화곡동")
     assert ydp.accepts_umd("양평동5가") and ydp.accepts_umd("양평동") and not ydp.accepts_umd("여의도동")
     assert mapo.accepts_umd("아무동")
+
+
+# ---------- 2026-08 개편 이후 K-apt JSON 응답 ----------
+
+KAPT_LIST_JSON = """{"response": {"header": {"resultCode": "00", "resultMsg": "NORMAL SERVICE."},
+ "body": {"items": [
+   {"as1": "서울특별시", "as2": "마포구", "as3": "아현동", "as4": null, "bjdCode": "1144012000", "kaptCode": "A13376001", "kaptName": "마포래미안푸르지오"},
+   {"as1": "서울특별시", "as2": "마포구", "as3": "공덕동", "as4": null, "bjdCode": "1144010100", "kaptCode": "A13300001", "kaptName": "작은단지"}
+ ], "numOfRows": 1000, "pageNo": 1, "totalCount": 2}}}"""
+
+KAPT_BASIC_JSON = """{"response": {"header": {"resultCode": "00", "resultMsg": "NORMAL SERVICE."},
+ "body": {"item": {"kaptCode": "A13376001", "kaptName": "마포래미안푸르지오",
+   "kaptAddr": "서울특별시 마포구 아현동 777 마포래미안푸르지오", "doroJuso": "서울특별시 마포구 마포대로 195",
+   "bjdCode": "1144012000", "codeSaleNm": "분양", "kaptdaCnt": 3885.0, "kaptDongCnt": "44",
+   "kaptUsedate": "20140930", "kaptMparea60": 1200, "kaptMparea85": 2000, "kaptMparea135": 400,
+   "kaptTel": null, "extra": {"nested": 1}}}}}"""
+
+
+def test_kapt_json_list_and_basic():
+    items, total = parse_list(KAPT_LIST_JSON)
+    assert total == 2 and [i["kapt_code"] for i in items] == ["A13376001", "A13300001"]
+    assert items[0]["as3"] == "아현동" and items[0]["as4"] == ""
+    basic = parse_basic(KAPT_BASIC_JSON)
+    assert basic.households == 3885 and basic.dong_count == 44 and basic.approved == "2014-09-30"
+    assert basic.umd == "아현동" and basic.jibun == "777" and basic.area_85 == 2000
+    assert basic.road_address == "서울특별시 마포구 마포대로 195"
+
+
+def test_json_variants_and_errors():
+    from collector.molit_api import describe_error, parse_envelope
+
+    # 구버전 모양: items 안에 item
+    items, total = parse_envelope('{"response":{"header":{"resultCode":"00"},"body":{"items":{"item":[{"kaptCode":"A1"}]},"totalCount":1}}}')
+    assert total == 1 and items[0].findtext("kaptCode") == "A1"
+    # 결과 없음: items 가 빈 문자열
+    items, total = parse_envelope('{"response":{"header":{"resultCode":"00"},"body":{"items":"","totalCount":0}}}')
+    assert items == [] and total == 0
+    assert parse_basic('{"response":{"header":{"resultCode":"00"},"body":{}}}') is None
+    # 오류 코드
+    with pytest.raises(ApiError, match="api error 30"):
+        parse_envelope('{"response":{"header":{"resultCode":"30","resultMsg":"SERVICE KEY IS NOT REGISTERED ERROR."}}}')
+    # 오류 본문 설명
+    assert "SERVICE_KEY_IS_NOT_REGISTERED_ERROR" in describe_error(ERROR_XML)
+    assert describe_error("<html>  Bad\n Gateway </html>").startswith("XML parse error") or "Bad Gateway" in describe_error("<html>  Bad\n Gateway </html>")
+
+
+def test_clean_service_key_and_redact():
+    from collector.http import redact
+
+    assert config.clean_service_key("  abc+def/ghi==\n") == "abc+def/ghi=="
+    assert config.clean_service_key("abc%2Bdef%2Fghi%3D%3D") == "abc+def/ghi=="
+    msg = "HTTPSConnectionPool(host='apis.data.go.kr'): Max retries exceeded with url: /1613000/X/getX?serviceKey=SECRET%2Bkey%3D%3D&LAWD_CD=11440 (Caused by ...)"
+    out = redact(msg)
+    assert "SECRET" not in out and "serviceKey=***" in out and "LAWD_CD=11440" in out
+    assert "abcdef" not in redact("Authorization: KakaoAK abcdef123")

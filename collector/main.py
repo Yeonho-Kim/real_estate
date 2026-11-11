@@ -21,7 +21,7 @@ def _require(name: str) -> str:
     value = config.env(name)
     if not value:
         sys.exit(f"환경변수 {name} 가 필요합니다.")
-    return value
+    return config.clean_service_key(value) if name == "DATA_GO_KR_KEY" else value.strip()
 
 
 def cmd_complexes(args) -> None:

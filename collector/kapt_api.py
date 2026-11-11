@@ -3,12 +3,11 @@ from __future__ import annotations
 
 import logging
 import re
-import xml.etree.ElementTree as ET
 from dataclasses import asdict, dataclass
 
 from . import config
 from .http import ApiError, get
-from .molit_api import _int, _text, parse_envelope
+from .molit_api import _int, _text, describe_error, parse_envelope
 
 log = logging.getLogger(__name__)
 
@@ -60,8 +59,8 @@ def _approved(value: str) -> str:
     return value
 
 
-def parse_list(xml_text: str) -> tuple[list[dict], int]:
-    items, total = parse_envelope(xml_text)
+def parse_list(text: str) -> tuple[list[dict], int]:
+    items, total = parse_envelope(text)
     out = []
     for item in items:
         code = _text(item, "kaptCode")
@@ -79,17 +78,10 @@ def parse_list(xml_text: str) -> tuple[list[dict], int]:
     return out, total
 
 
-def parse_basic(xml_text: str) -> KaptBasic | None:
-    items, _ = parse_envelope(xml_text)
+def parse_basic(text: str) -> KaptBasic | None:
+    items, _ = parse_envelope(text)
     if not items:
-        # 단건 응답은 items/item 없이 body/item 또는 body 바로 아래에 올 수도 있다.
-        root = ET.fromstring(xml_text)
-        items = root.findall(".//body/item")
-    if not items:
-        body = ET.fromstring(xml_text).find(".//body")
-        if body is None or body.find("kaptCode") is None:
-            return None
-        items = [body]
+        return None
     item = items[0]
     address = _text(item, "kaptAddr")
     umd, jibun = parse_lot_address(address)
@@ -111,19 +103,24 @@ def parse_basic(xml_text: str) -> KaptBasic | None:
     )
 
 
+MAX_LIST_PAGES = 30
+
+
 def fetch_list(service_key: str, sigungu_code: str) -> list[dict]:
     results: list[dict] = []
-    page = 1
-    while True:
-        params = {"serviceKey": service_key, "sigunguCode": sigungu_code, "pageNo": page, "numOfRows": 100}
+    seen: set[str] = set()
+    for page in range(1, MAX_LIST_PAGES + 1):
+        params = {"serviceKey": service_key, "sigunguCode": sigungu_code, "pageNo": page, "numOfRows": config.PAGE_SIZE}
         resp = get(config.KAPT_LIST_URL, params)
         if resp.status_code != 200:
-            raise ApiError(f"HTTP {resp.status_code} from kapt list: {resp.text[:200]}")
+            raise ApiError(f"HTTP {resp.status_code} from kapt list: {describe_error(resp.text)}")
         parsed, total = parse_list(resp.text)
-        results.extend(parsed)
-        if not parsed or len(results) >= total:
+        fresh = [p for p in parsed if p["kapt_code"] not in seen]
+        seen.update(p["kapt_code"] for p in fresh)
+        results.extend(fresh)
+        # 서버가 numOfRows 를 더 작게 자를 수 있어 받은 건수로 판단한다.
+        if not fresh or len(results) >= total:
             break
-        page += 1
     log.info("kapt list %s -> %d단지", sigungu_code, len(results))
     return results
 
@@ -131,5 +128,5 @@ def fetch_list(service_key: str, sigungu_code: str) -> list[dict]:
 def fetch_basic(service_key: str, kapt_code: str) -> KaptBasic | None:
     resp = get(config.KAPT_BASIS_URL, {"serviceKey": service_key, "kaptCode": kapt_code})
     if resp.status_code != 200:
-        raise ApiError(f"HTTP {resp.status_code} from kapt basic: {resp.text[:200]}")
+        raise ApiError(f"HTTP {resp.status_code} from kapt basic: {describe_error(resp.text)}")
     return parse_basic(resp.text)

@@ -1,6 +1,7 @@
 """국토교통부 아파트 실거래가(매매·전월세) API 호출과 파싱."""
 from __future__ import annotations
 
+import json
 import logging
 import re
 import xml.etree.ElementTree as ET
@@ -112,27 +113,87 @@ def _short_date(value: str) -> str:
     return f"{year}-{m.group(2)}-{m.group(3)}"
 
 
-def parse_envelope(xml_text: str) -> tuple[list[ET.Element], int]:
-    """응답 XML에서 item 목록과 totalCount를 꺼낸다. 오류 코드면 ApiError."""
+def _json_items(data) -> tuple[list[ET.Element], int]:
+    """JSON 응답을 XML 과 같은 모양(item 요소 목록)으로 바꾼다.
+
+    공공데이터포털 JSON 모양: {"response": {"header": {...}, "body": {"items": [...] | {"item": ...}, "item": {...}}}}
+    """
+    root = data.get("response", data) if isinstance(data, dict) else {}
+    if not isinstance(root, dict):
+        raise ApiError("JSON 응답 모양을 알 수 없음")
+    header = root.get("header") if isinstance(root.get("header"), dict) else root
+    code = str(header.get("resultCode", "") or "").strip()
+    msg = str(header.get("resultMsg", "") or "")
+    if code and code not in OK_CODES and code not in NO_DATA_CODES:
+        raise ApiError(f"api error {code}: {msg}")
+    body = root.get("body")
+    if not isinstance(body, dict):
+        if code in OK_CODES or code in NO_DATA_CODES:
+            return [], 0
+        raise ApiError(f"JSON 응답에 body 가 없음 (키: {sorted(root)[:8]})")
+
+    raw = body.get("items")
+    if isinstance(raw, dict):          # 구버전: {"items": {"item": [...]}}
+        raw = raw.get("item")
+    if raw in (None, ""):
+        raw = body.get("item")         # 단건: {"body": {"item": {...}}}
+    if isinstance(raw, dict):
+        raw = [raw]
+    if not isinstance(raw, list):
+        raw = []
+
+    items: list[ET.Element] = []
+    for record in raw:
+        if not isinstance(record, dict):
+            continue
+        el = ET.Element("item")
+        for key, value in record.items():
+            if isinstance(value, (dict, list)):
+                continue
+            ET.SubElement(el, str(key)).text = "" if value is None else str(value)
+        items.append(el)
+    total = _int(str(body.get("totalCount", "") or "")) or len(items)
+    return items, total
+
+
+def parse_envelope(text: str) -> tuple[list[ET.Element], int]:
+    """응답(XML 또는 JSON)에서 item 목록과 totalCount를 꺼낸다. 오류 코드면 ApiError."""
+    stripped = (text or "").lstrip("\ufeff \t\r\n")
+    if stripped[:1] in ("{", "["):
+        try:
+            data = json.loads(stripped)
+        except ValueError as exc:
+            raise ApiError(f"JSON parse error: {exc}; body={stripped[:300]}") from exc
+        return _json_items(data)
+
     try:
-        root = ET.fromstring(xml_text)
+        root = ET.fromstring(stripped)
     except ET.ParseError as exc:
-        raise ApiError(f"XML parse error: {exc}; body={xml_text[:300]}") from exc
+        raise ApiError(f"XML parse error: {exc}; body={stripped[:300]}") from exc
 
     # 공공데이터포털 공통 오류 형식 (OpenAPI_ServiceResponse)
     if root.tag == "OpenAPI_ServiceResponse":
-        code = root.findtext(".//returnReasonCode") or ""
-        msg = root.findtext(".//returnAuthMsg") or root.findtext(".//errMsg") or ""
+        code = (root.findtext(".//returnReasonCode") or "").strip()
+        msg = (root.findtext(".//returnAuthMsg") or root.findtext(".//errMsg") or "").strip()
         raise ApiError(f"portal error {code}: {msg}")
 
-    code = root.findtext(".//header/resultCode") or root.findtext(".//resultCode") or ""
+    code = (root.findtext(".//header/resultCode") or root.findtext(".//resultCode") or "").strip()
     msg = root.findtext(".//header/resultMsg") or root.findtext(".//resultMsg") or ""
     if code and code not in OK_CODES and code not in NO_DATA_CODES:
         raise ApiError(f"api error {code}: {msg}")
 
-    items = root.findall(".//items/item")
-    total = _int(root.findtext(".//body/totalCount") or root.findtext(".//totalCount") or "0") or 0
+    items = root.findall(".//items/item") or root.findall(".//body/item")
+    total = _int(root.findtext(".//body/totalCount") or root.findtext(".//totalCount") or "0") or len(items)
     return items, total
+
+
+def describe_error(text: str) -> str:
+    """오류 응답 본문을 한 줄 설명으로 줄인다."""
+    try:
+        parse_envelope(text)
+    except ApiError as exc:
+        return str(exc)
+    return " ".join((text or "").split())[:200]
 
 
 # ---------- 매매 ----------
@@ -229,7 +290,7 @@ def _fetch_all(url: str, service_key: str, lawd_cd: str, deal_ymd: str, parser) 
         }
         resp = get(url, params)
         if resp.status_code != 200:
-            raise ApiError(f"HTTP {resp.status_code} from {url}: {resp.text[:200]}")
+            raise ApiError(f"HTTP {resp.status_code} from {url.rsplit('/', 1)[-1]}: {describe_error(resp.text)}")
         parsed, total = parser(resp.text)
         results.extend(parsed)
         if len(parsed) == 0 or len(results) >= total or page * config.PAGE_SIZE >= total:
