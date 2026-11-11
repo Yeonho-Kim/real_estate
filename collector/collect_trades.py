@@ -5,7 +5,7 @@ import logging
 from collections import Counter, defaultdict
 
 from . import config
-from .matching import ComplexIndex
+from .matching import MATCH_VERSION, ComplexIndex
 from .molit_api import fetch_rents, fetch_sales
 from .store import month_list, now_iso, read_json, write_json
 
@@ -37,48 +37,66 @@ def merge_records(existing: list[dict], fresh: list[dict], refreshed_months: set
     return kept
 
 
-def collect(service_key: str, months: list[str] | None = None) -> dict:
-    """반환: {"months": [...], "fetched": {"sales": [...], "rents": [...]} , "by_complex": {...}}"""
+def needs_rematch() -> bool:
+    """연결 규칙이 바뀌어 저장된 연결을 버려야 하는지."""
+    master = read_json(config.COMPLEXES_FILE, {})
+    return bool(master.get("complexes")) and master.get("match_version") != MATCH_VERSION
+
+
+def collect(service_key: str, months: list[str] | None = None, rematch: bool = False) -> dict:
+    """실거래를 받아 단지에 연결하고 저장한다.
+
+    rematch=True 면 저장된 연결을 버리고 전체 기간을 다시 받는다.
+    반환: {"months": [...], "sales_by": {...}, "rents_by": {...}, "stats": {...}}
+    """
     complexes = load_complexes()
     if not complexes:
         raise RuntimeError("data/complexes.json 이 없습니다. 먼저 `python -m collector.main complexes` 를 실행하세요.")
     overrides = read_json(config.OVERRIDES_FILE, {})
     index = ComplexIndex(complexes, overrides)
+    if rematch:
+        index.reset_learned()
 
     if months is None:
-        first_run = not config.STATE_FILE.exists()
-        months = month_list(config.BACKFILL_MONTHS if first_run else config.REFRESH_MONTHS)
+        full = rematch or not config.STATE_FILE.exists()
+        months = month_list(config.BACKFILL_MONTHS if full else config.REFRESH_MONTHS)
     month_set = set(months)
+
+    # 1) 먼저 전부 받는다.
+    sales, rents = [], []
+    for region in config.REGIONS:
+        for ym in months:
+            sales += [(region, s) for s in fetch_sales(service_key, region.code, ym)]
+            rents += [(region, r) for r in fetch_rents(service_key, region.code, ym)]
 
     sales_by: dict[str, list[dict]] = defaultdict(list)
     rents_by: dict[str, list[dict]] = defaultdict(list)
     unmatched: Counter = Counter()
-    stats = Counter()
+    stats = Counter(sales_raw=len(sales), rents_raw=len(rents))
 
-    for region in config.REGIONS:
-        for ym in months:
-            for sale in fetch_sales(service_key, region.code, ym):
-                stats["sales_raw"] += 1
-                if not region.accepts_umd(sale.umd) or not config.in_area_range(sale.area):
-                    continue
-                stats["sales_filtered"] += 1
-                c = index.match(sale.umd, sale.jibun, sale.apt_name, sale.apt_seq)
-                if c is None:
-                    unmatched[f"{region.name}|{sale.umd}|{sale.jibun}|{sale.apt_name}"] += 1
-                    continue
-                sales_by[c["kapt_code"]].append(sale.to_dict())
-            for rent in fetch_rents(service_key, region.code, ym):
-                stats["rents_raw"] += 1
-                if not region.accepts_umd(rent.umd) or not config.in_area_range(rent.area):
-                    continue
-                stats["rents_filtered"] += 1
-                c = index.match(rent.umd, rent.jibun, rent.apt_name)
-                if c is None:
-                    unmatched[f"{region.name}|{rent.umd}|{rent.jibun}|{rent.apt_name}"] += 1
-                    continue
-                rents_by[c["kapt_code"]].append(rent.to_dict())
+    # 2) 매매를 먼저 연결한다. 매매에는 일련번호·도로명이 있어 확실하고, 여기서 확정된 지번을 전월세가 따라간다.
+    for region, sale in sales:
+        if not region.accepts_umd(sale.umd) or not config.in_area_range(sale.area):
+            continue
+        stats["sales_filtered"] += 1
+        c = index.match(sale.umd, sale.jibun, sale.apt_name, sale.apt_seq, sale.build_year, sale.road_name, sale.road_no)
+        if c is None:
+            unmatched[f"{region.name}|{sale.umd}|{sale.jibun}|{sale.apt_name}"] += 1
+            continue
+        sales_by[c["kapt_code"]].append(sale.to_dict())
+    for region, rent in rents:
+        if not region.accepts_umd(rent.umd) or not config.in_area_range(rent.area):
+            continue
+        stats["rents_filtered"] += 1
+        c = index.match(rent.umd, rent.jibun, rent.apt_name, "", rent.build_year, rent.road_name, rent.road_no)
+        if c is None:
+            unmatched[f"{region.name}|{rent.umd}|{rent.jibun}|{rent.apt_name}"] += 1
+            continue
+        rents_by[c["kapt_code"]].append(rent.to_dict())
+    stats["sales_matched"] = sum(len(v) for v in sales_by.values())
+    stats["rents_matched"] = sum(len(v) for v in rents_by.values())
 
-    # 저장 (매칭 과정에서 학습된 aptSeq 도 함께 저장)
+    # 3) 저장 (연결 과정에서 확정된 aptSeq·지번도 함께 저장)
     for c in complexes:
         code = c["kapt_code"]
         if code not in sales_by and code not in rents_by and not (config.TRADES_DIR / f"{code}.json").exists():
@@ -95,11 +113,13 @@ def collect(service_key: str, months: list[str] | None = None) -> dict:
 
     master = read_json(config.COMPLEXES_FILE, {})
     master["complexes"] = complexes
+    master["match_version"] = MATCH_VERSION
     write_json(config.COMPLEXES_FILE, master)
 
     write_json(config.UNMATCHED_FILE, {
         "updated_at": now_iso(),
-        "note": "세대수 300 미만 단지는 매칭되지 않는 것이 정상. 300 이상인데 여기 있으면 collector/overrides.json 에 aptSeq→kaptCode 를 추가.",
+        "note": "단지에 연결하지 못한 거래. 300세대 미만 단지면 정상. 300세대 이상인데 여기 있으면 "
+                "collector/overrides.json 에 aptSeq→단지코드 를 추가한다 (단지코드는 data/complexes.json).",
         "items": [{"where": k, "count": v} for k, v in unmatched.most_common()],
     })
     log.info("수집 통계: %s, 미매칭 %d종", dict(stats), len(unmatched))

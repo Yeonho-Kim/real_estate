@@ -33,7 +33,7 @@ SALE_XML = """<?xml version="1.0" encoding="UTF-8"?>
     <dealAmount>    185,000</dealAmount><dealDay>12</dealDay><dealMonth>10</dealMonth><dealYear>2026</dealYear>
     <dealingGbn>중개거래</dealingGbn><estateAgentSggNm>서울 마포구</estateAgentSggNm>
     <excluUseAr>84.89</excluUseAr><floor>15</floor><jibun>777</jibun><rgstDate> </rgstDate>
-    <roadNm>마포대로</roadNm><sggCd>11440</sggCd><umdNm>아현동</umdNm>
+    <roadNm>마포대로</roadNm><roadNmBonbun>00195</roadNmBonbun><roadNmBubun>00000</roadNmBubun><sggCd>11440</sggCd><umdNm>아현동</umdNm>
    </item>
    <item>
     <aptDong>101</aptDong><aptNm>마포래미안푸르지오</aptNm><aptSeq>11440-3214</aptSeq>

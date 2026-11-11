@@ -24,6 +24,7 @@ class Sale:
     umd: str          # 법정동명
     jibun: str
     road_name: str
+    road_no: str      # 도로명 건물번호 (본번 또는 본번-부번)
     area: float       # 전용면적 ㎡
     floor: int | None
     dong: str         # 등기 완료 건에만 제공
@@ -56,6 +57,8 @@ class Rent:
     term: str           # 계약기간 예: 24.10~26.10
     renewal_right: str  # 갱신요구권 사용
     sgg_code: str
+    road_name: str = ""
+    road_no: str = ""
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -180,6 +183,15 @@ def _json_items(data) -> tuple[list[ET.Element], int]:
     return items, total
 
 
+def _road_no(bonbun: str, bubun: str) -> str:
+    """'00195', '00000' → '195' / '00006', '00012' → '6-12'. 값이 없으면 ''."""
+    main = (bonbun or "").strip().lstrip("0")
+    sub = (bubun or "").strip().lstrip("0")
+    if not main or not main.isdigit():
+        return ""
+    return f"{main}-{sub}" if sub.isdigit() else main
+
+
 def parse_envelope(text: str) -> tuple[list[ET.Element], int]:
     """응답(XML 또는 JSON)에서 item 목록과 totalCount를 꺼낸다. 오류 코드면 ApiError."""
     stripped = (text or "").lstrip("\ufeff \t\r\n")
@@ -242,6 +254,7 @@ def parse_sale_item(item: ET.Element) -> Sale | None:
         umd=umd,
         jibun=jibun,
         road_name=_text(item, "roadNm", "도로명"),
+        road_no=_road_no(_text(item, "roadNmBonbun", "도로명건물본번호코드"), _text(item, "roadNmBubun", "도로명건물부번호코드")),
         area=area,
         floor=floor,
         dong=dong,
@@ -290,6 +303,8 @@ def parse_rent_item(item: ET.Element) -> Rent | None:
         term=_text(item, "contractTerm", "계약기간"),
         renewal_right=_text(item, "useRRRight", "갱신요구권사용"),
         sgg_code=_text(item, "sggCd", "지역코드"),
+        road_name=_text(item, "roadNm", "roadnm"),
+        road_no=_road_no(_text(item, "roadNmBonbun", "roadnmbonbun"), _text(item, "roadNmBubun", "roadnmbubun")),
     )
 
 

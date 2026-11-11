@@ -48,14 +48,19 @@ def reset_state_if_complexes_changed(before: set[str], after: set[str]) -> bool:
 
 
 def cmd_collect(args) -> None:
-    from .collect_trades import collect, load_complexes
+    from .collect_trades import collect, load_complexes, needs_rematch
     from .diff import compute_events, load_state, save_changes, update_state
     from .summary import build_summary
 
+    rematch = needs_rematch()
+    if rematch:
+        # 연결 규칙이 바뀌면 거래가 다른 단지로 옮겨 간다. 알림 없이 전체 기간을 다시 맞춘다.
+        log.info("연결 규칙이 바뀌어 저장된 연결을 버리고 전체 기간을 다시 받습니다.")
+        config.STATE_FILE.unlink(missing_ok=True)
     first_run = not config.STATE_FILE.exists()
     state = load_state()
-    months = args.months.split(",") if args.months else None
-    result = collect(_require("DATA_GO_KR_KEY"), months)
+    months = None if rematch else (args.months.split(",") if args.months else None)
+    result = collect(_require("DATA_GO_KR_KEY"), months, rematch=rematch)
     complexes = load_complexes()
     events = [] if first_run else compute_events(state, result["sales_by"], result["rents_by"], complexes)
     save_changes(events, first_run)

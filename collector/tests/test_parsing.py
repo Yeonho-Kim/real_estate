@@ -16,6 +16,7 @@ def test_parse_sales():
     assert s.price == 185000 and s.area == 84.89 and s.floor == 15
     assert s.date == "2026-10-12" and s.apt_seq == "11440-3214" and s.dealing == "중개거래"
     assert s.cancelled is False and s.registered == ""
+    assert s.road_name == "마포대로" and s.road_no == "195" and sales[1].road_no == ""
     s2 = sales[1]
     assert s2.cancelled is True and s2.cancel_date == "2026-10-20" and s2.registered == "2026-10-15"
     assert s2.dong == "101" and s2.dealing == "직거래"
@@ -140,3 +141,10 @@ def test_json_portal_error_and_quota():
     assert not isinstance(info.value, QuotaExceeded)
     with pytest.raises(QuotaExceeded):
         parse_envelope('{"response":{"header":{"resultCode":"22","resultMsg":"LIMITED NUMBER OF SERVICE REQUESTS EXCEEDS ERROR."}}}')
+
+
+def test_road_no():
+    from collector.molit_api import _road_no
+
+    assert _road_no("00195", "00000") == "195" and _road_no("00006", "00012") == "6-12"
+    assert _road_no("", "") == "" and _road_no(" ", "00003") == "" and _road_no("195", "") == "195"
