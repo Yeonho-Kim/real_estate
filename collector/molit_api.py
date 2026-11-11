@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 from dataclasses import asdict, dataclass
 
 from . import config
-from .http import ApiError, get
+from .http import ApiError, QuotaExceeded, get
 
 log = logging.getLogger(__name__)
 
@@ -113,11 +113,35 @@ def _short_date(value: str) -> str:
     return f"{year}-{m.group(2)}-{m.group(3)}"
 
 
+def _is_quota(code: str, msg: str) -> bool:
+    """코드 22 = LIMITED_NUMBER_OF_SERVICE_REQUESTS_EXCEEDS_ERROR (일일 한도). 초당 한도(PER_SECOND)는 제외."""
+    upper = (msg or "").upper()
+    if "PER_SECOND" in upper:
+        return False
+    return code.strip() == "22" or "LIMITED_NUMBER_OF_SERVICE_REQUESTS_EXCEEDS" in upper
+
+
+def _portal_error(code: str, msg: str) -> ApiError:
+    text = f"portal error {code.strip()}: {msg.strip()}"
+    return QuotaExceeded(text) if _is_quota(code, msg) else ApiError(text)
+
+
+def _api_error(code: str, msg: str) -> ApiError:
+    text = f"api error {code.strip()}: {msg.strip()}"
+    return QuotaExceeded(text) if _is_quota(code, msg) else ApiError(text)
+
+
 def _json_items(data) -> tuple[list[ET.Element], int]:
     """JSON 응답을 XML 과 같은 모양(item 요소 목록)으로 바꾼다.
 
     공공데이터포털 JSON 모양: {"response": {"header": {...}, "body": {"items": [...] | {"item": ...}, "item": {...}}}}
     """
+    if isinstance(data, dict) and isinstance(data.get("OpenAPI_ServiceResponse"), dict):
+        # 포털 공통 오류가 JSON 으로 올 때: {"OpenAPI_ServiceResponse": {"cmmMsgHeader": {...}}}
+        head = data["OpenAPI_ServiceResponse"].get("cmmMsgHeader") or data["OpenAPI_ServiceResponse"]
+        head = head if isinstance(head, dict) else {}
+        raise _portal_error(str(head.get("returnReasonCode", "") or ""),
+                            str(head.get("returnAuthMsg", "") or head.get("errMsg", "") or ""))
     root = data.get("response", data) if isinstance(data, dict) else {}
     if not isinstance(root, dict):
         raise ApiError("JSON 응답 모양을 알 수 없음")
@@ -125,7 +149,7 @@ def _json_items(data) -> tuple[list[ET.Element], int]:
     code = str(header.get("resultCode", "") or "").strip()
     msg = str(header.get("resultMsg", "") or "")
     if code and code not in OK_CODES and code not in NO_DATA_CODES:
-        raise ApiError(f"api error {code}: {msg}")
+        raise _api_error(code, msg)
     body = root.get("body")
     if not isinstance(body, dict):
         if code in OK_CODES or code in NO_DATA_CODES:
@@ -175,12 +199,12 @@ def parse_envelope(text: str) -> tuple[list[ET.Element], int]:
     if root.tag == "OpenAPI_ServiceResponse":
         code = (root.findtext(".//returnReasonCode") or "").strip()
         msg = (root.findtext(".//returnAuthMsg") or root.findtext(".//errMsg") or "").strip()
-        raise ApiError(f"portal error {code}: {msg}")
+        raise _portal_error(code, msg)
 
     code = (root.findtext(".//header/resultCode") or root.findtext(".//resultCode") or "").strip()
     msg = root.findtext(".//header/resultMsg") or root.findtext(".//resultMsg") or ""
     if code and code not in OK_CODES and code not in NO_DATA_CODES:
-        raise ApiError(f"api error {code}: {msg}")
+        raise _api_error(code, msg)
 
     items = root.findall(".//items/item") or root.findall(".//body/item")
     total = _int(root.findtext(".//body/totalCount") or root.findtext(".//totalCount") or "0") or len(items)

@@ -1,6 +1,8 @@
 import copy
 import json
 
+import pytest
+
 from collector import config, diff, summary
 from collector.collect_trades import collect, merge_records
 from collector.matching import ComplexIndex, normalize_name
@@ -195,3 +197,63 @@ def test_state_reset_when_complex_set_changes(tmp_data_dir):
     assert reset_state_if_complexes_changed({"A", "B"}, {"A", "B"}) is False and config.STATE_FILE.exists()
     assert reset_state_if_complexes_changed({"A", "B"}, {"A", "B", "C"}) is True and not config.STATE_FILE.exists()
     assert reset_state_if_complexes_changed({"A"}, {"B"}) is False   # 이미 없음
+
+
+def test_build_reuses_known_complexes_and_stops_on_quota(monkeypatch, tmp_data_dir):
+    """아는 단지는 다시 조회하지 않고, 한도 초과 시 받은 데까지만 저장한다."""
+    from collector import build_complexes, kapt_api
+    from collector.http import ApiError, QuotaExceeded
+    from collector.kapt_api import parse_basic
+
+    from .test_parsing import KAPT_BASIC_JSON
+
+    monkeypatch.setattr(config, "REGIONS", (config.Region("11440", "마포구"),))
+    write_json(config.COMPLEXES_FILE, {"complexes": [copy.deepcopy(COMPLEX)]})          # 이미 마스터에 있음
+    write_json(config.COMPLEXES_SKIPPED_FILE, {"items": [
+        {"kapt_code": "SMALL", "name": "작은단지", "sgg_name": "마포구", "umd": "공덕동", "households": 120, "ho_count": None, "address": "", "reason": "households"},
+        {"kapt_code": "LATER", "name": "어제못받음", "sgg_name": "마포구", "umd": "공덕동", "households": None, "ho_count": None, "address": "", "reason": "not_fetched"},
+    ]})
+    listing = [{"kapt_code": c, "name": c, "as3": "공덕동"} for c in ("A13376001", "SMALL", "LATER", "NEW1", "NEW2", "NEW3")]
+    monkeypatch.setattr(build_complexes, "fetch_list", lambda key, code: listing)
+    asked = []
+
+    def fake_basic(key, code):
+        asked.append(code)
+        if code == "NEW2":
+            raise QuotaExceeded("portal error 22: LIMITED_NUMBER_OF_SERVICE_REQUESTS_EXCEEDS_ERROR")
+        data = json.loads(KAPT_BASIC_JSON)
+        data["response"]["body"]["item"].update(kaptCode=code, kaptName=code, kaptdaCnt=800)
+        return parse_basic(json.dumps(data))
+
+    monkeypatch.setattr(build_complexes, "fetch_basic", fake_basic)
+    result = build_complexes.build("KEY", None)
+
+    assert asked == ["LATER", "NEW1", "NEW2"]                    # 아는 단지는 조회 안 함, 한도 뒤로는 중단
+    assert sorted(c["kapt_code"] for c in result) == ["A13376001", "LATER", "NEW1"]
+    assert next(c for c in result if c["kapt_code"] == "A13376001")["lat"] == 37.55   # 기존 좌표 유지
+    skipped = {i["kapt_code"]: i["reason"] for i in json.loads(config.COMPLEXES_SKIPPED_FILE.read_text())["items"]}
+    assert skipped == {"SMALL": "households", "NEW2": "not_fetched", "NEW3": "not_fetched"}
+    assert json.loads(config.COMPLEXES_FILE.read_text())["skipped"]["not_fetched"] == 2
+
+    # 일시 오류는 다시 시도해서 성공한다
+    monkeypatch.setattr(kapt_api.time, "sleep", lambda s: None)
+    attempts = []
+
+    class Resp:
+        status_code = 200
+
+        def __init__(self, text):
+            self.text = text
+
+    def flaky_get(url, params, headers=None):
+        attempts.append(1)
+        if len(attempts) < 3:
+            return Resp('{"OpenAPI_ServiceResponse":{"cmmMsgHeader":{"returnAuthMsg":"HTTP ROUTING ERROR","returnReasonCode":"04"}}}')
+        return Resp(KAPT_BASIC_JSON)
+
+    monkeypatch.setattr(kapt_api, "get", flaky_get)
+    assert kapt_api.fetch_basic("KEY", "A13376001").households == 3885 and len(attempts) == 3
+    attempts.clear()
+    monkeypatch.setattr(kapt_api, "get", lambda url, params, headers=None: Resp('{"OpenAPI_ServiceResponse":{"cmmMsgHeader":{"returnAuthMsg":"HTTP ROUTING ERROR","returnReasonCode":"04"}}}'))
+    with pytest.raises(ApiError, match="HTTP ROUTING ERROR"):
+        kapt_api.fetch_basic("KEY", "A13376001")

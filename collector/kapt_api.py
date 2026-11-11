@@ -3,10 +3,11 @@ from __future__ import annotations
 
 import logging
 import re
+import time
 from dataclasses import asdict, dataclass
 
 from . import config
-from .http import ApiError, get
+from .http import ApiError, QuotaExceeded, get
 from .molit_api import _int, _text, describe_error, parse_envelope
 
 log = logging.getLogger(__name__)
@@ -128,8 +129,24 @@ def fetch_list(service_key: str, sigungu_code: str) -> list[dict]:
     return results
 
 
+BASIC_RETRY_WAITS = (5, 15)  # 일시 오류일 때 다시 시도하기 전 대기(초)
+
+
 def fetch_basic(service_key: str, kapt_code: str) -> KaptBasic | None:
-    resp = get(config.KAPT_BASIS_URL, {"serviceKey": service_key, "kaptCode": kapt_code})
-    if resp.status_code != 200:
-        raise ApiError(f"HTTP {resp.status_code} from kapt basic: {describe_error(resp.text)}")
-    return parse_basic(resp.text)
+    """단지 기본정보. 일시 오류는 잠시 쉬었다 다시 시도하고, 일일 한도 초과(QuotaExceeded)는 바로 올린다."""
+    waits = list(BASIC_RETRY_WAITS)
+    while True:
+        try:
+            resp = get(config.KAPT_BASIS_URL, {"serviceKey": service_key, "kaptCode": kapt_code})
+            if resp.status_code != 200:
+                parse_envelope(resp.text)  # 본문이 포털 오류면 여기서 알맞은 오류가 난다
+                raise ApiError(f"HTTP {resp.status_code} from kapt basic: {describe_error(resp.text)}")
+            return parse_basic(resp.text)
+        except QuotaExceeded:
+            raise
+        except ApiError as exc:
+            if not waits:
+                raise
+            wait = waits.pop(0)
+            log.warning("기본정보 %s 실패 (%s) -> %s초 뒤 재시도", kapt_code, exc, wait)
+            time.sleep(wait)

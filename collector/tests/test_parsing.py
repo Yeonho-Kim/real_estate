@@ -120,3 +120,23 @@ def test_clean_service_key_and_redact():
     out = redact(msg)
     assert "SECRET" not in out and "serviceKey=***" in out and "LAWD_CD=11440" in out
     assert "abcdef" not in redact("Authorization: KakaoAK abcdef123")
+
+
+def test_json_portal_error_and_quota():
+    from collector.http import QuotaExceeded
+    from collector.molit_api import parse_envelope
+
+    quota = '{"OpenAPI_ServiceResponse":{"cmmMsgHeader":{"errMsg":"SERVICE ERROR","returnAuthMsg":"LIMITED_NUMBER_OF_SERVICE_REQUESTS_EXCEEDS_ERROR","returnReasonCode":"22"}}}'
+    with pytest.raises(QuotaExceeded, match="portal error 22"):
+        parse_envelope(quota)
+    other = '{"OpenAPI_ServiceResponse":{"cmmMsgHeader":{"errMsg":"SERVICE ERROR","returnAuthMsg":"HTTP ROUTING ERROR","returnReasonCode":"04"}}}'
+    with pytest.raises(ApiError, match="HTTP ROUTING ERROR") as info:
+        parse_envelope(other)
+    assert not isinstance(info.value, QuotaExceeded)
+    # 초당 한도는 일일 한도가 아니다
+    per_sec = '{"OpenAPI_ServiceResponse":{"cmmMsgHeader":{"returnAuthMsg":"LIMITED_NUMBER_OF_SERVICE_REQUESTS_PER_SECOND_EXCEEDS_ERROR","returnReasonCode":"23"}}}'
+    with pytest.raises(ApiError) as info:
+        parse_envelope(per_sec)
+    assert not isinstance(info.value, QuotaExceeded)
+    with pytest.raises(QuotaExceeded):
+        parse_envelope('{"response":{"header":{"resultCode":"22","resultMsg":"LIMITED NUMBER OF SERVICE REQUESTS EXCEEDS ERROR."}}}')

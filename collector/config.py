@@ -93,7 +93,8 @@ PAGE_SIZE = 1000
 REQUEST_TIMEOUT = 40
 REQUEST_RETRIES = 3
 REQUEST_SLEEP = 0.2  # 호출 사이 대기(초)
-BASIC_WORKERS = int(os.environ.get("BASIC_WORKERS", "4"))  # 단지 기본정보 동시 조회 수
+# 단지 기본정보 동시 조회 수. K-apt 서버는 동시 요청에 약해 4개만 보내도 시간 초과가 났다. 1(순차)을 유지한다.
+BASIC_WORKERS = int(os.environ.get("BASIC_WORKERS", "1"))
 
 
 def env(name: str, default: str | None = None) -> str | None:

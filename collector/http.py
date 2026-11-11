@@ -19,6 +19,10 @@ class ApiError(RuntimeError):
     pass
 
 
+class QuotaExceeded(ApiError):
+    """일일 호출 한도 초과. 다시 시도해도 소용없으므로 재시도하지 않는다."""
+
+
 def redact(text: object) -> str:
     """오류 문구에 섞인 인증키를 가린다. (공개 저장소의 Actions 로그는 누구나 볼 수 있다)"""
     return _AUTH_RE.sub(r"\1***", _KEY_RE.sub(r"\1***", str(text)))

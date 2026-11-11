@@ -28,7 +28,7 @@ def cmd_complexes(args) -> None:
     from .build_complexes import build
 
     before = {c["kapt_code"] for c in read_json(config.COMPLEXES_FILE, {}).get("complexes", [])}
-    result = build(_require("DATA_GO_KR_KEY"), config.env("KAKAO_REST_KEY"), geocode=not args.no_geocode)
+    result = build(_require("DATA_GO_KR_KEY"), config.env("KAKAO_REST_KEY"), geocode=not args.no_geocode, full=args.full)
     after = {c["kapt_code"] for c in result}
     if reset_state_if_complexes_changed(before, after):
         log.info("단지 구성이 바뀌어(+%d, -%d) 기준 상태를 초기화했습니다. 다음 수집은 알림 없이 전체 기간을 다시 받습니다.",
@@ -88,6 +88,7 @@ def main(argv=None) -> None:
 
     p = sub.add_parser("complexes")
     p.add_argument("--no-geocode", action="store_true")
+    p.add_argument("--full", action="store_true", help="이미 아는 단지도 전부 다시 조회")
     p.set_defaults(func=cmd_complexes)
 
     p = sub.add_parser("collect")
@@ -100,6 +101,7 @@ def main(argv=None) -> None:
 
     p = sub.add_parser("all")
     p.add_argument("--no-geocode", action="store_true")
+    p.add_argument("--full", action="store_true")
     p.add_argument("--months")
     p.add_argument("--dry-run", action="store_true")
     p.set_defaults(func=cmd_all)
