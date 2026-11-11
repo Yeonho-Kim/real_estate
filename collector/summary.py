@@ -1,6 +1,9 @@
 """지도 마커용 요약(data/summary.json) 생성."""
 from __future__ import annotations
 
+import os
+import re
+from collections import Counter
 from datetime import date, timedelta
 
 from . import config
@@ -52,6 +55,41 @@ def bucket_stats(sales: list[dict], rents: list[dict], today: date | None = None
     return out
 
 
+_PAREN = re.compile(r"\(.*?\)|\[.*?\]")
+
+
+def _clean(name: str) -> str:
+    out = _PAREN.sub("", name or "")
+    out = re.sub(r"관리사무소|아파트", "", out)
+    return " ".join(out.split()).strip()
+
+
+def search_name(kapt_name: str, trade_names: list[str]) -> str:
+    """지도·부동산 앱에서 검색할 때 쓸 단지명.
+
+    K-apt 이름과 실거래 자료의 이름 가운데 더 구체적인(긴) 쪽을 쓴다.
+    - K-apt "흑석자이" 보다 실거래 "흑석리버파크자이" 가 실제로 통하는 이름이다.
+    - 반대로 실거래 "우성", "현대" 는 너무 짧아 K-apt "노량진우성" 이 낫다.
+    실거래 이름이 단지별로 여럿이면(…1단지, …2단지) 공통 앞부분을 쓴다.
+    """
+    kapt = _clean(kapt_name)
+    cleaned = [c for c in (_clean(n) for n in trade_names) if c]
+    if not cleaned:
+        return kapt
+    distinct = list(dict.fromkeys(cleaned))
+    if len(distinct) > 1:
+        prefix = os.path.commonprefix(distinct).strip()
+        trade = prefix if len(prefix) >= 4 else Counter(cleaned).most_common(1)[0][0]
+    else:
+        trade = distinct[0]
+    return trade if len(trade.replace(" ", "")) > len(kapt.replace(" ", "")) else kapt
+
+
+def short_address(road_address: str) -> str:
+    """'서울특별시 마포구 마포대로 195' → '마포구 마포대로 195'"""
+    return re.sub(r"^서울(특별시)?\s*", "", (road_address or "").strip())
+
+
 def build_summary(complexes: list[dict], events: list[dict]) -> dict:
     new_counts: dict[str, int] = {}
     for e in events:
@@ -67,6 +105,8 @@ def build_summary(complexes: list[dict], events: list[dict]) -> dict:
         items.append({
             "kapt_code": c["kapt_code"],
             "name": c["name"],
+            "search_name": search_name(c["name"], [r["apt_name"] for r in (sales or rents)]),
+            "addr": short_address(c.get("road_address", "")),
             "sgg": c["sgg_name"],
             "umd": c["umd"],
             "lat": c.get("lat"),

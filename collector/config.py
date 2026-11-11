@@ -49,6 +49,10 @@ REGIONS: tuple[Region, ...] = (
 # 세대수 기준 (이상)
 MIN_HOUSEHOLDS = int(os.environ.get("MIN_HOUSEHOLDS", "300"))
 
+# 제외할 분양형태 (K-apt codeSaleNm: 분양 / 임대 / 혼합). 임대 단지는 매매·전월세 실거래가 없어 지도에서 뺀다.
+# 분양과 임대가 섞인 "혼합"은 대부분 일반 단지라 남긴다. 쉼표로 여러 개, 빈 문자열이면 제외 없음.
+EXCLUDE_SALE_TYPES = tuple(t.strip() for t in os.environ.get("EXCLUDE_SALE_TYPES", "임대").split(",") if t.strip())
+
 # 전용면적 범위(㎡). 59타입(59.9x) ~ 84타입(84.9x) 을 포함하도록 여유를 둠.
 AREA_MIN = float(os.environ.get("AREA_MIN", "58"))
 AREA_MAX = float(os.environ.get("AREA_MAX", "86"))  # 미만

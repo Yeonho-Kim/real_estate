@@ -275,6 +275,7 @@ def test_state_reset_when_complex_set_changes(tmp_data_dir):
 
     write_json(config.STATE_FILE, {"sale_keys": ["a"]})
     assert reset_state_if_complexes_changed({"A", "B"}, {"A", "B"}) is False and config.STATE_FILE.exists()
+    assert reset_state_if_complexes_changed({"A", "B"}, {"A"}) is False and config.STATE_FILE.exists()   # 빠지기만 함
     assert reset_state_if_complexes_changed({"A", "B"}, {"A", "B", "C"}) is True and not config.STATE_FILE.exists()
     assert reset_state_if_complexes_changed({"A"}, {"B"}) is False   # 이미 없음
 
@@ -377,3 +378,60 @@ def test_unmatched_report_has_override_hints(monkeypatch, tmp_data_dir):
     assert len(items) == 1
     assert items[0] == {"where": "마포구|아현동|777|마포래미안푸르지오", "count": 4, "sales": 2, "rents": 2,
                         "apt_seq": "11440-3214", "road": "마포대로 195", "build_year": 2014}
+
+
+def test_rental_complexes_are_excluded(monkeypatch, tmp_data_dir):
+    """임대 단지는 마스터에서 빠진다. 이미 마스터에 있던 임대 단지도 빠지고 거래 파일이 지워진다."""
+    from collector import build_complexes
+    from collector.kapt_api import parse_basic
+
+    from .test_parsing import KAPT_BASIC_JSON
+
+    monkeypatch.setattr(config, "REGIONS", (config.Region("11440", "마포구"),))
+    old_rental = dict(copy.deepcopy(COMPLEX), kapt_code="RENT_OLD", name="예전임대", sale_type="임대")
+    write_json(config.COMPLEXES_FILE, {"complexes": [copy.deepcopy(COMPLEX), old_rental]})
+    write_json(config.TRADES_DIR / "RENT_OLD.json", {"sales": [], "rents": []})
+    write_json(config.TRADES_DIR / "A13376001.json", {"sales": [], "rents": []})
+    write_json(config.COMPLEXES_SKIPPED_FILE, {"items": [
+        {"kapt_code": "RENT_KNOWN", "name": "확인된임대", "sgg_name": "마포구", "umd": "공덕동", "households": 800,
+         "ho_count": 800, "sale_type": "임대", "address": "", "reason": "rental"},
+    ]})
+    listing = [{"kapt_code": c, "name": c, "as3": "공덕동"} for c in ("A13376001", "RENT_OLD", "RENT_KNOWN", "RENT_NEW", "MIXED")]
+    monkeypatch.setattr(build_complexes, "fetch_list", lambda key, code: listing)
+    asked = []
+
+    def fake_basic(key, code):
+        asked.append(code)
+        data = json.loads(KAPT_BASIC_JSON)
+        data["response"]["body"]["item"].update(kaptCode=code, kaptName=code, kaptdaCnt=900,
+                                                codeSaleNm="임대" if code == "RENT_NEW" else "혼합")
+        return parse_basic(json.dumps(data))
+
+    monkeypatch.setattr(build_complexes, "fetch_basic", fake_basic)
+    result = build_complexes.build("KEY", None)
+
+    assert sorted(c["kapt_code"] for c in result) == ["A13376001", "MIXED"]       # 분양·혼합만 남음
+    assert asked == ["RENT_NEW", "MIXED"]                                         # 이미 아는 임대 단지는 조회 안 함
+    skipped = {i["kapt_code"]: i["reason"] for i in json.loads(config.COMPLEXES_SKIPPED_FILE.read_text())["items"]}
+    assert skipped == {"RENT_OLD": "rental", "RENT_KNOWN": "rental", "RENT_NEW": "rental"}
+    assert not (config.TRADES_DIR / "RENT_OLD.json").exists() and (config.TRADES_DIR / "A13376001.json").exists()
+
+    # 제외 규칙을 끄면 다시 들어온다 (기준이 바뀌면 캐시가 아니라 지금 기준으로 판단)
+    monkeypatch.setattr(config, "EXCLUDE_SALE_TYPES", ())
+    result = build_complexes.build("KEY", None)
+    assert {"RENT_OLD", "RENT_KNOWN", "RENT_NEW"} <= {c["kapt_code"] for c in result}
+
+
+def test_search_name_and_address():
+    from collector.summary import search_name, short_address
+
+    assert search_name("흑석자이", ["흑석리버파크자이"] * 3) == "흑석리버파크자이"            # 실거래 이름이 더 구체적
+    assert search_name("노량진우성", ["우성"]) == "노량진우성"                                # 실거래 이름이 너무 짧음
+    assert search_name("사당 대림아파트", ["대림(169-8)"]) == "사당 대림"
+    assert search_name("마포래미안푸르지오", ["마포래미안푸르지오4단지", "마포래미안푸르지오1단지"]) == "마포래미안푸르지오"
+    assert search_name("DMC파크뷰자이아파트", ["DMC파크뷰자이1단지", "DMC파크뷰자이2단지", "DMC파크뷰자이1단지(임대)"]) == "DMC파크뷰자이"
+    assert search_name("상암월드컵파크2단지", ["상암월드컵파크2단지"]) == "상암월드컵파크2단지"
+    assert search_name("힐스테이트  서대문포레스트 아파트", []) == "힐스테이트 서대문포레스트"
+    assert search_name("도화현대1차아파트", ["도화동현대", "도화현대"]) == "도화현대1차"
+    assert short_address("서울특별시 마포구 마포대로 195") == "마포구 마포대로 195"
+    assert short_address("") == ""

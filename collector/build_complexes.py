@@ -21,7 +21,8 @@ from .store import now_iso, read_json, write_json
 
 log = logging.getLogger(__name__)
 
-REASONS = ("households", "umd", "no_basic", "not_fetched")
+REASONS = ("households", "rental", "umd", "no_basic", "not_fetched")
+CACHED_REASONS = ("households", "rental")  # 기본정보를 이미 받아 판단이 끝난 경우
 _QUOTA = object()
 
 
@@ -33,17 +34,37 @@ def _skip(entry: dict, region, reason: str, basic=None) -> dict:
         "umd": (basic.umd if basic else "") or entry.get("as3", ""),
         "households": basic.households if basic else None,
         "ho_count": basic.ho_count if basic else None,
+        "sale_type": basic.sale_type if basic else "",
         "address": basic.address if basic else "",
         "reason": reason,
     }
 
 
+def _skip_record(record: dict, reason: str) -> dict:
+    """이미 마스터에 있던 단지를 제외할 때 (예: 임대 단지 제외 규칙이 새로 생김)."""
+    return {
+        "kapt_code": record["kapt_code"], "name": record.get("name", ""), "sgg_name": record.get("sgg_name", ""),
+        "umd": record.get("umd", ""), "households": record.get("households"), "ho_count": record.get("ho_count"),
+        "sale_type": record.get("sale_type", ""), "address": record.get("address", ""), "reason": reason,
+    }
+
+
+def exclusion_reason(households: int | None, sale_type: str) -> str | None:
+    """세대수·분양형태로 제외할지 판단. 제외하지 않으면 None."""
+    if households is not None and households < config.MIN_HOUSEHOLDS:
+        return "households"
+    if (sale_type or "") in config.EXCLUDE_SALE_TYPES:
+        return "rental"
+    return None
+
+
 def build(service_key: str, kakao_rest_key: str | None, geocode: bool = True, full: bool = False) -> list[dict]:
     existing = {} if full else {c["kapt_code"]: c for c in read_json(config.COMPLEXES_FILE, {}).get("complexes", [])}
-    known_small = {} if full else {
+    # 지난번에 기본정보를 받아 제외로 판단한 단지. 기준이 바뀌었을 수 있으니 판단은 지금 기준으로 다시 한다.
+    known_skipped = {} if full else {
         i["kapt_code"]: i
         for i in read_json(config.COMPLEXES_SKIPPED_FILE, {}).get("items", [])
-        if i.get("reason") == "households" and i.get("households") is not None and i["households"] < config.MIN_HOUSEHOLDS
+        if i.get("reason") in CACHED_REASONS and i.get("households") is not None
     }
     coords_cache = {c["kapt_code"]: c for c in read_json(config.COMPLEXES_FILE, {}).get("complexes", [])}
 
@@ -63,13 +84,20 @@ def build(service_key: str, kakao_rest_key: str | None, geocode: bool = True, fu
             elif code in existing:
                 record = dict(existing[code])
                 record.setdefault("ho_count", None)
-                result.append(record)
-            elif code in known_small:
-                skipped_items.append(dict(known_small[code]))
+                reason = exclusion_reason(record.get("households"), record.get("sale_type", ""))
+                if reason:
+                    skipped_items.append(_skip_record(record, reason))
+                else:
+                    result.append(record)
+            elif code in known_skipped and exclusion_reason(known_skipped[code]["households"], known_skipped[code].get("sale_type", "")):
+                item = dict(known_skipped[code])
+                item.setdefault("sale_type", "")
+                item["reason"] = exclusion_reason(item["households"], item["sale_type"])
+                skipped_items.append(item)
             else:
                 todo.append((region, entry))
-    log.info("단지 목록 %s | 재사용 %d, 이미 확인된 세대수 미달 %d, 새로 조회 %d",
-             listed, len(result), sum(1 for i in skipped_items if i["reason"] == "households"), len(todo))
+    log.info("단지 목록 %s | 재사용 %d, 이미 확인된 제외 %d, 새로 조회 %d",
+             listed, len(result), sum(1 for i in skipped_items if i["reason"] in CACHED_REASONS), len(todo))
 
     # 2) 기본정보 조회. 일일 한도를 넘으면 남은 것은 건너뛴다.
     quota_hit = threading.Event()
@@ -105,8 +133,9 @@ def build(service_key: str, kakao_rest_key: str | None, geocode: bool = True, fu
             log.warning("기본정보 없음: %s %s", entry["kapt_code"], entry.get("name"))
             skipped_items.append(_skip(entry, region, "no_basic"))
             continue
-        if basic.households < config.MIN_HOUSEHOLDS:
-            skipped_items.append(_skip(entry, region, "households", basic))
+        reason = exclusion_reason(basic.households, basic.sale_type)
+        if reason:
+            skipped_items.append(_skip(entry, region, reason, basic))
             continue
         umd = basic.umd or entry.get("as3", "")
         if not region.accepts_umd(umd):
@@ -150,13 +179,29 @@ def build(service_key: str, kakao_rest_key: str | None, geocode: bool = True, fu
     skipped_items.sort(key=lambda i: (i["reason"], i["sgg_name"], -(i["households"] or 0), i["name"]))
     write_json(config.COMPLEXES_SKIPPED_FILE, {
         "generated_at": now_iso(),
-        "note": "단지 마스터에서 제외한 단지. reason: households=세대수 미달, umd=대상 동이 아님, "
+        "note": "단지 마스터에서 제외한 단지. reason: households=세대수 미달, rental=임대 단지, umd=대상 동이 아님, "
                 "no_basic=기본정보 없음, not_fetched=일일 한도 초과로 아직 확인 못함(다음 실행에서 이어서 받음)",
         "min_households": config.MIN_HOUSEHOLDS,
+        "exclude_sale_types": list(config.EXCLUDE_SALE_TYPES),
         "items": skipped_items,
     })
     log.info("마스터 %d개 저장 (제외: %s)", len(result), skipped)
+    removed = remove_orphan_trades({r["kapt_code"] for r in result})
+    if removed:
+        log.info("마스터에서 빠진 단지의 거래 파일 %d개를 지웠습니다.", removed)
     if skipped["not_fetched"]:
         log.warning("일일 한도 때문에 %d개 단지를 확인하지 못했습니다. 내일 '단지 마스터 다시 만들기'로 다시 실행하면 이어서 받습니다.",
                     skipped["not_fetched"])
     return result
+
+
+def remove_orphan_trades(valid_codes: set[str]) -> int:
+    """마스터에 없는 단지의 거래 파일을 지운다 (단지가 제외된 뒤 남은 파일)."""
+    if not valid_codes or not config.TRADES_DIR.exists():
+        return 0
+    removed = 0
+    for path in config.TRADES_DIR.glob("*.json"):
+        if path.stem not in valid_codes:
+            path.unlink()
+            removed += 1
+    return removed

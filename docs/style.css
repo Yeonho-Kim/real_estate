@@ -31,8 +31,8 @@ html, body { margin: 0; height: 100%; font-family: -apple-system, BlinkMacSystem
 button { font: inherit; cursor: pointer; }
 a { color: var(--accent); }
 
-#app { position: relative; height: 100%; display: flex; flex-direction: column; }
-#map { flex: 1; min-height: 0; background: var(--surface-2); }
+#app { position: relative; height: 100%; display: flex; flex-direction: column; overflow: hidden; }
+#map { flex: 1; min-height: 0; background: var(--surface-2); overflow: hidden; }
 
 /* 상단 바 */
 header { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; padding: 8px 16px; background: var(--surface); border-bottom: 1px solid var(--line); z-index: 5; }
@@ -64,8 +64,12 @@ header .meta { color: var(--text-3); font-size: 12px; margin-left: auto; }
 #panel.open { transform: none; }
 #panel .inner { padding: 16px; }
 #panel h2 { margin: 0 0 4px; font-size: 18px; }
-#panel .sub { color: var(--text-2); font-size: 12px; margin-bottom: 12px; }
+#panel .sub { color: var(--text-2); font-size: 12px; margin-bottom: 10px; line-height: 1.5; }
 #panel .close { position: absolute; top: 10px; right: 10px; border: 0; background: transparent; font-size: 20px; color: var(--text-2); }
+.links { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px; }
+.links a { display: inline-flex; align-items: center; min-height: 32px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface-2); color: var(--text); font-size: 12px; text-decoration: none; white-space: nowrap; }
+.links a:hover, .links a:focus-visible { border-color: var(--accent); color: var(--accent); }
+.links a span { color: var(--text-3); }
 .tabs { display: flex; gap: 6px; margin: 10px 0; }
 .tabs button { border: 1px solid var(--line); background: var(--surface); color: var(--text-2); border-radius: 8px; padding: 5px 10px; }
 .tabs button.on { border-color: var(--text); color: var(--text); font-weight: 600; }

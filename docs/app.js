@@ -41,6 +41,33 @@
   }
   function bucketOf(area) { return area < 65 ? "59" : area < 80 ? "70" : "84"; }
 
+  // ---------- 외부 서비스 링크 ----------
+  const DEFAULT_LINKS = [
+    { label: "네이버 지도", url: "https://map.naver.com/p/search/{query}" },
+    { label: "카카오맵", url: "https://map.kakao.com/link/map/{name},{lat},{lng}" },
+  ];
+  function linkValues(c) {
+    const name = c.search_name || c.name;
+    return { name, query: `${c.umd} ${name}`.trim(), addr: c.addr || "", sgg: c.sgg || "", umd: c.umd || "", lat: c.lat, lng: c.lng };
+  }
+  function buildLinks(c) {
+    const values = linkValues(c);
+    const links = Array.isArray(cfg.LINKS) && cfg.LINKS.length ? cfg.LINKS : DEFAULT_LINKS;
+    return links
+      .filter((l) => l && l.label && l.url)
+      // 좌표가 필요한 링크는 좌표가 없으면 빼고, 값이 비면(예: 주소 없음) 그 링크도 뺀다.
+      .filter((l) => (l.url.match(/\{(\w+)\}/g) || []).every((k) => values[k.slice(1, -1)] != null && values[k.slice(1, -1)] !== ""))
+      .map((l) => ({
+        label: l.label,
+        href: l.url.replace(/\{(\w+)\}/g, (_, k) => (k === "lat" || k === "lng" ? String(values[k]) : encodeURIComponent(values[k]))),
+      }));
+  }
+  function linksHtml(c) {
+    const links = buildLinks(c);
+    if (!links.length) return "";
+    return `<nav class="links" aria-label="다른 서비스에서 보기">${links.map((l) => `<a href="${esc(l.href)}" target="_blank" rel="noopener noreferrer">${esc(l.label)}<span aria-hidden="true"> ↗</span></a>`).join("")}</nav>`;
+  }
+
   // ---------- 데이터 ----------
   async function fetchJson(path, optional) {
     const res = await fetch(`${DATA}/${path}`, { cache: "no-cache" });
@@ -183,7 +210,8 @@
 
     $("panelBody").innerHTML = `
       <h2>${esc(c.name)}</h2>
-      <div class="sub">${esc(c.sgg)} ${esc(c.umd)} · ${c.households.toLocaleString()}세대${c.area_85 ? ` (60~85㎡ ${c.area_85.toLocaleString()}세대)` : ""} · ${c.approved ? c.approved.slice(0, 4) + "년 승인" : ""}</div>
+      <div class="sub">${esc(c.sgg)} ${esc(c.umd)} · ${c.households.toLocaleString()}세대${c.area_85 ? ` (60~85㎡ ${c.area_85.toLocaleString()}세대)` : ""} · ${c.approved ? c.approved.slice(0, 4) + "년 승인" : ""}${c.search_name && c.search_name.replace(/\s/g, "") !== c.name.replace(/\s/g, "") ? `<br>실거래 자료 이름: ${esc(c.search_name)}` : ""}</div>
+      ${linksHtml(c)}
       <div class="tabs" id="panelTabs">${tabs.map((k) => `<button data-tab="${k}" class="${k === sel ? "on" : ""}">${k === "all" ? "전체" : `<span class="sw" style="background:${TYPE_COLOR[k]}"></span>${TYPE_LABEL[k]}`}</button>`).join("")}</div>
       ${statsHtml}
       <h3>월별 평균 매매가 (최근 24개월)</h3>
@@ -255,7 +283,10 @@
       const v = min + ((max - min) * i) / ticks;
       html += `<line class="grid" x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}"/><text x="${L - 4}" y="${y(v) + 3}" text-anchor="end">${fmtEok(Math.round(v))}</text>`;
     }
-    months.forEach((m, i) => { if (i % 6 === 0 || i === months.length - 1) html += `<text x="${x(i)}" y="${H - 6}" text-anchor="middle">${m.slice(2).replace("-", ".")}</text>`; });
+    months.forEach((m, i) => {
+      const last = i === months.length - 1;
+      if (i % 6 === 0 || last) html += `<text x="${x(i)}" y="${H - 6}" text-anchor="${last ? "end" : "middle"}">${m.slice(2).replace("-", ".")}</text>`;
+    });
     for (const k of keys) {
       const pts = series[k].map((v, i) => (v == null ? null : [x(i), y(v)]));
       let dPath = "", prev = null;

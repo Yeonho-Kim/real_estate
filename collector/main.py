@@ -36,12 +36,13 @@ def cmd_complexes(args) -> None:
 
 
 def reset_state_if_complexes_changed(before: set[str], after: set[str]) -> bool:
-    """단지 구성이 바뀌면 state.json 을 지운다.
+    """새 단지가 들어오면 state.json 을 지운다.
 
     새로 들어온 단지의 과거 거래가 "신규 거래"로 잡혀 알림이 쏟아지는 것을 막고,
     그 단지도 전체 기간(BACKFILL_MONTHS)을 받게 하기 위해서다.
     """
-    if before == after or not config.STATE_FILE.exists():
+    # 단지가 빠지기만 한 경우에는 다시 받을 것도, 가짜 알림이 생길 일도 없다.
+    if not (after - before) or not config.STATE_FILE.exists():
         return False
     config.STATE_FILE.unlink()
     return True
