@@ -1,7 +1,7 @@
 // 공개해도 되는 설정값만 둔다. 비밀키는 GitHub Secrets 에만 저장한다.
 window.APP_CONFIG = {
   // developers.kakao.com 앱의 "JavaScript 키". 플랫폼 > Web 에 사이트 도메인 등록 필요.
-  KAKAO_JS_KEY: "",
+  KAKAO_JS_KEY: "6db932ec1f7df1c51987823b63de2b20",
   // python -m collector.gen_vapid 가 출력한 공개키
   VAPID_PUBLIC_KEY: "",
   // 데이터 경로 (GitHub Pages 에서는 _site/data 로 복사됨)
