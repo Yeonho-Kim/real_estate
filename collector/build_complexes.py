@@ -172,9 +172,12 @@ def build(service_key: str, kakao_rest_key: str | None, geocode: bool = True, fu
         skipped[item["reason"]] += 1
 
     result.sort(key=lambda r: (r["sgg_code"], r["umd"], r["name"]))
-    write_json(config.COMPLEXES_FILE, {
-        "generated_at": now_iso(), "count": len(result), "listed": listed, "skipped": skipped, "complexes": result,
-    })
+    master = {"generated_at": now_iso(), "count": len(result), "listed": listed, "skipped": skipped, "complexes": result}
+    # 연결 규칙 버전을 지우면 다음 수집이 "규칙이 바뀌었다"고 보고 전체 기간을 다시 받는다. 그대로 넘긴다.
+    previous_version = read_json(config.COMPLEXES_FILE, {}).get("match_version")
+    if previous_version is not None:
+        master["match_version"] = previous_version
+    write_json(config.COMPLEXES_FILE, master)
     # 세대수 미달은 큰 것부터 보이게 정렬 (300세대 근처에서 잘못 빠진 단지를 찾기 쉽도록)
     skipped_items.sort(key=lambda i: (i["reason"], i["sgg_name"], -(i["households"] or 0), i["name"]))
     write_json(config.COMPLEXES_SKIPPED_FILE, {

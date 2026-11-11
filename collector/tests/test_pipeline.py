@@ -435,3 +435,26 @@ def test_search_name_and_address():
     assert search_name("도화현대1차아파트", ["도화동현대", "도화현대"]) == "도화현대1차"
     assert short_address("서울특별시 마포구 마포대로 195") == "마포구 마포대로 195"
     assert short_address("") == ""
+
+
+def test_rebuild_keeps_match_version_and_state(monkeypatch, tmp_data_dir):
+    """단지 마스터를 다시 만들어도 연결 규칙 버전이 남아야 한다.
+
+    지워지면 다음 수집이 전체 기간을 다시 받고 변화 감지 기준을 초기화한다 (실제로 한 번 일어난 문제).
+    """
+    from collector import build_complexes, collect_trades, main
+
+    monkeypatch.setattr(config, "REGIONS", (config.Region("11440", "마포구"),))
+    rental = dict(copy.deepcopy(COMPLEX), kapt_code="RENT", name="임대단지", sale_type="임대")
+    write_json(config.COMPLEXES_FILE, {"match_version": MATCH_VERSION, "complexes": [copy.deepcopy(COMPLEX), rental]})
+    write_json(config.STATE_FILE, {"sale_keys": ["k"], "rent_keys": [], "cancelled_keys": []})
+    monkeypatch.setattr(build_complexes, "fetch_list", lambda key, code: [
+        {"kapt_code": "A13376001", "name": "x", "as3": "아현동"}, {"kapt_code": "RENT", "name": "y", "as3": "아현동"}])
+    monkeypatch.setenv("DATA_GO_KR_KEY", "KEY")
+    main.main(["complexes", "--no-geocode"])
+
+    master = json.loads(config.COMPLEXES_FILE.read_text())
+    assert [c["kapt_code"] for c in master["complexes"]] == ["A13376001"]
+    assert master["match_version"] == MATCH_VERSION
+    assert not collect_trades.needs_rematch()
+    assert config.STATE_FILE.exists()          # 단지가 빠지기만 했으므로 기준 상태 유지
