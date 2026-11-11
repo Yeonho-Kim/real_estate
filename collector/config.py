@@ -13,6 +13,7 @@ DATA_DIR = ROOT / "data"
 TRADES_DIR = DATA_DIR / "trades"
 CHANGES_DIR = DATA_DIR / "changes"
 COMPLEXES_FILE = DATA_DIR / "complexes.json"
+COMPLEXES_SKIPPED_FILE = DATA_DIR / "complexes_skipped.json"
 SUMMARY_FILE = DATA_DIR / "summary.json"
 STATE_FILE = DATA_DIR / "state.json"
 UNMATCHED_FILE = DATA_DIR / "unmatched.json"
@@ -92,6 +93,7 @@ PAGE_SIZE = 1000
 REQUEST_TIMEOUT = 40
 REQUEST_RETRIES = 3
 REQUEST_SLEEP = 0.2  # 호출 사이 대기(초)
+BASIC_WORKERS = int(os.environ.get("BASIC_WORKERS", "4"))  # 단지 기본정보 동시 조회 수
 
 
 def env(name: str, default: str | None = None) -> str | None:

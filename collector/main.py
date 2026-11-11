@@ -27,7 +27,24 @@ def _require(name: str) -> str:
 def cmd_complexes(args) -> None:
     from .build_complexes import build
 
-    build(_require("DATA_GO_KR_KEY"), config.env("KAKAO_REST_KEY"), geocode=not args.no_geocode)
+    before = {c["kapt_code"] for c in read_json(config.COMPLEXES_FILE, {}).get("complexes", [])}
+    result = build(_require("DATA_GO_KR_KEY"), config.env("KAKAO_REST_KEY"), geocode=not args.no_geocode)
+    after = {c["kapt_code"] for c in result}
+    if reset_state_if_complexes_changed(before, after):
+        log.info("단지 구성이 바뀌어(+%d, -%d) 기준 상태를 초기화했습니다. 다음 수집은 알림 없이 전체 기간을 다시 받습니다.",
+                 len(after - before), len(before - after))
+
+
+def reset_state_if_complexes_changed(before: set[str], after: set[str]) -> bool:
+    """단지 구성이 바뀌면 state.json 을 지운다.
+
+    새로 들어온 단지의 과거 거래가 "신규 거래"로 잡혀 알림이 쏟아지는 것을 막고,
+    그 단지도 전체 기간(BACKFILL_MONTHS)을 받게 하기 위해서다.
+    """
+    if before == after or not config.STATE_FILE.exists():
+        return False
+    config.STATE_FILE.unlink()
+    return True
 
 
 def cmd_collect(args) -> None:

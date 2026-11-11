@@ -11,6 +11,7 @@ def tmp_data_dir(tmp_path, monkeypatch):
     monkeypatch.setattr(config, "TRADES_DIR", data / "trades")
     monkeypatch.setattr(config, "CHANGES_DIR", data / "changes")
     monkeypatch.setattr(config, "COMPLEXES_FILE", data / "complexes.json")
+    monkeypatch.setattr(config, "COMPLEXES_SKIPPED_FILE", data / "complexes_skipped.json")
     monkeypatch.setattr(config, "SUMMARY_FILE", data / "summary.json")
     monkeypatch.setattr(config, "STATE_FILE", data / "state.json")
     monkeypatch.setattr(config, "UNMATCHED_FILE", data / "unmatched.json")

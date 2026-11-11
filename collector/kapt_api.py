@@ -19,7 +19,8 @@ class KaptBasic:
     address: str        # 법정동 주소 (kaptAddr)
     road_address: str   # 도로명 주소 (doroJuso)
     bjd_code: str
-    households: int
+    households: int          # kaptdaCnt, 비어 있으면 hoCnt 로 대신함
+    ho_count: int | None     # hoCnt (호수) 원본값
     dong_count: int | None
     approved: str       # 사용승인일 YYYY-MM-DD
     area_60: int | None   # 전용 60㎡ 이하 세대수
@@ -85,13 +86,15 @@ def parse_basic(text: str) -> KaptBasic | None:
     item = items[0]
     address = _text(item, "kaptAddr")
     umd, jibun = parse_lot_address(address)
+    ho_count = _int(_text(item, "hoCnt"))
     return KaptBasic(
         kapt_code=_text(item, "kaptCode"),
         name=_text(item, "kaptName"),
         address=address,
         road_address=_text(item, "doroJuso"),
         bjd_code=_text(item, "bjdCode"),
-        households=_int(_text(item, "kaptdaCnt")) or 0,
+        households=_int(_text(item, "kaptdaCnt", "kaptDaCnt")) or ho_count or 0,
+        ho_count=ho_count,
         dong_count=_int(_text(item, "kaptDongCnt")),
         approved=_approved(_text(item, "kaptUsedate")),
         area_60=_int(_text(item, "kaptMparea60")),

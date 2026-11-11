@@ -167,6 +167,31 @@ def test_build_complexes_end_to_end_with_json_api(monkeypatch, tmp_data_dir):
     assert result[0]["lat"] == 37.5541 and result[0]["lng"] == 126.9561 and result[0]["sgg_name"] == "마포구"
     saved = json.loads(config.COMPLEXES_FILE.read_text())
     assert saved["count"] == 1 and saved["skipped"]["households"] == 1 and saved["skipped"]["umd"] == 1
+    assert saved["listed"]["마포구"] == 2 and saved["listed"]["강서구"] == 1
+    skipped = json.loads(config.COMPLEXES_SKIPPED_FILE.read_text())["items"]
+    assert {(i["name"], i["reason"], i["households"]) for i in skipped} == {("작은단지", "households", 120), ("화곡단지", "umd", None)}
     # 화곡동 단지는 기본정보를 부르지 않고 목록 단계에서 걸러진다
     assert not any(name == "getAphusBassInfoV5" and p.get("kaptCode") == "G1" for name, p in calls)
     assert sum(1 for name, p in calls if name == "getSigunguAptList4" and p["sigunguCode"] == "11440") == 2
+
+
+def test_households_falls_back_to_ho_count():
+    from collector.kapt_api import parse_basic
+
+    def body(**fields):
+        return json.dumps({"response": {"header": {"resultCode": "00"}, "body": {"item": dict(
+            kaptCode="A1", kaptName="새단지", kaptAddr="서울특별시 동작구 흑석동 343 새단지", **fields)}}})
+
+    assert parse_basic(body(kaptdaCnt=None, hoCnt=1772)).households == 1772       # 세대수 비어 있음
+    assert parse_basic(body(kaptdaCnt="0", hoCnt="959")).households == 959        # 세대수 0
+    assert parse_basic(body(kaptdaCnt=500, hoCnt=520)).households == 500          # 있으면 세대수 우선
+    assert parse_basic(body()).households == 0
+
+
+def test_state_reset_when_complex_set_changes(tmp_data_dir):
+    from collector.main import reset_state_if_complexes_changed
+
+    write_json(config.STATE_FILE, {"sale_keys": ["a"]})
+    assert reset_state_if_complexes_changed({"A", "B"}, {"A", "B"}) is False and config.STATE_FILE.exists()
+    assert reset_state_if_complexes_changed({"A", "B"}, {"A", "B", "C"}) is True and not config.STATE_FILE.exists()
+    assert reset_state_if_complexes_changed({"A"}, {"B"}) is False   # 이미 없음
