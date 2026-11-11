@@ -152,3 +152,28 @@ jobs:
           path: _site
       - id: deploy
         uses: actions/deploy-pages@v4
+
+      # 실제 사이트가 방금 만든 버전을 내보내는지 확인한다 (배포는 성공했는데 예전 화면이 보이는 경우를 잡기 위해).
+      - name: 배포 확인
+        env:
+          PAGE_URL: ${{ steps.deploy.outputs.page_url }}
+        run: |
+          want="$(cat _site/version.json)"
+          echo "기대 버전: $want"
+          ok=0
+          for i in 1 2 3 4 5 6 7 8 9 10 11 12; do
+            got="$(curl -fsS "${PAGE_URL}version.json?t=$(date +%s)" || true)"
+            if [ "$got" = "$want" ]; then ok=1; break; fi
+            echo "아직 예전 버전: ${got:-응답 없음} (${i}/12)"
+            sleep 10
+          done
+          echo "--- index.html 이 가리키는 스크립트"
+          curl -fsS "${PAGE_URL}?t=$(date +%s)" | grep -E 'app-version|app\.js|config\.js|style\.css' || true
+          echo "--- 응답 헤더 (캐시 정책)"
+          curl -fsSI "${PAGE_URL}app.js" | grep -iE '^(cache-control|age|last-modified|etag|x-cache)' || true
+          echo "--- 배포된 스크립트에 링크 코드가 있는지"
+          echo "app.js linksHtml: $(curl -fsS "${PAGE_URL}app.js?t=$(date +%s)" | grep -c 'linksHtml' || true)"
+          echo "config.js LINKS: $(curl -fsS "${PAGE_URL}config.js?t=$(date +%s)" | grep -c 'LINKS' || true)"
+          echo "summary.json 단지 수: $(curl -fsS "${PAGE_URL}data/summary.json?t=$(date +%s)" | python3 -c 'import json,sys; print(len(json.load(sys.stdin)["complexes"]))' || true)"
+          if [ "$ok" != 1 ]; then echo "::error::배포된 사이트가 새 버전을 내보내지 않습니다."; exit 1; fi
+          echo "배포 확인 완료: $want" | tee -a "$GITHUB_STEP_SUMMARY"
