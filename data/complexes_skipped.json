@@ -1,0 +1,5457 @@
+{
+ "generated_at": "2026-11-11T18:27:53+09:00",
+ "note": "단지 마스터에서 제외한 단지. reason: households=세대수 미달, umd=대상 동이 아님, no_basic=기본정보 없음, not_fetched=일일 한도 초과로 아직 확인 못함(다음 실행에서 이어서 받음)",
+ "min_households": 300,
+ "items": [
+  {
+   "kapt_code": "A15704017",
+   "name": "염창강변성원",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 297,
+   "ho_count": 297,
+   "address": "서울특별시 강서구 염창동 295 염창강변성원",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15786116",
+   "name": "염창금호",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 290,
+   "ho_count": 290,
+   "address": "서울특별시 강서구 염창동 240-32 염창금호",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15704015",
+   "name": "염창롯데캐슬",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 284,
+   "ho_count": 284,
+   "address": "서울특별시 강서구 염창동 272-11 염창롯데캐슬",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15786314",
+   "name": "염창태영송화",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 277,
+   "ho_count": 277,
+   "address": "서울특별시 강서구 염창동 270-1 염창태영송화",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15786213",
+   "name": "염창무학",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 273,
+   "ho_count": 273,
+   "address": "서울특별시 강서구 염창동 255 염창무학",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15786312",
+   "name": "염창극동상록수",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 256,
+   "ho_count": 256,
+   "address": "서울특별시 강서구 염창동 280 염창극동상록수",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15786111",
+   "name": "염창극동",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 249,
+   "ho_count": 249,
+   "address": "서울특별시 강서구 염창동 246-23 염창극동",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15786510",
+   "name": "염창한강동아(2차)",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 212,
+   "ho_count": 212,
+   "address": "서울특별시 강서구 염창동 293 염창한강동아(2차)",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15786408",
+   "name": "삼정그린코아",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 206,
+   "ho_count": 206,
+   "address": "서울특별시 강서구 염창동 282 삼정그린코아",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15704009",
+   "name": "염창벽산늘푸른",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 206,
+   "ho_count": 206,
+   "address": "서울특별시 강서구 염창동 290 염창벽산늘푸른",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15704007",
+   "name": "염창1차보람더하임아파트",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 202,
+   "ho_count": 202,
+   "address": "서울특별시 강서구 염창동 305 염창1차보람더하임아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15704006",
+   "name": "염창우성3차",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 196,
+   "ho_count": 196,
+   "address": "서울특별시 강서구 염창동 272-28 염창우성3차",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15786405",
+   "name": "염창우성2차",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 186,
+   "ho_count": 186,
+   "address": "서울특별시 강서구 염창동 287-1 염창우성2차",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15786104",
+   "name": "삼성하나로",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 178,
+   "ho_count": 178,
+   "address": "서울특별시 강서구 염창동 248-3 삼성하나로",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15704003",
+   "name": "염창월드메르디앙",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 168,
+   "ho_count": 168,
+   "address": "서울특별시 강서구 염창동 297 염창월드메르디앙",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15704002",
+   "name": "염창 일신건영휴먼빌아파트",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 166,
+   "ho_count": 166,
+   "address": "서울특별시 강서구 염창동 298 염창 일신건영휴먼빌아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15776001",
+   "name": "염창강변월드메르디앙",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 164,
+   "ho_count": 164,
+   "address": "서울특별시 강서구 염창동 240-1 염창강변월드메르디앙",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15704001",
+   "name": "염창2차한화꿈에그린",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 163,
+   "ho_count": 163,
+   "address": "서울특별시 강서구 염창동 302 염창2차한화꿈에그린",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10027541",
+   "name": "강서쌍용예가아파트",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 152,
+   "ho_count": 152,
+   "address": "서울특별시 강서구 염창동 308 강서쌍용예가아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10021935",
+   "name": "염창삼성한아름아파트",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 140,
+   "ho_count": 140,
+   "address": "서울특별시 강서구 염창동 264-27 염창삼성한아름아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10024353",
+   "name": "염창현대아이파크아파트",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 136,
+   "ho_count": 136,
+   "address": "서울특별시 강서구 염창동 282-19 염창현대아이파크아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10022537",
+   "name": "염창힐스테이트아파트",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 135,
+   "ho_count": 135,
+   "address": "서울특별시 강서구 염창동 306- 염창힐스테이트아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10022108",
+   "name": "염창동강변코아루아파트",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 130,
+   "ho_count": 130,
+   "address": "서울특별시 강서구 염창동 303- 염창동강변코아루아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15776004",
+   "name": "현대3",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 127,
+   "ho_count": 127,
+   "address": "서울특별시 강서구 염창동 291 현대3",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10022042",
+   "name": "염창대림아파트",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 122,
+   "ho_count": 122,
+   "address": "서울특별시 강서구 염창동 262-2 염창대림아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10025049",
+   "name": "염창동길훈아파트",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 115,
+   "ho_count": 115,
+   "address": "서울특별시 강서구 염창동 294 염창동길훈아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10021770",
+   "name": "염창현대2차아파트",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 106,
+   "ho_count": 106,
+   "address": "서울특별시 강서구 염창동 249-11 염창현대2차아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15776003",
+   "name": "이너스내안에",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 105,
+   "ho_count": 105,
+   "address": "서울특별시 강서구 염창동 254-2 이너스내안에",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15776002",
+   "name": "태진드림피아",
+   "sgg_name": "강서구",
+   "umd": "염창동",
+   "households": 65,
+   "ho_count": 65,
+   "address": "서울특별시 강서구 염창동 296 태진드림피아",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15605003",
+   "name": "노량진쌍용예가",
+   "sgg_name": "동작구",
+   "umd": "노량진동",
+   "households": 299,
+   "ho_count": 299,
+   "address": "서울특별시 동작구 노량진동 332 노량진쌍용예가",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10022416",
+   "name": "더써밋타워",
+   "sgg_name": "동작구",
+   "umd": "노량진동",
+   "households": 299,
+   "ho_count": 305,
+   "address": "서울특별시 동작구 노량진동 54-4 더써밋타워",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10027614",
+   "name": "상도 휴엔하임 도시형생횔주택",
+   "sgg_name": "동작구",
+   "umd": "상도동",
+   "households": 298,
+   "ho_count": 298,
+   "address": "서울특별시 동작구 상도동 363-164 상도 휴엔하임 도시형생횔주택",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15609501",
+   "name": "사당제일",
+   "sgg_name": "동작구",
+   "umd": "사당동",
+   "households": 296,
+   "ho_count": 296,
+   "address": "서울특별시 동작구 사당동 240-15 사당제일",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15601102",
+   "name": "신대방경남교수",
+   "sgg_name": "동작구",
+   "umd": "신대방동",
+   "households": 295,
+   "ho_count": 295,
+   "address": "서울특별시 동작구 신대방동 710 신대방경남교수",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15683601",
+   "name": "상도1동대림",
+   "sgg_name": "동작구",
+   "umd": "상도동",
+   "households": 279,
+   "ho_count": 279,
+   "address": "서울특별시 동작구 상도동 411 상도1동대림",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15681104",
+   "name": "대방2차현대",
+   "sgg_name": "동작구",
+   "umd": "대방동",
+   "households": 278,
+   "ho_count": 278,
+   "address": "서울특별시 동작구 대방동 506 대방2차현대",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15608002",
+   "name": "동작금강KCC",
+   "sgg_name": "동작구",
+   "umd": "동작동",
+   "households": 276,
+   "ho_count": 276,
+   "address": "서울특별시 동작구 동작동 331 동작금강KCC",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10023551",
+   "name": "동작협성휴포레시그니처아파트",
+   "sgg_name": "동작구",
+   "umd": "신대방동",
+   "households": 274,
+   "ho_count": 274,
+   "address": "서울특별시 동작구 신대방동 686-48 동작협성휴포레시그니처아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15606001",
+   "name": "경동윈츠리버",
+   "sgg_name": "동작구",
+   "umd": "본동",
+   "households": 272,
+   "ho_count": 272,
+   "address": "서울특별시 동작구 본동 484 경동윈츠리버",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10024524",
+   "name": "더클래식동작",
+   "sgg_name": "동작구",
+   "umd": "노량진동",
+   "households": 272,
+   "ho_count": 272,
+   "address": "서울특별시 동작구 노량진동 37-1 더클래식동작",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15601202",
+   "name": "신대방한성",
+   "sgg_name": "동작구",
+   "umd": "신대방동",
+   "households": 272,
+   "ho_count": 272,
+   "address": "서울특별시 동작구 신대방동 470-8 신대방한성",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15681802",
+   "name": "사당현대아파트",
+   "sgg_name": "동작구",
+   "umd": "사당동",
+   "households": 265,
+   "ho_count": 265,
+   "address": "서울특별시 동작구 사당동 169-32 사당현대아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15605102",
+   "name": "본동한신휴플러스",
+   "sgg_name": "동작구",
+   "umd": "본동",
+   "households": 247,
+   "ho_count": 247,
+   "address": "서울특별시 동작구 본동 487 본동한신휴플러스",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15672002",
+   "name": "보라매삼성쉐르빌",
+   "sgg_name": "동작구",
+   "umd": "신대방동",
+   "households": 246,
+   "ho_count": 246,
+   "address": "서울특별시 동작구 신대방동 395-66 보라매삼성쉐르빌",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15601002",
+   "name": "보라매아카데미타워아파트",
+   "sgg_name": "동작구",
+   "umd": "신대방동",
+   "households": 225,
+   "ho_count": 225,
+   "address": "서울특별시 동작구 신대방동 395-69 보라매아카데미타워아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15609301",
+   "name": "사당롯데캐슬",
+   "sgg_name": "동작구",
+   "umd": "사당동",
+   "households": 223,
+   "ho_count": 223,
+   "address": "서울특별시 동작구 사당동 1149 사당롯데캐슬",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15609002",
+   "name": "사당삼호그린",
+   "sgg_name": "동작구",
+   "umd": "사당동",
+   "households": 211,
+   "ho_count": 211,
+   "address": "서울특별시 동작구 사당동 1138 사당삼호그린",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10023966",
+   "name": "어바니엘한강",
+   "sgg_name": "동작구",
+   "umd": "노량진동",
+   "households": 207,
+   "ho_count": 207,
+   "address": "서울특별시 동작구 노량진동 333 어바니엘한강",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15681103",
+   "name": "대방우정",
+   "sgg_name": "동작구",
+   "umd": "대방동",
+   "households": 206,
+   "ho_count": 206,
+   "address": "서울특별시 동작구 대방동 505 대방우정",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15679103",
+   "name": "우리유앤미",
+   "sgg_name": "동작구",
+   "umd": "흑석동",
+   "households": 206,
+   "ho_count": 206,
+   "address": "서울특별시 동작구 흑석동 329 우리유앤미",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10027472",
+   "name": "상도효성해링턴플레이스",
+   "sgg_name": "동작구",
+   "umd": "상도동",
+   "households": 202,
+   "ho_count": 202,
+   "address": "서울특별시 동작구 상도동 536 상도효성해링턴플레이스",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15602002",
+   "name": "보라매코오롱하늘채",
+   "sgg_name": "동작구",
+   "umd": "대방동",
+   "households": 200,
+   "ho_count": 200,
+   "address": "서울특별시 동작구 대방동 509 보라매코오롱하늘채",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15672001",
+   "name": "보라매우성",
+   "sgg_name": "동작구",
+   "umd": "신대방동",
+   "households": 199,
+   "ho_count": 199,
+   "address": "서울특별시 동작구 신대방동 706 보라매우성",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15603401",
+   "name": "경향렉스빌아파트",
+   "sgg_name": "동작구",
+   "umd": "상도동",
+   "households": 197,
+   "ho_count": 197,
+   "address": "서울특별시 동작구 상도동 445 경향렉스빌아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15678101",
+   "name": "상도현대",
+   "sgg_name": "동작구",
+   "umd": "상도동",
+   "households": 194,
+   "ho_count": 194,
+   "address": "서울특별시 동작구 상도동 412 상도현대",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15671801",
+   "name": "상도두산위브",
+   "sgg_name": "동작구",
+   "umd": "상도동",
+   "households": 190,
+   "ho_count": 199,
+   "address": "서울특별시 동작구 상도동 529 상도두산위브",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15609401",
+   "name": "사당삼익그린뷰",
+   "sgg_name": "동작구",
+   "umd": "사당동",
+   "households": 183,
+   "ho_count": 183,
+   "address": "서울특별시 동작구 사당동 1150 사당삼익그린뷰",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15608001",
+   "name": "이수교스위첸",
+   "sgg_name": "동작구",
+   "umd": "동작동",
+   "households": 178,
+   "ho_count": 178,
+   "address": "서울특별시 동작구 동작동 332 이수교스위첸",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15676702",
+   "name": "본동SH-ville",
+   "sgg_name": "동작구",
+   "umd": "본동",
+   "households": 176,
+   "ho_count": 176,
+   "address": "서울특별시 동작구 본동 490 본동SH-ville",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15605001",
+   "name": "노량진삼익",
+   "sgg_name": "동작구",
+   "umd": "노량진동",
+   "households": 175,
+   "ho_count": 175,
+   "address": "서울특별시 동작구 노량진동 330 노량진삼익",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15685201",
+   "name": "신대방우성2차",
+   "sgg_name": "동작구",
+   "umd": "신대방동",
+   "households": 174,
+   "ho_count": 174,
+   "address": "서울특별시 동작구 신대방동 565-21 신대방우성2차",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15601201",
+   "name": "신대방신동아",
+   "sgg_name": "동작구",
+   "umd": "신대방동",
+   "households": 171,
+   "ho_count": 171,
+   "address": "서울특별시 동작구 신대방동 360-17 신대방신동아",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15603007",
+   "name": "상도래미안1차제2",
+   "sgg_name": "동작구",
+   "umd": "상도동",
+   "households": 164,
+   "ho_count": 164,
+   "address": "서울특별시 동작구 상도동 447 상도래미안1차제2",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15602001",
+   "name": "대방경남아너스빌",
+   "sgg_name": "동작구",
+   "umd": "대방동",
+   "households": 163,
+   "ho_count": 163,
+   "address": "서울특별시 동작구 대방동 512 대방경남아너스빌",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15603001",
+   "name": "상도동원베네스트",
+   "sgg_name": "동작구",
+   "umd": "상도동",
+   "households": 162,
+   "ho_count": 162,
+   "address": "서울특별시 동작구 상도동 528 상도동원베네스트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10020085",
+   "name": "스타팰리스 이수",
+   "sgg_name": "동작구",
+   "umd": "사당동",
+   "households": 162,
+   "ho_count": 162,
+   "address": "서울특별시 동작구 사당동 1008-1 스타팰리스 이수",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15606005",
+   "name": "한강쌍용",
+   "sgg_name": "동작구",
+   "umd": "본동",
+   "households": 161,
+   "ho_count": 161,
+   "address": "서울특별시 동작구 본동 150 한강쌍용",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15679106",
+   "name": "흑석해가든",
+   "sgg_name": "동작구",
+   "umd": "흑석동",
+   "households": 154,
+   "ho_count": 154,
+   "address": "서울특별시 동작구 흑석동 332 흑석해가든",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15609001",
+   "name": "사당유니드",
+   "sgg_name": "동작구",
+   "umd": "사당동",
+   "households": 151,
+   "ho_count": 151,
+   "address": "서울특별시 동작구 사당동 1155 사당유니드",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10024777",
+   "name": "상도동 롯데캐슬 비엔",
+   "sgg_name": "동작구",
+   "umd": "상도동",
+   "households": 141,
+   "ho_count": 141,
+   "address": "서울특별시 동작구 상도동 530 상도동 롯데캐슬 비엔",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10022230",
+   "name": "르메이에르",
+   "sgg_name": "동작구",
+   "umd": "사당동",
+   "households": 140,
+   "ho_count": 140,
+   "address": "서울특별시 동작구 사당동 1141- 르메이에르",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10024642",
+   "name": "사당진흥아파트",
+   "sgg_name": "동작구",
+   "umd": "사당동",
+   "households": 140,
+   "ho_count": 140,
+   "address": "서울특별시 동작구 사당동 1142 사당진흥아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10027495",
+   "name": "이수자이 주상복합",
+   "sgg_name": "동작구",
+   "umd": "사당동",
+   "households": 140,
+   "ho_count": 140,
+   "address": "서울특별시 동작구 사당동 147-29 이수자이 주상복합",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15603009",
+   "name": "상도더샵2차",
+   "sgg_name": "동작구",
+   "umd": "상도동",
+   "households": 138,
+   "ho_count": 138,
+   "address": "서울특별시 동작구 상도동 534 상도더샵2차",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10022217",
+   "name": "현진에버빌아파트",
+   "sgg_name": "동작구",
+   "umd": "신대방동",
+   "households": 135,
+   "ho_count": 135,
+   "address": "서울특별시 동작구 신대방동 716- 현진에버빌아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15606006",
+   "name": "본동한신휴플러스제2",
+   "sgg_name": "동작구",
+   "umd": "본동",
+   "households": 134,
+   "ho_count": 134,
+   "address": "서울특별시 동작구 본동 488 본동한신휴플러스제2",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10024752",
+   "name": "신한토탈아파트",
+   "sgg_name": "동작구",
+   "umd": "대방동",
+   "households": 134,
+   "ho_count": 134,
+   "address": "서울특별시 동작구 대방동 41 신한토탈아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10021100",
+   "name": "신대방벽산아파트",
+   "sgg_name": "동작구",
+   "umd": "신대방동",
+   "households": 132,
+   "ho_count": 132,
+   "address": "서울특별시 동작구 신대방동 709- 신대방벽산아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10024811",
+   "name": "남해오네뜨아파트",
+   "sgg_name": "동작구",
+   "umd": "사당동",
+   "households": 131,
+   "ho_count": 131,
+   "address": "서울특별시 동작구 사당동 1143 남해오네뜨아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10021490",
+   "name": "건영약수맨션",
+   "sgg_name": "동작구",
+   "umd": "상도동",
+   "households": 130,
+   "ho_count": 130,
+   "address": "서울특별시 동작구 상도동 211-1 건영약수맨션",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10023859",
+   "name": "대방동신일해피트리 아파트",
+   "sgg_name": "동작구",
+   "umd": "대방동",
+   "households": 130,
+   "ho_count": 130,
+   "address": "서울특별시 동작구 대방동 510 대방동신일해피트리 아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10026873",
+   "name": "극동강변아파트",
+   "sgg_name": "동작구",
+   "umd": "본동",
+   "households": 123,
+   "ho_count": 123,
+   "address": "서울특별시 동작구 본동 148-2 극동강변아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10022916",
+   "name": "상도1차갑을명가아파트",
+   "sgg_name": "동작구",
+   "umd": "상도동",
+   "households": 123,
+   "ho_count": 123,
+   "address": "서울특별시 동작구 상도동 458 상도1차갑을명가아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15609008",
+   "name": "사당대아2차",
+   "sgg_name": "동작구",
+   "umd": "사당동",
+   "households": 120,
+   "ho_count": 120,
+   "address": "서울특별시 동작구 사당동 1135 사당대아2차",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10022456",
+   "name": "상도2차갑을명가아파트",
+   "sgg_name": "동작구",
+   "umd": "상도동",
+   "households": 118,
+   "ho_count": 119,
+   "address": "서울특별시 동작구 상도동 459- 상도2차갑을명가아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10021807",
+   "name": "사당삼성아파트",
+   "sgg_name": "동작구",
+   "umd": "사당동",
+   "households": 113,
+   "ho_count": 113,
+   "address": "서울특별시 동작구 사당동 1140- 사당삼성아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10022181",
+   "name": "사당kcc아파트",
+   "sgg_name": "동작구",
+   "umd": "사당동",
+   "households": 111,
+   "ho_count": 111,
+   "address": "서울특별시 동작구 사당동 1153 사당kcc아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10022093",
+   "name": "골든노블레스",
+   "sgg_name": "동작구",
+   "umd": "대방동",
+   "households": 110,
+   "ho_count": 110,
+   "address": "서울특별시 동작구 대방동 403-16 골든노블레스",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15601004",
+   "name": "신대방",
+   "sgg_name": "동작구",
+   "umd": "신대방동",
+   "households": 108,
+   "ho_count": 108,
+   "address": "서울특별시 동작구 신대방동 705 신대방",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10025504",
+   "name": "숲속마을 신동아파밀리에 아파트",
+   "sgg_name": "동작구",
+   "umd": "신대방동",
+   "households": 105,
+   "ho_count": 105,
+   "address": "서울특별시 동작구 신대방동 717 숲속마을 신동아파밀리에 아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10022384",
+   "name": "대방2차e편한세상아파트",
+   "sgg_name": "동작구",
+   "umd": "대방동",
+   "households": 100,
+   "ho_count": 100,
+   "address": "서울특별시 동작구 대방동 507- 대방2차e편한세상아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10023324",
+   "name": "캐릭터그린빌아파트",
+   "sgg_name": "동작구",
+   "umd": "신대방동",
+   "households": 96,
+   "ho_count": 96,
+   "address": "서울특별시 동작구 신대방동 395-73 캐릭터그린빌아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10024188",
+   "name": "롯데타워아파트",
+   "sgg_name": "동작구",
+   "umd": "신대방동",
+   "households": 90,
+   "ho_count": 0,
+   "address": "서울특별시 동작구 신대방동 395-67 롯데타워아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10020109",
+   "name": "쌍용임대아파트",
+   "sgg_name": "동작구",
+   "umd": "상도동",
+   "households": 65,
+   "ho_count": 65,
+   "address": "서울특별시 동작구 상도동 418 쌍용임대아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10026025",
+   "name": "사당갑을명가아파트",
+   "sgg_name": "동작구",
+   "umd": "사당동",
+   "households": 63,
+   "ho_count": 63,
+   "address": "서울특별시 동작구 사당동 1151 사당갑을명가아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10025175",
+   "name": "신동아갯마을아파트",
+   "sgg_name": "동작구",
+   "umd": "동작동",
+   "households": 44,
+   "ho_count": 0,
+   "address": "서울특별시 동작구 동작동 329 신동아갯마을아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10019890",
+   "name": "공덕역청년안심주택e.seo(이서)",
+   "sgg_name": "마포구",
+   "umd": "염리동",
+   "households": 299,
+   "ho_count": 299,
+   "address": "서울특별시 마포구 염리동 172-10 공덕역청년안심주택e.seo(이서)",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12179001",
+   "name": "브라운스톤공덕",
+   "sgg_name": "마포구",
+   "umd": "신공덕동",
+   "households": 290,
+   "ho_count": 290,
+   "address": "서울특별시 마포구 신공덕동 170 브라운스톤공덕",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10027748",
+   "name": "공덕파크자이 아파트",
+   "sgg_name": "마포구",
+   "umd": "공덕동",
+   "households": 288,
+   "ho_count": 288,
+   "address": "서울특별시 마포구 공덕동 476 공덕파크자이 아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12187703",
+   "name": "성산2차현대",
+   "sgg_name": "마포구",
+   "umd": "중동",
+   "households": 282,
+   "ho_count": 282,
+   "address": "서울특별시 마포구 중동 40-12 성산2차현대",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12185605",
+   "name": "대원칸타빌",
+   "sgg_name": "마포구",
+   "umd": "신수동",
+   "households": 279,
+   "ho_count": 279,
+   "address": "서울특별시 마포구 신수동 453 대원칸타빌",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10025633",
+   "name": "마포 웨스트리버 태영데시앙아파트",
+   "sgg_name": "마포구",
+   "umd": "창전동",
+   "households": 276,
+   "ho_count": 276,
+   "address": "서울특별시 마포구 창전동 449 마포 웨스트리버 태영데시앙아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12185504",
+   "name": "신수성원",
+   "sgg_name": "마포구",
+   "umd": "신수동",
+   "households": 260,
+   "ho_count": 260,
+   "address": "서울특별시 마포구 신수동 190 신수성원",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12182901",
+   "name": "상수두산위브",
+   "sgg_name": "마포구",
+   "umd": "상수동",
+   "households": 258,
+   "ho_count": 258,
+   "address": "서울특별시 마포구 상수동 396 상수두산위브",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12188202",
+   "name": "창전현대홈타운",
+   "sgg_name": "마포구",
+   "umd": "창전동",
+   "households": 243,
+   "ho_count": 243,
+   "address": "서울특별시 마포구 창전동 440 창전현대홈타운",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12103006",
+   "name": "대우메트로디오빌",
+   "sgg_name": "마포구",
+   "umd": "신공덕동",
+   "households": 242,
+   "ho_count": 242,
+   "address": "서울특별시 마포구 신공덕동 167 대우메트로디오빌",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12182401",
+   "name": "망원2차대림",
+   "sgg_name": "마포구",
+   "umd": "망원동",
+   "households": 240,
+   "ho_count": 240,
+   "address": "서울특별시 마포구 망원동 497 망원2차대림",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10022941",
+   "name": "마포푸르지오더센트럴",
+   "sgg_name": "마포구",
+   "umd": "아현동",
+   "households": 239,
+   "ho_count": 239,
+   "address": "서울특별시 마포구 아현동 275-2 마포푸르지오더센트럴",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12188201",
+   "name": "신촌금호",
+   "sgg_name": "마포구",
+   "umd": "창전동",
+   "households": 239,
+   "ho_count": 239,
+   "address": "서울특별시 마포구 창전동 438 신촌금호",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12180404",
+   "name": "공덕삼성임대",
+   "sgg_name": "마포구",
+   "umd": "공덕동",
+   "households": 226,
+   "ho_count": 226,
+   "address": "서울특별시 마포구 공덕동 371-1 공덕삼성임대",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12112001",
+   "name": "밤섬현대",
+   "sgg_name": "마포구",
+   "umd": "현석동",
+   "households": 219,
+   "ho_count": 219,
+   "address": "서울특별시 마포구 현석동 220 밤섬현대",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12179502",
+   "name": "DMC상암센트럴파크1단지",
+   "sgg_name": "마포구",
+   "umd": "상암동",
+   "households": 213,
+   "ho_count": 213,
+   "address": "서울특별시 마포구 상암동 1630 DMC상암센트럴파크1단지",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12123001",
+   "name": "망원휴먼빌아파트",
+   "sgg_name": "마포구",
+   "umd": "망원동",
+   "households": 210,
+   "ho_count": 210,
+   "address": "서울특별시 마포구 망원동 509 망원휴먼빌아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12185603",
+   "name": "신수현대",
+   "sgg_name": "마포구",
+   "umd": "신수동",
+   "households": 210,
+   "ho_count": 210,
+   "address": "서울특별시 마포구 신수동 445-5 신수현대",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12101001",
+   "name": "서서울삼성아파트",
+   "sgg_name": "마포구",
+   "umd": "아현동",
+   "households": 208,
+   "ho_count": 208,
+   "address": "서울특별시 마포구 아현동 692 서서울삼성아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12187902",
+   "name": "건영월드컵",
+   "sgg_name": "마포구",
+   "umd": "중동",
+   "households": 206,
+   "ho_count": 206,
+   "address": "서울특별시 마포구 중동 393 건영월드컵",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12172402",
+   "name": "서희스타힐스",
+   "sgg_name": "마포구",
+   "umd": "대흥동",
+   "households": 203,
+   "ho_count": 239,
+   "address": "서울특별시 마포구 대흥동 12-41 서희스타힐스",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10027951",
+   "name": "공덕자이(임대)",
+   "sgg_name": "마포구",
+   "umd": "아현동",
+   "households": 201,
+   "ho_count": 201,
+   "address": "서울특별시 마포구 아현동 799 공덕자이(임대)",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12170602",
+   "name": "공덕2삼성임대",
+   "sgg_name": "마포구",
+   "umd": "공덕동",
+   "households": 199,
+   "ho_count": 199,
+   "address": "서울특별시 마포구 공덕동 43 공덕2삼성임대",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10027301",
+   "name": "마포한강2차푸르지오",
+   "sgg_name": "마포구",
+   "umd": "합정동",
+   "households": 198,
+   "ho_count": 198,
+   "address": "서울특별시 마포구 합정동 473 마포한강2차푸르지오",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10027902",
+   "name": "마포한강푸르지오",
+   "sgg_name": "마포구",
+   "umd": "합정동",
+   "households": 198,
+   "ho_count": 198,
+   "address": "서울특별시 마포구 합정동 472 마포한강푸르지오",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12104001",
+   "name": "도화현대",
+   "sgg_name": "마포구",
+   "umd": "도화동",
+   "households": 196,
+   "ho_count": 196,
+   "address": "서울특별시 마포구 도화동 547 도화현대",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12179005",
+   "name": "공덕아이파크",
+   "sgg_name": "마포구",
+   "umd": "신공덕동",
+   "households": 195,
+   "ho_count": 195,
+   "address": "서울특별시 마포구 신공덕동 174 공덕아이파크",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12102002",
+   "name": "공덕한화꿈에그린",
+   "sgg_name": "마포구",
+   "umd": "공덕동",
+   "households": 192,
+   "ho_count": 192,
+   "address": "서울특별시 마포구 공덕동 460 공덕한화꿈에그린",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12177801",
+   "name": "서강한화오벨리스크스위트",
+   "sgg_name": "마포구",
+   "umd": "창전동",
+   "households": 192,
+   "ho_count": 192,
+   "address": "서울특별시 마포구 창전동 442 서강한화오벨리스크스위트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12185602",
+   "name": "신수세양청마루",
+   "sgg_name": "마포구",
+   "umd": "신수동",
+   "households": 192,
+   "ho_count": 192,
+   "address": "서울특별시 마포구 신수동 451 신수세양청마루",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12125001",
+   "name": "성산2차e-편한세상",
+   "sgg_name": "마포구",
+   "umd": "성산동",
+   "households": 189,
+   "ho_count": 189,
+   "address": "서울특별시 마포구 성산동 604 성산2차e-편한세상",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12179501",
+   "name": "DMC상암센트럴파크2단지",
+   "sgg_name": "마포구",
+   "umd": "상암동",
+   "households": 184,
+   "ho_count": 184,
+   "address": "서울특별시 마포구 상암동 1618 DMC상암센트럴파크2단지",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12180401",
+   "name": "공덕현대",
+   "sgg_name": "마포구",
+   "umd": "공덕동",
+   "households": 183,
+   "ho_count": 183,
+   "address": "서울특별시 마포구 공덕동 370-9 공덕현대",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12182101",
+   "name": "망원1차대림",
+   "sgg_name": "마포구",
+   "umd": "망원동",
+   "households": 181,
+   "ho_count": 181,
+   "address": "서울특별시 마포구 망원동 496 망원1차대림",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12187901",
+   "name": "중동계룡",
+   "sgg_name": "마포구",
+   "umd": "중동",
+   "households": 180,
+   "ho_count": 180,
+   "address": "서울특별시 마포구 중동 391 중동계룡",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12185001",
+   "name": "성사1차 풍림아파트",
+   "sgg_name": "마포구",
+   "umd": "성산동",
+   "households": 172,
+   "ho_count": 172,
+   "address": "서울특별시 마포구 성산동 600 성사1차 풍림아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12170401",
+   "name": "마포동원베네스트",
+   "sgg_name": "마포구",
+   "umd": "도화동",
+   "households": 167,
+   "ho_count": 167,
+   "address": "서울특별시 마포구 도화동 564 마포동원베네스트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10024626",
+   "name": "공덕SK리더스뷰 2단지",
+   "sgg_name": "마포구",
+   "umd": "공덕동",
+   "households": 166,
+   "ho_count": 166,
+   "address": "서울특별시 마포구 공덕동 480 공덕SK리더스뷰 2단지",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12181101",
+   "name": "마포더포레스트",
+   "sgg_name": "마포구",
+   "umd": "대흥동",
+   "households": 165,
+   "ho_count": 165,
+   "address": "서울특별시 마포구 대흥동 803 마포더포레스트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12111001",
+   "name": "마포경남아너스빌",
+   "sgg_name": "마포구",
+   "umd": "신수동",
+   "households": 160,
+   "ho_count": 160,
+   "address": "서울특별시 마포구 신수동 456 마포경남아너스빌",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10022963",
+   "name": "맹그로브신촌",
+   "sgg_name": "마포구",
+   "umd": "노고산동",
+   "households": 151,
+   "ho_count": 151,
+   "address": "서울특별시 마포구 노고산동 56-74 맹그로브신촌",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10023755",
+   "name": "마포한강 J-SKY아파트",
+   "sgg_name": "마포구",
+   "umd": "망원동",
+   "households": 149,
+   "ho_count": 149,
+   "address": "서울특별시 마포구 망원동 522 마포한강 J-SKY아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10021282",
+   "name": "마포대림2차e-편한세상아파트",
+   "sgg_name": "마포구",
+   "umd": "용강동",
+   "households": 141,
+   "ho_count": 141,
+   "address": "서울특별시 마포구 용강동 501- 마포대림2차e-편한세상아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10024784",
+   "name": "서교푸르지오아파트",
+   "sgg_name": "마포구",
+   "umd": "서교동",
+   "households": 136,
+   "ho_count": 136,
+   "address": "서울특별시 마포구 서교동 486 서교푸르지오아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10024150",
+   "name": "망원성원2차아파트",
+   "sgg_name": "마포구",
+   "umd": "망원동",
+   "households": 134,
+   "ho_count": 134,
+   "address": "서울특별시 마포구 망원동 489 망원성원2차아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10025672",
+   "name": "마포 보성 아파트",
+   "sgg_name": "마포구",
+   "umd": "마포동",
+   "households": 133,
+   "ho_count": 133,
+   "address": "서울특별시 마포구 마포동 442 마포 보성 아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10027504",
+   "name": "월드마크마포아파트",
+   "sgg_name": "마포구",
+   "umd": "신공덕동",
+   "households": 132,
+   "ho_count": 132,
+   "address": "서울특별시 마포구 신공덕동 173 월드마크마포아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10027572",
+   "name": "마포영화블렌하임",
+   "sgg_name": "마포구",
+   "umd": "망원동",
+   "households": 130,
+   "ho_count": 130,
+   "address": "서울특별시 마포구 망원동 517 마포영화블렌하임",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10024587",
+   "name": "대명비발디아파트",
+   "sgg_name": "마포구",
+   "umd": "연남동",
+   "households": 128,
+   "ho_count": 128,
+   "address": "서울특별시 마포구 연남동 259-1 대명비발디아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12179006",
+   "name": "신공덕e-편한세상",
+   "sgg_name": "마포구",
+   "umd": "신공덕동",
+   "households": 128,
+   "ho_count": 128,
+   "address": "서울특별시 마포구 신공덕동 168 신공덕e-편한세상",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10022213",
+   "name": "성산동성아파트",
+   "sgg_name": "마포구",
+   "umd": "성산동",
+   "households": 127,
+   "ho_count": 127,
+   "address": "서울특별시 마포구 성산동 597- 성산동성아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10021649",
+   "name": "대흥동 세양아파트",
+   "sgg_name": "마포구",
+   "umd": "대흥동",
+   "households": 126,
+   "ho_count": 126,
+   "address": "서울특별시 마포구 대흥동 802- 대흥동 세양아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10022303",
+   "name": "마포대림1차",
+   "sgg_name": "마포구",
+   "umd": "용강동",
+   "households": 123,
+   "ho_count": 123,
+   "address": "서울특별시 마포구 용강동 500- 마포대림1차",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10024334",
+   "name": "마포KCC웰츠타워",
+   "sgg_name": "마포구",
+   "umd": "신공덕동",
+   "households": 122,
+   "ho_count": 122,
+   "address": "서울특별시 마포구 신공덕동 171 마포KCC웰츠타워",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10022480",
+   "name": "마포트라팰리스2",
+   "sgg_name": "마포구",
+   "umd": "아현동",
+   "households": 120,
+   "ho_count": 120,
+   "address": "서울특별시 마포구 아현동 738- 마포트라팰리스2",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10023665",
+   "name": "우림 루미아트",
+   "sgg_name": "마포구",
+   "umd": "망원동",
+   "households": 119,
+   "ho_count": 119,
+   "address": "서울특별시 마포구 망원동 498 우림 루미아트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10019997",
+   "name": "염리동 중앙하이츠 A.P.T",
+   "sgg_name": "마포구",
+   "umd": "염리동",
+   "households": 114,
+   "ho_count": 114,
+   "address": "서울특별시 마포구 염리동 161-1 염리동 중앙하이츠 A.P.T",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10022359",
+   "name": "망원미원2차아파트",
+   "sgg_name": "마포구",
+   "umd": "망원동",
+   "households": 105,
+   "ho_count": 105,
+   "address": "서울특별시 마포구 망원동 433-9 망원미원2차아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12179003",
+   "name": "신공덕2삼성래미안제2",
+   "sgg_name": "마포구",
+   "umd": "신공덕동",
+   "households": 103,
+   "ho_count": 103,
+   "address": "서울특별시 마포구 신공덕동 159 신공덕2삼성래미안제2",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10022429",
+   "name": "중동 동원월드타운아파트",
+   "sgg_name": "마포구",
+   "umd": "중동",
+   "households": 102,
+   "ho_count": 102,
+   "address": "서울특별시 마포구 중동 395- 중동 동원월드타운아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10020640",
+   "name": "마포창전쌍용스윗닷홈",
+   "sgg_name": "마포구",
+   "umd": "창전동",
+   "households": 100,
+   "ho_count": 100,
+   "address": "서울특별시 마포구 창전동 441- 마포창전쌍용스윗닷홈",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10019899",
+   "name": "벽산솔렌스힐아파트",
+   "sgg_name": "마포구",
+   "umd": "신수동",
+   "households": 94,
+   "ho_count": 94,
+   "address": "서울특별시 마포구 신수동 457 벽산솔렌스힐아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10024597",
+   "name": "염리동세양청마루아파트",
+   "sgg_name": "마포구",
+   "umd": "염리동",
+   "households": 88,
+   "ho_count": 88,
+   "address": "서울특별시 마포구 염리동 522 염리동세양청마루아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12084302",
+   "name": "유원홍은",
+   "sgg_name": "서대문구",
+   "umd": "홍은동",
+   "households": 299,
+   "ho_count": 299,
+   "address": "서울특별시 서대문구 홍은동 22 유원홍은",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10024532",
+   "name": "북한산두산위브2차",
+   "sgg_name": "서대문구",
+   "umd": "홍은동",
+   "households": 296,
+   "ho_count": 296,
+   "address": "서울특별시 서대문구 홍은동 468 북한산두산위브2차",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10027681",
+   "name": "홍제금호어울림아파트",
+   "sgg_name": "서대문구",
+   "umd": "홍제동",
+   "households": 296,
+   "ho_count": 296,
+   "address": "서울특별시 서대문구 홍제동 451-13 홍제금호어울림아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12071001",
+   "name": "홍은두산",
+   "sgg_name": "서대문구",
+   "umd": "홍은동",
+   "households": 294,
+   "ho_count": 294,
+   "address": "서울특별시 서대문구 홍은동 456 홍은두산",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12008001",
+   "name": "독립문파크빌",
+   "sgg_name": "서대문구",
+   "umd": "현저동",
+   "households": 290,
+   "ho_count": 290,
+   "address": "서울특별시 서대문구 현저동 1019 독립문파크빌",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10027019",
+   "name": "상암DMC엘가",
+   "sgg_name": "서대문구",
+   "umd": "남가좌동",
+   "households": 288,
+   "ho_count": 288,
+   "address": "서울특별시 서대문구 남가좌동 387 상암DMC엘가",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10020267",
+   "name": "DMC 가재울 아이파크",
+   "sgg_name": "서대문구",
+   "umd": "남가좌동",
+   "households": 283,
+   "ho_count": 283,
+   "address": "서울특별시 서대문구 남가좌동 289-54 DMC 가재울 아이파크",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12076601",
+   "name": "북가좌삼호제2",
+   "sgg_name": "서대문구",
+   "umd": "북가좌동",
+   "households": 267,
+   "ho_count": 267,
+   "address": "서울특별시 서대문구 북가좌동 449-1 북가좌삼호제2",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12070201",
+   "name": "충정리시온",
+   "sgg_name": "서대문구",
+   "umd": "충정로3가",
+   "households": 258,
+   "ho_count": 258,
+   "address": "서울특별시 서대문구 충정로3가 465 충정리시온",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12081602",
+   "name": "월드컵현대",
+   "sgg_name": "서대문구",
+   "umd": "북가좌동",
+   "households": 254,
+   "ho_count": 254,
+   "address": "서울특별시 서대문구 북가좌동 371-1 월드컵현대",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12078201",
+   "name": "인왕산현대",
+   "sgg_name": "서대문구",
+   "umd": "홍제동",
+   "households": 246,
+   "ho_count": 246,
+   "address": "서울특별시 서대문구 홍제동 460-1 인왕산현대",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12009201",
+   "name": "홍제성원아파트",
+   "sgg_name": "서대문구",
+   "umd": "홍제동",
+   "households": 242,
+   "ho_count": 242,
+   "address": "서울특별시 서대문구 홍제동 456 홍제성원아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12009303",
+   "name": "홍제현대그린",
+   "sgg_name": "서대문구",
+   "umd": "홍제동",
+   "households": 240,
+   "ho_count": 240,
+   "address": "서울특별시 서대문구 홍제동 455 홍제현대그린",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12005001",
+   "name": "냉천동부센트레빌",
+   "sgg_name": "서대문구",
+   "umd": "냉천동",
+   "households": 237,
+   "ho_count": 237,
+   "address": "서울특별시 서대문구 냉천동 260 냉천동부센트레빌",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12009302",
+   "name": "인왕산벽산아파트",
+   "sgg_name": "서대문구",
+   "umd": "홍제동",
+   "households": 236,
+   "ho_count": 236,
+   "address": "서울특별시 서대문구 홍제동 465 인왕산벽산아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12013201",
+   "name": "DMC두산위브",
+   "sgg_name": "서대문구",
+   "umd": "북가좌동",
+   "households": 235,
+   "ho_count": 235,
+   "address": "서울특별시 서대문구 북가좌동 459 DMC두산위브",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12078706",
+   "name": "홍제청구3차",
+   "sgg_name": "서대문구",
+   "umd": "홍제동",
+   "households": 228,
+   "ho_count": 228,
+   "address": "서울특별시 서대문구 홍제동 462 홍제청구3차",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12071103",
+   "name": "연희대림아파트",
+   "sgg_name": "서대문구",
+   "umd": "연희동",
+   "households": 220,
+   "ho_count": 220,
+   "address": "서울특별시 서대문구 연희동 700 연희대림아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12086001",
+   "name": "홍제태영으뜸",
+   "sgg_name": "서대문구",
+   "umd": "홍제동",
+   "households": 214,
+   "ho_count": 214,
+   "address": "서울특별시 서대문구 홍제동 373 홍제태영으뜸",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12013101",
+   "name": "디엠씨현대",
+   "sgg_name": "서대문구",
+   "umd": "북가좌동",
+   "households": 213,
+   "ho_count": 213,
+   "address": "서울특별시 서대문구 북가좌동 453 디엠씨현대",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12071102",
+   "name": "연희임광아파트",
+   "sgg_name": "서대문구",
+   "umd": "연희동",
+   "households": 212,
+   "ho_count": 212,
+   "address": "서울특별시 서대문구 연희동 738 연희임광아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12071002",
+   "name": "홍은동부센트레빌",
+   "sgg_name": "서대문구",
+   "umd": "홍은동",
+   "households": 201,
+   "ho_count": 201,
+   "address": "서울특별시 서대문구 홍은동 461 홍은동부센트레빌",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10019979",
+   "name": "경희궁 유보라",
+   "sgg_name": "서대문구",
+   "umd": "영천동",
+   "households": 199,
+   "ho_count": 199,
+   "address": "서울특별시 서대문구 영천동 69-121 경희궁 유보라",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12013001",
+   "name": "DMC휴먼빌",
+   "sgg_name": "서대문구",
+   "umd": "북가좌동",
+   "households": 197,
+   "ho_count": 197,
+   "address": "서울특별시 서대문구 북가좌동 456 DMC휴먼빌",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12010001",
+   "name": "홍은동원베네스트",
+   "sgg_name": "서대문구",
+   "umd": "홍은동",
+   "households": 195,
+   "ho_count": 195,
+   "address": "서울특별시 서대문구 홍은동 463 홍은동원베네스트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12009101",
+   "name": "홍제남양",
+   "sgg_name": "서대문구",
+   "umd": "홍제동",
+   "households": 192,
+   "ho_count": 192,
+   "address": "서울특별시 서대문구 홍제동 457 홍제남양",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12071104",
+   "name": "연희자이엘라",
+   "sgg_name": "서대문구",
+   "umd": "연희동",
+   "households": 186,
+   "ho_count": 186,
+   "address": "서울특별시 서대문구 연희동 745 연희자이엘라",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12010101",
+   "name": "홍은풍림1차",
+   "sgg_name": "서대문구",
+   "umd": "홍은동",
+   "households": 181,
+   "ho_count": 193,
+   "address": "서울특별시 서대문구 홍은동 440-3 홍은풍림1차",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12003001",
+   "name": "충정로 skview 아파트",
+   "sgg_name": "서대문구",
+   "umd": "합동",
+   "households": 180,
+   "ho_count": 180,
+   "address": "서울특별시 서대문구 합동 118 충정로 skview 아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12009001",
+   "name": "홍제유원하나제2",
+   "sgg_name": "서대문구",
+   "umd": "홍제동",
+   "households": 150,
+   "ho_count": 150,
+   "address": "서울특별시 서대문구 홍제동 454 홍제유원하나제2",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10023330",
+   "name": "무악재한화",
+   "sgg_name": "서대문구",
+   "umd": "홍제동",
+   "households": 139,
+   "ho_count": 141,
+   "address": "서울특별시 서대문구 홍제동 464 무악재한화",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10021965",
+   "name": "고은맨숀아파트",
+   "sgg_name": "서대문구",
+   "umd": "홍제동",
+   "households": 136,
+   "ho_count": 136,
+   "address": "서울특별시 서대문구 홍제동 156-200 고은맨숀아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10024620",
+   "name": "인왕산어울림 아파트",
+   "sgg_name": "서대문구",
+   "umd": "홍제동",
+   "households": 123,
+   "ho_count": 123,
+   "address": "서울특별시 서대문구 홍제동 467 인왕산어울림 아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10020829",
+   "name": "홍제중앙하이츠아파트",
+   "sgg_name": "서대문구",
+   "umd": "홍제동",
+   "households": 123,
+   "ho_count": 0,
+   "address": "서울특별시 서대문구 홍제동 342- 홍제중앙하이츠아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10020056",
+   "name": "돈의문센트레빌215동",
+   "sgg_name": "서대문구",
+   "umd": "냉천동",
+   "households": 120,
+   "ho_count": 120,
+   "address": "서울특별시 서대문구 냉천동 261 돈의문센트레빌215동",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12076401",
+   "name": "홍제비콘드림힐",
+   "sgg_name": "서대문구",
+   "umd": "홍제동",
+   "households": 119,
+   "ho_count": 119,
+   "address": "서울특별시 서대문구 홍제동 468 홍제비콘드림힐",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12009002",
+   "name": "인왕산한신휴플러스",
+   "sgg_name": "서대문구",
+   "umd": "홍제동",
+   "households": 115,
+   "ho_count": 115,
+   "address": "서울특별시 서대문구 홍제동 469 인왕산한신휴플러스",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10024428",
+   "name": "북가좌 신일해피트리아파트",
+   "sgg_name": "서대문구",
+   "umd": "북가좌동",
+   "households": 111,
+   "ho_count": 111,
+   "address": "서울특별시 서대문구 북가좌동 455 북가좌 신일해피트리아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12012001",
+   "name": "쌍용스윗닷홈",
+   "sgg_name": "서대문구",
+   "umd": "남가좌동",
+   "households": 110,
+   "ho_count": 110,
+   "address": "서울특별시 서대문구 남가좌동 380 쌍용스윗닷홈",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10022194",
+   "name": "충정우리유앤미아파트",
+   "sgg_name": "서대문구",
+   "umd": "충정로3가",
+   "households": 108,
+   "ho_count": 108,
+   "address": "서울특별시 서대문구 충정로3가 466- 충정우리유앤미아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10023016",
+   "name": "북아현경남아파트(101동)",
+   "sgg_name": "서대문구",
+   "umd": "북아현동",
+   "households": 106,
+   "ho_count": 106,
+   "address": "서울특별시 서대문구 북아현동 1006 북아현경남아파트(101동)",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10023562",
+   "name": "홍은동일아파트",
+   "sgg_name": "서대문구",
+   "umd": "홍은동",
+   "households": 101,
+   "ho_count": 101,
+   "address": "서울특별시 서대문구 홍은동 457 홍은동일아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A12071004",
+   "name": "진흥",
+   "sgg_name": "서대문구",
+   "umd": "홍은동",
+   "households": 90,
+   "ho_count": 90,
+   "address": "서울특별시 서대문구 홍은동 459 진흥",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10023116",
+   "name": "충정로현대아파트",
+   "sgg_name": "서대문구",
+   "umd": "충정로2가",
+   "households": 83,
+   "ho_count": 83,
+   "address": "서울특별시 서대문구 충정로2가 185-15 충정로현대아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15010602",
+   "name": "양평동양",
+   "sgg_name": "영등포구",
+   "umd": "양평동6가",
+   "households": 263,
+   "ho_count": 263,
+   "address": "서울특별시 영등포구 양평동6가 100 양평동양",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15010601",
+   "name": "양평한솔",
+   "sgg_name": "영등포구",
+   "umd": "양평동6가",
+   "households": 219,
+   "ho_count": 219,
+   "address": "서울특별시 영등포구 양평동6가 99 양평한솔",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15086702",
+   "name": "삼호한숲",
+   "sgg_name": "영등포구",
+   "umd": "양평동4가",
+   "households": 216,
+   "ho_count": 216,
+   "address": "서울특별시 영등포구 양평동4가 94 삼호한숲",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15010304",
+   "name": "양평삼호",
+   "sgg_name": "영등포구",
+   "umd": "양평동3가",
+   "households": 213,
+   "ho_count": 213,
+   "address": "서울특별시 영등포구 양평동3가 66 양평삼호",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15086601",
+   "name": "양평경남2차아너스빌",
+   "sgg_name": "영등포구",
+   "umd": "양평동4가",
+   "households": 198,
+   "ho_count": 198,
+   "address": "서울특별시 영등포구 양평동4가 51-1 양평경남2차아너스빌",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15010501",
+   "name": "양평동보아파트",
+   "sgg_name": "영등포구",
+   "umd": "양평동5가",
+   "households": 184,
+   "ho_count": 184,
+   "address": "서울특별시 영등포구 양평동5가 9-1 양평동보아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15010302",
+   "name": "양평경남1차",
+   "sgg_name": "영등포구",
+   "umd": "양평동3가",
+   "households": 179,
+   "ho_count": 179,
+   "address": "서울특별시 영등포구 양평동3가 55-1 양평경남1차",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15010303",
+   "name": "양평동삼천리아파트",
+   "sgg_name": "영등포구",
+   "umd": "양평동3가",
+   "households": 179,
+   "ho_count": 179,
+   "address": "서울특별시 영등포구 양평동3가 24 양평동삼천리아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15010201",
+   "name": "양평상록수",
+   "sgg_name": "영등포구",
+   "umd": "양평동2가",
+   "households": 176,
+   "ho_count": 176,
+   "address": "서울특별시 영등포구 양평동2가 45 양평상록수",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15010301",
+   "name": "양평우림루미아트",
+   "sgg_name": "영등포구",
+   "umd": "양평동3가",
+   "households": 170,
+   "ho_count": 170,
+   "address": "서울특별시 영등포구 양평동3가 102 양평우림루미아트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15086201",
+   "name": "양평서통한신",
+   "sgg_name": "영등포구",
+   "umd": "양평동1가",
+   "households": 165,
+   "ho_count": 165,
+   "address": "서울특별시 영등포구 양평동1가 14-1 양평서통한신",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10020758",
+   "name": "양평현대3차아파트",
+   "sgg_name": "영등포구",
+   "umd": "양평동3가",
+   "households": 145,
+   "ho_count": 145,
+   "address": "서울특별시 영등포구 양평동3가 79- 양평현대3차아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10026457",
+   "name": "양평역미소지움아파트",
+   "sgg_name": "영등포구",
+   "umd": "양평동3가",
+   "households": 128,
+   "ho_count": 128,
+   "address": "서울특별시 영등포구 양평동3가 106 양평역미소지움아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10021291",
+   "name": "양평역월드메르디앙아파트",
+   "sgg_name": "영등포구",
+   "umd": "양평동3가",
+   "households": 116,
+   "ho_count": 116,
+   "address": "서울특별시 영등포구 양평동3가 19- 양평역월드메르디앙아파트",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A10022708",
+   "name": "오목교벽산블루밍",
+   "sgg_name": "영등포구",
+   "umd": "양평동2가",
+   "households": 114,
+   "ho_count": 114,
+   "address": "서울특별시 영등포구 양평동2가 39-1 오목교벽산블루밍",
+   "reason": "households"
+  },
+  {
+   "kapt_code": "A15780605",
+   "name": "가양2단지",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15780704",
+   "name": "가양3단지(강변)",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15780705",
+   "name": "가양4단지",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15780806",
+   "name": "가양5단지",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15780905",
+   "name": "가양6단지",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15774708",
+   "name": "가양7단지",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15781002",
+   "name": "가양9-1",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15781003",
+   "name": "가양9-2",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15780401",
+   "name": "가양강나루현대",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15780703",
+   "name": "가양대림경동",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15780904",
+   "name": "가양도시개발공사8단지(임대)",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10024367",
+   "name": "가양동 강나루 2차현대아파트",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15780603",
+   "name": "가양동신대아",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10025616",
+   "name": "가양보람아파트",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10023543",
+   "name": "가양역두산위브아파트",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10021511",
+   "name": "가양우방아파트",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15780002",
+   "name": "가양우성",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15720101",
+   "name": "가양일신건영휴먼빌",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15780701",
+   "name": "가양중앙하이츠",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15780602",
+   "name": "가양한보구암",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10022928",
+   "name": "강서금호어울림퍼스티어",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10020155",
+   "name": "강서뉴타워아파트",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10021866",
+   "name": "강서센트레빌3차",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15781201",
+   "name": "강서센트레빌4차",
+   "sgg_name": "강서구",
+   "umd": "공항동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15782501",
+   "name": "강서월드메르디앙",
+   "sgg_name": "강서구",
+   "umd": "내발산동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10021562",
+   "name": "강서한강월드메르디앙아파트",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15720001",
+   "name": "강서한강자이",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15701007",
+   "name": "강서힐스테이트아파트",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15722102",
+   "name": "개화산동부센트레빌",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15770102",
+   "name": "그랜드아이파크",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15779704",
+   "name": "길성그랑프리텔1차",
+   "sgg_name": "강서구",
+   "umd": "내발산동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10022156",
+   "name": "더트루엘마곡HQ",
+   "sgg_name": "강서구",
+   "umd": "공항동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10022233",
+   "name": "등촌2차보람아파트",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15703308",
+   "name": "등촌3단지주공아파트",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15703301",
+   "name": "등촌8단지주공아파트",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15703204",
+   "name": "등촌IPARK",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15703002",
+   "name": "등촌대동황토방",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15703005",
+   "name": "등촌대동황토방2차아파트",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15783703",
+   "name": "등촌대림e편한세상",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15703307",
+   "name": "등촌대림아파트",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15703302",
+   "name": "등촌동성",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10022348",
+   "name": "등촌동코오롱오투빌2차아파트",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15783806",
+   "name": "등촌라인",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15703303",
+   "name": "등촌미주진로",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15703004",
+   "name": "등촌부영",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15783905",
+   "name": "등촌삼성한사랑",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15784008",
+   "name": "등촌서광",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15772901",
+   "name": "등촌우성101동",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15772902",
+   "name": "등촌우성102동",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10021139",
+   "name": "등촌월드메르디앙",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15783701",
+   "name": "등촌임광",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15703306",
+   "name": "등촌주공10단지",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15703318",
+   "name": "등촌주공11단지",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15703313",
+   "name": "등촌주공1단지",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15703304",
+   "name": "등촌주공2단지",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15776414",
+   "name": "등촌주공4단지",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15703309",
+   "name": "등촌주공5단지",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15776617",
+   "name": "등촌주공6단지",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15776715",
+   "name": "등촌주공7단지",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15776916",
+   "name": "등촌주공9단지",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15784003",
+   "name": "등촌코오롱오투빌1차",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15783902",
+   "name": "등촌태영",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15784402",
+   "name": "등촌태진아름",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10019905",
+   "name": "등촌파밀리에더클래식",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15784201",
+   "name": "등촌현대1차(한마음)",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15722005",
+   "name": "마곡 한진해모로",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10026879",
+   "name": "마곡13단지 힐스테이트마스터 아파트",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10019860",
+   "name": "마곡경남아너스빌아파트",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15721001",
+   "name": "마곡금호어울림",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10021574",
+   "name": "마곡나루경남아파트",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15721005",
+   "name": "마곡벽산",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10025641",
+   "name": "마곡보타닉경남아너스빌아파트",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15722001",
+   "name": "마곡삼성",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15722306",
+   "name": "마곡서광",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15722201",
+   "name": "마곡서광2차아파트",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10021419",
+   "name": "마곡센트레빌아파트",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15728008",
+   "name": "마곡수명산파크1단지",
+   "sgg_name": "강서구",
+   "umd": "내발산동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15728004",
+   "name": "마곡수명산파크2단지",
+   "sgg_name": "강서구",
+   "umd": "내발산동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15728003",
+   "name": "마곡수명산파크3단지",
+   "sgg_name": "강서구",
+   "umd": "내발산동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15728006",
+   "name": "마곡수명산파크4단지",
+   "sgg_name": "강서구",
+   "umd": "내발산동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15728007",
+   "name": "마곡수명산파크5단지",
+   "sgg_name": "강서구",
+   "umd": "내발산동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15728002",
+   "name": "마곡수명산파크6단지",
+   "sgg_name": "강서구",
+   "umd": "내발산동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15728005",
+   "name": "마곡수명산파크7단지",
+   "sgg_name": "강서구",
+   "umd": "내발산동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10021698",
+   "name": "마곡수명산파크8단지",
+   "sgg_name": "강서구",
+   "umd": "내발산동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15721003",
+   "name": "마곡신안",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15722003",
+   "name": "마곡신안네트빌(1단지)",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10027452",
+   "name": "마곡엠밸리10단지 아파트",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10027371",
+   "name": "마곡엠밸리11단지",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10027403",
+   "name": "마곡엠밸리12단지",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15721010",
+   "name": "마곡엠밸리14단지",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15728011",
+   "name": "마곡엠밸리15단지",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10019964",
+   "name": "마곡엠밸리17단지",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15722009",
+   "name": "마곡엠밸리1단지",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15721009",
+   "name": "마곡엠밸리2단지",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15721011",
+   "name": "마곡엠밸리3단지",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15721008",
+   "name": "마곡엠밸리4단지",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15722010",
+   "name": "마곡엠밸리5단지",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15721006",
+   "name": "마곡엠밸리6단지",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15721007",
+   "name": "마곡엠밸리7단지",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10027433",
+   "name": "마곡엠밸리8단지",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10024426",
+   "name": "마곡엠밸리9단지",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15722106",
+   "name": "마곡우림필유아파트",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15777501",
+   "name": "마곡중앙하이츠아파트",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15722104",
+   "name": "마곡청구아파트",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15722004",
+   "name": "마곡푸르지오",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15721004",
+   "name": "마곡한솔솔파크",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15785703",
+   "name": "마곡한숲대림아파트",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15785507",
+   "name": "마곡현대1차",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15784601",
+   "name": "마곡현대아파트",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10027687",
+   "name": "마곡힐스테이트",
+   "sgg_name": "강서구",
+   "umd": "마곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15701006",
+   "name": "명지해드는터",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15785005",
+   "name": "방화11단지",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15722307",
+   "name": "방화1단지(장미)",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15785711",
+   "name": "방화2-2 그린",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15722314",
+   "name": "방화2단지",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15785002",
+   "name": "방화3차우림필유",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15785710",
+   "name": "방화4단지(삼익삼환)",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15785613",
+   "name": "방화5단지",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15785612",
+   "name": "방화6단지",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15785605",
+   "name": "방화9단지",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15722011",
+   "name": "방화길훈",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15785608",
+   "name": "방화동 개화아파트",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15722204",
+   "name": "방화동E편한세상",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15722108",
+   "name": "방화동부센트레빌",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15778101",
+   "name": "방화동성아파트",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10023292",
+   "name": "방화메이빌아파트",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15722007",
+   "name": "방화삼성꽃마을",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10021043",
+   "name": "방화스카이포레아파트",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15722203",
+   "name": "방화신동아",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15773501",
+   "name": "방화월드메르디앙",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15785601",
+   "name": "방화진로",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15785709",
+   "name": "방화청솔3단지",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10021529",
+   "name": "비원빌라",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10025703",
+   "name": "삼형그레이스빌아파트",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10025201",
+   "name": "서광 프리메라",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10020618",
+   "name": "센터스퀘어 발산",
+   "sgg_name": "강서구",
+   "umd": "내발산동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15728014",
+   "name": "수산오성",
+   "sgg_name": "강서구",
+   "umd": "내발산동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10024505",
+   "name": "신마곡 벽산 블루밍",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10024768",
+   "name": "아임2030(청년주택)",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10023934",
+   "name": "엘크루발산아파트",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10020646",
+   "name": "우장산동문디이스트아파트",
+   "sgg_name": "강서구",
+   "umd": "내발산동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15728013",
+   "name": "우장산롯데1차",
+   "sgg_name": "강서구",
+   "umd": "내발산동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15728010",
+   "name": "우장산롯데2차",
+   "sgg_name": "강서구",
+   "umd": "내발산동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15701601",
+   "name": "우장산롯데3차",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15701602",
+   "name": "우장산롯데캐슬",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10023515",
+   "name": "우장산숲 아이파크",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15701003",
+   "name": "우장산아이파크이편한세상",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15701002",
+   "name": "우장산에스케이뷰",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10024145",
+   "name": "우장산역 해링턴타워",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15701004",
+   "name": "우장산한화꿈에그린",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15701005",
+   "name": "우장산휴먼빌",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15728009",
+   "name": "우장산힐스테이트",
+   "sgg_name": "강서구",
+   "umd": "내발산동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10020494",
+   "name": "웰라이빌주상복합관리단",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10023075",
+   "name": "지와인 아파트",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15722304",
+   "name": "치현마을동일스위트리버아파트",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15703001",
+   "name": "코오롱하늘채아파트",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10020082",
+   "name": "타워힐아파트",
+   "sgg_name": "강서구",
+   "umd": "내발산동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10024391",
+   "name": "태영방송인아파트",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15780604",
+   "name": "한강타운아파트",
+   "sgg_name": "강서구",
+   "umd": "가양동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15783907",
+   "name": "한사랑2차삼성아파트(등촌동)",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10028020",
+   "name": "해태아파트",
+   "sgg_name": "강서구",
+   "umd": "공항동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15722008",
+   "name": "홍익",
+   "sgg_name": "강서구",
+   "umd": "방화동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10021232",
+   "name": "화곡 1동 복지아파트",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15770101",
+   "name": "화곡2차보람",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15788302",
+   "name": "화곡대림아파트",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10022019",
+   "name": "화곡더리브스카이",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15788901",
+   "name": "화곡미성",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15791001",
+   "name": "화곡유림노르웨이숲",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15788203",
+   "name": "화곡중앙하이츠",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15770801",
+   "name": "화곡초록",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15792602",
+   "name": "화곡푸르지오",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10021290",
+   "name": "희훈리치파크아파트",
+   "sgg_name": "강서구",
+   "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10026761",
+   "name": "H하우스 대림 뉴스테이",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10024495",
+   "name": "e편한세상 문래 에듀플라츠",
+   "sgg_name": "영등포구",
+   "umd": "문래동6가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10024725",
+   "name": "e편한세상 영등포 아델포레",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15076801",
+   "name": "금호어울림",
+   "sgg_name": "영등포구",
+   "umd": "문래동3가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15004202",
+   "name": "당산2가현대",
+   "sgg_name": "영등포구",
+   "umd": "당산동2가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15004405",
+   "name": "당산2차삼성",
+   "sgg_name": "영등포구",
+   "umd": "당산동4가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15004503",
+   "name": "당산2차효성타운",
+   "sgg_name": "영등포구",
+   "umd": "당산동5가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15072002",
+   "name": "당산SHVILLE",
+   "sgg_name": "영등포구",
+   "umd": "당산동3가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15081002",
+   "name": "당산강변래미안3차",
+   "sgg_name": "영등포구",
+   "umd": "당산동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10021966",
+   "name": "당산계룡리슈빌1단지",
+   "sgg_name": "영등포구",
+   "umd": "당산동3가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10021967",
+   "name": "당산계룡리슈빌2단지",
+   "sgg_name": "영등포구",
+   "umd": "당산동3가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10021962",
+   "name": "당산계룡리슈빌3단지",
+   "sgg_name": "영등포구",
+   "umd": "당산동3가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10024834",
+   "name": "당산금호2차어울림아파트",
+   "sgg_name": "영등포구",
+   "umd": "당산동3가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15004403",
+   "name": "당산금호어울림",
+   "sgg_name": "영등포구",
+   "umd": "당산동4가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15004506",
+   "name": "당산동1차효성아파트",
+   "sgg_name": "영등포구",
+   "umd": "당산동5가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15004201",
+   "name": "당산동대우",
+   "sgg_name": "영등포구",
+   "umd": "당산동2가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15080205",
+   "name": "당산동부센트레빌",
+   "sgg_name": "영등포구",
+   "umd": "당산동3가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15004502",
+   "name": "당산디오빌",
+   "sgg_name": "영등포구",
+   "umd": "당산동5가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10026797",
+   "name": "당산롯데캐슬프레스티지 아파트",
+   "sgg_name": "영등포구",
+   "umd": "당산동4가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15072201",
+   "name": "당산반도유보라",
+   "sgg_name": "영등포구",
+   "umd": "당산동4가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10027684",
+   "name": "당산브라운스톤아파트",
+   "sgg_name": "영등포구",
+   "umd": "당산동4가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15004507",
+   "name": "당산삼성래미안",
+   "sgg_name": "영등포구",
+   "umd": "당산동5가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15080402",
+   "name": "당산삼익",
+   "sgg_name": "영등포구",
+   "umd": "당산동3가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15004501",
+   "name": "당산성원아파트",
+   "sgg_name": "영등포구",
+   "umd": "당산동5가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10024789",
+   "name": "당산센트럴아이파크",
+   "sgg_name": "영등포구",
+   "umd": "당산동5가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15004101",
+   "name": "당산신동아파밀리에",
+   "sgg_name": "영등포구",
+   "umd": "당산동1가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15072001",
+   "name": "당산쌍용예가클래식",
+   "sgg_name": "영등포구",
+   "umd": "당산동3가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15004505",
+   "name": "당산유원제일2차",
+   "sgg_name": "영등포구",
+   "umd": "당산동5가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15080002",
+   "name": "당산진로",
+   "sgg_name": "영등포구",
+   "umd": "당산동1가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15075001",
+   "name": "당산코오롱",
+   "sgg_name": "영등포구",
+   "umd": "당산동1가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15003802",
+   "name": "당산푸르지오",
+   "sgg_name": "영등포구",
+   "umd": "영등포동8가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15080204",
+   "name": "당산한양",
+   "sgg_name": "영등포구",
+   "umd": "당산동3가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15004406",
+   "name": "당산현대3차",
+   "sgg_name": "영등포구",
+   "umd": "당산동4가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15080507",
+   "name": "당산현대5차",
+   "sgg_name": "영등포구",
+   "umd": "당산동4가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10024829",
+   "name": "대림 우성2차",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15081604",
+   "name": "대림3동현대아파트",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15007101",
+   "name": "대림갑을명가",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10021186",
+   "name": "대림동1차한신아파트",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15081802",
+   "name": "대림동2차한신아파트",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15095001",
+   "name": "대림동현대",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15081201",
+   "name": "대림성원",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15081606",
+   "name": "대림신동아",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10027935",
+   "name": "대림쌍용플래티넘S",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15081503",
+   "name": "대림우성",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15081105",
+   "name": "대림코오롱",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15081602",
+   "name": "대림현대2차",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15081107",
+   "name": "대림현대3차",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10023715",
+   "name": "더샵파크프레스티지",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15083202",
+   "name": "도림동아에코빌",
+   "sgg_name": "영등포구",
+   "umd": "도림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15083201",
+   "name": "도림청구",
+   "sgg_name": "영등포구",
+   "umd": "도림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15076701",
+   "name": "도림한라",
+   "sgg_name": "영등포구",
+   "umd": "도림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10019936",
+   "name": "디마크당산",
+   "sgg_name": "영등포구",
+   "umd": "당산동6가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15081001",
+   "name": "래미안당산1차아파트",
+   "sgg_name": "영등포구",
+   "umd": "당산동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10027073",
+   "name": "래미안에스티움",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10027755",
+   "name": "래미안프레비뉴",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15005002",
+   "name": "레전드힐스",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15088915",
+   "name": "롯데캐슬아이비",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15088614",
+   "name": "롯데캐슬엠파이어",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10020541",
+   "name": "리마크빌 당산",
+   "sgg_name": "영등포구",
+   "umd": "당산동3가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15009401",
+   "name": "리버뷰신안인스빌",
+   "sgg_name": "영등포구",
+   "umd": "문래동4가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10022428",
+   "name": "문래건영아파트",
+   "sgg_name": "영등포구",
+   "umd": "문래동3가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15083602",
+   "name": "문래공원한신",
+   "sgg_name": "영등포구",
+   "umd": "문래동3가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15083601",
+   "name": "문래국화",
+   "sgg_name": "영등포구",
+   "umd": "문래동3가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15009201",
+   "name": "문래남성",
+   "sgg_name": "영등포구",
+   "umd": "문래동2가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15009503",
+   "name": "문래대림",
+   "sgg_name": "영등포구",
+   "umd": "문래동5가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15009603",
+   "name": "문래대원",
+   "sgg_name": "영등포구",
+   "umd": "문래동6가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10026197",
+   "name": "문래동모아미래도아파트",
+   "sgg_name": "영등포구",
+   "umd": "문래동5가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15009505",
+   "name": "문래두산위브",
+   "sgg_name": "영등포구",
+   "umd": "문래동5가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10024925",
+   "name": "문래롯데캐슬아파트",
+   "sgg_name": "영등포구",
+   "umd": "문래동6가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15009601",
+   "name": "문래미원아파트",
+   "sgg_name": "영등포구",
+   "umd": "문래동6가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15009606",
+   "name": "문래베어스타운",
+   "sgg_name": "영등포구",
+   "umd": "문래동6가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15009402",
+   "name": "문래삼환",
+   "sgg_name": "영등포구",
+   "umd": "문래동4가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10027023",
+   "name": "문래우정아파트",
+   "sgg_name": "영등포구",
+   "umd": "문래동3가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10027512",
+   "name": "문래유원아파트",
+   "sgg_name": "영등포구",
+   "umd": "문래동6가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15083404",
+   "name": "문래자이아파트",
+   "sgg_name": "영등포구",
+   "umd": "문래동3가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15009602",
+   "name": "문래한신",
+   "sgg_name": "영등포구",
+   "umd": "문래동6가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10024832",
+   "name": "문래해태아파트",
+   "sgg_name": "영등포구",
+   "umd": "문래동3가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15009604",
+   "name": "문래현대1차",
+   "sgg_name": "영등포구",
+   "umd": "문래동6가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15009607",
+   "name": "문래현대2차",
+   "sgg_name": "영등포구",
+   "umd": "문래동6가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15009502",
+   "name": "문래현대3차",
+   "sgg_name": "영등포구",
+   "umd": "문래동5가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15009504",
+   "name": "문래현대5차아파트",
+   "sgg_name": "영등포구",
+   "umd": "문래동5가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15009605",
+   "name": "문래현대6차아파트",
+   "sgg_name": "영등포구",
+   "umd": "문래동6가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15083603",
+   "name": "문래힐스테이트",
+   "sgg_name": "영등포구",
+   "umd": "문래동3가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10021177",
+   "name": "문영칸타빌레아파트",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10025070",
+   "name": "보라매 sk뷰",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10027381",
+   "name": "보라매 신동아파밀리에아파트",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15086006",
+   "name": "보라매경남아너스빌",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15086001",
+   "name": "보라매두산위브",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10026801",
+   "name": "브라운스톤 영등포",
+   "sgg_name": "영등포구",
+   "umd": "영등포동7가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10022891",
+   "name": "브라이튼여의도아파트",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15001003",
+   "name": "서울아파트관리사무소",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10022098",
+   "name": "센트레빌아스테리움영등포",
+   "sgg_name": "영등포구",
+   "umd": "영등포동2가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10026311",
+   "name": "순영웰라이빌아파트",
+   "sgg_name": "영등포구",
+   "umd": "영등포동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15005102",
+   "name": "신기목련",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15005303",
+   "name": "신길1차우성아파트",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10022430",
+   "name": "신길AK푸르지오주상복합",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15005302",
+   "name": "신길건영",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15083703",
+   "name": "신길경남",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10021119",
+   "name": "신길동대성유니드아파트",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15083701",
+   "name": "신길삼두",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15005603",
+   "name": "신길삼성",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15005402",
+   "name": "신길삼성래미안",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15005401",
+   "name": "신길삼성제2",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15005705",
+   "name": "신길삼환",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10025562",
+   "name": "신길센트럴아이파크",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10025024",
+   "name": "신길센트럴자이",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15086007",
+   "name": "신길우성2차",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15086004",
+   "name": "신길우성3차아파트",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15005001",
+   "name": "신길우성4차아파트",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15005301",
+   "name": "신길우성5차",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15005602",
+   "name": "신길우창",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15096001",
+   "name": "신길자이",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10024470",
+   "name": "신길파크자이",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15085404",
+   "name": "신길한성",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15095002",
+   "name": "신대림신동아파밀리에",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15007201",
+   "name": "신대림자이",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15007002",
+   "name": "신대림한솔솔파크",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10026182",
+   "name": "신미아파트",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10021210",
+   "name": "신풍역 비스타동원",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10026816",
+   "name": "아크로타워스퀘어",
+   "sgg_name": "영등포구",
+   "umd": "영등포동7가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15089307",
+   "name": "여의대우트럼프월드2차",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15001012",
+   "name": "여의도공작",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15001019",
+   "name": "여의도광장",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15001005",
+   "name": "여의도금호리첸시아",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15001016",
+   "name": "여의도대교",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15076301",
+   "name": "여의도대우트럼프월드",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10024490",
+   "name": "여의도더리브스타일",
+   "sgg_name": "영등포구",
+   "umd": "영등포동1가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15088208",
+   "name": "여의도목화",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15088717",
+   "name": "여의도미성",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15001020",
+   "name": "여의도삼부",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15089411",
+   "name": "여의도삼익",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15001009",
+   "name": "여의도수정",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15089421",
+   "name": "여의도시범아파트",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15089510",
+   "name": "여의도은하",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15076302",
+   "name": "여의도자이",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15001004",
+   "name": "여의도장미",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15089513",
+   "name": "여의도진주",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15001001",
+   "name": "여의도초원",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15088918",
+   "name": "여의도한양",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15088802",
+   "name": "여의도화랑",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15003701",
+   "name": "영등포경남아너스빌",
+   "sgg_name": "영등포구",
+   "umd": "영등포동7가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15003001",
+   "name": "영등포두산위브",
+   "sgg_name": "영등포구",
+   "umd": "영등포동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15003801",
+   "name": "영등포삼환",
+   "sgg_name": "영등포구",
+   "umd": "영등포동8가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15076702",
+   "name": "영등포아트자이",
+   "sgg_name": "영등포구",
+   "umd": "도림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10023516",
+   "name": "영등포자이르네",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15003002",
+   "name": "영등포푸르지오",
+   "sgg_name": "영등포구",
+   "umd": "영등포동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10022974",
+   "name": "준타워",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10025122",
+   "name": "지밸리소홈",
+   "sgg_name": "영등포구",
+   "umd": "대림동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10024981",
+   "name": "콤비아파트",
+   "sgg_name": "영등포구",
+   "umd": "여의도동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10023489",
+   "name": "포레나 당산",
+   "sgg_name": "영등포구",
+   "umd": "당산동2가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15005501",
+   "name": "포레나 신길",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10024567",
+   "name": "포레나영등포센트럴아파트",
+   "sgg_name": "영등포구",
+   "umd": "영등포동7가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A15080501",
+   "name": "한강아파트",
+   "sgg_name": "영등포구",
+   "umd": "당산동4가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10025518",
+   "name": "현대프라자주상복합아파트",
+   "sgg_name": "영등포구",
+   "umd": "영등포동5가",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10024615",
+   "name": "힐스테이트클래시안아파트",
+   "sgg_name": "영등포구",
+   "umd": "신길동",
+   "households": null,
+   "ho_count": null,
+   "address": "",
+   "reason": "umd"
+  }
+ ]
+}
