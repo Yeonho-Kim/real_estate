@@ -69,7 +69,7 @@
       const s = document.createElement("script");
       s.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${encodeURIComponent(cfg.KAKAO_JS_KEY)}&autoload=false`;
       s.onload = () => window.kakao.maps.load(resolve);
-      s.onerror = () => reject(new Error("카카오맵 SDK 를 불러오지 못했습니다. JavaScript 키와 등록 도메인을 확인하세요."));
+      s.onerror = () => reject(new Error("카카오맵 SDK 를 불러오지 못했습니다. 카카오 콘솔에서 [카카오맵] > [사용 설정] 이 ON 인지, [JavaScript SDK 도메인]에 이 사이트 도메인이 등록됐는지 확인하세요."));
       document.head.appendChild(s);
     });
   }
@@ -365,7 +365,7 @@
       await loadKakao();
     } catch (err) {
       if (err.message === "NO_KEY") {
-        showNotice(`<h2>카카오맵 키가 필요합니다</h2><p><code>docs/config.js</code> 의 <code>KAKAO_JS_KEY</code> 에 카카오 개발자 앱의 JavaScript 키를 넣고, 앱의 플랫폼(Web)에 이 사이트 도메인을 등록하세요.</p>`);
+        showNotice(`<h2>카카오맵 키가 필요합니다</h2><p><code>docs/config.js</code> 의 <code>KAKAO_JS_KEY</code> 에 카카오 개발자 앱의 JavaScript 키를 넣고, 카카오 콘솔의 [플랫폼 키] &gt; [JavaScript 키] &gt; [JavaScript SDK 도메인]에 이 사이트 도메인을 등록하세요.</p>`);
       } else {
         showNotice(`<h2>지도를 불러오지 못했습니다</h2><p>${esc(err.message)}</p>`);
       }

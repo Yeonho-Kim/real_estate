@@ -23,6 +23,12 @@
 
 ## 처음 설정 (한 번만)
 
+PC 없이 **휴대폰만으로** 끝낼 수 있습니다. 로컬에서 실행해야 하는 명령은 없습니다.
+
+- Secret 등록: 휴대폰 **브라우저**로 github.com 저장소 → Settings → Secrets and variables → Actions → New repository secret. (GitHub 모바일 앱에는 이 메뉴가 없습니다. 메뉴가 안 보이면 브라우저의 "데스크톱 사이트" 보기를 켭니다.)
+- 파일 수정: github.com 에서 파일을 열고 연필 아이콘으로 고친 뒤 Commit changes.
+- 워크플로 실행: Actions 탭 → 워크플로 선택 → Run workflow.
+
 ### 1. 저장소
 1. 저장소를 **Public** 으로 전환합니다 (무료 요금제에서 Pages 를 쓰기 위해).
 2. Settings → Pages → **Build and deployment → Source** 를 **GitHub Actions** 로 바꿉니다.
@@ -42,20 +48,33 @@
 > 4개 API 의 요청 주소는 `collector/config.py` 에 있습니다. 포털 명세가 바뀌어 첫 실행 로그에 `HTTP 404` 나 `api error` 가 보이면 활용신청 페이지의 요청 주소로 그 값을 고치면 됩니다.
 
 ### 3. 카카오 개발자 앱
-[developers.kakao.com](https://developers.kakao.com) → 내 애플리케이션 → 추가.
-- **앱 키 → REST API 키** → Secret `KAKAO_REST_KEY` (주소→좌표 변환용)
-- **앱 키 → JavaScript 키** → `docs/config.js` 의 `KAKAO_JS_KEY`
-- **플랫폼 → Web → 사이트 도메인** 에 `https://<계정>.github.io` 추가 (로컬 확인용으로 `http://localhost:8765` 도 추가)
-- 제품 설정에서 **카카오맵** 을 활성화합니다.
+콘솔 메뉴가 2026년에 바뀌었습니다. 도메인 등록은 앱 단위가 아니라 **키 단위**로 하고, 카카오맵은 심사 없이 사용 설정만 켜면 됩니다.
+
+1. [developers.kakao.com](https://developers.kakao.com) 에 로그인해 앱을 만듭니다. 앱 이름·회사명·카테고리가 필수이고, 앱 이름에 "카카오"는 넣을 수 없습니다.
+2. **[카카오맵] > [사용 설정]** 의 상태를 **ON** 으로 바꿉니다. 켜지 않으면 지도와 주소 검색이 모두 거부됩니다.
+3. **[앱] > [플랫폼 키] > [JavaScript 키]** 의 값을 `docs/config.js` 의 `KAKAO_JS_KEY` 에 넣습니다.
+4. 같은 화면의 **[JavaScript SDK 도메인]** 에 `https://<계정>.github.io` 를 등록합니다. 경로 없이 도메인까지만 적습니다.
+5. **[앱] > [플랫폼 키] > [REST API 키]** 의 값을 Secret `KAKAO_REST_KEY` 로 등록합니다 (주소→좌표 변환용).
+6. REST API 키의 **호출 허용 IP 주소는 비워 둡니다.** GitHub Actions 는 실행마다 IP 가 달라서, 등록하면 `ip mismatched` 오류가 납니다.
+
+참고:
+- 무료 쿼터는 계정에서 **처음 카카오맵을 켠 앱 하나**에만 적용됩니다. 다른 앱에서 이미 켠 적이 있으면 그 앱의 키를 쓰는 편이 간단합니다.
+- JavaScript 키는 페이지 소스에 보이는 것이 정상이며 등록한 도메인에서만 동작합니다. REST API 키는 Secret 에만 둡니다.
+- 하루 무료 한도는 웹 지도 30만 건, 주소 검색 10만 건으로 이 프로젝트 사용량보다 훨씬 큽니다.
 
 ### 4. 웹 푸시 키
+웹 푸시는 공개키·비밀키 한 쌍(VAPID 키)이 필요합니다.
+
+- **공개키**: `docs/config.js` 의 `VAPID_PUBLIC_KEY` 에 이미 들어 있습니다. 손댈 것이 없습니다.
+- **비밀키**: 공개키와 짝이 되는 값을 Secret `VAPID_PRIVATE_KEY` 로 등록합니다. 저장소에는 올리지 않습니다.
+- Secret `PUSH_CONTACT` 에 `mailto:본인메일` 을 등록합니다 (푸시 서버가 요구하는 연락처).
+
+키 쌍을 새로 만들어야 할 때(비밀키를 잃어버렸거나 노출됐을 때)는 둘을 **함께** 바꿉니다. 한쪽만 바꾸면 알림이 가지 않습니다. 바꾼 뒤에는 6번의 구독 등록도 다시 해야 합니다. PC 가 있으면 아래 명령으로 만들 수 있고, 없으면 Claude Code 세션에 "VAPID 키를 새로 만들어 줘"라고 요청하면 됩니다.
+
 ```bash
 pip install -r requirements.txt
 python -m collector.gen_vapid
 ```
-- 출력된 `VAPID_PRIVATE_KEY` → Secret `VAPID_PRIVATE_KEY`
-- 출력된 `VAPID_PUBLIC_KEY` → `docs/config.js` 의 `VAPID_PUBLIC_KEY`
-- Secret `PUSH_CONTACT` 에 `mailto:본인메일` (푸시 서버가 요구하는 연락처)
 
 ### 5. 첫 수집
 Actions 탭 → **실거래 수집·알림·배포** → Run workflow.
@@ -74,7 +93,7 @@ Secret 목록 정리:
 |---|---|
 | `DATA_GO_KR_KEY` | 공공데이터포털 인증키(Decoding) |
 | `KAKAO_REST_KEY` | 카카오 REST API 키 |
-| `VAPID_PRIVATE_KEY` | gen_vapid 출력 비밀키 |
+| `VAPID_PRIVATE_KEY` | 웹 푸시 비밀키 (`docs/config.js` 공개키의 짝) |
 | `PUSH_CONTACT` | `mailto:...` |
 | `PUSH_SUBSCRIPTIONS` | 브라우저 구독 JSON |
 
@@ -113,7 +132,9 @@ Secret 목록 정리:
 
 실거래 신고 기한이 30일이라 계약 후 최대 한 달 뒤에 나타날 수 있습니다.
 
-## 로컬에서 확인
+## 로컬에서 확인 (선택)
+
+PC 가 있을 때만 필요합니다. 평소 운영에는 쓰지 않습니다. 로컬에서 지도를 보려면 카카오 **[JavaScript SDK 도메인]** 에 `http://localhost:8765` 도 등록합니다.
 
 ```bash
 python -m venv .venv && . .venv/bin/activate
