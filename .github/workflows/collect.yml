@@ -2,9 +2,10 @@ name: 실거래 수집·알림·배포
 
 on:
   schedule:
-    # KST 08:00, 20:00 (UTC 23:00, 11:00)
-    - cron: "0 23 * * *"
-    - cron: "0 11 * * *"
+    # KST 08:17, 20:17 (UTC 23:17, 11:17).
+    # GitHub 은 정각에 예약이 몰려 실행이 크게 늦거나 건너뛰는 일이 있어 정각을 피한다.
+    - cron: "17 23 * * *"
+    - cron: "17 11 * * *"
   workflow_dispatch:
     inputs:
       rebuild_complexes:
@@ -132,7 +133,14 @@ jobs:
             echo "변경 없음"
           else
             git commit -m "data: $(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M') 수집"
-            git push
+            # 수집하는 동안 main 에 코드가 올라왔을 수 있다. 그 위에 얹어서 올린다 (data/ 는 이 작업만 고친다).
+            for attempt in 1 2 3; do
+              if git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}"; then
+                break
+              fi
+              if [ "$attempt" = 3 ]; then echo "::error::데이터 커밋을 올리지 못했습니다."; exit 1; fi
+              sleep $((attempt * 5))
+            done
           fi
 
       - name: 사이트 빌드

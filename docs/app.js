@@ -379,8 +379,27 @@
     $("closeModal").addEventListener("click", () => $("pushModal").classList.remove("open"));
   }
 
+  // ---------- 새 버전 확인 ----------
+  // 브라우저가 예전 페이지를 캐시에서 꺼내 쓰는 경우, 배포된 버전과 다르면 한 번만 다시 불러온다.
+  async function ensureLatest() {
+    const meta = document.querySelector('meta[name="app-version"]');
+    if (!meta) return; // 로컬에서 docs/ 를 바로 열었을 때
+    try {
+      const res = await fetch(`./version.json?t=${Date.now()}`, { cache: "no-store" });
+      if (!res.ok) return;
+      const latest = (await res.json()).v;
+      if (!latest || latest === meta.content) return;
+      let already = null;
+      try { already = sessionStorage.getItem("reloaded-for"); } catch (_) { return; }
+      if (already === latest) return; // 다시 불러와도 그대로면 되풀이하지 않는다
+      sessionStorage.setItem("reloaded-for", latest);
+      location.reload();
+    } catch (_) { /* 확인 실패는 무시 */ }
+  }
+
   // ---------- 시작 ----------
   async function start() {
+    ensureLatest();
     bindUI();
     try {
       await loadData();
