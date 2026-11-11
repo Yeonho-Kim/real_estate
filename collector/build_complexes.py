@@ -14,7 +14,7 @@ import threading
 from concurrent.futures import ThreadPoolExecutor
 
 from . import config
-from .geocode import geocode_complex
+from .geocode import find_kakao_place, geocode_complex
 from .http import QuotaExceeded
 from .kapt_api import fetch_basic, fetch_list
 from .store import now_iso, read_json, write_json
@@ -166,6 +166,18 @@ def build(service_key: str, kakao_rest_key: str | None, geocode: bool = True, fu
                 record["lat"], record["lng"] = coords
             else:
                 log.warning("좌표 변환 실패: %s %s", record["name"], record["address"])
+
+        # 5) 카카오맵 장소 번호 (링크용). 한 번 찾아 본 단지는 다시 찾지 않는다 (full 이면 다시 찾음).
+        found = 0
+        for record in result:
+            if "kakao_place_id" in record and not full:
+                continue
+            place = find_kakao_place(kakao_rest_key, record["name"], record["road_address"], record.get("lat"), record.get("lng"))
+            record["kakao_place_id"] = place["id"] if place else ""
+            record["kakao_place_name"] = place["name"] if place else ""
+            found += bool(place)
+        with_place = sum(1 for r in result if r.get("kakao_place_id"))
+        log.info("카카오맵 장소: 이번에 %d곳 찾음, 전체 %d/%d", found, with_place, len(result))
 
     skipped = dict.fromkeys(REASONS, 0)
     for item in skipped_items:

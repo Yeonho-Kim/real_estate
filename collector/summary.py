@@ -107,6 +107,7 @@ def build_summary(complexes: list[dict], events: list[dict]) -> dict:
             "name": c["name"],
             "search_name": search_name(c["name"], [r["apt_name"] for r in (sales or rents)]),
             "addr": short_address(c.get("road_address", "")),
+            "kakao_place_id": c.get("kakao_place_id") or "",
             "sgg": c["sgg_name"],
             "umd": c["umd"],
             "lat": c.get("lat"),

@@ -48,19 +48,30 @@
   ];
   function linkValues(c) {
     const name = c.search_name || c.name;
-    return { name, query: `${c.umd} ${name}`.trim(), addr: c.addr || "", sgg: c.sgg || "", umd: c.umd || "", lat: c.lat, lng: c.lng };
+    return { name, query: `${c.umd} ${name}`.trim(), addr: c.addr || "", sgg: c.sgg || "", umd: c.umd || "", lat: c.lat, lng: c.lng, kakao_id: c.kakao_place_id || "" };
+  }
+  const RAW_VALUES = new Set(["lat", "lng", "kakao_id"]); // 주소에 그대로 넣는 값 (나머지는 인코딩)
+  function fillTemplate(template, values) {
+    const keys = (template.match(/\{(\w+)\}/g) || []).map((k) => k.slice(1, -1));
+    if (!keys.every((k) => values[k] != null && values[k] !== "")) return null; // 필요한 값이 없으면 이 주소는 못 쓴다
+    return template.replace(/\{(\w+)\}/g, (_, k) => (RAW_VALUES.has(k) ? String(values[k]) : encodeURIComponent(values[k])));
+  }
+  function directLink(c, label) {
+    const url = cfg.DIRECT_LINKS && cfg.DIRECT_LINKS[c.kapt_code] && cfg.DIRECT_LINKS[c.kapt_code][label];
+    return typeof url === "string" && /^https:\/\//.test(url) ? url : null;
   }
   function buildLinks(c) {
     const values = linkValues(c);
     const links = Array.isArray(cfg.LINKS) && cfg.LINKS.length ? cfg.LINKS : DEFAULT_LINKS;
-    return links
-      .filter((l) => l && l.label && l.url)
-      // 좌표가 필요한 링크는 좌표가 없으면 빼고, 값이 비면(예: 주소 없음) 그 링크도 뺀다.
-      .filter((l) => (l.url.match(/\{(\w+)\}/g) || []).every((k) => values[k.slice(1, -1)] != null && values[k.slice(1, -1)] !== ""))
-      .map((l) => ({
-        label: l.label,
-        href: l.url.replace(/\{(\w+)\}/g, (_, k) => (k === "lat" || k === "lng" ? String(values[k]) : encodeURIComponent(values[k]))),
-      }));
+    const out = [];
+    for (const l of links) {
+      if (!l || !l.label || !l.url) continue;
+      // 1) 단지별로 직접 지정한 주소 2) 주소 형식 가운데 필요한 값이 모두 있는 첫 번째
+      let href = directLink(c, l.label);
+      if (!href) for (const template of [].concat(l.url)) { href = fillTemplate(template, values); if (href) break; }
+      if (href) out.push({ label: l.label, href });
+    }
+    return out;
   }
   function linksHtml(c) {
     const links = buildLinks(c);

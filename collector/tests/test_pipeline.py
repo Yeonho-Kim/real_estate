@@ -240,6 +240,14 @@ def test_build_complexes_end_to_end_with_json_api(monkeypatch, tmp_data_dir):
         if "address.json" in url:
             assert headers["Authorization"] == "KakaoAK REST"
             return Resp("", payload={"documents": [{"x": "126.9561", "y": "37.5541"}]})
+        if "keyword.json" in url:
+            assert params["x"] == 126.9561 and params["y"] == 37.5541 and params["radius"] == 500
+            return Resp("", payload={"documents": [
+                {"id": "111", "place_name": "마포래미안푸르지오 관리사무소", "category_name": "부동산 > 주거시설 > 아파트 > 아파트관리사무소",
+                 "road_address_name": "서울 마포구 마포대로 195", "distance": "20"},
+                {"id": "26338954", "place_name": "마포래미안푸르지오아파트", "category_name": "부동산 > 주거시설 > 아파트",
+                 "road_address_name": "서울 마포구 마포대로 195", "distance": "35"},
+            ]})
         raise AssertionError(url)
 
     monkeypatch.setattr(http.requests, "get", fake_get)
@@ -247,6 +255,7 @@ def test_build_complexes_end_to_end_with_json_api(monkeypatch, tmp_data_dir):
 
     assert [c["kapt_code"] for c in result] == ["A13376001"]      # 120세대 단지 제외
     assert result[0]["lat"] == 37.5541 and result[0]["lng"] == 126.9561 and result[0]["sgg_name"] == "마포구"
+    assert result[0]["kakao_place_id"] == "26338954" and result[0]["kakao_place_name"] == "마포래미안푸르지오아파트"
     saved = json.loads(config.COMPLEXES_FILE.read_text())
     assert saved["count"] == 1 and saved["skipped"]["households"] == 1 and saved["skipped"]["umd"] == 1
     assert saved["listed"]["마포구"] == 2 and saved["listed"]["강서구"] == 1
@@ -255,6 +264,10 @@ def test_build_complexes_end_to_end_with_json_api(monkeypatch, tmp_data_dir):
     # 화곡동 단지는 기본정보를 부르지 않고 목록 단계에서 걸러진다
     assert not any(name == "getAphusBassInfoV5" and p.get("kaptCode") == "G1" for name, p in calls)
     assert sum(1 for name, p in calls if name == "getSigunguAptList4" and p["sigunguCode"] == "11440") == 2
+    # 한 번 찾은 단지는 다시 찾지 않는다
+    before = sum(1 for name, _ in calls if name == "keyword.json")
+    build_complexes.build("KEY", "REST")
+    assert sum(1 for name, _ in calls if name == "keyword.json") == before
 
 
 def test_households_falls_back_to_ho_count():
@@ -458,3 +471,31 @@ def test_rebuild_keeps_match_version_and_state(monkeypatch, tmp_data_dir):
     assert master["match_version"] == MATCH_VERSION
     assert not collect_trades.needs_rematch()
     assert config.STATE_FILE.exists()          # 단지가 빠지기만 했으므로 기준 상태 유지
+
+
+def test_pick_kakao_place():
+    """카카오 검색 결과에서 단지에 해당하는 장소만 고른다."""
+    from collector.geocode import is_apartment_place, pick_place
+
+    apt = {"id": "1", "place_name": "마포쌍용황금아파트", "category_name": "부동산 > 주거시설 > 아파트",
+           "road_address_name": "서울 마포구 마포대로4라길 30", "distance": "40"}
+    office = dict(apt, id="2", place_name="마포쌍용황금아파트 관리사무소", category_name="부동산 > 주거시설 > 아파트 > 아파트관리사무소")
+    shop = dict(apt, id="3", place_name="마포쌍용황금아파트상가", category_name="부동산 > 상가,빌딩")
+    neighbor = {"id": "4", "place_name": "마포한화오벨리스크아파트", "category_name": "부동산 > 주거시설 > 아파트",
+                "road_address_name": "서울 마포구 마포대로 33", "distance": "120"}
+    assert is_apartment_place(apt) and not is_apartment_place(office) and not is_apartment_place(shop)
+
+    road = "서울특별시 마포구 마포대로4라길 30"
+    assert pick_place([office, shop, neighbor, apt], "마포쌍용황금", road)["id"] == "1"
+    # 이름이 전혀 달라도 도로명 주소가 같으면 같은 단지 (K-apt 흑석자이 = 카카오 흑석리버파크자이)
+    renamed = {"id": "9", "place_name": "흑석리버파크자이아파트", "category_name": "부동산 > 주거시설 > 아파트",
+               "road_address_name": "서울 동작구 서달로 90", "distance": "210"}
+    assert pick_place([renamed], "흑석자이", "서울특별시 동작구 서달로 90")["id"] == "9"
+    # 주소가 달라도 가깝고 이름이 비슷하면 인정
+    moved = dict(apt, id="5", road_address_name="서울 마포구 마포대로4라길 28", distance="60")
+    assert pick_place([moved], "마포쌍용황금", road)["id"] == "5"
+    # 이웃 단지, 멀리 있는 같은 이름, 아파트가 아닌 곳은 고르지 않는다
+    assert pick_place([neighbor], "마포쌍용황금", road) is None
+    assert pick_place([dict(moved, distance="400")], "마포쌍용황금", road) is None
+    assert pick_place([office, shop], "마포쌍용황금", road) is None
+    assert pick_place([], "마포쌍용황금", road) is None
