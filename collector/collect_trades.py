@@ -71,8 +71,22 @@ def collect(service_key: str, months: list[str] | None = None, rematch: bool = F
 
     sales_by: dict[str, list[dict]] = defaultdict(list)
     rents_by: dict[str, list[dict]] = defaultdict(list)
-    unmatched: Counter = Counter()
+    unmatched: dict[str, dict] = {}
     stats = Counter(sales_raw=len(sales), rents_raw=len(rents))
+
+    def note_unmatched(region, rec, kind: str) -> None:
+        """연결 못 한 거래를 단지별로 모은다. 수동 지정(overrides.json)에 필요한 값도 함께 남긴다."""
+        key = f"{region.name}|{rec.umd}|{rec.jibun}|{rec.apt_name}"
+        item = unmatched.setdefault(key, {
+            "where": key, "count": 0, "sales": 0, "rents": 0, "apt_seq": "",
+            "road": "", "build_year": rec.build_year,
+        })
+        item["count"] += 1
+        item[kind] += 1
+        if getattr(rec, "apt_seq", "") and not item["apt_seq"]:
+            item["apt_seq"] = rec.apt_seq
+        if rec.road_name and not item["road"]:
+            item["road"] = f"{rec.road_name} {rec.road_no}".strip()
 
     # 2) 매매를 먼저 연결한다. 매매에는 일련번호·도로명이 있어 확실하고, 여기서 확정된 지번을 전월세가 따라간다.
     for region, sale in sales:
@@ -81,7 +95,7 @@ def collect(service_key: str, months: list[str] | None = None, rematch: bool = F
         stats["sales_filtered"] += 1
         c = index.match(sale.umd, sale.jibun, sale.apt_name, sale.apt_seq, sale.build_year, sale.road_name, sale.road_no)
         if c is None:
-            unmatched[f"{region.name}|{sale.umd}|{sale.jibun}|{sale.apt_name}"] += 1
+            note_unmatched(region, sale, "sales")
             continue
         sales_by[c["kapt_code"]].append(sale.to_dict())
     for region, rent in rents:
@@ -90,7 +104,7 @@ def collect(service_key: str, months: list[str] | None = None, rematch: bool = F
         stats["rents_filtered"] += 1
         c = index.match(rent.umd, rent.jibun, rent.apt_name, "", rent.build_year, rent.road_name, rent.road_no)
         if c is None:
-            unmatched[f"{region.name}|{rent.umd}|{rent.jibun}|{rent.apt_name}"] += 1
+            note_unmatched(region, rent, "rents")
             continue
         rents_by[c["kapt_code"]].append(rent.to_dict())
     stats["sales_matched"] = sum(len(v) for v in sales_by.values())
@@ -118,9 +132,10 @@ def collect(service_key: str, months: list[str] | None = None, rematch: bool = F
 
     write_json(config.UNMATCHED_FILE, {
         "updated_at": now_iso(),
-        "note": "단지에 연결하지 못한 거래. 300세대 미만 단지면 정상. 300세대 이상인데 여기 있으면 "
-                "collector/overrides.json 에 aptSeq→단지코드 를 추가한다 (단지코드는 data/complexes.json).",
-        "items": [{"where": k, "count": v} for k, v in unmatched.most_common()],
+        "note": "단지에 연결하지 못한 거래. 300세대 미만 단지면 정상(data/complexes_skipped.json 에서 확인). "
+                "300세대 이상인데 여기 있으면 collector/overrides.json 에 \"apt_seq 값\": \"단지코드\" 를 추가한다 "
+                "(단지코드는 data/complexes.json). road 는 거래 자료의 도로명 주소.",
+        "items": sorted(unmatched.values(), key=lambda i: -i["count"]),
     })
     log.info("수집 통계: %s, 미매칭 %d종", dict(stats), len(unmatched))
     return {"months": months, "sales_by": dict(sales_by), "rents_by": dict(rents_by), "stats": dict(stats)}

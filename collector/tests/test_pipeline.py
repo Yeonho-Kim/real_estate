@@ -364,3 +364,16 @@ def test_rematch_when_rules_change(monkeypatch, tmp_data_dir):
     changes = json.loads(config.LATEST_CHANGES_FILE.read_text())
     assert changes["first_run"] is True and changes["count"] == 0          # 알림 없음
     assert not collect_trades.needs_rematch()
+
+
+def test_unmatched_report_has_override_hints(monkeypatch, tmp_data_dir):
+    """연결 못 한 거래에는 수동 지정에 필요한 aptSeq·도로명이 함께 남는다."""
+    _fake_fetch(monkeypatch)
+    other = copy.deepcopy(COMPLEX)
+    other.update(kapt_code="ELSE", name="전혀다른단지", jibun="1", road_address="서울특별시 마포구 다른길 9")
+    write_json(config.COMPLEXES_FILE, {"match_version": MATCH_VERSION, "complexes": [other]})
+    collect("KEY", ["202610"])
+    items = json.loads(config.UNMATCHED_FILE.read_text())["items"]
+    assert len(items) == 1
+    assert items[0] == {"where": "마포구|아현동|777|마포래미안푸르지오", "count": 4, "sales": 2, "rents": 2,
+                        "apt_seq": "11440-3214", "road": "마포대로 195", "build_year": 2014}
