@@ -1,2463 +1,807 @@
 {
- "updated_at": "2026-11-11T22:34:37+09:00",
+ "updated_at": "2026-11-11T22:48:21+09:00",
  "note": "단지에 연결하지 못한 거래. 300세대 미만 단지면 정상(data/complexes_skipped.json 에서 확인). 300세대 이상인데 여기 있으면 collector/overrides.json 에 \"apt_seq 값\": \"단지코드\" 를 추가한다 (단지코드는 data/complexes.json). road 는 거래 자료의 도로명 주소.",
  "items": [
   {
    "where": "동작구|신대방동|686-48|동작협성휴포레시그니처",
-   "count": 160,
-   "sales": 34,
-   "rents": 126,
+   "count": 52,
+   "sales": 10,
+   "rents": 42,
    "apt_seq": "11590-5055",
    "road": "시흥대로 606",
    "build_year": 2022
   },
   {
-   "where": "동작구|상도동|407|현대(관악)",
-   "count": 157,
-   "sales": 50,
-   "rents": 107,
-   "apt_seq": "11590-3295",
-   "road": "상도로 421",
-   "build_year": 1992
-  },
-  {
-   "where": "서대문구|홍은동|468|북한산두산위브2차",
-   "count": 133,
-   "sales": 37,
-   "rents": 96,
-   "apt_seq": "11410-4856",
-   "road": "홍은중앙로1길 100",
-   "build_year": 2021
-  },
-  {
-   "where": "동작구|사당동|240-15|제일",
-   "count": 133,
-   "sales": 30,
-   "rents": 103,
-   "apt_seq": "11590-51",
-   "road": "사당로16다길 57",
-   "build_year": 1987
-  },
-  {
-   "where": "서대문구|현저동|1019|독립문파크빌",
-   "count": 126,
-   "sales": 40,
-   "rents": 86,
-   "apt_seq": "11410-11",
-   "road": "통일로 279-75",
-   "build_year": 2000
-  },
-  {
-   "where": "동작구|상도동|536|상도효성해링턴플레이스",
-   "count": 123,
-   "sales": 26,
-   "rents": 97,
-   "apt_seq": "11590-4559",
-   "road": "상도로 207",
-   "build_year": 2016
-  },
-  {
-   "where": "강서구|염창동|240-32|금호타운",
-   "count": 115,
-   "sales": 40,
-   "rents": 75,
-   "apt_seq": "11500-3",
-   "road": "양천로 595",
-   "build_year": 1999
-  },
-  {
    "where": "마포구|상암동|1584|DMCVILLE",
-   "count": 115,
+   "count": 40,
    "sales": 0,
-   "rents": 115,
+   "rents": 40,
    "apt_seq": "",
    "road": "월드컵북로60길 13 13",
    "build_year": 2006
   },
   {
-   "where": "서대문구|홍제동|462|청구3차",
-   "count": 111,
-   "sales": 30,
-   "rents": 81,
-   "apt_seq": "11410-65",
-   "road": "통일로 332",
-   "build_year": 2001
+   "where": "동작구|사당동|240-15|제일",
+   "count": 35,
+   "sales": 9,
+   "rents": 26,
+   "apt_seq": "11590-51",
+   "road": "사당로16다길 57",
+   "build_year": 1987
   },
   {
-   "where": "마포구|창전동|449|마포웨스트리버태영데시앙",
-   "count": 110,
-   "sales": 31,
-   "rents": 79,
-   "apt_seq": "11440-5818",
-   "road": "서강로3길 32",
-   "build_year": 2019
+   "where": "동작구|상도동|536|상도효성해링턴플레이스",
+   "count": 31,
+   "sales": 1,
+   "rents": 30,
+   "apt_seq": "11590-4559",
+   "road": "상도로 207",
+   "build_year": 2016
   },
   {
-   "where": "마포구|신공덕동|170|브라운스톤공덕아파트",
-   "count": 104,
-   "sales": 23,
-   "rents": 81,
-   "apt_seq": "11440-4551",
-   "road": "백범로 230",
-   "build_year": 2009
+   "where": "동작구|상도동|407|현대(관악)",
+   "count": 27,
+   "sales": 10,
+   "rents": 17,
+   "apt_seq": "11590-3295",
+   "road": "상도로 421",
+   "build_year": 1992
   },
   {
-   "where": "강서구|염창동|255|무학",
-   "count": 102,
-   "sales": 28,
-   "rents": 74,
-   "apt_seq": "11500-13",
-   "road": "양천로77길 45",
-   "build_year": 1999
+   "where": "서대문구|현저동|1019|독립문파크빌",
+   "count": 26,
+   "sales": 12,
+   "rents": 14,
+   "apt_seq": "11410-11",
+   "road": "통일로 279-75",
+   "build_year": 2000
   },
   {
    "where": "서대문구|홍제동|471|금호어울림",
-   "count": 100,
-   "sales": 36,
-   "rents": 64,
+   "count": 24,
+   "sales": 1,
+   "rents": 23,
    "apt_seq": "11410-4537",
    "road": "모래내로 411",
    "build_year": 2016
   },
   {
-   "where": "마포구|공덕동|476|공덕파크자이",
-   "count": 95,
-   "sales": 23,
-   "rents": 72,
-   "apt_seq": "11440-5530",
-   "road": "백범로 152",
-   "build_year": 2015
+   "where": "서대문구|홍은동|468|북한산두산위브2차",
+   "count": 23,
+   "sales": 6,
+   "rents": 17,
+   "apt_seq": "11410-4856",
+   "road": "",
+   "build_year": 2021
   },
   {
-   "where": "강서구|염창동|290|벽산늘푸른",
-   "count": 94,
-   "sales": 32,
-   "rents": 62,
-   "apt_seq": "11500-14",
-   "road": "양천로63길 52",
-   "build_year": 1998
-  },
-  {
-   "where": "동작구|노량진동|332|쌍용예가",
-   "count": 90,
-   "sales": 20,
-   "rents": 70,
-   "apt_seq": "11590-3742",
-   "road": "장승배기로16길 134",
-   "build_year": 2010
-  },
-  {
-   "where": "서대문구|북가좌동|371-1|월드컵현대",
-   "count": 89,
-   "sales": 23,
-   "rents": 66,
-   "apt_seq": "11410-107",
-   "road": "수색로 154",
-   "build_year": 1998
-  },
-  {
-   "where": "강서구|염창동|270-1|태영",
-   "count": 89,
-   "sales": 28,
-   "rents": 61,
-   "apt_seq": "11500-25",
-   "road": "공항대로61길 60",
+   "where": "강서구|염창동|255|무학",
+   "count": 23,
+   "sales": 3,
+   "rents": 20,
+   "apt_seq": "11500-13",
+   "road": "양천로77길 45",
    "build_year": 1999
   },
   {
-   "where": "마포구|신공덕동|174|공덕아이파크",
-   "count": 86,
-   "sales": 21,
-   "rents": 65,
-   "apt_seq": "11440-5218",
-   "road": "만리재로 36",
-   "build_year": 2013
-  },
-  {
-   "where": "마포구|창전동|438|신촌금호",
-   "count": 86,
-   "sales": 30,
-   "rents": 56,
-   "apt_seq": "11440-46",
-   "road": "서강로9길 19",
-   "build_year": 2001
-  },
-  {
-   "where": "마포구|도화동|564|마포동원베네스트",
-   "count": 85,
-   "sales": 27,
-   "rents": 58,
-   "apt_seq": "11440-4611",
-   "road": "도화4길 41",
-   "build_year": 2010
-  },
-  {
    "where": "강서구|염창동|295|성원",
-   "count": 85,
-   "sales": 36,
-   "rents": 49,
+   "count": 21,
+   "sales": 8,
+   "rents": 13,
    "apt_seq": "11500-20",
    "road": "양천로69길 65",
    "build_year": 2001
   },
   {
-   "where": "강서구|염창동|280|극동상록수",
-   "count": 85,
-   "sales": 30,
-   "rents": 55,
-   "apt_seq": "11500-2",
-   "road": "공항대로71길 31",
-   "build_year": 1999
-  },
-  {
-   "where": "영등포구|양평동6가|100|동양",
-   "count": 84,
-   "sales": 27,
-   "rents": 57,
-   "apt_seq": "11560-99",
-   "road": "양평로30가길 15",
-   "build_year": 2000
-  },
-  {
-   "where": "동작구|동작동|331|금강KCC",
-   "count": 82,
-   "sales": 29,
-   "rents": 53,
-   "apt_seq": "11590-95",
-   "road": "동작대로39가길 55",
-   "build_year": 2003
-  },
-  {
-   "where": "마포구|상암동|1630|DMC상암센트럴파크1단지",
-   "count": 77,
-   "sales": 22,
-   "rents": 55,
-   "apt_seq": "11440-4660",
-   "road": "월드컵북로43길 11",
-   "build_year": 2009
-  },
-  {
-   "where": "영등포구|양평동3가|66|삼호",
-   "count": 77,
-   "sales": 27,
-   "rents": 50,
-   "apt_seq": "11560-88",
-   "road": "선유로 172",
-   "build_year": 1998
-  },
-  {
-   "where": "마포구|현석동|220|밤섬힐스테이트",
-   "count": 75,
-   "sales": 23,
-   "rents": 52,
-   "apt_seq": "11440-42",
-   "road": "신수로3길 23",
-   "build_year": 1999
-  },
-  {
-   "where": "동작구|상도동|411|대림아파트",
-   "count": 75,
-   "sales": 27,
-   "rents": 48,
-   "apt_seq": "11590-85",
-   "road": "상도로60길 20",
-   "build_year": 1995
-  },
-  {
-   "where": "동작구|흑석동|329|우리유앤미",
-   "count": 75,
-   "sales": 31,
-   "rents": 44,
-   "apt_seq": "11590-105",
-   "road": "서달로 83",
-   "build_year": 2003
-  },
-  {
-   "where": "동작구|사당동|169-32|현대",
-   "count": 74,
-   "sales": 30,
-   "rents": 44,
-   "apt_seq": "11590-52",
-   "road": "사당로17길 111",
-   "build_year": 1991
-  },
-  {
-   "where": "영등포구|양평동4가|94|삼호한숲",
-   "count": 73,
-   "sales": 15,
-   "rents": 58,
-   "apt_seq": "11560-94",
-   "road": "선유로47길 34",
-   "build_year": 2000
-  },
-  {
-   "where": "동작구|신대방동|470-8|한성아파트",
-   "count": 73,
-   "sales": 23,
-   "rents": 50,
-   "apt_seq": "11590-78",
-   "road": "여의대방로10길 13",
-   "build_year": 1995
-  },
-  {
-   "where": "강서구|염창동|272-28|염창3우성",
-   "count": 71,
-   "sales": 32,
-   "rents": 39,
-   "apt_seq": "11500-224",
-   "road": "공항대로63길 14",
-   "build_year": 1993
-  },
-  {
-   "where": "서대문구|냉천동|260|동부센트레빌",
-   "count": 70,
-   "sales": 23,
-   "rents": 47,
-   "apt_seq": "11410-7",
-   "road": "독립문로14길 74",
-   "build_year": 2002
-  },
-  {
-   "where": "영등포구|양평동4가|51-1|경남아너스빌",
-   "count": 70,
-   "sales": 25,
-   "rents": 45,
-   "apt_seq": "11560-93",
-   "road": "양평로17길 9",
-   "build_year": 2000
-  },
-  {
-   "where": "동작구|본동|487|한신휴플러스",
-   "count": 70,
-   "sales": 26,
-   "rents": 44,
-   "apt_seq": "11590-128",
-   "road": "매봉로 99",
-   "build_year": 2004
-  },
-  {
-   "where": "강서구|염창동|248-3|삼성하나로",
-   "count": 67,
-   "sales": 32,
-   "rents": 35,
-   "apt_seq": "11500-15",
-   "road": "양천로73길 5",
-   "build_year": 1994
-  },
-  {
-   "where": "마포구|신수동|190|신수동성원",
-   "count": 66,
-   "sales": 26,
-   "rents": 40,
-   "apt_seq": "11440-39",
-   "road": "독막로28길 7",
-   "build_year": 1998
-  },
-  {
-   "where": "마포구|창전동|440|창전동현대홈타운",
-   "count": 66,
-   "sales": 25,
-   "rents": 41,
-   "apt_seq": "11440-3890",
-   "road": "서강로 83",
-   "build_year": 2005
-  },
-  {
-   "where": "강서구|염창동|287-1|우성2",
-   "count": 66,
-   "sales": 19,
-   "rents": 47,
-   "apt_seq": "11500-23",
-   "road": "양천로67길 54",
-   "build_year": 1992
-  },
-  {
-   "where": "마포구|신수동|445-5|현대",
-   "count": 65,
-   "sales": 16,
-   "rents": 49,
-   "apt_seq": "11440-41",
-   "road": "토정로 242",
-   "build_year": 1996
-  },
-  {
-   "where": "마포구|공덕동|478|공덕더샵",
-   "count": 65,
-   "sales": 18,
-   "rents": 47,
-   "apt_seq": "11440-5727",
-   "road": "백범로 170",
-   "build_year": 2018
-  },
-  {
-   "where": "동작구|대방동|506|현대홈타운2",
-   "count": 65,
-   "sales": 24,
-   "rents": 41,
-   "apt_seq": "11590-65",
-   "road": "알마타길 58",
-   "build_year": 1999
-  },
-  {
-   "where": "동작구|대방동|505|우정",
-   "count": 65,
-   "sales": 18,
-   "rents": 47,
-   "apt_seq": "11590-61",
-   "road": "여의대방로62길 23",
+   "where": "강서구|염창동|240-32|금호타운",
+   "count": 21,
+   "sales": 5,
+   "rents": 16,
+   "apt_seq": "11500-3",
+   "road": "양천로 595",
    "build_year": 1999
   },
   {
    "where": "마포구|합정동|473|마포한강2차푸르지오",
-   "count": 63,
-   "sales": 16,
-   "rents": 47,
+   "count": 19,
+   "sales": 5,
+   "rents": 14,
    "apt_seq": "11440-5606",
    "road": "월드컵로3길 14",
    "build_year": 2016
   },
   {
+   "where": "서대문구|홍제동|462|청구3차",
+   "count": 19,
+   "sales": 2,
+   "rents": 17,
+   "apt_seq": "11410-65",
+   "road": "통일로 332",
+   "build_year": 2001
+  },
+  {
+   "where": "강서구|염창동|290|벽산늘푸른",
+   "count": 19,
+   "sales": 9,
+   "rents": 10,
+   "apt_seq": "11500-14",
+   "road": "양천로63길 52",
+   "build_year": 1998
+  },
+  {
    "where": "서대문구|합동|118|에스케이뷰",
-   "count": 63,
-   "sales": 12,
-   "rents": 51,
+   "count": 18,
+   "sales": 4,
+   "rents": 14,
    "apt_seq": "11410-3838",
    "road": "서소문로 43-8",
    "build_year": 2008
   },
   {
-   "where": "강서구|염창동|246-23|극동",
-   "count": 63,
-   "sales": 27,
-   "rents": 36,
-   "apt_seq": "11500-518",
-   "road": "양천로69길 18",
-   "build_year": 2000
-  },
-  {
-   "where": "동작구|상도동|534|상도더샵2차",
-   "count": 63,
-   "sales": 25,
-   "rents": 38,
-   "apt_seq": "11590-4206",
-   "road": "장승배기로10길 100",
-   "build_year": 2014
-  },
-  {
-   "where": "동작구|본동|150|한강쌍용",
-   "count": 63,
+   "where": "강서구|염창동|287-1|우성2",
+   "count": 18,
    "sales": 5,
-   "rents": 58,
-   "apt_seq": "11590-31",
-   "road": "노량진로24길 2",
-   "build_year": 1999
+   "rents": 13,
+   "apt_seq": "11500-23",
+   "road": "양천로67길 54",
+   "build_year": 1992
   },
   {
-   "where": "서대문구|홍제동|455|현대그린",
-   "count": 62,
-   "sales": 31,
-   "rents": 31,
-   "apt_seq": "11410-69",
-   "road": "세무서2길 64",
-   "build_year": 1996
-  },
-  {
-   "where": "서대문구|홍은동|456|두산",
-   "count": 62,
-   "sales": 37,
-   "rents": 25,
-   "apt_seq": "11410-82",
-   "road": "모래내로 309",
-   "build_year": 1997
-  },
-  {
-   "where": "마포구|공덕동|460|한화꿈에그린",
-   "count": 60,
-   "sales": 22,
-   "rents": 38,
-   "apt_seq": "11440-176",
-   "road": "마포대로10길 22",
-   "build_year": 2004
-  },
-  {
-   "where": "동작구|대방동|510|신일해피트리",
-   "count": 59,
-   "sales": 16,
-   "rents": 43,
-   "apt_seq": "11590-3282",
-   "road": "여의대방로62길 8",
-   "build_year": 2005
-  },
-  {
-   "where": "마포구|신수동|456|마포경남아너스빌",
-   "count": 58,
-   "sales": 21,
-   "rents": 37,
-   "apt_seq": "11440-4078",
-   "road": "신수로 81",
-   "build_year": 2007
-  },
-  {
-   "where": "마포구|망원동|509|휴먼빌",
-   "count": 58,
-   "sales": 24,
-   "rents": 34,
-   "apt_seq": "11440-204",
-   "road": "방울내로 31",
-   "build_year": 2004
-  },
-  {
-   "where": "영등포구|양평동6가|99|한솔",
-   "count": 58,
-   "sales": 21,
-   "rents": 37,
-   "apt_seq": "11560-100",
-   "road": "양평로30길 51",
-   "build_year": 1999
-  },
-  {
-   "where": "마포구|중동|40-12|현대",
-   "count": 57,
-   "sales": 25,
-   "rents": 32,
-   "apt_seq": "11440-124",
-   "road": "성암로7길 3",
-   "build_year": 2000
-  },
-  {
-   "where": "동작구|사당동|1149|사당롯데캐슬2차",
-   "count": 57,
-   "sales": 24,
-   "rents": 33,
-   "apt_seq": "11590-138",
-   "road": "사당로27길 181",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|상수동|396|상수두산위브",
-   "count": 56,
-   "sales": 14,
-   "rents": 42,
-   "apt_seq": "11440-213",
-   "road": "독막로18길 5",
-   "build_year": 2004
-  },
-  {
-   "where": "동작구|사당동|1138|삼호그린",
-   "count": 56,
-   "sales": 17,
-   "rents": 39,
-   "apt_seq": "11590-45",
-   "road": "사당로2가길 188",
-   "build_year": 1999
-  },
-  {
-   "where": "서대문구|북가좌동|459|DMC두산위브",
-   "count": 55,
-   "sales": 28,
-   "rents": 27,
-   "apt_seq": "11410-3677",
-   "road": "증가로 200-8",
-   "build_year": 2007
-  },
-  {
-   "where": "서대문구|연희동|738|임광",
-   "count": 55,
-   "sales": 21,
-   "rents": 34,
-   "apt_seq": "11410-35",
-   "road": "동교로 291",
-   "build_year": 1999
-  },
-  {
-   "where": "강서구|염창동|291|현대3",
-   "count": 55,
-   "sales": 11,
-   "rents": 44,
-   "apt_seq": "11500-30",
-   "road": "양천로75길 60",
-   "build_year": 1996
-  },
-  {
-   "where": "영등포구|양평동3가|106|양평역미소지움",
-   "count": 55,
-   "sales": 14,
-   "rents": 41,
-   "apt_seq": "11560-1983",
-   "road": "양산로 11",
-   "build_year": 2018
-  },
-  {
-   "where": "강서구|염창동|293|한강동아",
-   "count": 54,
-   "sales": 20,
-   "rents": 34,
-   "apt_seq": "11500-27",
-   "road": "양천로73길 80",
-   "build_year": 1998
-  },
-  {
-   "where": "동작구|신대방동|565-21|우성2차",
-   "count": 54,
-   "sales": 19,
-   "rents": 35,
-   "apt_seq": "11590-90",
-   "road": "여의대방로 8",
-   "build_year": 1995
-  },
-  {
-   "where": "동작구|상도동|528|동원베네스트",
-   "count": 54,
-   "sales": 18,
-   "rents": 36,
-   "apt_seq": "11590-3577",
-   "road": "상도로34길 42",
-   "build_year": 2008
-  },
-  {
-   "where": "동작구|상도동|412|상도현대",
-   "count": 54,
-   "sales": 22,
-   "rents": 32,
-   "apt_seq": "11590-15",
-   "road": "사당로2길 2-32",
-   "build_year": 2003
-  },
-  {
-   "where": "서대문구|북가좌동|453|DMC현대아파트",
-   "count": 53,
-   "sales": 25,
-   "rents": 28,
-   "apt_seq": "11410-109",
-   "road": "응암로 33",
-   "build_year": 2000
-  },
-  {
-   "where": "마포구|신공덕동|168|신공덕e편한세상",
-   "count": 52,
-   "sales": 18,
-   "rents": 34,
-   "apt_seq": "11440-4072",
-   "road": "백범로 239",
-   "build_year": 2007
-  },
-  {
-   "where": "마포구|공덕동|370-9|공덕현대",
-   "count": 52,
-   "sales": 22,
-   "rents": 30,
-   "apt_seq": "11440-126",
-   "road": "마포대로11길 73",
-   "build_year": 1989
-  },
-  {
-   "where": "강서구|염창동|302|염창2차한화꿈에그린",
-   "count": 52,
-   "sales": 19,
-   "rents": 33,
-   "apt_seq": "11500-5206",
-   "road": "공항대로63길 16",
-   "build_year": 2006
-  },
-  {
-   "where": "영등포구|양평동3가|24|삼천리",
-   "count": 52,
-   "sales": 22,
-   "rents": 30,
-   "apt_seq": "11560-87",
-   "road": "선유서로 115",
-   "build_year": 2000
-  },
-  {
-   "where": "서대문구|홍제동|156-200|고은",
-   "count": 51,
-   "sales": 11,
-   "rents": 40,
-   "apt_seq": "11410-43",
-   "road": "모래내로 453",
-   "build_year": 1975
-  },
-  {
-   "where": "서대문구|홍은동|22|유원",
-   "count": 51,
-   "sales": 18,
-   "rents": 33,
-   "apt_seq": "11410-89",
-   "road": "홍은중앙로1길 33",
-   "build_year": 1987
-  },
-  {
-   "where": "마포구|창전동|442|서강오벨리스크스위트",
-   "count": 50,
-   "sales": 20,
-   "rents": 30,
-   "apt_seq": "11440-4083",
-   "road": "창전로 45",
-   "build_year": 2007
-  },
-  {
-   "where": "서대문구|홍은동|463|동원베네스트",
-   "count": 50,
-   "sales": 11,
-   "rents": 39,
-   "apt_seq": "11410-4044",
-   "road": "홍은중앙로1길 65",
-   "build_year": 2012
-  },
-  {
-   "where": "강서구|염창동|262-2|대림",
-   "count": 49,
-   "sales": 14,
-   "rents": 35,
-   "apt_seq": "11500-5",
-   "road": "공항대로75길 42",
-   "build_year": 1999
-  },
-  {
-   "where": "영등포구|양평동3가|102|우림루미아트",
-   "count": 47,
-   "sales": 19,
-   "rents": 28,
-   "apt_seq": "11560-157",
-   "road": "선유로33길 23",
-   "build_year": 2004
+   "where": "마포구|신공덕동|174|공덕아이파크",
+   "count": 18,
+   "sales": 0,
+   "rents": 18,
+   "apt_seq": "",
+   "road": "만리재로 36 36",
+   "build_year": 2013
   },
   {
    "where": "영등포구|양평동3가|55-1|경남아너스빌",
-   "count": 47,
-   "sales": 24,
-   "rents": 23,
+   "count": 17,
+   "sales": 7,
+   "rents": 10,
    "apt_seq": "11560-89",
    "road": "선유로33길 22",
    "build_year": 1998
   },
   {
-   "where": "마포구|아현동|692|서서울삼성",
-   "count": 46,
-   "sales": 15,
-   "rents": 31,
-   "apt_seq": "11440-1",
-   "road": "마포대로 262",
-   "build_year": 1998
+   "where": "강서구|염창동|270-1|태영",
+   "count": 16,
+   "sales": 4,
+   "rents": 12,
+   "apt_seq": "11500-25",
+   "road": "공항대로61길 60",
+   "build_year": 1999
   },
   {
-   "where": "강서구|염창동|308|강서쌍용예가",
-   "count": 46,
-   "sales": 15,
-   "rents": 31,
-   "apt_seq": "11500-6884",
-   "road": "양천로 613",
-   "build_year": 2014
+   "where": "서대문구|홍제동|455|현대그린",
+   "count": 15,
+   "sales": 9,
+   "rents": 6,
+   "apt_seq": "11410-69",
+   "road": "세무서2길 64",
+   "build_year": 1996
   },
   {
-   "where": "강서구|염창동|298|일신건영휴먼빌",
-   "count": 46,
-   "sales": 16,
-   "rents": 30,
-   "apt_seq": "11500-299",
-   "road": "양천로71가길 22",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|중동|393|건영월드컵",
-   "count": 45,
-   "sales": 17,
-   "rents": 28,
-   "apt_seq": "11440-125",
-   "road": "성암로 41",
-   "build_year": 2002
-  },
-  {
-   "where": "서대문구|북가좌동|455|신일해피트리",
-   "count": 45,
-   "sales": 15,
-   "rents": 30,
-   "apt_seq": "11410-3517",
-   "road": "수색로 147-1",
+   "where": "동작구|대방동|510|신일해피트리",
+   "count": 15,
+   "sales": 2,
+   "rents": 13,
+   "apt_seq": "11590-3282",
+   "road": "여의대방로62길 8",
    "build_year": 2005
   },
   {
-   "where": "강서구|염창동|305|염창1차보람더하임",
-   "count": 45,
-   "sales": 9,
-   "rents": 36,
-   "apt_seq": "11500-5406",
-   "road": "양천로 666",
-   "build_year": 2008
+   "where": "동작구|본동|150|한강쌍용",
+   "count": 15,
+   "sales": 0,
+   "rents": 15,
+   "apt_seq": "",
+   "road": "노량진로24길 2 2",
+   "build_year": 1999
+  },
+  {
+   "where": "서대문구|홍은동|456|두산",
+   "count": 14,
+   "sales": 11,
+   "rents": 3,
+   "apt_seq": "11410-82",
+   "road": "모래내로 309",
+   "build_year": 1997
+  },
+  {
+   "where": "영등포구|양평동3가|66|삼호",
+   "count": 14,
+   "sales": 6,
+   "rents": 8,
+   "apt_seq": "11560-88",
+   "road": "선유로 172",
+   "build_year": 1998
+  },
+  {
+   "where": "영등포구|양평동4가|94|삼호한숲",
+   "count": 14,
+   "sales": 1,
+   "rents": 13,
+   "apt_seq": "11560-94",
+   "road": "선유로47길 34",
+   "build_year": 2000
+  },
+  {
+   "where": "동작구|사당동|169-32|현대",
+   "count": 14,
+   "sales": 8,
+   "rents": 6,
+   "apt_seq": "11590-52",
+   "road": "사당로17길 111",
+   "build_year": 1991
+  },
+  {
+   "where": "동작구|상도동|411|대림아파트",
+   "count": 14,
+   "sales": 4,
+   "rents": 10,
+   "apt_seq": "11590-85",
+   "road": "상도로60길 20",
+   "build_year": 1995
+  },
+  {
+   "where": "마포구|창전동|440|창전동현대홈타운",
+   "count": 13,
+   "sales": 3,
+   "rents": 10,
+   "apt_seq": "11440-3890",
+   "road": "서강로 83",
+   "build_year": 2005
+  },
+  {
+   "where": "마포구|창전동|449|마포웨스트리버태영데시앙",
+   "count": 13,
+   "sales": 3,
+   "rents": 10,
+   "apt_seq": "11440-5818",
+   "road": "서강로3길 32",
+   "build_year": 2019
+  },
+  {
+   "where": "서대문구|냉천동|260|동부센트레빌",
+   "count": 13,
+   "sales": 3,
+   "rents": 10,
+   "apt_seq": "11410-7",
+   "road": "독립문로14길 74",
+   "build_year": 2002
+  },
+  {
+   "where": "강서구|염창동|272-28|염창3우성",
+   "count": 13,
+   "sales": 8,
+   "rents": 5,
+   "apt_seq": "11500-224",
+   "road": "공항대로63길 14",
+   "build_year": 1993
+  },
+  {
+   "where": "강서구|염창동|293|한강동아",
+   "count": 13,
+   "sales": 3,
+   "rents": 10,
+   "apt_seq": "11500-27",
+   "road": "양천로73길 80",
+   "build_year": 1998
+  },
+  {
+   "where": "강서구|염창동|291|현대3",
+   "count": 13,
+   "sales": 3,
+   "rents": 10,
+   "apt_seq": "11500-30",
+   "road": "양천로75길 60",
+   "build_year": 1996
+  },
+  {
+   "where": "마포구|공덕동|476|공덕파크자이",
+   "count": 13,
+   "sales": 0,
+   "rents": 13,
+   "apt_seq": "",
+   "road": "백범로 152 152",
+   "build_year": 2015
+  },
+  {
+   "where": "마포구|신공덕동|170|브라운스톤공덕아파트",
+   "count": 13,
+   "sales": 0,
+   "rents": 13,
+   "apt_seq": "",
+   "road": "백범로 230 230",
+   "build_year": 2009
+  },
+  {
+   "where": "동작구|신대방동|470-8|한성아파트",
+   "count": 13,
+   "sales": 0,
+   "rents": 13,
+   "apt_seq": "",
+   "road": "여의대방로10길 13 13",
+   "build_year": 1995
+  },
+  {
+   "where": "마포구|신수동|456|마포경남아너스빌",
+   "count": 12,
+   "sales": 3,
+   "rents": 9,
+   "apt_seq": "11440-4078",
+   "road": "신수로 81",
+   "build_year": 2007
+  },
+  {
+   "where": "서대문구|북가좌동|453|DMC현대아파트",
+   "count": 12,
+   "sales": 6,
+   "rents": 6,
+   "apt_seq": "11410-109",
+   "road": "응암로 33",
+   "build_year": 2000
+  },
+  {
+   "where": "서대문구|북가좌동|459|DMC두산위브",
+   "count": 12,
+   "sales": 6,
+   "rents": 6,
+   "apt_seq": "11410-3677",
+   "road": "증가로 200-8",
+   "build_year": 2007
+  },
+  {
+   "where": "강서구|염창동|240-1|강변월드메르디앙",
+   "count": 12,
+   "sales": 5,
+   "rents": 7,
+   "apt_seq": "11500-5966",
+   "road": "양천로63길 51",
+   "build_year": 2010
+  },
+  {
+   "where": "강서구|염창동|280|극동상록수",
+   "count": 12,
+   "sales": 4,
+   "rents": 8,
+   "apt_seq": "11500-2",
+   "road": "공항대로71길 31",
+   "build_year": 1999
+  },
+  {
+   "where": "영등포구|양평동3가|106|양평역미소지움",
+   "count": 12,
+   "sales": 2,
+   "rents": 10,
+   "apt_seq": "11560-1983",
+   "road": "양산로 11",
+   "build_year": 2018
+  },
+  {
+   "where": "동작구|상도동|412|상도현대",
+   "count": 12,
+   "sales": 6,
+   "rents": 6,
+   "apt_seq": "11590-15",
+   "road": "사당로2길 2-32",
+   "build_year": 2003
+  },
+  {
+   "where": "동작구|사당동|1149|사당롯데캐슬2차",
+   "count": 12,
+   "sales": 5,
+   "rents": 7,
+   "apt_seq": "11590-138",
+   "road": "사당로27길 181",
+   "build_year": 2004
   },
   {
    "where": "동작구|상도동|529|상도두산위브",
-   "count": 45,
-   "sales": 18,
-   "rents": 27,
+   "count": 12,
+   "sales": 7,
+   "rents": 5,
    "apt_seq": "11590-3714",
    "road": "상도로30길 39",
    "build_year": 2010
   },
   {
+   "where": "마포구|대흥동|803|동양엔파트",
+   "count": 12,
+   "sales": 0,
+   "rents": 12,
+   "apt_seq": "",
+   "road": "백범로 82 82",
+   "build_year": 2007
+  },
+  {
    "where": "마포구|마포동|442|보성",
-   "count": 44,
-   "sales": 12,
-   "rents": 32,
+   "count": 11,
+   "sales": 1,
+   "rents": 10,
    "apt_seq": "11440-29",
    "road": "마포대로4길 90",
    "build_year": 1996
   },
   {
-   "where": "서대문구|홍은동|461|홍은센트레빌",
-   "count": 44,
-   "sales": 28,
-   "rents": 16,
-   "apt_seq": "11410-3898",
-   "road": "통일로 553",
+   "where": "마포구|상암동|1630|DMC상암센트럴파크1단지",
+   "count": 11,
+   "sales": 1,
+   "rents": 10,
+   "apt_seq": "11440-4660",
+   "road": "월드컵북로43길 11",
    "build_year": 2009
   },
   {
+   "where": "마포구|도화동|538|성지",
+   "count": 11,
+   "sales": 2,
+   "rents": 9,
+   "apt_seq": "11440-16",
+   "road": "큰우물로 75",
+   "build_year": 1984
+  },
+  {
+   "where": "마포구|도화동|564|마포동원베네스트",
+   "count": 11,
+   "sales": 1,
+   "rents": 10,
+   "apt_seq": "11440-4611",
+   "road": "도화4길 41",
+   "build_year": 2010
+  },
+  {
+   "where": "동작구|사당동|1138|삼호그린",
+   "count": 11,
+   "sales": 5,
+   "rents": 6,
+   "apt_seq": "11590-45",
+   "road": "사당로2가길 188",
+   "build_year": 1999
+  },
+  {
+   "where": "강서구|염창동|246-23|극동",
+   "count": 11,
+   "sales": 0,
+   "rents": 11,
+   "apt_seq": "",
+   "road": "양천로69길 18 18",
+   "build_year": 2000
+  },
+  {
+   "where": "마포구|중동|40-12|현대",
+   "count": 10,
+   "sales": 4,
+   "rents": 6,
+   "apt_seq": "11440-124",
+   "road": "성암로7길 3",
+   "build_year": 2000
+  },
+  {
+   "where": "마포구|망원동|497|대림2",
+   "count": 10,
+   "sales": 3,
+   "rents": 7,
+   "apt_seq": "11440-93",
+   "road": "망원로1길 27",
+   "build_year": 2002
+  },
+  {
+   "where": "마포구|신수동|190|신수동성원",
+   "count": 10,
+   "sales": 3,
+   "rents": 7,
+   "apt_seq": "11440-39",
+   "road": "독막로28길 7",
+   "build_year": 1998
+  },
+  {
+   "where": "서대문구|북가좌동|371-1|월드컵현대",
+   "count": 10,
+   "sales": 3,
+   "rents": 7,
+   "apt_seq": "11410-107",
+   "road": "수색로 154",
+   "build_year": 1998
+  },
+  {
+   "where": "강서구|염창동|298|일신건영휴먼빌",
+   "count": 10,
+   "sales": 2,
+   "rents": 8,
+   "apt_seq": "11500-299",
+   "road": "양천로71가길 22",
+   "build_year": 2004
+  },
+  {
    "where": "영등포구|양평동5가|9-1|동보",
-   "count": 44,
-   "sales": 14,
-   "rents": 30,
+   "count": 10,
+   "sales": 2,
+   "rents": 8,
    "apt_seq": "11560-97",
    "road": "양평로23길 18",
    "build_year": 1998
   },
   {
-   "where": "동작구|사당동|1141|르메이에르",
-   "count": 44,
-   "sales": 21,
-   "rents": 23,
-   "apt_seq": "11590-41",
-   "road": "사당로20길 119",
+   "where": "영등포구|양평동6가|100|동양",
+   "count": 10,
+   "sales": 2,
+   "rents": 8,
+   "apt_seq": "11560-99",
+   "road": "양평로30가길 15",
+   "build_year": 2000
+  },
+  {
+   "where": "동작구|사당동|1140|삼성",
+   "count": 10,
+   "sales": 7,
+   "rents": 3,
+   "apt_seq": "11590-44",
+   "road": "동작대로35아길 14",
+   "build_year": 1999
+  },
+  {
+   "where": "동작구|동작동|331|금강KCC",
+   "count": 10,
+   "sales": 2,
+   "rents": 8,
+   "apt_seq": "11590-95",
+   "road": "동작대로39가길 55",
+   "build_year": 2003
+  },
+  {
+   "where": "동작구|신대방동|716|현진에버빌",
+   "count": 10,
+   "sales": 3,
+   "rents": 7,
+   "apt_seq": "11590-104",
+   "road": "신대방1나길 45",
+   "build_year": 2003
+  },
+  {
+   "where": "마포구|현석동|220|밤섬힐스테이트",
+   "count": 10,
+   "sales": 0,
+   "rents": 10,
+   "apt_seq": "",
+   "road": "신수로3길 23 23",
+   "build_year": 1999
+  },
+  {
+   "where": "마포구|창전동|438|신촌금호",
+   "count": 9,
+   "sales": 1,
+   "rents": 8,
+   "apt_seq": "11440-46",
+   "road": "서강로9길 19",
    "build_year": 2001
   },
   {
-   "where": "마포구|신수동|453|대원칸타빌",
-   "count": 43,
-   "sales": 15,
-   "rents": 28,
-   "apt_seq": "11440-129",
-   "road": "창전로2길 10",
-   "build_year": 2004
+   "where": "마포구|연남동|259-1|대명",
+   "count": 9,
+   "sales": 4,
+   "rents": 5,
+   "apt_seq": "11440-94",
+   "road": "동교로39길 11",
+   "build_year": 1995
   },
   {
-   "where": "마포구|성산동|604|성산2차e-편한세상",
-   "count": 43,
-   "sales": 14,
-   "rents": 29,
-   "apt_seq": "11440-171",
-   "road": "월드컵북로 216",
-   "build_year": 2005
+   "where": "서대문구|홍은동|461|홍은센트레빌",
+   "count": 9,
+   "sales": 5,
+   "rents": 4,
+   "apt_seq": "11410-3898",
+   "road": "통일로 553",
+   "build_year": 2009
   },
   {
-   "where": "서대문구|홍제동|453-1|청구2차",
-   "count": 43,
-   "sales": 21,
-   "rents": 22,
-   "apt_seq": "11410-64",
-   "road": "통일로 344",
-   "build_year": 1997
+   "where": "서대문구|홍은동|463|동원베네스트",
+   "count": 9,
+   "sales": 3,
+   "rents": 6,
+   "apt_seq": "11410-4044",
+   "road": "홍은중앙로1길 65",
+   "build_year": 2012
   },
   {
-   "where": "강서구|염창동|297|월드메르디앙",
-   "count": 43,
-   "sales": 10,
-   "rents": 33,
-   "apt_seq": "11500-298",
-   "road": "양천로71길 38",
-   "build_year": 2004
+   "where": "강서구|염창동|248-3|삼성하나로",
+   "count": 9,
+   "sales": 6,
+   "rents": 3,
+   "apt_seq": "11500-15",
+   "road": "양천로73길 5",
+   "build_year": 1994
+  },
+  {
+   "where": "강서구|염창동|262-2|대림",
+   "count": 9,
+   "sales": 1,
+   "rents": 8,
+   "apt_seq": "11500-5",
+   "road": "공항대로75길 42",
+   "build_year": 1999
+  },
+  {
+   "where": "영등포구|양평동1가|245|삼환",
+   "count": 9,
+   "sales": 2,
+   "rents": 7,
+   "apt_seq": "11560-78",
+   "road": "영등포로 49",
+   "build_year": 1994
   },
   {
    "where": "영등포구|양평동2가|45|상록수",
-   "count": 43,
-   "sales": 13,
-   "rents": 30,
+   "count": 9,
+   "sales": 1,
+   "rents": 8,
    "apt_seq": "11560-82",
    "road": "영등포로 17",
    "build_year": 1999
   },
   {
+   "where": "동작구|대방동|505|우정",
+   "count": 9,
+   "sales": 2,
+   "rents": 7,
+   "apt_seq": "11590-61",
+   "road": "여의대방로62길 23",
+   "build_year": 1999
+  },
+  {
+   "where": "동작구|사당동|1155|대성유니드",
+   "count": 9,
+   "sales": 4,
+   "rents": 5,
+   "apt_seq": "11590-3643",
+   "road": "동작대로29길 195",
+   "build_year": 2009
+  },
+  {
+   "where": "동작구|신대방동|565-21|우성2차",
+   "count": 9,
+   "sales": 4,
+   "rents": 5,
+   "apt_seq": "11590-90",
+   "road": "여의대방로 8",
+   "build_year": 1995
+  },
+  {
+   "where": "동작구|흑석동|329|우리유앤미",
+   "count": 9,
+   "sales": 4,
+   "rents": 5,
+   "apt_seq": "11590-105",
+   "road": "서달로 83",
+   "build_year": 2003
+  },
+  {
    "where": "동작구|동작동|332|이수교KCC스위첸",
-   "count": 43,
-   "sales": 17,
-   "rents": 26,
+   "count": 9,
+   "sales": 2,
+   "rents": 7,
    "apt_seq": "11590-3322",
    "road": "동작대로45길 22",
    "build_year": 2006
   },
   {
    "where": "서대문구|홍제동|465|인왕산벽산",
-   "count": 42,
-   "sales": 17,
-   "rents": 25,
-   "apt_seq": "11410-59",
-   "road": "세무서길 106-12",
+   "count": 9,
+   "sales": 0,
+   "rents": 9,
+   "apt_seq": "",
+   "road": "세무서길 106-12 106-12",
    "build_year": 2003
-  },
-  {
-   "where": "강서구|염창동|240-1|강변월드메르디앙",
-   "count": 42,
-   "sales": 15,
-   "rents": 27,
-   "apt_seq": "11500-5966",
-   "road": "양천로63길 51",
-   "build_year": 2010
-  },
-  {
-   "where": "동작구|노량진동|330|삼익",
-   "count": 42,
-   "sales": 11,
-   "rents": 31,
-   "apt_seq": "11590-3",
-   "road": "만양로 84",
-   "build_year": 2001
-  },
-  {
-   "where": "동작구|사당동|1140|삼성",
-   "count": 42,
-   "sales": 16,
-   "rents": 26,
-   "apt_seq": "11590-44",
-   "road": "동작대로35아길 14",
-   "build_year": 1999
-  },
-  {
-   "where": "동작구|사당동|1155|대성유니드",
-   "count": 42,
-   "sales": 18,
-   "rents": 24,
-   "apt_seq": "11590-3643",
-   "road": "동작대로29길 195",
-   "build_year": 2009
-  },
-  {
-   "where": "동작구|신대방동|710|경남교수",
-   "count": 42,
-   "sales": 11,
-   "rents": 31,
-   "apt_seq": "11590-66",
-   "road": "여의대방로10길 14",
-   "build_year": 2001
-  },
-  {
-   "where": "동작구|본동|148-2|극동강변",
-   "count": 42,
-   "sales": 7,
-   "rents": 35,
-   "apt_seq": "11590-28",
-   "road": "매봉로 156",
-   "build_year": 1992
-  },
-  {
-   "where": "동작구|신대방동|709|벽산",
-   "count": 40,
-   "sales": 21,
-   "rents": 19,
-   "apt_seq": "11590-68",
-   "road": "여의대방로22길 24",
-   "build_year": 1997
-  },
-  {
-   "where": "동작구|대방동|512|경남아너스빌",
-   "count": 40,
-   "sales": 16,
-   "rents": 24,
-   "apt_seq": "11590-3323",
-   "road": "여의대방로54길 6",
-   "build_year": 2006
-  },
-  {
-   "where": "마포구|성산동|600|성사1차풍림아파트101동",
-   "count": 39,
-   "sales": 20,
-   "rents": 19,
-   "apt_seq": "11440-112",
-   "road": "성암로1길 8",
-   "build_year": 2000
-  },
-  {
-   "where": "마포구|망원동|497|대림2",
-   "count": 39,
-   "sales": 20,
-   "rents": 19,
-   "apt_seq": "11440-93",
-   "road": "망원로1길 27",
-   "build_year": 2002
-  },
-  {
-   "where": "마포구|아현동|732|삼환나띠르빌",
-   "count": 37,
-   "sales": 7,
-   "rents": 30,
-   "apt_seq": "11440-143",
-   "road": "마포대로 183-16",
-   "build_year": 2003
-  },
-  {
-   "where": "마포구|염리동|161-1|중앙하이츠",
-   "count": 36,
-   "sales": 13,
-   "rents": 23,
-   "apt_seq": "11440-35",
-   "road": "독막로 289",
-   "build_year": 1998
-  },
-  {
-   "where": "마포구|망원동|496|대림1",
-   "count": 36,
-   "sales": 12,
-   "rents": 24,
-   "apt_seq": "11440-88",
-   "road": "망원로2길 103",
-   "build_year": 2002
-  },
-  {
-   "where": "서대문구|홍제동|457|남양",
-   "count": 36,
-   "sales": 14,
-   "rents": 22,
-   "apt_seq": "11410-46",
-   "road": "홍제내길 168",
-   "build_year": 1999
-  },
-  {
-   "where": "강서구|염창동|272-11|롯데캐슬",
-   "count": 36,
-   "sales": 13,
-   "rents": 23,
-   "apt_seq": "11500-464",
-   "road": "공항대로65길 21",
-   "build_year": 2005
-  },
-  {
-   "where": "영등포구|양평동1가|14-1|한신공영",
-   "count": 36,
-   "sales": 16,
-   "rents": 20,
-   "apt_seq": "11560-80",
-   "road": "영등포로12길 7",
-   "build_year": 1996
-  },
-  {
-   "where": "동작구|사당동|1143|남해오네뜨",
-   "count": 36,
-   "sales": 13,
-   "rents": 23,
-   "apt_seq": "11590-55",
-   "road": "사당로2가길 173",
-   "build_year": 2002
   },
   {
    "where": "마포구|신수동|457|벽산솔렌스힐",
-   "count": 35,
-   "sales": 12,
-   "rents": 23,
+   "count": 8,
+   "sales": 3,
+   "rents": 5,
    "apt_seq": "11440-4155",
    "road": "광성로 28",
    "build_year": 2007
   },
   {
-   "where": "영등포구|양평동3가|19|월드메르디앙",
-   "count": 35,
-   "sales": 4,
-   "rents": 31,
-   "apt_seq": "11560-1221",
-   "road": "선유서로 116",
-   "build_year": 2005
-  },
-  {
-   "where": "마포구|대흥동|803|동양엔파트",
-   "count": 34,
-   "sales": 5,
-   "rents": 29,
-   "apt_seq": "11440-4074",
-   "road": "백범로 82",
+   "where": "마포구|창전동|442|서강오벨리스크스위트",
+   "count": 8,
+   "sales": 2,
+   "rents": 6,
+   "apt_seq": "11440-4083",
+   "road": "창전로 45",
    "build_year": 2007
   },
   {
-   "where": "마포구|대흥동|802|대흥동세양",
-   "count": 34,
-   "sales": 6,
-   "rents": 28,
-   "apt_seq": "11440-31",
-   "road": "독막로 288",
-   "build_year": 2000
-  },
-  {
-   "where": "강서구|염창동|264-27|삼성한아름",
-   "count": 34,
-   "sales": 17,
-   "rents": 17,
-   "apt_seq": "11500-17",
-   "road": "양천로 686-5",
-   "build_year": 1993
-  },
-  {
-   "where": "강서구|염창동|282|삼정그린코아",
-   "count": 34,
-   "sales": 10,
-   "rents": 24,
-   "apt_seq": "11500-18",
-   "road": "공항대로75길 30",
-   "build_year": 2001
-  },
-  {
-   "where": "동작구|대방동|509|보라매코오롱하늘채",
-   "count": 33,
-   "sales": 12,
-   "rents": 21,
-   "apt_seq": "11590-3281",
-   "road": "여의대방로24다길 40",
-   "build_year": 2005
-  },
-  {
-   "where": "동작구|본동|484|경동윈츠리버",
-   "count": 33,
-   "sales": 15,
-   "rents": 18,
-   "apt_seq": "11590-96",
-   "road": "노량진로32길 156",
-   "build_year": 2004
-  },
-  {
-   "where": "동작구|사당동|1150|삼익그린뷰",
-   "count": 33,
-   "sales": 10,
-   "rents": 23,
-   "apt_seq": "11590-98",
-   "road": "남부순환로255길 21",
-   "build_year": 2003
-  },
-  {
-   "where": "마포구|도화동|538|성지",
-   "count": 32,
-   "sales": 9,
-   "rents": 23,
-   "apt_seq": "11440-16",
-   "road": "큰우물로 75",
-   "build_year": 1984
-  },
-  {
-   "where": "마포구|성산동|597|성산동성",
-   "count": 32,
-   "sales": 10,
-   "rents": 22,
-   "apt_seq": "11440-107",
-   "road": "모래내로3길 4",
-   "build_year": 1999
-  },
-  {
-   "where": "마포구|망원동|491|대상3",
-   "count": 31,
-   "sales": 13,
-   "rents": 18,
-   "apt_seq": "11440-69",
-   "road": "월드컵로31길 103",
-   "build_year": 2000
-  },
-  {
-   "where": "마포구|연남동|259-1|대명",
-   "count": 31,
-   "sales": 14,
-   "rents": 17,
-   "apt_seq": "11440-94",
-   "road": "동교로39길 11",
-   "build_year": 1995
-  },
-  {
-   "where": "서대문구|연희동|700|대림",
-   "count": 31,
-   "sales": 7,
-   "rents": 24,
-   "apt_seq": "11410-27",
-   "road": "연희로32길 20",
-   "build_year": 1993
-  },
-  {
    "where": "강서구|염창동|249-11|현대2",
-   "count": 31,
-   "sales": 13,
-   "rents": 18,
+   "count": 8,
+   "sales": 3,
+   "rents": 5,
    "apt_seq": "11500-29",
    "road": "양천로73길 6",
    "build_year": 1993
   },
   {
-   "where": "영등포구|양평동3가|79|현대3차",
-   "count": 31,
-   "sales": 11,
-   "rents": 20,
-   "apt_seq": "11560-90",
-   "road": "선유동2로 23",
-   "build_year": 1991
+   "where": "강서구|염창동|282|삼정그린코아",
+   "count": 8,
+   "sales": 2,
+   "rents": 6,
+   "apt_seq": "11500-18",
+   "road": "공항대로75길 30",
+   "build_year": 2001
   },
   {
-   "where": "마포구|용강동|501|대림2차",
-   "count": 29,
-   "sales": 10,
-   "rents": 19,
-   "apt_seq": "11440-178",
-   "road": "토정로32길 6",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|아현동|371-1|예미원",
-   "count": 29,
-   "sales": 9,
-   "rents": 20,
-   "apt_seq": "11440-5233",
-   "road": "마포대로 236",
-   "build_year": 1970
-  },
-  {
-   "where": "서대문구|북아현동|114-1|북아현맨션",
-   "count": 29,
-   "sales": 11,
-   "rents": 18,
-   "apt_seq": "11410-15",
-   "road": "북아현로6길 78",
-   "build_year": 1975
-  },
-  {
-   "where": "서대문구|충정로3가|466|우리유앤미",
-   "count": 29,
-   "sales": 7,
-   "rents": 22,
-   "apt_seq": "11410-3607",
-   "road": "경기대로 26-7",
-   "build_year": 2008
-  },
-  {
-   "where": "서대문구|북가좌동|460|DMC이랜드해가든",
-   "count": 29,
-   "sales": 9,
-   "rents": 20,
-   "apt_seq": "11410-3712",
-   "road": "수색로 157",
-   "build_year": 2007
-  },
-  {
-   "where": "영등포구|양평동1가|245|삼환",
-   "count": 29,
-   "sales": 9,
-   "rents": 20,
-   "apt_seq": "11560-78",
-   "road": "영등포로 49",
-   "build_year": 1994
-  },
-  {
-   "where": "동작구|상도동|445|경향렉스빌",
-   "count": 29,
-   "sales": 11,
-   "rents": 18,
-   "apt_seq": "11590-23",
-   "road": "양녕로23길 9",
-   "build_year": 2002
-  },
-  {
-   "where": "동작구|신대방동|716|현진에버빌",
-   "count": 29,
-   "sales": 9,
-   "rents": 20,
-   "apt_seq": "11590-104",
-   "road": "신대방1나길 45",
-   "build_year": 2003
-  },
-  {
-   "where": "마포구|중동|391|중동계룡아파트",
-   "count": 28,
-   "sales": 16,
-   "rents": 12,
-   "apt_seq": "11440-121",
-   "road": "월드컵북로38가길 20",
+   "where": "영등포구|양평동4가|51-1|경남아너스빌",
+   "count": 8,
+   "sales": 1,
+   "rents": 7,
+   "apt_seq": "11560-93",
+   "road": "양평로17길 9",
    "build_year": 2000
   },
   {
-   "where": "동작구|대방동|41|신한토탈",
-   "count": 28,
-   "sales": 11,
-   "rents": 17,
-   "apt_seq": "11590-60",
-   "road": "등용로14길 34",
-   "build_year": 1997
+   "where": "동작구|노량진동|332|쌍용예가",
+   "count": 8,
+   "sales": 1,
+   "rents": 7,
+   "apt_seq": "11590-3742",
+   "road": "장승배기로16길 134",
+   "build_year": 2010
   },
   {
-   "where": "동작구|사당동|1135|경남아너스빌2차",
-   "count": 28,
-   "sales": 12,
-   "rents": 16,
-   "apt_seq": "11590-86",
-   "road": "사당로 165",
-   "build_year": 1998
+   "where": "동작구|대방동|506|현대홈타운2",
+   "count": 8,
+   "sales": 2,
+   "rents": 6,
+   "apt_seq": "11590-65",
+   "road": "알마타길 58",
+   "build_year": 1999
   },
   {
-   "where": "서대문구|홍은동|439-1|홍은동아더프라임",
-   "count": 27,
-   "sales": 8,
-   "rents": 19,
-   "apt_seq": "11410-4377",
-   "road": "통일로 530",
-   "build_year": 2014
-  },
-  {
-   "where": "서대문구|홍제동|322-138|홍제에스피엘",
-   "count": 27,
-   "sales": 26,
-   "rents": 1,
-   "apt_seq": "11410-5010",
-   "road": "모래내로 424",
-   "build_year": 2023
+   "where": "동작구|본동|487|한신휴플러스",
+   "count": 8,
+   "sales": 2,
+   "rents": 6,
+   "apt_seq": "11590-128",
+   "road": "매봉로 99",
+   "build_year": 2004
   },
   {
    "where": "동작구|사당동|1142|진흥아리엘",
-   "count": 27,
-   "sales": 6,
-   "rents": 21,
+   "count": 8,
+   "sales": 1,
+   "rents": 7,
    "apt_seq": "11590-150",
    "road": "사당로16아길 43",
    "build_year": 2004
   },
   {
-   "where": "마포구|망원동|489|성원2",
-   "count": 26,
-   "sales": 8,
-   "rents": 18,
-   "apt_seq": "11440-76",
-   "road": "망원로4길 8",
-   "build_year": 1999
-  },
-  {
-   "where": "마포구|합정동|472|마포한강푸르지오",
-   "count": 26,
-   "sales": 4,
-   "rents": 22,
-   "apt_seq": "11440-5495",
-   "road": "월드컵로1길 14",
-   "build_year": 2015
-  },
-  {
-   "where": "마포구|망원동|433-9|미원2",
-   "count": 26,
-   "sales": 10,
-   "rents": 16,
-   "apt_seq": "11440-127",
-   "road": "월드컵로29길 68",
-   "build_year": 1997
-  },
-  {
-   "where": "마포구|도화동|563|마포아크로타워",
-   "count": 26,
-   "sales": 5,
-   "rents": 21,
-   "apt_seq": "11440-4108",
-   "road": "마포대로 68",
-   "build_year": 2007
-  },
-  {
-   "where": "마포구|창전동|441|창전쌍용스윗닷홈",
-   "count": 26,
-   "sales": 8,
-   "rents": 18,
-   "apt_seq": "11440-3898",
-   "road": "창전로 63",
-   "build_year": 2005
-  },
-  {
-   "where": "서대문구|홍제동|342|중앙하이츠",
-   "count": 26,
-   "sales": 10,
-   "rents": 16,
-   "apt_seq": "11410-62",
-   "road": "홍제내2길 67",
+   "where": "동작구|노량진동|330|삼익",
+   "count": 8,
+   "sales": 1,
+   "rents": 7,
+   "apt_seq": "11590-3",
+   "road": "만양로 84",
    "build_year": 2001
   },
   {
-   "where": "강서구|염창동|306|염창힐스테이트",
-   "count": 26,
-   "sales": 6,
-   "rents": 20,
-   "apt_seq": "11500-5933",
-   "road": "양천로73길 24",
-   "build_year": 2009
-  },
-  {
-   "where": "강서구|염창동|70-20|삼천리",
-   "count": 26,
-   "sales": 8,
-   "rents": 18,
-   "apt_seq": "11500-19",
-   "road": "양천로67길 71-16",
-   "build_year": 1992
-  },
-  {
-   "where": "영등포구|양평동2가|39-1|오목교벽산블루밍",
-   "count": 26,
-   "sales": 21,
-   "rents": 5,
-   "apt_seq": "11560-83",
-   "road": "선유서로21길 30",
-   "build_year": 1996
-  },
-  {
-   "where": "동작구|신대방동|706|보라매우성",
-   "count": 26,
-   "sales": 8,
-   "rents": 18,
-   "apt_seq": "11590-71",
-   "road": "보라매로5길 5",
-   "build_year": 1995
-  },
-  {
-   "where": "마포구|상암동|1618|DMC상암센트럴파크2단지",
-   "count": 25,
-   "sales": 10,
-   "rents": 15,
-   "apt_seq": "11440-4659",
-   "road": "월드컵북로42가길 11",
-   "build_year": 2009
-  },
-  {
-   "where": "서대문구|홍제동|468|홍제비콘드림힐",
-   "count": 25,
-   "sales": 10,
-   "rents": 15,
-   "apt_seq": "11410-3599",
-   "road": "세무서8길 49",
-   "build_year": 2006
-  },
-  {
-   "where": "강서구|염창동|282-19|현대아이파크",
-   "count": 25,
-   "sales": 8,
-   "rents": 17,
-   "apt_seq": "11500-5104",
-   "road": "공항대로 637",
-   "build_year": 2005
-  },
-  {
-   "where": "동작구|사당동|1158|반석블레스",
-   "count": 25,
-   "sales": 11,
-   "rents": 14,
-   "apt_seq": "11590-4568",
-   "road": "사당로2길 76",
-   "build_year": 2016
-  },
-  {
-   "where": "마포구|신수동|455|경남아너스빌",
-   "count": 24,
-   "sales": 6,
-   "rents": 18,
-   "apt_seq": "11440-3920",
-   "road": "창전로2길 42",
-   "build_year": 2005
-  },
-  {
-   "where": "서대문구|남가좌동|380|쌍용스윗닷홈",
-   "count": 24,
-   "sales": 12,
-   "rents": 12,
-   "apt_seq": "11410-3525",
-   "road": "거북골로 91-6",
-   "build_year": 2005
-  },
-  {
-   "where": "서대문구|홍은동|465|HDX휴팰리스",
-   "count": 24,
-   "sales": 11,
-   "rents": 13,
-   "apt_seq": "11410-4755",
-   "road": "통일로 536",
-   "build_year": 2018
-  },
-  {
-   "where": "강서구|염창동|263-2|주상복합태진가람",
-   "count": 24,
-   "sales": 6,
-   "rents": 18,
-   "apt_seq": "11500-24",
-   "road": "양천로 706",
-   "build_year": 1995
-  },
-  {
-   "where": "동작구|신대방동|705|신대방",
-   "count": 24,
-   "sales": 16,
-   "rents": 8,
-   "apt_seq": "11590-74",
-   "road": "보라매로 83",
-   "build_year": 1995
-  },
-  {
-   "where": "강서구|염창동|254-2|이너스내안에",
-   "count": 23,
-   "sales": 9,
-   "rents": 14,
-   "apt_seq": "11500-296",
-   "road": "양천로75길 22-21",
-   "build_year": 2004
-  },
-  {
-   "where": "동작구|대방동|504|한국개나리",
-   "count": 23,
-   "sales": 6,
-   "rents": 17,
-   "apt_seq": "11590-64",
-   "road": "여의대방로62길 15",
-   "build_year": 1997
-  },
-  {
-   "where": "마포구|중동|395|동원월드타운",
-   "count": 22,
-   "sales": 10,
-   "rents": 12,
-   "apt_seq": "11440-163",
-   "road": "성암로5길 12",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|성산동|596|대원",
-   "count": 22,
-   "sales": 3,
-   "rents": 19,
-   "apt_seq": "11440-103",
-   "road": "성산로4길 75",
-   "build_year": 1999
-  },
-  {
-   "where": "서대문구|충정로3가|222|피어리스",
-   "count": 22,
-   "sales": 6,
-   "rents": 16,
-   "apt_seq": "11410-5",
-   "road": "충정로 50",
-   "build_year": 1987
-  },
-  {
-   "where": "서대문구|홍은동|440-3|풍림1차",
-   "count": 22,
-   "sales": 8,
-   "rents": 14,
-   "apt_seq": "11410-92",
-   "road": "통일로48가길 37",
-   "build_year": 1988
-  },
-  {
-   "where": "마포구|망원동|499|한강2차대주피오레",
-   "count": 21,
-   "sales": 3,
-   "rents": 18,
-   "apt_seq": "11440-91",
-   "road": "동교로3길 115",
-   "build_year": 2003
-  },
-  {
-   "where": "서대문구|북아현동|1006|북아현경남",
-   "count": 21,
-   "sales": 5,
-   "rents": 16,
-   "apt_seq": "11410-14",
-   "road": "북아현로 40",
-   "build_year": 1996
-  },
-  {
-   "where": "서대문구|홍은동|440-1|반석블레스",
-   "count": 21,
-   "sales": 8,
-   "rents": 13,
-   "apt_seq": "11410-3960",
-   "road": "통일로48가길 15",
-   "build_year": 2013
-  },
-  {
-   "where": "동작구|상도동|458|상도1차갑을명가",
-   "count": 21,
-   "sales": 10,
-   "rents": 11,
-   "apt_seq": "11590-3356",
-   "road": "국사봉길 178",
-   "build_year": 2006
-  },
-  {
-   "where": "동작구|사당동|1153|케이씨씨",
-   "count": 21,
-   "sales": 7,
-   "rents": 14,
-   "apt_seq": "11590-3372",
-   "road": "사당로20나길 57",
-   "build_year": 2007
-  },
-  {
-   "where": "마포구|마포동|350|강변한신코아",
-   "count": 20,
-   "sales": 5,
-   "rents": 15,
-   "apt_seq": "11440-27",
-   "road": "마포대로4다길 18",
-   "build_year": 1992
-  },
-  {
-   "where": "마포구|합정동|470|일신건영휴먼빌아파트",
-   "count": 20,
-   "sales": 4,
-   "rents": 16,
-   "apt_seq": "11440-3908",
-   "road": "토정로5길 9",
-   "build_year": 2005
-  },
-  {
-   "where": "마포구|염리동|522|염리동세양청마루아파트101동",
-   "count": 20,
-   "sales": 6,
-   "rents": 14,
-   "apt_seq": "11440-3897",
-   "road": "독막로42길 5",
-   "build_year": 2005
-  },
-  {
-   "where": "서대문구|북가좌동|150|요진",
-   "count": 20,
-   "sales": 11,
-   "rents": 9,
-   "apt_seq": "11410-105",
-   "road": "수색로 102",
-   "build_year": 1998
-  },
-  {
-   "where": "서대문구|홍제동|464|무악재한화",
-   "count": 20,
-   "sales": 8,
-   "rents": 12,
-   "apt_seq": "11410-48",
-   "road": "통일로 357",
-   "build_year": 2001
-  },
-  {
-   "where": "마포구|도화동|544|고려",
-   "count": 19,
-   "sales": 5,
-   "rents": 14,
-   "apt_seq": "11440-11",
-   "road": "큰우물로 76",
-   "build_year": 1984
-  },
-  {
-   "where": "마포구|신수동|451|세양청마루",
-   "count": 19,
-   "sales": 5,
-   "rents": 14,
-   "apt_seq": "11440-142",
-   "road": "독막로 209",
-   "build_year": 2003
-  },
-  {
-   "where": "마포구|망원동|498|우림루미아트",
-   "count": 19,
-   "sales": 2,
-   "rents": 17,
-   "apt_seq": "11440-89",
-   "road": "월드컵로31길 77",
-   "build_year": 2003
-  },
-  {
-   "where": "서대문구|북가좌동|456|DMC휴먼빌아파트",
-   "count": 19,
-   "sales": 5,
-   "rents": 14,
-   "apt_seq": "11410-3608",
-   "road": "거북골로18가길 23",
-   "build_year": 2008
-  },
-  {
-   "where": "강서구|염창동|271-4|염창2차보람",
-   "count": 19,
-   "sales": 8,
-   "rents": 11,
-   "apt_seq": "11500-5181",
-   "road": "공항대로59다길 61",
-   "build_year": 2005
-  },
-  {
-   "where": "동작구|흑석동|332|해가든",
-   "count": 19,
-   "sales": 6,
-   "rents": 13,
-   "apt_seq": "11590-3713",
-   "road": "서달로 150",
-   "build_year": 2010
-  },
-  {
-   "where": "동작구|사당동|1145|사당해그린",
-   "count": 19,
-   "sales": 2,
-   "rents": 17,
-   "apt_seq": "11590-137",
-   "road": "사당로2길 40",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|망원동|516|망원동동원데쟈뷰",
-   "count": 18,
-   "sales": 4,
-   "rents": 14,
-   "apt_seq": "11440-4503",
-   "road": "방울내로9안길 57",
-   "build_year": 2008
-  },
-  {
-   "where": "마포구|망원동|523|마포월드컵제이스카이",
-   "count": 18,
-   "sales": 7,
-   "rents": 11,
-   "apt_seq": "11440-5919",
-   "road": "방울내로11길 38",
-   "build_year": 2021
-  },
-  {
-   "where": "강서구|염창동|250-1|삼현팰리채",
-   "count": 18,
-   "sales": 5,
-   "rents": 13,
-   "apt_seq": "11500-5621",
-   "road": "양천로73가길 28",
-   "build_year": 2008
-  },
-  {
-   "where": "영등포구|양평동3가|104|삼익플라주101동",
-   "count": 18,
-   "sales": 8,
-   "rents": 10,
-   "apt_seq": "11560-1418",
-   "road": "선유로42길 6",
-   "build_year": 2009
-  },
-  {
-   "where": "영등포구|양평동1가|269|이너스삼성",
-   "count": 18,
-   "sales": 5,
-   "rents": 13,
-   "apt_seq": "11560-1216",
-   "road": "선유서로26길 23",
-   "build_year": 2005
-  },
-  {
-   "where": "동작구|상도동|530|롯데캐슬비엔",
-   "count": 18,
-   "sales": 7,
-   "rents": 11,
-   "apt_seq": "11590-3744",
-   "road": "양녕로 170",
-   "build_year": 2010
-  },
-  {
-   "where": "마포구|성산동|142-9|세원",
-   "count": 17,
-   "sales": 5,
-   "rents": 12,
-   "apt_seq": "11440-108",
-   "road": "월드컵북로 194",
-   "build_year": 1996
-  },
-  {
-   "where": "마포구|망원동|478-27|미원1",
-   "count": 17,
-   "sales": 6,
-   "rents": 11,
-   "apt_seq": "11440-74",
-   "road": "망원로11길 38",
-   "build_year": 1996
-  },
-  {
-   "where": "동작구|신대방동|395-69|보라매아카데미타워",
-   "count": 17,
-   "sales": 7,
-   "rents": 10,
-   "apt_seq": "11590-70",
-   "road": "보라매로5가길 16",
-   "build_year": 1998
-  },
-  {
-   "where": "동작구|사당동|1136|경남아너스빌(대아3)",
-   "count": 17,
-   "sales": 3,
-   "rents": 14,
-   "apt_seq": "11590-87",
-   "road": "동작대로29길 81",
-   "build_year": 1998
-  },
-  {
-   "where": "동작구|사당동|1147|대창센시티",
-   "count": 17,
-   "sales": 7,
-   "rents": 10,
-   "apt_seq": "11590-3279",
-   "road": "사당로9가길 55",
-   "build_year": 2005
-  },
-  {
-   "where": "동작구|사당동|1037-9|삼성아파트",
-   "count": 17,
-   "sales": 6,
-   "rents": 11,
-   "apt_seq": "11590-3313",
-   "road": "사당로26길 130-6",
-   "build_year": 2006
-  },
-  {
-   "where": "마포구|망원동|508|강림스위트빌",
-   "count": 16,
-   "sales": 5,
-   "rents": 11,
-   "apt_seq": "11440-203",
-   "road": "방울내로11길 147",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|망원동|420|성원1",
-   "count": 16,
-   "sales": 7,
-   "rents": 9,
-   "apt_seq": "11440-128",
-   "road": "월드컵로25길 125",
-   "build_year": 1998
-  },
-  {
-   "where": "영등포구|양평동3가|105|삼익플라주201동",
-   "count": 16,
-   "sales": 7,
-   "rents": 9,
-   "apt_seq": "11560-1527",
-   "road": "선유로40길 7",
-   "build_year": 2012
-  },
-  {
-   "where": "동작구|상도동|459|상도2차갑을명가",
-   "count": 16,
-   "sales": 8,
-   "rents": 8,
-   "apt_seq": "11590-3358",
-   "road": "국사봉길 175",
-   "build_year": 2006
-  },
-  {
-   "where": "동작구|상도동|409|동아",
-   "count": 16,
-   "sales": 8,
-   "rents": 8,
-   "apt_seq": "11590-11",
-   "road": "양녕로23길 43",
-   "build_year": 1995
-  },
-  {
-   "where": "마포구|망원동|507|신부파스카4차",
-   "count": 15,
-   "sales": 8,
-   "rents": 7,
-   "apt_seq": "11440-202",
-   "road": "방울내로 43",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|도화동|559|마포트라팰리스",
-   "count": 15,
-   "sales": 6,
-   "rents": 9,
-   "apt_seq": "11440-3993",
-   "road": "마포대로 53",
-   "build_year": 2006
-  },
-  {
-   "where": "마포구|망원동|500|한강1차대주피오레",
-   "count": 15,
-   "sales": 1,
-   "rents": 14,
-   "apt_seq": "11440-90",
-   "road": "동교로3길 67",
-   "build_year": 2003
-  },
-  {
-   "where": "마포구|용강동|495-1|강변그린",
-   "count": 15,
-   "sales": 1,
-   "rents": 14,
-   "apt_seq": "11440-1150",
-   "road": "대흥로2길 8",
-   "build_year": 1999
-  },
-  {
-   "where": "서대문구|충정로3가|30-17|충정솔레디움(101동)",
-   "count": 15,
-   "sales": 5,
-   "rents": 10,
-   "apt_seq": "11410-289",
-   "road": "경기대로3길 7",
-   "build_year": 2005
-  },
-  {
-   "where": "서대문구|홍은동|186-22|서강1차(1동)",
-   "count": 15,
-   "sales": 8,
-   "rents": 7,
-   "apt_seq": "11410-87",
-   "road": "연희로41길 142",
-   "build_year": 1988
-  },
-  {
-   "where": "서대문구|충정로2가|185-15|현대",
-   "count": 15,
-   "sales": 2,
-   "rents": 13,
-   "apt_seq": "11410-1",
-   "road": "충정로7길 30",
-   "build_year": 1992
-  },
-  {
-   "where": "강서구|염창동|294|길훈",
-   "count": 15,
-   "sales": 8,
-   "rents": 7,
-   "apt_seq": "11500-4",
-   "road": "양천로65길 45",
-   "build_year": 1999
-  },
-  {
-   "where": "강서구|염창동|303|강변코아루",
-   "count": 15,
-   "sales": 6,
-   "rents": 9,
-   "apt_seq": "11500-5297",
-   "road": "양천로71길 54",
-   "build_year": 2007
-  },
-  {
-   "where": "영등포구|양평동3가|103|태승훼밀리",
-   "count": 15,
-   "sales": 3,
-   "rents": 12,
-   "apt_seq": "11560-1381",
-   "road": "선유서로34길 6",
-   "build_year": 2008
-  },
-  {
-   "where": "동작구|노량진동|331|형인한강",
-   "count": 15,
-   "sales": 8,
-   "rents": 7,
-   "apt_seq": "11590-6",
-   "road": "만양로 36",
-   "build_year": 2001
-  },
-  {
-   "where": "마포구|서교동|485-17|카라(카라)",
-   "count": 15,
-   "sales": 0,
-   "rents": 15,
-   "apt_seq": "",
-   "road": "월드컵로8길 17 17",
-   "build_year": 2023
-  },
-  {
-   "where": "서대문구|홍제동|469|인왕산한신휴플러스",
-   "count": 14,
-   "sales": 8,
-   "rents": 6,
-   "apt_seq": "11410-3893",
-   "road": "통일로 397",
-   "build_year": 2009
-  },
-  {
-   "where": "동작구|사당동|산25-2|현대주택조합",
-   "count": 14,
-   "sales": 5,
-   "rents": 9,
-   "apt_seq": "11590-53",
-   "road": "사당로17길 111",
-   "build_year": 1993
-  },
-  {
-   "where": "동작구|사당동|1151|갑을명가",
-   "count": 14,
-   "sales": 7,
-   "rents": 7,
-   "apt_seq": "11590-3317",
-   "road": "솔밭로 65",
-   "build_year": 2006
-  },
-  {
-   "where": "동작구|신대방동|717|신동아파밀리에",
-   "count": 14,
-   "sales": 3,
-   "rents": 11,
-   "apt_seq": "11590-3285",
-   "road": "여의대방로10길 100",
-   "build_year": 2005
-  },
-  {
-   "where": "마포구|망원동|502|함성월드빌",
-   "count": 13,
-   "sales": 4,
-   "rents": 9,
-   "apt_seq": "11440-132",
-   "road": "망원로11길 73",
-   "build_year": 2003
-  },
-  {
-   "where": "마포구|현석동|118|밤섬예가클래식",
-   "count": 13,
-   "sales": 5,
-   "rents": 8,
-   "apt_seq": "11440-43",
-   "road": "신수로2길 26",
-   "build_year": 1989
-  },
-  {
-   "where": "마포구|망원동|513|상암마젤란21",
-   "count": 13,
-   "sales": 5,
-   "rents": 8,
-   "apt_seq": "11440-453",
-   "road": "방울내로11길 43",
-   "build_year": 2005
-  },
-  {
-   "where": "마포구|망원동|433-4|뉴성신아파트",
-   "count": 13,
-   "sales": 2,
-   "rents": 11,
-   "apt_seq": "11440-5972",
-   "road": "포은로 143",
-   "build_year": 2021
-  },
-  {
-   "where": "서대문구|홍제동|373|태영으뜸(데시앙)",
-   "count": 13,
-   "sales": 5,
-   "rents": 8,
-   "apt_seq": "11410-56",
-   "road": "세검정로3길 63",
-   "build_year": 1998
-  },
-  {
-   "where": "강서구|염창동|301|염창3차보람",
-   "count": 13,
-   "sales": 5,
-   "rents": 8,
-   "apt_seq": "11500-5184",
-   "road": "양천로71가길 21",
-   "build_year": 2006
-  },
-  {
-   "where": "동작구|사당동|1156|이너스내안애",
-   "count": 13,
-   "sales": 8,
-   "rents": 5,
-   "apt_seq": "11590-3869",
-   "road": "사당로13길 40",
-   "build_year": 2012
-  },
-  {
-   "where": "영등포구|양평동1가|30|양평동동문디이스트",
-   "count": 13,
-   "sales": 0,
-   "rents": 13,
-   "apt_seq": "",
-   "road": "선유동1로 9-7 9-7",
-   "build_year": 2025
-  },
-  {
-   "where": "마포구|망원동|503|현진에버빌2",
-   "count": 12,
-   "sales": 8,
-   "rents": 4,
-   "apt_seq": "11440-131",
-   "road": "동교로3길 125",
-   "build_year": 2003
-  },
-  {
-   "where": "마포구|중동|36-29|강림월드타운",
-   "count": 12,
-   "sales": 5,
-   "rents": 7,
-   "apt_seq": "11440-120",
-   "road": "성암로7길 14",
-   "build_year": 2002
-  },
-  {
-   "where": "서대문구|홍제동|196-26|제니스뷰아파트",
-   "count": 12,
-   "sales": 8,
-   "rents": 4,
-   "apt_seq": "11410-4902",
-   "road": "홍제원길 51",
-   "build_year": 2022
-  },
-  {
-   "where": "서대문구|남가좌동|105-1|창덕에버빌",
-   "count": 12,
-   "sales": 5,
-   "rents": 7,
-   "apt_seq": "11410-103",
-   "road": "모래내로 143",
-   "build_year": 1998
-  },
-  {
-   "where": "서대문구|북가좌동|467|DMC서부인터빌",
-   "count": 12,
-   "sales": 7,
-   "rents": 5,
-   "apt_seq": "11410-3743",
-   "road": "증가로30길 8",
-   "build_year": 2008
-  },
-  {
-   "where": "서대문구|연희동|218-16|일진아이윌",
-   "count": 12,
-   "sales": 2,
-   "rents": 10,
-   "apt_seq": "11410-3485",
-   "road": "동교로 290",
-   "build_year": 2005
-  },
-  {
-   "where": "서대문구|홍은동|459|진흥",
-   "count": 12,
-   "sales": 7,
-   "rents": 5,
-   "apt_seq": "11410-97",
-   "road": "모래내로 319",
-   "build_year": 2002
-  },
-  {
-   "where": "마포구|망원동|490|강변타운",
-   "count": 11,
-   "sales": 4,
-   "rents": 7,
-   "apt_seq": "11440-67",
-   "road": "동교로3길 79",
-   "build_year": 2000
-  },
-  {
-   "where": "마포구|서교동|488|삼익플라주서교1",
-   "count": 11,
-   "sales": 1,
-   "rents": 10,
-   "apt_seq": "11440-4187",
-   "road": "월드컵북로 39",
-   "build_year": 2007
-  },
-  {
-   "where": "강서구|염창동|296|태진드림피아",
-   "count": 11,
-   "sales": 2,
-   "rents": 9,
-   "apt_seq": "11500-270",
-   "road": "양천로 663",
-   "build_year": 2003
-  },
-  {
-   "where": "강서구|염창동|264-18|송촌",
-   "count": 11,
-   "sales": 6,
-   "rents": 5,
-   "apt_seq": "11500-5102",
-   "road": "공항대로71길 49",
-   "build_year": 2005
-  },
-  {
-   "where": "동작구|상도동|520|삼환나우빌(520-0)",
-   "count": 11,
-   "sales": 6,
-   "rents": 5,
-   "apt_seq": "11590-3388",
-   "road": "상도로55길 25",
-   "build_year": 2007
-  },
-  {
-   "where": "마포구|망원동|505|함성드림빌",
-   "count": 10,
-   "sales": 2,
-   "rents": 8,
-   "apt_seq": "11440-200",
-   "road": "월드컵로31길 89",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|성산동|650|성산동자담이움아파트",
-   "count": 10,
-   "sales": 3,
-   "rents": 7,
-   "apt_seq": "11440-4037",
-   "road": "월드컵로26길 57",
-   "build_year": 2006
-  },
-  {
-   "where": "서대문구|홍은동|457|동일",
-   "count": 10,
-   "sales": 6,
-   "rents": 4,
-   "apt_seq": "11410-81",
-   "road": "홍은중앙로 81",
-   "build_year": 1997
-  },
-  {
-   "where": "서대문구|홍제동|470|제일아파트",
-   "count": 10,
-   "sales": 6,
-   "rents": 4,
-   "apt_seq": "11410-4465",
-   "road": "통일로37나길 12-6",
-   "build_year": 2015
-  },
-  {
-   "where": "강서구|염창동|245-1|이너스내안에201동",
-   "count": 10,
-   "sales": 6,
-   "rents": 4,
-   "apt_seq": "11500-5247",
-   "road": "양천로67가길 49",
-   "build_year": 2006
-  },
-  {
-   "where": "강서구|염창동|250-3|이너스양화6차",
-   "count": 10,
-   "sales": 4,
-   "rents": 6,
-   "apt_seq": "11500-5856",
-   "road": "양천로73가길 38",
-   "build_year": 2009
-  },
-  {
-   "where": "동작구|상도동|410|현대201동",
-   "count": 10,
-   "sales": 2,
-   "rents": 8,
-   "apt_seq": "11590-18",
-   "road": "사당로2가길 10-5",
-   "build_year": 1995
-  },
-  {
-   "where": "마포구|합정동|468|두영이지안",
-   "count": 9,
-   "sales": 2,
-   "rents": 7,
-   "apt_seq": "11440-222",
-   "road": "희우정로1길 48",
-   "build_year": 2005
-  },
-  {
-   "where": "마포구|망원동|510|두영이지안",
-   "count": 9,
-   "sales": 3,
-   "rents": 6,
-   "apt_seq": "11440-205",
-   "road": "방울내로 36",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|망원동|236-2|한강그린1차아파트",
-   "count": 9,
-   "sales": 5,
-   "rents": 4,
-   "apt_seq": "11440-4939",
-   "road": "동교로1길 22",
-   "build_year": 2011
-  },
-  {
-   "where": "마포구|망원동|512|예지안파크뷰",
-   "count": 9,
-   "sales": 4,
-   "rents": 5,
-   "apt_seq": "11440-207",
-   "road": "방울내로1길 41-14",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|용강동|495-3|강변그린",
-   "count": 9,
-   "sales": 1,
-   "rents": 8,
-   "apt_seq": "11440-5725",
-   "road": "대흥로2길 16",
-   "build_year": 1999
-  },
-  {
-   "where": "마포구|망원동|511|함성월드빌2차",
-   "count": 9,
-   "sales": 1,
-   "rents": 8,
-   "apt_seq": "11440-206",
-   "road": "월드컵로11길 35",
-   "build_year": 2004
-  },
-  {
-   "where": "서대문구|천연동|98-17|반석블레스포레",
-   "count": 9,
-   "sales": 4,
-   "rents": 5,
-   "apt_seq": "11410-5018",
-   "road": "독립문로8길 27",
-   "build_year": 2024
-  },
-  {
-   "where": "서대문구|홍은동|산11-244|세한숲속마을",
-   "count": 9,
-   "sales": 7,
-   "rents": 2,
-   "apt_seq": "11410-3755",
-   "road": "통일로 555",
-   "build_year": 2002
-  },
-  {
-   "where": "서대문구|북아현동|1-97|성우아파트",
-   "count": 9,
-   "sales": 4,
-   "rents": 5,
-   "apt_seq": "11410-3460",
-   "road": "북아현로22길 24",
-   "build_year": 2005
-  },
-  {
-   "where": "서대문구|북아현동|1010|경남102동",
-   "count": 9,
-   "sales": 1,
-   "rents": 8,
-   "apt_seq": "11410-3902",
-   "road": "북아현로6길 15",
-   "build_year": 2008
-  },
-  {
-   "where": "서대문구|북가좌동|384-1|우공팰리스",
-   "count": 9,
-   "sales": 1,
-   "rents": 8,
-   "apt_seq": "11410-3702",
-   "road": "수색로8길 40",
-   "build_year": 2007
-  },
-  {
-   "where": "서대문구|충정로2가|69-23|로얄훼미리아파트A동",
-   "count": 9,
-   "sales": 2,
-   "rents": 7,
-   "apt_seq": "11410-139",
-   "road": "경기대로9길 15",
-   "build_year": 2004
-  },
-  {
-   "where": "영등포구|양평동4가|324|에이스리버티움",
-   "count": 9,
-   "sales": 1,
-   "rents": 8,
-   "apt_seq": "11560-1254",
-   "road": "선유로53길 2",
-   "build_year": 2006
-  },
-  {
-   "where": "동작구|상도동|460|상도팰리스",
-   "count": 9,
-   "sales": 3,
-   "rents": 6,
-   "apt_seq": "11590-123",
-   "road": "상도로47바길 40",
-   "build_year": 2006
-  },
-  {
-   "where": "동작구|상도동|413|삼익",
-   "count": 9,
-   "sales": 1,
-   "rents": 8,
-   "apt_seq": "11590-12",
-   "road": "양녕로26나길 8",
-   "build_year": 1997
-  },
-  {
-   "where": "마포구|노고산동|128|에피소드신촌캠퍼스",
-   "count": 9,
-   "sales": 0,
-   "rents": 9,
-   "apt_seq": "",
-   "road": "신촌로 68 68",
-   "build_year": 2025
-  },
-  {
-   "where": "마포구|망원동|501|태청",
-   "count": 8,
-   "sales": 5,
-   "rents": 3,
-   "apt_seq": "11440-159",
-   "road": "포은로6길 34",
-   "build_year": 2003
-  },
-  {
-   "where": "마포구|망원동|506|탑건진선미",
-   "count": 8,
-   "sales": 3,
-   "rents": 5,
-   "apt_seq": "11440-201",
-   "road": "방울내로5길 49",
-   "build_year": 2004
-  },
-  {
-   "where": "서대문구|홍은동|8-285|북한산삼부르네상스301동302동303동",
-   "count": 8,
-   "sales": 5,
-   "rents": 3,
-   "apt_seq": "11410-5031",
-   "road": "포방터8길 1",
-   "build_year": 2024
-  },
-  {
-   "where": "강서구|염창동|307|이너스내안에",
-   "count": 8,
-   "sales": 3,
-   "rents": 5,
-   "apt_seq": "11500-6212",
-   "road": "양천로67가길 56",
-   "build_year": 2011
-  },
-  {
-   "where": "강서구|염창동|242-8|염창동예성그린캐슬",
-   "count": 8,
-   "sales": 3,
-   "rents": 5,
-   "apt_seq": "11500-5101",
-   "road": "양천로65길 46",
-   "build_year": 2005
-  },
-  {
-   "where": "영등포구|양평동4가|261|계명",
-   "count": 8,
-   "sales": 1,
-   "rents": 7,
-   "apt_seq": "11560-146",
-   "road": "양평로18길 13",
-   "build_year": 2003
-  },
-  {
-   "where": "영등포구|양평동1가|270|창건애드웰",
-   "count": 8,
-   "sales": 2,
-   "rents": 6,
-   "apt_seq": "11560-1321",
-   "road": "양산로 56",
-   "build_year": 2006
-  },
-  {
-   "where": "동작구|상도동|283-75|상도타워A동",
-   "count": 8,
-   "sales": 3,
-   "rents": 5,
-   "apt_seq": "11590-3874",
-   "road": "성대로6가길 149",
-   "build_year": 2005
-  },
-  {
-   "where": "마포구|신공덕동|167|대우메트로디오빌",
+   "where": "마포구|상수동|396|상수두산위브",
    "count": 8,
    "sales": 0,
    "rents": 8,
    "apt_seq": "",
-   "road": "백범로 199 199",
-   "build_year": 2005
+   "road": "독막로18길 5 5",
+   "build_year": 2004
+  },
+  {
+   "where": "마포구|신수동|453|대원칸타빌",
+   "count": 8,
+   "sales": 0,
+   "rents": 8,
+   "apt_seq": "",
+   "road": "창전로2길 10 10",
+   "build_year": 2004
   },
   {
    "where": "서대문구|북가좌동|497|이랜드PEERDMC",
@@ -2469,1237 +813,1012 @@
    "build_year": 2026
   },
   {
-   "where": "마포구|상암동|34-51|예인하우스",
-   "count": 7,
-   "sales": 2,
-   "rents": 5,
-   "apt_seq": "11440-5134",
-   "road": "월드컵북로43길 38",
-   "build_year": 2012
-  },
-  {
-   "where": "마포구|대흥동|18-55|성신",
-   "count": 7,
-   "sales": 1,
-   "rents": 6,
-   "apt_seq": "11440-3931",
-   "road": "대흥로21길 14",
-   "build_year": 2006
-  },
-  {
-   "where": "마포구|망원동|495|신부3차파스카",
+   "where": "마포구|염리동|161-1|중앙하이츠",
    "count": 7,
    "sales": 3,
    "rents": 4,
-   "apt_seq": "11440-157",
-   "road": "방울내로9안길 98",
-   "build_year": 2002
+   "apt_seq": "11440-35",
+   "road": "독막로 289",
+   "build_year": 1998
   },
   {
-   "where": "마포구|망원동|514|함성월드빌3차301동",
+   "where": "마포구|망원동|433-9|미원2",
    "count": 7,
-   "sales": 1,
-   "rents": 6,
-   "apt_seq": "11440-3912",
-   "road": "망원로11길 35",
-   "build_year": 2005
+   "sales": 6,
+   "rents": 1,
+   "apt_seq": "11440-127",
+   "road": "월드컵로29길 68",
+   "build_year": 1997
   },
   {
-   "where": "마포구|망원동|418-29|예향",
+   "where": "서대문구|연희동|738|임광",
    "count": 7,
-   "sales": 1,
-   "rents": 6,
-   "apt_seq": "11440-78",
-   "road": "망원로2길 14",
-   "build_year": 2001
+   "sales": 3,
+   "rents": 4,
+   "apt_seq": "11410-35",
+   "road": "동교로 291",
+   "build_year": 1999
   },
   {
-   "where": "서대문구|홍제동|312-243|파크힐",
+   "where": "서대문구|홍제동|156-200|고은",
    "count": 7,
-   "sales": 5,
-   "rents": 2,
-   "apt_seq": "11410-186",
-   "road": "통일로37나길 65",
+   "sales": 2,
+   "rents": 5,
+   "apt_seq": "11410-43",
+   "road": "모래내로 453",
+   "build_year": 1975
+  },
+  {
+   "where": "강서구|염창동|297|월드메르디앙",
+   "count": 7,
+   "sales": 2,
+   "rents": 5,
+   "apt_seq": "11500-298",
+   "road": "양천로71길 38",
    "build_year": 2004
   },
   {
-   "where": "서대문구|북가좌동|418-22|한울뉴타운",
+   "where": "강서구|염창동|305|염창1차보람더하임",
    "count": 7,
    "sales": 2,
    "rents": 5,
-   "apt_seq": "11410-128",
-   "road": "응암로 42",
-   "build_year": 2004
-  },
-  {
-   "where": "서대문구|북아현동|1-50|우민A",
-   "count": 7,
-   "sales": 3,
-   "rents": 4,
-   "apt_seq": "11410-17",
-   "road": "북아현로22길 82",
-   "build_year": 2001
-  },
-  {
-   "where": "서대문구|홍제동|132-5|에이원",
-   "count": 7,
-   "sales": 2,
-   "rents": 5,
-   "apt_seq": "11410-4457",
-   "road": "홍제원길 45",
-   "build_year": 2015
-  },
-  {
-   "where": "서대문구|연희동|717-29|한인트윈빌",
-   "count": 7,
-   "sales": 2,
-   "rents": 5,
-   "apt_seq": "11410-173",
-   "road": "홍연길 77",
-   "build_year": 2002
-  },
-  {
-   "where": "서대문구|연희동|708-4|홍연",
-   "count": 7,
-   "sales": 2,
-   "rents": 5,
-   "apt_seq": "11410-37",
-   "road": "홍연4길 31",
-   "build_year": 1981
-  },
-  {
-   "where": "서대문구|홍제동|247-19|홍일",
-   "count": 7,
-   "sales": 5,
-   "rents": 2,
-   "apt_seq": "11410-154",
-   "road": "세무서길 39",
-   "build_year": 1969
-  },
-  {
-   "where": "서대문구|충정로3가|477|충림예하임",
-   "count": 7,
-   "sales": 2,
-   "rents": 5,
-   "apt_seq": "11410-3939",
-   "road": "충정로5길 27",
-   "build_year": 2010
-  },
-  {
-   "where": "동작구|상도동|283-68|파크뷰아파트",
-   "count": 7,
-   "sales": 7,
-   "rents": 0,
-   "apt_seq": "11590-3671",
-   "road": "성대로6가길 144",
-   "build_year": 2009
-  },
-  {
-   "where": "동작구|동작동|329|이수교신동아아파트",
-   "count": 7,
-   "sales": 3,
-   "rents": 4,
-   "apt_seq": "11590-37",
-   "road": "동작대로43길 36",
-   "build_year": 2001
-  },
-  {
-   "where": "동작구|대방동|381-3|드림빌라트",
-   "count": 7,
-   "sales": 2,
-   "rents": 5,
-   "apt_seq": "11590-235",
-   "road": "대방동27길 4",
-   "build_year": 2001
-  },
-  {
-   "where": "마포구|합정동|450-11|한강그린2차",
-   "count": 7,
-   "sales": 0,
-   "rents": 7,
-   "apt_seq": "",
-   "road": "동교로 16-2 16-2",
-   "build_year": 2012
-  },
-  {
-   "where": "서대문구|충정로3가|1-37|동호",
-   "count": 7,
-   "sales": 0,
-   "rents": 7,
-   "apt_seq": "",
-   "road": "경기대로9길 60 60",
-   "build_year": 2003
-  },
-  {
-   "where": "마포구|성산동|666|월드컵아이파크(666-0)",
-   "count": 6,
-   "sales": 2,
-   "rents": 4,
-   "apt_seq": "11440-4564",
-   "road": "모래내로9길 3",
+   "apt_seq": "11500-5406",
+   "road": "양천로 666",
    "build_year": 2008
   },
   {
-   "where": "마포구|망원동|492|대상4",
+   "where": "강서구|염창동|250-1|삼현팰리채",
+   "count": 7,
+   "sales": 2,
+   "rents": 5,
+   "apt_seq": "11500-5621",
+   "road": "양천로73가길 28",
+   "build_year": 2008
+  },
+  {
+   "where": "강서구|염창동|282-19|현대아이파크",
+   "count": 7,
+   "sales": 2,
+   "rents": 5,
+   "apt_seq": "11500-5104",
+   "road": "공항대로 637",
+   "build_year": 2005
+  },
+  {
+   "where": "영등포구|양평동3가|102|우림루미아트",
+   "count": 7,
+   "sales": 6,
+   "rents": 1,
+   "apt_seq": "11560-157",
+   "road": "선유로33길 23",
+   "build_year": 2004
+  },
+  {
+   "where": "동작구|사당동|1150|삼익그린뷰",
+   "count": 7,
+   "sales": 2,
+   "rents": 5,
+   "apt_seq": "11590-98",
+   "road": "남부순환로255길 21",
+   "build_year": 2003
+  },
+  {
+   "where": "마포구|성산동|604|성산2차e-편한세상",
+   "count": 7,
+   "sales": 0,
+   "rents": 7,
+   "apt_seq": "",
+   "road": "월드컵북로 216 216",
+   "build_year": 2005
+  },
+  {
+   "where": "마포구|신수동|445-5|현대",
+   "count": 7,
+   "sales": 0,
+   "rents": 7,
+   "apt_seq": "",
+   "road": "토정로 242 242",
+   "build_year": 1996
+  },
+  {
+   "where": "동작구|상도동|534|상도더샵2차",
+   "count": 7,
+   "sales": 0,
+   "rents": 7,
+   "apt_seq": "",
+   "road": "장승배기로10길 100 100",
+   "build_year": 2014
+  },
+  {
+   "where": "마포구|아현동|732|삼환나띠르빌",
+   "count": 6,
+   "sales": 1,
+   "rents": 5,
+   "apt_seq": "11440-143",
+   "road": "마포대로 183-16",
+   "build_year": 2003
+  },
+  {
+   "where": "마포구|망원동|236-2|한강그린1차아파트",
+   "count": 6,
+   "sales": 3,
+   "rents": 3,
+   "apt_seq": "11440-4939",
+   "road": "동교로1길 22",
+   "build_year": 2011
+  },
+  {
+   "where": "마포구|공덕동|460|한화꿈에그린",
+   "count": 6,
+   "sales": 3,
+   "rents": 3,
+   "apt_seq": "11440-176",
+   "road": "마포대로10길 22",
+   "build_year": 2004
+  },
+  {
+   "where": "서대문구|홍제동|464|무악재한화",
+   "count": 6,
+   "sales": 3,
+   "rents": 3,
+   "apt_seq": "11410-48",
+   "road": "통일로 357",
+   "build_year": 2001
+  },
+  {
+   "where": "서대문구|홍제동|453-1|청구2차",
+   "count": 6,
+   "sales": 3,
+   "rents": 3,
+   "apt_seq": "11410-64",
+   "road": "통일로 344",
+   "build_year": 1997
+  },
+  {
+   "where": "서대문구|홍은동|459|진흥",
+   "count": 6,
+   "sales": 4,
+   "rents": 2,
+   "apt_seq": "11410-97",
+   "road": "모래내로 319",
+   "build_year": 2002
+  },
+  {
+   "where": "서대문구|홍은동|440-1|반석블레스",
+   "count": 6,
+   "sales": 3,
+   "rents": 3,
+   "apt_seq": "11410-3960",
+   "road": "통일로48가길 15",
+   "build_year": 2013
+  },
+  {
+   "where": "서대문구|홍은동|439-1|홍은동아더프라임",
    "count": 6,
    "sales": 2,
    "rents": 4,
+   "apt_seq": "11410-4377",
+   "road": "통일로 530",
+   "build_year": 2014
+  },
+  {
+   "where": "서대문구|홍제동|468|홍제비콘드림힐",
+   "count": 6,
+   "sales": 2,
+   "rents": 4,
+   "apt_seq": "11410-3599",
+   "road": "세무서8길 49",
+   "build_year": 2006
+  },
+  {
+   "where": "강서구|염창동|302|염창2차한화꿈에그린",
+   "count": 6,
+   "sales": 1,
+   "rents": 5,
+   "apt_seq": "11500-5206",
+   "road": "공항대로63길 16",
+   "build_year": 2006
+  },
+  {
+   "where": "강서구|염창동|306|염창힐스테이트",
+   "count": 6,
+   "sales": 1,
+   "rents": 5,
+   "apt_seq": "11500-5933",
+   "road": "양천로73길 24",
+   "build_year": 2009
+  },
+  {
+   "where": "강서구|염창동|272-11|롯데캐슬",
+   "count": 6,
+   "sales": 1,
+   "rents": 5,
+   "apt_seq": "11500-464",
+   "road": "공항대로65길 21",
+   "build_year": 2005
+  },
+  {
+   "where": "영등포구|양평동1가|14-1|한신공영",
+   "count": 6,
+   "sales": 1,
+   "rents": 5,
+   "apt_seq": "11560-80",
+   "road": "영등포로12길 7",
+   "build_year": 1996
+  },
+  {
+   "where": "동작구|대방동|512|경남아너스빌",
+   "count": 6,
+   "sales": 2,
+   "rents": 4,
+   "apt_seq": "11590-3323",
+   "road": "여의대방로54길 6",
+   "build_year": 2006
+  },
+  {
+   "where": "동작구|신대방동|706|보라매우성",
+   "count": 6,
+   "sales": 2,
+   "rents": 4,
+   "apt_seq": "11590-71",
+   "road": "보라매로5길 5",
+   "build_year": 1995
+  },
+  {
+   "where": "마포구|성산동|600|성사1차풍림아파트101동",
+   "count": 5,
+   "sales": 2,
+   "rents": 3,
+   "apt_seq": "11440-112",
+   "road": "성암로1길 8",
+   "build_year": 2000
+  },
+  {
+   "where": "마포구|망원동|523|마포월드컵제이스카이",
+   "count": 5,
+   "sales": 2,
+   "rents": 3,
+   "apt_seq": "11440-5919",
+   "road": "방울내로11길 38",
+   "build_year": 2021
+  },
+  {
+   "where": "마포구|망원동|506|탑건진선미",
+   "count": 5,
+   "sales": 1,
+   "rents": 4,
+   "apt_seq": "11440-201",
+   "road": "방울내로5길 49",
+   "build_year": 2004
+  },
+  {
+   "where": "마포구|아현동|371-1|예미원",
+   "count": 5,
+   "sales": 1,
+   "rents": 4,
+   "apt_seq": "11440-5233",
+   "road": "마포대로 236",
+   "build_year": 1970
+  },
+  {
+   "where": "마포구|성산동|142-9|세원",
+   "count": 5,
+   "sales": 2,
+   "rents": 3,
+   "apt_seq": "11440-108",
+   "road": "월드컵북로 194",
+   "build_year": 1996
+  },
+  {
+   "where": "마포구|대흥동|802|대흥동세양",
+   "count": 5,
+   "sales": 1,
+   "rents": 4,
+   "apt_seq": "11440-31",
+   "road": "독막로 288",
+   "build_year": 2000
+  },
+  {
+   "where": "서대문구|홍은동|22|유원",
+   "count": 5,
+   "sales": 3,
+   "rents": 2,
+   "apt_seq": "11410-89",
+   "road": "홍은중앙로1길 33",
+   "build_year": 1987
+  },
+  {
+   "where": "서대문구|북가좌동|455|신일해피트리",
+   "count": 5,
+   "sales": 2,
+   "rents": 3,
+   "apt_seq": "11410-3517",
+   "road": "수색로 147-1",
+   "build_year": 2005
+  },
+  {
+   "where": "서대문구|충정로3가|466|우리유앤미",
+   "count": 5,
+   "sales": 1,
+   "rents": 4,
+   "apt_seq": "11410-3607",
+   "road": "경기대로 26-7",
+   "build_year": 2008
+  },
+  {
+   "where": "강서구|염창동|294|길훈",
+   "count": 5,
+   "sales": 4,
+   "rents": 1,
+   "apt_seq": "11500-4",
+   "road": "양천로65길 45",
+   "build_year": 1999
+  },
+  {
+   "where": "강서구|염창동|263-2|주상복합태진가람",
+   "count": 5,
+   "sales": 2,
+   "rents": 3,
+   "apt_seq": "11500-24",
+   "road": "양천로 706",
+   "build_year": 1995
+  },
+  {
+   "where": "강서구|염창동|271-4|염창2차보람",
+   "count": 5,
+   "sales": 2,
+   "rents": 3,
+   "apt_seq": "11500-5181",
+   "road": "공항대로59다길 61",
+   "build_year": 2005
+  },
+  {
+   "where": "강서구|염창동|308|강서쌍용예가",
+   "count": 5,
+   "sales": 1,
+   "rents": 4,
+   "apt_seq": "11500-6884",
+   "road": "양천로 613",
+   "build_year": 2014
+  },
+  {
+   "where": "영등포구|양평동3가|24|삼천리",
+   "count": 5,
+   "sales": 3,
+   "rents": 2,
+   "apt_seq": "11560-87",
+   "road": "선유서로 115",
+   "build_year": 2000
+  },
+  {
+   "where": "영등포구|양평동2가|39-1|오목교벽산블루밍",
+   "count": 5,
+   "sales": 4,
+   "rents": 1,
+   "apt_seq": "11560-83",
+   "road": "선유서로21길 30",
+   "build_year": 1996
+  },
+  {
+   "where": "동작구|대방동|509|보라매코오롱하늘채",
+   "count": 5,
+   "sales": 1,
+   "rents": 4,
+   "apt_seq": "11590-3281",
+   "road": "여의대방로24다길 40",
+   "build_year": 2005
+  },
+  {
+   "where": "동작구|본동|148-2|극동강변",
+   "count": 5,
+   "sales": 1,
+   "rents": 4,
+   "apt_seq": "11590-28",
+   "road": "매봉로 156",
+   "build_year": 1992
+  },
+  {
+   "where": "동작구|상도동|445|경향렉스빌",
+   "count": 5,
+   "sales": 1,
+   "rents": 4,
+   "apt_seq": "11590-23",
+   "road": "양녕로23길 9",
+   "build_year": 2002
+  },
+  {
+   "where": "동작구|대방동|504|한국개나리",
+   "count": 5,
+   "sales": 2,
+   "rents": 3,
+   "apt_seq": "11590-64",
+   "road": "여의대방로62길 15",
+   "build_year": 1997
+  },
+  {
+   "where": "동작구|대방동|41|신한토탈",
+   "count": 5,
+   "sales": 1,
+   "rents": 4,
+   "apt_seq": "11590-60",
+   "road": "등용로14길 34",
+   "build_year": 1997
+  },
+  {
+   "where": "동작구|신대방동|709|벽산",
+   "count": 5,
+   "sales": 2,
+   "rents": 3,
+   "apt_seq": "11590-68",
+   "road": "여의대방로22길 24",
+   "build_year": 1997
+  },
+  {
+   "where": "마포구|신공덕동|168|신공덕e편한세상",
+   "count": 5,
+   "sales": 0,
+   "rents": 5,
+   "apt_seq": "",
+   "road": "백범로 239 239",
+   "build_year": 2007
+  },
+  {
+   "where": "마포구|공덕동|478|공덕더샵",
+   "count": 5,
+   "sales": 0,
+   "rents": 5,
+   "apt_seq": "",
+   "road": "백범로 170 170",
+   "build_year": 2018
+  },
+  {
+   "where": "서대문구|홍제동|457|남양",
+   "count": 5,
+   "sales": 0,
+   "rents": 5,
+   "apt_seq": "",
+   "road": "홍제내길 168 168",
+   "build_year": 1999
+  },
+  {
+   "where": "강서구|염창동|296|태진드림피아",
+   "count": 5,
+   "sales": 0,
+   "rents": 5,
+   "apt_seq": "",
+   "road": "양천로 663 663",
+   "build_year": 2003
+  },
+  {
+   "where": "영등포구|양평동3가|79|현대3차",
+   "count": 5,
+   "sales": 0,
+   "rents": 5,
+   "apt_seq": "",
+   "road": "선유동2로 23 23",
+   "build_year": 1991
+  },
+  {
+   "where": "영등포구|양평동1가|269|이너스삼성",
+   "count": 5,
+   "sales": 0,
+   "rents": 5,
+   "apt_seq": "",
+   "road": "선유서로26길 23 23",
+   "build_year": 2005
+  },
+  {
+   "where": "영등포구|양평동6가|99|한솔",
+   "count": 5,
+   "sales": 0,
+   "rents": 5,
+   "apt_seq": "",
+   "road": "양평로30길 51 51",
+   "build_year": 1999
+  },
+  {
+   "where": "마포구|성산동|597|성산동성",
+   "count": 4,
+   "sales": 1,
+   "rents": 3,
+   "apt_seq": "11440-107",
+   "road": "모래내로3길 4",
+   "build_year": 1999
+  },
+  {
+   "where": "마포구|중동|391|중동계룡아파트",
+   "count": 4,
+   "sales": 3,
+   "rents": 1,
+   "apt_seq": "11440-121",
+   "road": "월드컵북로38가길 20",
+   "build_year": 2000
+  },
+  {
+   "where": "마포구|망원동|509|휴먼빌",
+   "count": 4,
+   "sales": 2,
+   "rents": 2,
+   "apt_seq": "11440-204",
+   "road": "방울내로 31",
+   "build_year": 2004
+  },
+  {
+   "where": "마포구|망원동|492|대상4",
+   "count": 4,
+   "sales": 1,
+   "rents": 3,
    "apt_seq": "11440-70",
    "road": "포은로8길 8",
    "build_year": 2000
   },
   {
-   "where": "마포구|신공덕동|5-5|뉴마인",
-   "count": 6,
+   "where": "마포구|망원동|507|신부파스카4차",
+   "count": 4,
+   "sales": 3,
+   "rents": 1,
+   "apt_seq": "11440-202",
+   "road": "방울내로 43",
+   "build_year": 2004
+  },
+  {
+   "where": "마포구|신수동|451|세양청마루",
+   "count": 4,
    "sales": 1,
-   "rents": 5,
-   "apt_seq": "11440-4213",
-   "road": "마포대로14길 32",
+   "rents": 3,
+   "apt_seq": "11440-142",
+   "road": "독막로 209",
+   "build_year": 2003
+  },
+  {
+   "where": "서대문구|북가좌동|456|DMC휴먼빌아파트",
+   "count": 4,
+   "sales": 1,
+   "rents": 3,
+   "apt_seq": "11410-3608",
+   "road": "거북골로18가길 23",
    "build_year": 2008
   },
   {
-   "where": "서대문구|북아현동|1-49|우민B",
-   "count": 6,
-   "sales": 4,
+   "where": "서대문구|홍제동|342|중앙하이츠",
+   "count": 4,
+   "sales": 2,
    "rents": 2,
-   "apt_seq": "11410-18",
-   "road": "북아현로22길 86",
+   "apt_seq": "11410-62",
+   "road": "홍제내2길 67",
    "build_year": 2001
   },
   {
-   "where": "서대문구|연희동|742|성원쌍떼빌팰리스",
-   "count": 6,
-   "sales": 4,
-   "rents": 2,
-   "apt_seq": "11410-185",
-   "road": "연희로28길 35-28",
-   "build_year": 2005
-  },
-  {
-   "where": "서대문구|대현동|145|예스에이피엠",
-   "count": 6,
-   "sales": 2,
-   "rents": 4,
-   "apt_seq": "11410-3713",
-   "road": "이화여대1길 10",
-   "build_year": 2007
-  },
-  {
-   "where": "서대문구|홍제동|294-36|원일",
-   "count": 6,
-   "sales": 2,
-   "rents": 4,
-   "apt_seq": "11410-155",
-   "road": "통일로 476",
-   "build_year": 1970
-  },
-  {
-   "where": "서대문구|연희동|163-30|신원",
-   "count": 6,
+   "where": "서대문구|북가좌동|150|요진",
+   "count": 4,
    "sales": 3,
+   "rents": 1,
+   "apt_seq": "11410-105",
+   "road": "수색로 102",
+   "build_year": 1998
+  },
+  {
+   "where": "서대문구|홍제동|322-138|홍제에스피엘",
+   "count": 4,
+   "sales": 3,
+   "rents": 1,
+   "apt_seq": "11410-5010",
+   "road": "모래내로 424",
+   "build_year": 2023
+  },
+  {
+   "where": "서대문구|홍은동|465|HDX휴팰리스",
+   "count": 4,
+   "sales": 2,
+   "rents": 2,
+   "apt_seq": "11410-4755",
+   "road": "통일로 536",
+   "build_year": 2018
+  },
+  {
+   "where": "강서구|염창동|70-20|삼천리",
+   "count": 4,
+   "sales": 3,
+   "rents": 1,
+   "apt_seq": "11500-19",
+   "road": "양천로67길 71-16",
+   "build_year": 1992
+  },
+  {
+   "where": "강서구|염창동|254-2|이너스내안에",
+   "count": 4,
+   "sales": 1,
    "rents": 3,
-   "apt_seq": "11410-41",
-   "road": "연희로 239-5",
+   "apt_seq": "11500-296",
+   "road": "양천로75길 22-21",
+   "build_year": 2004
+  },
+  {
+   "where": "동작구|상도동|409|동아",
+   "count": 4,
+   "sales": 4,
+   "rents": 0,
+   "apt_seq": "11590-11",
+   "road": "양녕로23길 43",
+   "build_year": 1995
+  },
+  {
+   "where": "동작구|상도동|458|상도1차갑을명가",
+   "count": 4,
+   "sales": 1,
+   "rents": 3,
+   "apt_seq": "11590-3356",
+   "road": "국사봉길 178",
+   "build_year": 2006
+  },
+  {
+   "where": "동작구|사당동|1143|남해오네뜨",
+   "count": 4,
+   "sales": 2,
+   "rents": 2,
+   "apt_seq": "11590-55",
+   "road": "사당로2가길 173",
    "build_year": 2002
   },
   {
-   "where": "서대문구|충정로2가|69-60|로얄패밀리아파트B동",
-   "count": 6,
-   "sales": 2,
-   "rents": 4,
-   "apt_seq": "11410-286",
-   "road": "경기대로9길 11",
+   "where": "동작구|사당동|1141|르메이에르",
+   "count": 4,
+   "sales": 1,
+   "rents": 3,
+   "apt_seq": "11590-41",
+   "road": "사당로20길 119",
+   "build_year": 2001
+  },
+  {
+   "where": "동작구|사당동|1145|사당해그린",
+   "count": 4,
+   "sales": 1,
+   "rents": 3,
+   "apt_seq": "11590-137",
+   "road": "사당로2길 40",
    "build_year": 2004
   },
   {
-   "where": "서대문구|홍제동|157-68|광산",
-   "count": 6,
-   "sales": 2,
-   "rents": 4,
-   "apt_seq": "11410-45",
-   "road": "모래내로 455",
-   "build_year": 1973
+   "where": "동작구|사당동|1135|경남아너스빌2차",
+   "count": 4,
+   "sales": 1,
+   "rents": 3,
+   "apt_seq": "11590-86",
+   "road": "사당로 165",
+   "build_year": 1998
   },
   {
-   "where": "서대문구|북가좌동|325-43|충우팰리스2",
-   "count": 6,
+   "where": "동작구|노량진동|331|형인한강",
+   "count": 4,
    "sales": 1,
-   "rents": 5,
-   "apt_seq": "11410-181",
-   "road": "증가로29길 30-14",
-   "build_year": 2004
+   "rents": 3,
+   "apt_seq": "11590-6",
+   "road": "만양로 36",
+   "build_year": 2001
   },
   {
-   "where": "영등포구|양평동4가|196|수성예술",
-   "count": 6,
+   "where": "동작구|사당동|산25-2|현대주택조합",
+   "count": 4,
    "sales": 1,
-   "rents": 5,
-   "apt_seq": "11560-158",
-   "road": "선유로51길 32",
+   "rents": 3,
+   "apt_seq": "11590-53",
+   "road": "사당로17길 111",
    "build_year": 1993
   },
   {
-   "where": "동작구|대방동|99-1|(99-1)",
-   "count": 6,
+   "where": "동작구|사당동|1158|반석블레스",
+   "count": 4,
    "sales": 1,
-   "rents": 5,
-   "apt_seq": "11590-194",
-   "road": "여의대방로62길 24",
-   "build_year": 2001
+   "rents": 3,
+   "apt_seq": "11590-4568",
+   "road": "사당로2길 76",
+   "build_year": 2016
   },
   {
-   "where": "동작구|상도동|409-3|종인아네스트(409-3)",
-   "count": 6,
-   "sales": 2,
-   "rents": 4,
-   "apt_seq": "11590-3754",
-   "road": "양녕로23길 67",
-   "build_year": 2010
-  },
-  {
-   "where": "동작구|상도동|7-71|대동아파트",
-   "count": 6,
+   "where": "동작구|상도동|528|동원베네스트",
+   "count": 4,
    "sales": 1,
-   "rents": 5,
-   "apt_seq": "11590-4792",
-   "road": "매봉로4가길 13",
-   "build_year": 2017
-  },
-  {
-   "where": "서대문구|홍제동|307-9|홍제맨션",
-   "count": 6,
-   "sales": 0,
-   "rents": 6,
-   "apt_seq": "",
-   "road": "통일로39길 25 25",
-   "build_year": 1971
-  },
-  {
-   "where": "마포구|성산동|13-21|예림아너스",
-   "count": 5,
-   "sales": 3,
-   "rents": 2,
-   "apt_seq": "11440-4034",
-   "road": "성미산로11길 32-7",
-   "build_year": 2006
-  },
-  {
-   "where": "마포구|도화동|536|정우상가맨션",
-   "count": 5,
-   "sales": 4,
-   "rents": 1,
-   "apt_seq": "11440-18",
-   "road": "토정로37길 46",
-   "build_year": 1983
-  },
-  {
-   "where": "마포구|연남동|478-12|휴먼",
-   "count": 5,
-   "sales": 1,
-   "rents": 4,
-   "apt_seq": "11440-162",
-   "road": "연남로9길 20",
-   "build_year": 2003
-  },
-  {
-   "where": "마포구|합정동|467|한강동원아파트",
-   "count": 5,
-   "sales": 2,
    "rents": 3,
-   "apt_seq": "11440-167",
-   "road": "토정로2길 6-12",
-   "build_year": 2003
-  },
-  {
-   "where": "마포구|성산동|239-25|삼호빌라트",
-   "count": 5,
-   "sales": 2,
-   "rents": 3,
-   "apt_seq": "11440-105",
-   "road": "성미산로 72",
-   "build_year": 2001
-  },
-  {
-   "where": "마포구|성산동|199-53|한림101동",
-   "count": 5,
-   "sales": 2,
-   "rents": 3,
-   "apt_seq": "11440-212",
-   "road": "새터산5길 17",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|공덕동|468|두영이지안",
-   "count": 5,
-   "sales": 2,
-   "rents": 3,
-   "apt_seq": "11440-4462",
-   "road": "만리재로14길 27",
+   "apt_seq": "11590-3577",
+   "road": "상도로34길 42",
    "build_year": 2008
   },
   {
-   "where": "마포구|망원동|493|함성백합",
-   "count": 5,
-   "sales": 1,
+   "where": "마포구|노고산동|128|에피소드신촌캠퍼스",
+   "count": 4,
+   "sales": 0,
    "rents": 4,
-   "apt_seq": "11440-80",
-   "road": "월드컵로29길 113",
-   "build_year": 2001
+   "apt_seq": "",
+   "road": "신촌로 68 68",
+   "build_year": 2025
   },
   {
-   "where": "마포구|망원동|515|한강월드컵",
-   "count": 5,
-   "sales": 1,
+   "where": "마포구|도화동|559|마포트라팰리스",
+   "count": 4,
+   "sales": 0,
    "rents": 4,
-   "apt_seq": "11440-4006",
-   "road": "방울내로9안길 64",
+   "apt_seq": "",
+   "road": "마포대로 53 53",
    "build_year": 2006
   },
   {
-   "where": "마포구|합정동|469|한국프라우드",
-   "count": 5,
-   "sales": 3,
-   "rents": 2,
-   "apt_seq": "11440-3903",
-   "road": "희우정로 15",
-   "build_year": 2005
+   "where": "마포구|합정동|472|마포한강푸르지오",
+   "count": 4,
+   "sales": 0,
+   "rents": 4,
+   "apt_seq": "",
+   "road": "월드컵로1길 14 14",
+   "build_year": 2015
   },
   {
-   "where": "마포구|합정동|466|장미(466-0)",
-   "count": 5,
+   "where": "마포구|중동|395|동원월드타운",
+   "count": 4,
+   "sales": 0,
+   "rents": 4,
+   "apt_seq": "",
+   "road": "성암로5길 12 12",
+   "build_year": 2004
+  },
+  {
+   "where": "서대문구|충정로2가|185-15|현대",
+   "count": 4,
+   "sales": 0,
+   "rents": 4,
+   "apt_seq": "",
+   "road": "충정로7길 30 30",
+   "build_year": 1992
+  },
+  {
+   "where": "서대문구|북아현동|1010|경남102동",
+   "count": 4,
+   "sales": 0,
+   "rents": 4,
+   "apt_seq": "",
+   "road": "북아현로6길 15 15",
+   "build_year": 2008
+  },
+  {
+   "where": "동작구|신대방동|710|경남교수",
+   "count": 4,
+   "sales": 0,
+   "rents": 4,
+   "apt_seq": "",
+   "road": "여의대방로10길 14 14",
+   "build_year": 2001
+  },
+  {
+   "where": "동작구|사당동|1136|경남아너스빌(대아3)",
+   "count": 4,
+   "sales": 0,
+   "rents": 4,
+   "apt_seq": "",
+   "road": "동작대로29길 81 81",
+   "build_year": 1998
+  },
+  {
+   "where": "마포구|망원동|499|한강2차대주피오레",
+   "count": 3,
    "sales": 2,
-   "rents": 3,
-   "apt_seq": "11440-63",
-   "road": "어울마당로 11",
-   "build_year": 2000
+   "rents": 1,
+   "apt_seq": "11440-91",
+   "road": "동교로3길 115",
+   "build_year": 2003
   },
   {
-   "where": "마포구|연남동|515-23|청기와",
-   "count": 5,
+   "where": "마포구|망원동|511|함성월드빌2차",
+   "count": 3,
    "sales": 1,
-   "rents": 4,
-   "apt_seq": "11440-98",
-   "road": "연남로 27",
-   "build_year": 2000
+   "rents": 2,
+   "apt_seq": "11440-206",
+   "road": "월드컵로11길 35",
+   "build_year": 2004
   },
   {
-   "where": "마포구|망원동|419-3|참존1차(419-3)",
-   "count": 5,
+   "where": "마포구|망원동|478-27|미원1",
+   "count": 3,
    "sales": 1,
-   "rents": 4,
-   "apt_seq": "11440-3936",
-   "road": "망원로 19",
-   "build_year": 2005
+   "rents": 2,
+   "apt_seq": "11440-74",
+   "road": "망원로11길 38",
+   "build_year": 1996
+  },
+  {
+   "where": "마포구|망원동|420|성원1",
+   "count": 3,
+   "sales": 2,
+   "rents": 1,
+   "apt_seq": "11440-128",
+   "road": "월드컵로25길 125",
+   "build_year": 1998
+  },
+  {
+   "where": "마포구|아현동|692|서서울삼성",
+   "count": 3,
+   "sales": 1,
+   "rents": 2,
+   "apt_seq": "11440-1",
+   "road": "마포대로 262",
+   "build_year": 1998
+  },
+  {
+   "where": "마포구|망원동|496|대림1",
+   "count": 3,
+   "sales": 1,
+   "rents": 2,
+   "apt_seq": "11440-88",
+   "road": "망원로2길 103",
+   "build_year": 2002
+  },
+  {
+   "where": "마포구|성산동|650|성산동자담이움아파트",
+   "count": 3,
+   "sales": 1,
+   "rents": 2,
+   "apt_seq": "11440-4037",
+   "road": "월드컵로26길 57",
+   "build_year": 2006
+  },
+  {
+   "where": "마포구|망원동|503|현진에버빌2",
+   "count": 3,
+   "sales": 2,
+   "rents": 1,
+   "apt_seq": "11440-131",
+   "road": "동교로3길 125",
+   "build_year": 2003
   },
   {
    "where": "마포구|성산동|646-2|삼우캐슬",
-   "count": 5,
+   "count": 3,
    "sales": 1,
-   "rents": 4,
+   "rents": 2,
    "apt_seq": "11440-4192",
    "road": "성미산로 18",
    "build_year": 2008
   },
   {
-   "where": "서대문구|연희동|703-25|선명(102동)",
-   "count": 5,
+   "where": "서대문구|홍제동|373|태영으뜸(데시앙)",
+   "count": 3,
+   "sales": 2,
+   "rents": 1,
+   "apt_seq": "11410-56",
+   "road": "세검정로3길 63",
+   "build_year": 1998
+  },
+  {
+   "where": "서대문구|북가좌동|467|DMC서부인터빌",
+   "count": 3,
    "sales": 3,
+   "rents": 0,
+   "apt_seq": "11410-3743",
+   "road": "증가로30길 8",
+   "build_year": 2008
+  },
+  {
+   "where": "서대문구|홍은동|440-3|풍림1차",
+   "count": 3,
+   "sales": 2,
+   "rents": 1,
+   "apt_seq": "11410-92",
+   "road": "통일로48가길 37",
+   "build_year": 1988
+  },
+  {
+   "where": "서대문구|홍제동|469|인왕산한신휴플러스",
+   "count": 3,
+   "sales": 2,
+   "rents": 1,
+   "apt_seq": "11410-3893",
+   "road": "통일로 397",
+   "build_year": 2009
+  },
+  {
+   "where": "서대문구|홍은동|186-22|서강1차(1동)",
+   "count": 3,
+   "sales": 1,
    "rents": 2,
-   "apt_seq": "11410-299",
-   "road": "증가로 74",
-   "build_year": 2004
+   "apt_seq": "11410-87",
+   "road": "연희로41길 142",
+   "build_year": 1988
   },
   {
-   "where": "서대문구|홍제동|322-134|송도그린빌A동",
-   "count": 5,
-   "sales": 4,
-   "rents": 1,
-   "apt_seq": "11410-123",
-   "road": "모래내로24길 54",
-   "build_year": 2003
-  },
-  {
-   "where": "서대문구|홍은동|281|로하스",
-   "count": 5,
-   "sales": 4,
-   "rents": 1,
-   "apt_seq": "11410-3912",
-   "road": "모래내로17길 21",
-   "build_year": 2010
-  },
-  {
-   "where": "서대문구|북가좌동|273-17|동도하이츠비동",
-   "count": 5,
-   "sales": 2,
-   "rents": 3,
-   "apt_seq": "11410-190",
-   "road": "응암로 132",
-   "build_year": 2004
-  },
-  {
-   "where": "서대문구|합동|31-9|사랑채",
-   "count": 5,
-   "sales": 2,
-   "rents": 3,
-   "apt_seq": "11410-142",
-   "road": "서소문로 43-30",
-   "build_year": 2003
-  },
-  {
-   "where": "강서구|염창동|242-10|여명",
-   "count": 5,
-   "sales": 4,
-   "rents": 1,
-   "apt_seq": "11500-294",
-   "road": "양천로67길 21",
-   "build_year": 2002
-  },
-  {
-   "where": "강서구|염창동|267-4|노블레스2(267-4)",
-   "count": 5,
+   "where": "서대문구|홍제동|470|제일아파트",
+   "count": 3,
    "sales": 1,
-   "rents": 4,
-   "apt_seq": "11500-5311",
-   "road": "공항대로65가길 49",
-   "build_year": 2007
+   "rents": 2,
+   "apt_seq": "11410-4465",
+   "road": "통일로37나길 12-6",
+   "build_year": 2015
   },
   {
-   "where": "동작구|상도동|380-1|성우아파트",
-   "count": 5,
-   "sales": 4,
+   "where": "강서구|염창동|250-3|이너스양화6차",
+   "count": 3,
+   "sales": 3,
+   "rents": 0,
+   "apt_seq": "11500-5856",
+   "road": "양천로73가길 38",
+   "build_year": 2009
+  },
+  {
+   "where": "강서구|염창동|242-8|염창동예성그린캐슬",
+   "count": 3,
+   "sales": 2,
    "rents": 1,
-   "apt_seq": "11590-218",
-   "road": "국사봉1길 214",
-   "build_year": 1993
+   "apt_seq": "11500-5101",
+   "road": "양천로65길 46",
+   "build_year": 2005
   },
   {
-   "where": "동작구|상도1동|317-1|숭실그랜드",
-   "count": 5,
-   "sales": 4,
-   "rents": 1,
-   "apt_seq": "11590-26",
-   "road": "상도로47다길 29",
-   "build_year": 2003
-  },
-  {
-   "where": "동작구|대방동|383-17|신호리치빌",
-   "count": 5,
+   "where": "영등포구|양평동3가|19|월드메르디앙",
+   "count": 3,
    "sales": 1,
-   "rents": 4,
-   "apt_seq": "11590-92",
-   "road": "대방동길 99",
-   "build_year": 2003
+   "rents": 2,
+   "apt_seq": "11560-1221",
+   "road": "선유서로 116",
+   "build_year": 2005
   },
   {
-   "where": "마포구|망원동|422-12|청화",
-   "count": 5,
-   "sales": 0,
-   "rents": 5,
-   "apt_seq": "",
-   "road": "월드컵로25길 75 75",
-   "build_year": 2003
+   "where": "영등포구|양평동3가|103|태승훼밀리",
+   "count": 3,
+   "sales": 1,
+   "rents": 2,
+   "apt_seq": "11560-1381",
+   "road": "선유서로34길 6",
+   "build_year": 2008
   },
   {
-   "where": "마포구|합정동|386-9|두레",
-   "count": 5,
-   "sales": 0,
-   "rents": 5,
-   "apt_seq": "",
-   "road": "양화로3길 45 45",
-   "build_year": 2004
+   "where": "영등포구|양평동3가|105|삼익플라주201동",
+   "count": 3,
+   "sales": 1,
+   "rents": 2,
+   "apt_seq": "11560-1527",
+   "road": "선유로40길 7",
+   "build_year": 2012
+  },
+  {
+   "where": "동작구|사당동|1151|갑을명가",
+   "count": 3,
+   "sales": 2,
+   "rents": 1,
+   "apt_seq": "11590-3317",
+   "road": "솔밭로 65",
+   "build_year": 2006
+  },
+  {
+   "where": "동작구|사당동|1147|대창센시티",
+   "count": 3,
+   "sales": 2,
+   "rents": 1,
+   "apt_seq": "11590-3279",
+   "road": "사당로9가길 55",
+   "build_year": 2005
   },
   {
    "where": "마포구|망원동|429-3|대성2",
-   "count": 5,
+   "count": 3,
    "sales": 0,
-   "rents": 5,
+   "rents": 3,
    "apt_seq": "",
    "road": "월드컵로25길 122 122",
    "build_year": 1996
   },
   {
-   "where": "마포구|합정동|400-20|백운",
-   "count": 5,
+   "where": "마포구|서교동|488|삼익플라주서교1",
+   "count": 3,
    "sales": 0,
-   "rents": 5,
-   "apt_seq": "",
-   "road": "희우정로1길 27 27",
-   "build_year": 2002
-  },
-  {
-   "where": "서대문구|연희동|89-9|연화",
-   "count": 5,
-   "sales": 0,
-   "rents": 5,
-   "apt_seq": "",
-   "road": "연희로25길 101 101",
-   "build_year": 1975
-  },
-  {
-   "where": "서대문구|홍제동|175-3|홍제헤렌",
-   "count": 5,
-   "sales": 0,
-   "rents": 5,
-   "apt_seq": "",
-   "road": "통일로36가길 9 9",
-   "build_year": 2018
-  },
-  {
-   "where": "서대문구|홍제동|458|조한",
-   "count": 5,
-   "sales": 0,
-   "rents": 5,
-   "apt_seq": "",
-   "road": "홍제내길 174 174",
-   "build_year": 2000
-  },
-  {
-   "where": "영등포구|양평동1가|273|영등포자이디그니티",
-   "count": 5,
-   "sales": 0,
-   "rents": 5,
-   "apt_seq": "",
-   "road": "영등포로11길 19 19",
-   "build_year": 2026
-  },
-  {
-   "where": "마포구|합정동|389-16|대운행복",
-   "count": 4,
-   "sales": 1,
    "rents": 3,
-   "apt_seq": "11440-218",
-   "road": "양화로1길 38",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|성산동|199-15|한림201동",
-   "count": 4,
-   "sales": 3,
-   "rents": 1,
-   "apt_seq": "11440-454",
-   "road": "새터산5길 11",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|합정동|375-2|그레이스",
-   "count": 4,
-   "sales": 1,
-   "rents": 3,
-   "apt_seq": "11440-164",
-   "road": "양화진길 11",
-   "build_year": 2003
-  },
-  {
-   "where": "마포구|망원동|463-2|동보프리미아",
-   "count": 4,
-   "sales": 2,
-   "rents": 2,
-   "apt_seq": "11440-217",
-   "road": "방울내로11길 181",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|서교동|458-6|에덴지우",
-   "count": 4,
-   "sales": 1,
-   "rents": 3,
-   "apt_seq": "11440-4872",
-   "road": "동교로17길 45",
-   "build_year": 2011
-  },
-  {
-   "where": "마포구|망원동|454-36|참존2차(102동)",
-   "count": 4,
-   "sales": 2,
-   "rents": 2,
-   "apt_seq": "11440-3906",
-   "road": "망원로 14",
-   "build_year": 2005
-  },
-  {
-   "where": "마포구|공덕동|111-7|로즈빌A",
-   "count": 4,
-   "sales": 2,
-   "rents": 2,
-   "apt_seq": "11440-173",
-   "road": "임정로25길 21",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|합정동|357-5|두영이지안102동",
-   "count": 4,
-   "sales": 1,
-   "rents": 3,
-   "apt_seq": "11440-4341",
-   "road": "토정로 67",
+   "apt_seq": "",
+   "road": "월드컵북로 39 39",
    "build_year": 2007
   },
   {
-   "where": "서대문구|연희동|171-10|제니스APT",
-   "count": 4,
-   "sales": 3,
-   "rents": 1,
-   "apt_seq": "11410-4504",
-   "road": "모래내로 376",
-   "build_year": 2016
-  },
-  {
-   "where": "서대문구|북아현동|1-78|화신",
-   "count": 4,
-   "sales": 3,
-   "rents": 1,
-   "apt_seq": "11410-145",
-   "road": "북아현로22길 56",
+   "where": "마포구|용강동|501|대림2차",
+   "count": 3,
+   "sales": 0,
+   "rents": 3,
+   "apt_seq": "",
+   "road": "토정로32길 6 6",
    "build_year": 2004
-  },
-  {
-   "where": "서대문구|북아현동|1-1201|조은1차",
-   "count": 4,
-   "sales": 1,
-   "rents": 3,
-   "apt_seq": "11410-147",
-   "road": "북아현로 68-22",
-   "build_year": 2004
-  },
-  {
-   "where": "서대문구|연희동|703-32|선명(101동)",
-   "count": 4,
-   "sales": 2,
-   "rents": 2,
-   "apt_seq": "11410-300",
-   "road": "증가로 76",
-   "build_year": 2005
-  },
-  {
-   "where": "서대문구|북아현동|1-46|문영센스빌",
-   "count": 4,
-   "sales": 1,
-   "rents": 3,
-   "apt_seq": "11410-20",
-   "road": "북아현로20길 68",
-   "build_year": 2002
-  },
-  {
-   "where": "서대문구|북아현동|1-342|대성",
-   "count": 4,
-   "sales": 1,
-   "rents": 3,
-   "apt_seq": "11410-134",
-   "road": "북아현로22길 45",
-   "build_year": 2004
-  },
-  {
-   "where": "서대문구|북아현동|1-52|건일팰리스",
-   "count": 4,
-   "sales": 3,
-   "rents": 1,
-   "apt_seq": "11410-143",
-   "road": "북아현로22길 81",
-   "build_year": 2004
-  },
-  {
-   "where": "서대문구|북가좌동|7-2|한솔",
-   "count": 4,
-   "sales": 4,
-   "rents": 0,
-   "apt_seq": "11410-112",
-   "road": "증가로24길 21",
-   "build_year": 2002
-  },
-  {
-   "where": "서대문구|홍제동|456|성원",
-   "count": 4,
-   "sales": 3,
-   "rents": 1,
-   "apt_seq": "11410-53",
-   "road": "모래내로 430",
-   "build_year": 1998
-  },
-  {
-   "where": "서대문구|북아현동|1-122|그린빌",
-   "count": 4,
-   "sales": 1,
-   "rents": 3,
-   "apt_seq": "11410-146",
-   "road": "북아현로 72-4",
-   "build_year": 2003
-  },
-  {
-   "where": "서대문구|홍제동|283-36|마체스터",
-   "count": 4,
-   "sales": 1,
-   "rents": 3,
-   "apt_seq": "11410-3841",
-   "road": "세검정로 106-8",
-   "build_year": 2008
-  },
-  {
-   "where": "서대문구|남가좌동|345-4|백련미라보",
-   "count": 4,
-   "sales": 1,
-   "rents": 3,
-   "apt_seq": "11410-100",
-   "road": "가재울로6길 53-87",
-   "build_year": 1992
-  },
-  {
-   "where": "서대문구|연희동|705-4|연희에스엠",
-   "count": 4,
-   "sales": 1,
-   "rents": 3,
-   "apt_seq": "11410-3961",
-   "road": "홍연2길 21",
-   "build_year": 2011
-  },
-  {
-   "where": "강서구|염창동|241-24|엠그린",
-   "count": 4,
-   "sales": 1,
-   "rents": 3,
-   "apt_seq": "11500-5234",
-   "road": "양천로65길 13",
-   "build_year": 2006
-  },
-  {
-   "where": "강서구|염창동|304|이너스5차동진",
-   "count": 4,
-   "sales": 2,
-   "rents": 2,
-   "apt_seq": "11500-5346",
-   "road": "양천로71가길 29",
-   "build_year": 2007
-  },
-  {
-   "where": "강서구|염창동|271-5|염창2차보람",
-   "count": 4,
-   "sales": 1,
-   "rents": 3,
-   "apt_seq": "11500-5226",
-   "road": "공항대로61길 48-22",
-   "build_year": 2006
-  },
-  {
-   "where": "동작구|대방동|385-11|삼인",
-   "count": 4,
-   "sales": 2,
-   "rents": 2,
-   "apt_seq": "11590-117",
-   "road": "여의대방로36길 7",
-   "build_year": 2004
-  },
-  {
-   "where": "동작구|사당동|238-6|레디앙스",
-   "count": 4,
-   "sales": 4,
-   "rents": 0,
-   "apt_seq": "11590-208",
-   "road": "솔밭로 57",
-   "build_year": 2004
-  },
-  {
-   "where": "동작구|사당동|449-28|닷컴캐슬",
-   "count": 4,
-   "sales": 3,
-   "rents": 1,
-   "apt_seq": "11590-112",
-   "road": "남부순환로255나길 8",
-   "build_year": 2003
-  },
-  {
-   "where": "동작구|상도1동|501-3|현진베스트빌",
-   "count": 4,
-   "sales": 4,
-   "rents": 0,
-   "apt_seq": "11590-227",
-   "road": "강남초등길 23-3",
-   "build_year": 2003
-  },
-  {
-   "where": "동작구|흑석동|97-2|명수대",
-   "count": 4,
-   "sales": 1,
-   "rents": 3,
-   "apt_seq": "11590-32",
-   "road": "서달로 158",
-   "build_year": 1976
-  },
-  {
-   "where": "동작구|대방동|375-37|디어파크(파크빌리지)",
-   "count": 4,
-   "sales": 2,
-   "rents": 2,
-   "apt_seq": "11590-140",
-   "road": "여의대방로36길 34",
-   "build_year": 2004
-  },
-  {
-   "where": "서대문구|연희동|151-41|금보",
-   "count": 4,
-   "sales": 0,
-   "rents": 4,
-   "apt_seq": "",
-   "road": "연희로31길 14 14",
-   "build_year": 2004
-  },
-  {
-   "where": "서대문구|홍제동|312-221|동일5차101동",
-   "count": 4,
-   "sales": 0,
-   "rents": 4,
-   "apt_seq": "",
-   "road": "통일로37나길 52 52",
-   "build_year": 2005
-  },
-  {
-   "where": "강서구|염창동|313|염창역동문디이스트",
-   "count": 4,
-   "sales": 0,
-   "rents": 4,
-   "apt_seq": "",
-   "road": "공항대로81길 14 14",
-   "build_year": 2025
-  },
-  {
-   "where": "동작구|사당동|196|인정",
-   "count": 4,
-   "sales": 0,
-   "rents": 4,
-   "apt_seq": "",
-   "road": "사당로2길 72 72",
-   "build_year": 1988
-  },
-  {
-   "where": "동작구|상도동|126-32|현산푸른숲",
-   "count": 4,
-   "sales": 0,
-   "rents": 4,
-   "apt_seq": "",
-   "road": "상도로68길 33-1 33-1",
-   "build_year": 2007
-  },
-  {
-   "where": "동작구|신대방동|364-55|펭귄",
-   "count": 4,
-   "sales": 0,
-   "rents": 4,
-   "apt_seq": "",
-   "road": "여의대방로22나길 47 47",
-   "build_year": 1978
-  },
-  {
-   "where": "동작구|대방동|377-1|대방홈타운",
-   "count": 4,
-   "sales": 0,
-   "rents": 4,
-   "apt_seq": "",
-   "road": "대방동27길 27 27",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|망원동|384-7|삼우월드",
-   "count": 3,
-   "sales": 2,
-   "rents": 1,
-   "apt_seq": "11440-187",
-   "road": "월드컵로11길 37",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|성산동|81-106|성산힐아파트",
-   "count": 3,
-   "sales": 2,
-   "rents": 1,
-   "apt_seq": "11440-4849",
-   "road": "성산로6길 37-10",
-   "build_year": 2011
-  },
-  {
-   "where": "마포구|용강동|118-3|대호강변",
-   "count": 3,
-   "sales": 1,
-   "rents": 2,
-   "apt_seq": "11440-4802",
-   "road": "대흥로4길 54",
-   "build_year": 2010
-  },
-  {
-   "where": "마포구|합정동|376-5|그레이스3차",
-   "count": 3,
-   "sales": 1,
-   "rents": 2,
-   "apt_seq": "11440-3902",
-   "road": "양화진길 37",
-   "build_year": 2005
-  },
-  {
-   "where": "마포구|공덕동|111-416|로즈빌B",
-   "count": 3,
-   "sales": 1,
-   "rents": 2,
-   "apt_seq": "11440-174",
-   "road": "임정로25길 19",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|망원동|504|시티",
-   "count": 3,
-   "sales": 1,
-   "rents": 2,
-   "apt_seq": "11440-199",
-   "road": "포은로6길 33",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|합정동|357-3|두영이지안101동",
-   "count": 3,
-   "sales": 1,
-   "rents": 2,
-   "apt_seq": "11440-4340",
-   "road": "토정로 67",
-   "build_year": 2007
-  },
-  {
-   "where": "마포구|망원동|436-6|천우",
-   "count": 3,
-   "sales": 2,
-   "rents": 1,
-   "apt_seq": "11440-83",
-   "road": "방울내로5길 8",
-   "build_year": 2002
-  },
-  {
-   "where": "마포구|염리동|45-27|우공",
-   "count": 3,
-   "sales": 1,
-   "rents": 2,
-   "apt_seq": "11440-179",
-   "road": "백범로25길 92",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|서교동|453-15|센트레",
-   "count": 3,
-   "sales": 1,
-   "rents": 2,
-   "apt_seq": "11440-60",
-   "road": "월드컵북로7길 42",
-   "build_year": 2002
-  },
-  {
-   "where": "마포구|연남동|246-8|현대하이츠",
-   "count": 3,
-   "sales": 1,
-   "rents": 2,
-   "apt_seq": "11440-144",
-   "road": "성미산로23길 38",
-   "build_year": 2003
-  },
-  {
-   "where": "서대문구|홍제동|104-1|인왕",
-   "count": 3,
-   "sales": 3,
-   "rents": 0,
-   "apt_seq": "11410-57",
-   "road": "통일로32길 3",
-   "build_year": 1968
-  },
-  {
-   "where": "서대문구|창천동|416|노블레스",
-   "count": 3,
-   "sales": 2,
-   "rents": 1,
-   "apt_seq": "11410-160",
-   "road": "연희로2길 46",
-   "build_year": 2004
-  },
-  {
-   "where": "서대문구|홍제동|131-2|제니스",
-   "count": 3,
-   "sales": 2,
-   "rents": 1,
-   "apt_seq": "11410-4641",
-   "road": "홍제원길 25-1",
-   "build_year": 2017
-  },
-  {
-   "where": "서대문구|충정로3가|189-8|미동",
-   "count": 3,
-   "sales": 2,
-   "rents": 1,
-   "apt_seq": "11410-3",
-   "road": "충정로7길 9",
-   "build_year": 1969
-  },
-  {
-   "where": "서대문구|홍제동|104-20|안산맨숀",
-   "count": 3,
-   "sales": 3,
-   "rents": 0,
-   "apt_seq": "11410-54",
-   "road": "통일로32길 6",
-   "build_year": 1972
-  },
-  {
-   "where": "서대문구|연희동|188-41|시민",
-   "count": 3,
-   "sales": 2,
-   "rents": 1,
-   "apt_seq": "11410-171",
-   "road": "증가로 61",
-   "build_year": 1978
-  },
-  {
-   "where": "서대문구|창천동|359|건우그린",
-   "count": 3,
-   "sales": 1,
-   "rents": 2,
-   "apt_seq": "11410-292",
-   "road": "신촌로1길 69",
-   "build_year": 2003
-  },
-  {
-   "where": "영등포구|양평동6가|101|선유도삼성홈타운",
-   "count": 3,
-   "sales": 2,
-   "rents": 1,
-   "apt_seq": "11560-1711",
-   "road": "양평로28가길 44",
-   "build_year": 2015
-  },
-  {
-   "where": "동작구|상도동|375-5|성우2차아파트",
-   "count": 3,
-   "sales": 2,
-   "rents": 1,
-   "apt_seq": "11590-217",
-   "road": "국사봉1길 200",
-   "build_year": 1994
-  },
-  {
-   "where": "동작구|대방동|381-35|그린힐",
-   "count": 3,
-   "sales": 3,
-   "rents": 0,
-   "apt_seq": "11590-116",
-   "road": "여의대방로36길 16",
-   "build_year": 2003
-  },
-  {
-   "where": "동작구|사당동|205|삼성그린(205)",
-   "count": 3,
-   "sales": 2,
-   "rents": 1,
-   "apt_seq": "11590-232",
-   "road": "사당로2가길 202",
-   "build_year": 2001
-  },
-  {
-   "where": "동작구|상도동|350-5|샤인",
-   "count": 3,
-   "sales": 2,
-   "rents": 1,
-   "apt_seq": "11590-3418",
-   "road": "상도로15가길 22",
-   "build_year": 2007
-  },
-  {
-   "where": "마포구|중동|30-28|수풍",
-   "count": 3,
-   "sales": 0,
-   "rents": 3,
-   "apt_seq": "",
-   "road": "월드컵북로38가길 22-5 22-5",
-   "build_year": 2009
-  },
-  {
-   "where": "마포구|합정동|390-5|대운",
-   "count": 3,
-   "sales": 0,
-   "rents": 3,
-   "apt_seq": "",
-   "road": "포은로2나길 35 35",
-   "build_year": 2002
-  },
-  {
-   "where": "마포구|합정동|371-3|정원쉐르빌",
-   "count": 3,
-   "sales": 0,
-   "rents": 3,
-   "apt_seq": "",
-   "road": "성지3길 11 11",
-   "build_year": 2001
-  },
-  {
-   "where": "마포구|합정동|386-2|현대하이츠",
-   "count": 3,
-   "sales": 0,
-   "rents": 3,
-   "apt_seq": "",
-   "road": "양화로3길 59 59",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|서교동|329-2|대아",
-   "count": 3,
-   "sales": 0,
-   "rents": 3,
-   "apt_seq": "",
-   "road": "와우산로33길 26-7 26-7",
-   "build_year": 1997
-  },
-  {
-   "where": "마포구|합정동|355-1|에덴지우",
-   "count": 3,
-   "sales": 0,
-   "rents": 3,
-   "apt_seq": "",
-   "road": "어울마당로3길 19 19",
-   "build_year": 2006
-  },
-  {
-   "where": "마포구|성산동|50-1|골든빌3차",
-   "count": 3,
-   "sales": 0,
-   "rents": 3,
-   "apt_seq": "",
-   "road": "월드컵북로12안길 88 88",
-   "build_year": 2003
-  },
-  {
-   "where": "마포구|망원동|465-33|광남캐스빌C",
-   "count": 3,
-   "sales": 0,
-   "rents": 3,
-   "apt_seq": "",
-   "road": "방울내로5길 39-1 39-1",
-   "build_year": 2002
-  },
-  {
-   "where": "마포구|망원동|465-34|광남캐스빌A",
-   "count": 3,
-   "sales": 0,
-   "rents": 3,
-   "apt_seq": "",
-   "road": "방울내로5길 41-1 41-1",
-   "build_year": 2002
-  },
-  {
-   "where": "마포구|망원동|435-4|광남캐스빌",
-   "count": 3,
-   "sales": 0,
-   "rents": 3,
-   "apt_seq": "",
-   "road": "월드컵로31길 33 33",
-   "build_year": 2001
-  },
-  {
-   "where": "마포구|연남동|254-1|엘르빌2",
-   "count": 3,
-   "sales": 0,
-   "rents": 3,
-   "apt_seq": "",
-   "road": "동교로41길 35 35",
-   "build_year": 2002
   },
   {
    "where": "마포구|동교동|200-4|광남벨라스2동",
@@ -3711,112 +1830,94 @@
    "build_year": 2003
   },
   {
-   "where": "서대문구|연희동|743|우국한마음",
+   "where": "마포구|마포동|350|강변한신코아",
    "count": 3,
    "sales": 0,
    "rents": 3,
    "apt_seq": "",
-   "road": "홍제천로 194 194",
-   "build_year": 2005
+   "road": "마포대로4다길 18 18",
+   "build_year": 1992
   },
   {
-   "where": "서대문구|북가좌동|3-71|대성",
+   "where": "마포구|합정동|400-20|백운",
    "count": 3,
    "sales": 0,
    "rents": 3,
    "apt_seq": "",
-   "road": "증가로24바길 23 23",
+   "road": "희우정로1길 27 27",
    "build_year": 2002
   },
   {
-   "where": "서대문구|홍제동|322-87|풍진베이스타운",
+   "where": "마포구|망원동|489|성원2",
    "count": 3,
    "sales": 0,
    "rents": 3,
    "apt_seq": "",
-   "road": "모래내로24길 48 48",
-   "build_year": 2004
+   "road": "망원로4길 8 8",
+   "build_year": 1999
   },
   {
-   "where": "서대문구|충정로3가|30-9|장미",
+   "where": "마포구|망원동|422-12|청화",
    "count": 3,
    "sales": 0,
    "rents": 3,
    "apt_seq": "",
-   "road": "경기대로3길 5 5",
-   "build_year": 2004
-  },
-  {
-   "where": "서대문구|북아현동|1-1836|조은2차",
-   "count": 3,
-   "sales": 0,
-   "rents": 3,
-   "apt_seq": "",
-   "road": "북아현로 68-20 68-20",
-   "build_year": 2004
-  },
-  {
-   "where": "서대문구|홍제동|315-7|서울맨션",
-   "count": 3,
-   "sales": 0,
-   "rents": 3,
-   "apt_seq": "",
-   "road": "통일로37길 30 30",
-   "build_year": 1972
-  },
-  {
-   "where": "서대문구|홍제동|312-223|월드뷰",
-   "count": 3,
-   "sales": 0,
-   "rents": 3,
-   "apt_seq": "",
-   "road": "통일로39길 107-10 107-10",
+   "road": "월드컵로25길 75 75",
    "build_year": 2003
   },
   {
-   "where": "서대문구|창천동|368|엘르빌2차",
+   "where": "마포구|대흥동|18-55|성신",
    "count": 3,
    "sales": 0,
    "rents": 3,
    "apt_seq": "",
-   "road": "연희로2길 51-5 51-5",
+   "road": "대흥로21길 14 14",
+   "build_year": 2006
+  },
+  {
+   "where": "마포구|용강동|495-3|강변그린",
+   "count": 3,
+   "sales": 0,
+   "rents": 3,
+   "apt_seq": "",
+   "road": "대흥로2길 16 16",
+   "build_year": 1999
+  },
+  {
+   "where": "서대문구|연희동|717-29|한인트윈빌",
+   "count": 3,
+   "sales": 0,
+   "rents": 3,
+   "apt_seq": "",
+   "road": "홍연길 77 77",
    "build_year": 2002
   },
   {
-   "where": "영등포구|양평동6가|95-4|리츠뷰",
+   "where": "서대문구|천연동|98-17|반석블레스포레",
    "count": 3,
    "sales": 0,
    "rents": 3,
    "apt_seq": "",
-   "road": "양평로28사길 45 45",
-   "build_year": 2014
+   "road": "독립문로8길 27 27",
+   "build_year": 2024
   },
   {
-   "where": "동작구|사당동|64-128|라이즈2동",
+   "where": "영등포구|양평동3가|104|삼익플라주101동",
    "count": 3,
    "sales": 0,
    "rents": 3,
    "apt_seq": "",
-   "road": "동작대로33마길 17 17",
-   "build_year": 2003
+   "road": "선유로42길 6 6",
+   "build_year": 2009
   },
   {
-   "where": "동작구|사당동|288-34|까치산",
+   "where": "동작구|상도동|530|롯데캐슬비엔",
    "count": 3,
    "sales": 0,
    "rents": 3,
    "apt_seq": "",
-   "road": "사당로16라길 77 77",
-   "build_year": 2004
-  },
-  {
-   "where": "동작구|사당동|1016-42|삼성월드",
-   "count": 3,
-   "sales": 0,
-   "rents": 3,
-   "apt_seq": "",
-   "road": "동작대로11길 64 64",
-   "build_year": 2003
+   "road": "양녕로 170 170",
+   "build_year": 2010
   },
   {
    "where": "동작구|사당동|303-60|현대파크(아)",
@@ -3828,121 +1929,112 @@
    "build_year": 2005
   },
   {
-   "where": "마포구|신수동|91-511|(91-511)",
-   "count": 2,
-   "sales": 2,
-   "rents": 0,
-   "apt_seq": "11440-5002",
-   "road": "신수로 89",
-   "build_year": 2011
+   "where": "동작구|흑석동|332|해가든",
+   "count": 3,
+   "sales": 0,
+   "rents": 3,
+   "apt_seq": "",
+   "road": "서달로 150 150",
+   "build_year": 2010
   },
   {
-   "where": "마포구|망원동|412-19|뉴서울",
-   "count": 2,
-   "sales": 2,
-   "rents": 0,
-   "apt_seq": "11440-81",
-   "road": "월드컵로23길 46",
-   "build_year": 2002
-  },
-  {
-   "where": "마포구|중동|58-39|예원",
-   "count": 2,
-   "sales": 1,
-   "rents": 1,
-   "apt_seq": "11440-148",
-   "road": "성암로 133",
-   "build_year": 2003
-  },
-  {
-   "where": "마포구|성산동|255-11|유안",
-   "count": 2,
-   "sales": 1,
-   "rents": 1,
-   "apt_seq": "11440-117",
-   "road": "성미산로3가길 6-8",
-   "build_year": 2002
-  },
-  {
-   "where": "마포구|성산동|114-3|성일빌딩",
-   "count": 2,
-   "sales": 2,
-   "rents": 0,
-   "apt_seq": "11440-3994",
-   "road": "월드컵북로 98",
+   "where": "동작구|상도동|126-32|현산푸른숲",
+   "count": 3,
+   "sales": 0,
+   "rents": 3,
+   "apt_seq": "",
+   "road": "상도로68길 33-1 33-1",
    "build_year": 2007
   },
   {
-   "where": "마포구|노고산동|107-36|현대벤처빌",
+   "where": "마포구|용강동|495-1|강변그린",
    "count": 2,
    "sales": 1,
    "rents": 1,
-   "apt_seq": "11440-37",
-   "road": "백범로 10",
+   "apt_seq": "11440-1150",
+   "road": "대흥로2길 8",
+   "build_year": 1999
+  },
+  {
+   "where": "마포구|중동|393|건영월드컵",
+   "count": 2,
+   "sales": 1,
+   "rents": 1,
+   "apt_seq": "11440-125",
+   "road": "성암로 41",
    "build_year": 2002
   },
   {
-   "where": "마포구|망원동|465-3|광남캐스빌B",
+   "where": "마포구|공덕동|111-7|로즈빌A",
    "count": 2,
-   "sales": 1,
-   "rents": 1,
-   "apt_seq": "11440-84",
-   "road": "방울내로5길 41",
-   "build_year": 2002
+   "sales": 2,
+   "rents": 0,
+   "apt_seq": "11440-173",
+   "road": "임정로25길 21",
+   "build_year": 2004
   },
   {
-   "where": "마포구|합정동|200-1|펠리스아트빌",
+   "where": "마포구|합정동|466|장미(466-0)",
    "count": 2,
-   "sales": 1,
-   "rents": 1,
-   "apt_seq": "11440-150",
-   "road": "토정로 34",
-   "build_year": 2003
+   "sales": 2,
+   "rents": 0,
+   "apt_seq": "11440-63",
+   "road": "어울마당로 11",
+   "build_year": 2000
   },
   {
-   "where": "마포구|연남동|249-3|노블레스빌2",
+   "where": "마포구|합정동|470|일신건영휴먼빌아파트",
    "count": 2,
-   "sales": 1,
-   "rents": 1,
-   "apt_seq": "11440-101",
-   "road": "성미산로27길 15-1",
-   "build_year": 2002
+   "sales": 2,
+   "rents": 0,
+   "apt_seq": "11440-3908",
+   "road": "토정로5길 9",
+   "build_year": 2005
   },
   {
-   "where": "마포구|망원동|432-63|신부",
+   "where": "마포구|망원동|491|대상3",
    "count": 2,
    "sales": 1,
    "rents": 1,
-   "apt_seq": "11440-77",
-   "road": "월드컵로29길 84",
-   "build_year": 2001
+   "apt_seq": "11440-69",
+   "road": "월드컵로31길 103",
+   "build_year": 2000
   },
   {
-   "where": "마포구|성산동|254-28|그레이스",
+   "where": "마포구|성산동|596|대원",
    "count": 2,
    "sales": 1,
    "rents": 1,
-   "apt_seq": "11440-115",
-   "road": "월드컵로26길 21",
-   "build_year": 2002
+   "apt_seq": "11440-103",
+   "road": "성산로4길 75",
+   "build_year": 1999
   },
   {
-   "where": "마포구|망원동|483-6|목화",
+   "where": "마포구|성산동|666|월드컵아이파크(666-0)",
    "count": 2,
    "sales": 1,
    "rents": 1,
-   "apt_seq": "11440-158",
-   "road": "망원로 89",
-   "build_year": 2003
+   "apt_seq": "11440-4564",
+   "road": "모래내로9길 3",
+   "build_year": 2008
   },
   {
-   "where": "마포구|연남동|564-35|리츠",
+   "where": "마포구|합정동|357-5|두영이지안102동",
    "count": 2,
    "sales": 1,
    "rents": 1,
-   "apt_seq": "11440-5032",
-   "road": "연남로1길 84",
-   "build_year": 2012
+   "apt_seq": "11440-4341",
+   "road": "토정로 67",
+   "build_year": 2007
+  },
+  {
+   "where": "마포구|연남동|515-23|청기와",
+   "count": 2,
+   "sales": 1,
+   "rents": 1,
+   "apt_seq": "11440-98",
+   "road": "연남로 27",
+   "build_year": 2000
   },
   {
    "where": "마포구|성산동|25-1|라인성서",
@@ -3951,6 +2043,24 @@
    "rents": 1,
    "apt_seq": "11440-170",
    "road": "성미산로7안길 26",
+   "build_year": 2005
+  },
+  {
+   "where": "마포구|망원동|495|신부3차파스카",
+   "count": 2,
+   "sales": 1,
+   "rents": 1,
+   "apt_seq": "11440-157",
+   "road": "방울내로9안길 98",
+   "build_year": 2002
+  },
+  {
+   "where": "마포구|망원동|419-3|참존1차(419-3)",
+   "count": 2,
+   "sales": 1,
+   "rents": 1,
+   "apt_seq": "11440-3936",
+   "road": "망원로 19",
    "build_year": 2005
   },
   {
@@ -3963,139 +2073,103 @@
    "build_year": 2003
   },
   {
-   "where": "서대문구|홍제동|24-16|동양드림",
+   "where": "마포구|도화동|563|마포아크로타워",
    "count": 2,
-   "sales": 2,
-   "rents": 0,
-   "apt_seq": "11410-711",
-   "road": "통일로26길 12-2",
+   "sales": 1,
+   "rents": 1,
+   "apt_seq": "11440-4108",
+   "road": "마포대로 68",
+   "build_year": 2007
+  },
+  {
+   "where": "마포구|창전동|441|창전쌍용스윗닷홈",
+   "count": 2,
+   "sales": 1,
+   "rents": 1,
+   "apt_seq": "11440-3898",
+   "road": "창전로 63",
    "build_year": 2005
   },
   {
-   "where": "서대문구|홍은동|189-9|미든푸르지",
+   "where": "서대문구|연희동|163-30|신원",
    "count": 2,
    "sales": 1,
    "rents": 1,
-   "apt_seq": "11410-3588",
-   "road": "연희로41라길 23",
-   "build_year": 2006
+   "apt_seq": "11410-41",
+   "road": "연희로 239-5",
+   "build_year": 2002
   },
   {
-   "where": "서대문구|충정로3가|30-2|충정솔레디움(102동)",
+   "where": "서대문구|북가좌동|460|DMC이랜드해가든",
+   "count": 2,
+   "sales": 2,
+   "rents": 0,
+   "apt_seq": "11410-3712",
+   "road": "수색로 157",
+   "build_year": 2007
+  },
+  {
+   "where": "서대문구|충정로3가|222|피어리스",
    "count": 2,
    "sales": 1,
    "rents": 1,
-   "apt_seq": "11410-287",
-   "road": "경기대로3길 19-5",
-   "build_year": 2005
+   "apt_seq": "11410-5",
+   "road": "충정로 50",
+   "build_year": 1987
   },
   {
-   "where": "서대문구|홍제동|104-6|인왕궁맨숀",
+   "where": "서대문구|북아현동|1006|북아현경남",
    "count": 2,
    "sales": 2,
    "rents": 0,
-   "apt_seq": "11410-58",
-   "road": "통일로32길 14",
-   "build_year": 1974
+   "apt_seq": "11410-14",
+   "road": "북아현로 40",
+   "build_year": 1996
   },
   {
-   "where": "서대문구|홍은동|274-60|장성미모아",
-   "count": 2,
-   "sales": 2,
-   "rents": 0,
-   "apt_seq": "11410-3610",
-   "road": "모래내로 344-11",
-   "build_year": 2006
-  },
-  {
-   "where": "서대문구|연희동|169-9|에코빌리지",
-   "count": 2,
-   "sales": 2,
-   "rents": 0,
-   "apt_seq": "11410-3874",
-   "road": "홍제천로 202",
-   "build_year": 2009
-  },
-  {
-   "where": "서대문구|홍제동|131-9|그레이스(B동)",
+   "where": "서대문구|연희동|703-25|선명(102동)",
    "count": 2,
    "sales": 1,
    "rents": 1,
-   "apt_seq": "11410-3469",
-   "road": "홍제원길 26",
-   "build_year": 2005
-  },
-  {
-   "where": "서대문구|연희동|104-3|싸이",
-   "count": 2,
-   "sales": 2,
-   "rents": 0,
-   "apt_seq": "11410-3481",
-   "road": "증가로2길 53",
-   "build_year": 2005
-  },
-  {
-   "where": "서대문구|홍은동|8-920|북한산삼부르네상스102동103동104동",
-   "count": 2,
-   "sales": 1,
-   "rents": 1,
-   "apt_seq": "11410-5034",
-   "road": "포방터8길 30",
-   "build_year": 2024
-  },
-  {
-   "where": "서대문구|북가좌동|336-4|명진",
-   "count": 2,
-   "sales": 2,
-   "rents": 0,
-   "apt_seq": "11410-182",
-   "road": "증가로32안길 76",
-   "build_year": 2001
-  },
-  {
-   "where": "서대문구|연희동|169-3|드리밍아파트",
-   "count": 2,
-   "sales": 2,
-   "rents": 0,
-   "apt_seq": "11410-3609",
-   "road": "홍제천로 204",
-   "build_year": 2006
-  },
-  {
-   "where": "서대문구|홍은동|402-39|성우",
-   "count": 2,
-   "sales": 1,
-   "rents": 1,
-   "apt_seq": "11410-179",
-   "road": "가좌로 83",
+   "apt_seq": "11410-299",
+   "road": "증가로 74",
    "build_year": 2004
   },
   {
-   "where": "서대문구|창천동|468|씨밀레",
+   "where": "서대문구|연희동|705-4|연희에스엠",
    "count": 2,
    "sales": 1,
    "rents": 1,
-   "apt_seq": "11410-161",
-   "road": "연희로2안길 7-18",
+   "apt_seq": "11410-3961",
+   "road": "홍연2길 21",
+   "build_year": 2011
+  },
+  {
+   "where": "서대문구|충정로2가|69-23|로얄훼미리아파트A동",
+   "count": 2,
+   "sales": 2,
+   "rents": 0,
+   "apt_seq": "11410-139",
+   "road": "경기대로9길 15",
    "build_year": 2004
   },
   {
-   "where": "서대문구|홍은동|8-1091|북한산삼부르네상스205동206동207동",
+   "where": "서대문구|연희동|742|성원쌍떼빌팰리스",
    "count": 2,
-   "sales": 1,
-   "rents": 1,
-   "apt_seq": "11410-5036",
-   "road": "포방터8길 25",
-   "build_year": 2024
+   "sales": 2,
+   "rents": 0,
+   "apt_seq": "11410-185",
+   "road": "연희로28길 35-28",
+   "build_year": 2005
   },
   {
-   "where": "서대문구|연희동|1-78|파크카운티",
+   "where": "서대문구|북아현동|114-1|북아현맨션",
    "count": 2,
    "sales": 1,
    "rents": 1,
-   "apt_seq": "11410-117",
-   "road": "모래내로20길 24-17",
-   "build_year": 2003
+   "apt_seq": "11410-15",
+   "road": "북아현로6길 78",
+   "build_year": 1975
   },
   {
    "where": "강서구|염창동|263-7|DH팰리스",
@@ -4107,40 +2181,13 @@
    "build_year": 2022
   },
   {
-   "where": "동작구|노량진동|227-5|노량진맨션",
-   "count": 2,
-   "sales": 2,
-   "rents": 0,
-   "apt_seq": "11590-2",
-   "road": "장승배기로18길 27",
-   "build_year": 1974
-  },
-  {
-   "where": "동작구|상도동|210-250|남현그린",
+   "where": "강서구|염창동|264-27|삼성한아름",
    "count": 2,
    "sales": 1,
    "rents": 1,
-   "apt_seq": "11590-121",
-   "road": "양녕로27길 45",
-   "build_year": 2003
-  },
-  {
-   "where": "동작구|상도동|263-2|성대아파트",
-   "count": 2,
-   "sales": 1,
-   "rents": 1,
-   "apt_seq": "11590-125",
-   "road": "성대로12길 11",
-   "build_year": 2004
-  },
-  {
-   "where": "동작구|사당동|1048-8|오림센트빌",
-   "count": 2,
-   "sales": 1,
-   "rents": 1,
-   "apt_seq": "11590-193",
-   "road": "남부순환로257가길 8",
-   "build_year": 2001
+   "apt_seq": "11500-17",
+   "road": "양천로 686-5",
+   "build_year": 1993
   },
   {
    "where": "동작구|상도동|466|수정",
@@ -4152,58 +2199,112 @@
    "build_year": 2002
   },
   {
-   "where": "동작구|상도동|301-226|청운아파트",
+   "where": "동작구|본동|484|경동윈츠리버",
    "count": 2,
-   "sales": 1,
-   "rents": 1,
-   "apt_seq": "11590-216",
-   "road": "국사봉18길 24",
-   "build_year": 1994
-  },
-  {
-   "where": "동작구|상도동|7-92|종인아네스트",
-   "count": 2,
-   "sales": 1,
-   "rents": 1,
-   "apt_seq": "11590-3769",
-   "road": "매봉로4가길 33",
-   "build_year": 2011
-  },
-  {
-   "where": "마포구|연남동|364-8|무지개에이",
-   "count": 2,
-   "sales": 0,
-   "rents": 2,
-   "apt_seq": "",
-   "road": "연남로 83 83",
-   "build_year": 2000
-  },
-  {
-   "where": "마포구|망원동|429-4|대성1",
-   "count": 2,
-   "sales": 0,
-   "rents": 2,
-   "apt_seq": "",
-   "road": "월드컵로25길 128 128",
-   "build_year": 1994
-  },
-  {
-   "where": "마포구|연남동|249-12|노블레스(249-12)",
-   "count": 2,
-   "sales": 0,
-   "rents": 2,
-   "apt_seq": "",
-   "road": "성미산로23길 4 4",
-   "build_year": 2003
-  },
-  {
-   "where": "마포구|서교동|247-112|기정MAY(247-112)",
-   "count": 2,
-   "sales": 0,
-   "rents": 2,
-   "apt_seq": "",
-   "road": "월드컵북로7길 26-10 26-10",
+   "sales": 2,
+   "rents": 0,
+   "apt_seq": "11590-96",
+   "road": "노량진로32길 156",
    "build_year": 2004
+  },
+  {
+   "where": "동작구|대방동|381-3|드림빌라트",
+   "count": 2,
+   "sales": 2,
+   "rents": 0,
+   "apt_seq": "11590-235",
+   "road": "대방동27길 4",
+   "build_year": 2001
+  },
+  {
+   "where": "동작구|상도동|459|상도2차갑을명가",
+   "count": 2,
+   "sales": 2,
+   "rents": 0,
+   "apt_seq": "11590-3358",
+   "road": "국사봉길 175",
+   "build_year": 2006
+  },
+  {
+   "where": "동작구|상도동|7-71|대동아파트",
+   "count": 2,
+   "sales": 1,
+   "rents": 1,
+   "apt_seq": "11590-4792",
+   "road": "매봉로4가길 13",
+   "build_year": 2017
+  },
+  {
+   "where": "동작구|상도동|409-3|종인아네스트(409-3)",
+   "count": 2,
+   "sales": 1,
+   "rents": 1,
+   "apt_seq": "11590-3754",
+   "road": "양녕로23길 67",
+   "build_year": 2010
+  },
+  {
+   "where": "동작구|상도동|375-5|성우2차아파트",
+   "count": 2,
+   "sales": 1,
+   "rents": 1,
+   "apt_seq": "11590-217",
+   "road": "국사봉1길 200",
+   "build_year": 1994
+  },
+  {
+   "where": "동작구|사당동|1156|이너스내안애",
+   "count": 2,
+   "sales": 1,
+   "rents": 1,
+   "apt_seq": "11590-3869",
+   "road": "사당로13길 40",
+   "build_year": 2012
+  },
+  {
+   "where": "동작구|사당동|1037-9|삼성아파트",
+   "count": 2,
+   "sales": 1,
+   "rents": 1,
+   "apt_seq": "11590-3313",
+   "road": "사당로26길 130-6",
+   "build_year": 2006
+  },
+  {
+   "where": "마포구|염리동|522|염리동세양청마루아파트101동",
+   "count": 2,
+   "sales": 0,
+   "rents": 2,
+   "apt_seq": "",
+   "road": "독막로42길 5 5",
+   "build_year": 2005
+  },
+  {
+   "where": "마포구|현석동|118|밤섬예가클래식",
+   "count": 2,
+   "sales": 0,
+   "rents": 2,
+   "apt_seq": "",
+   "road": "신수로2길 26 26",
+   "build_year": 1989
+  },
+  {
+   "where": "마포구|신공덕동|167|대우메트로디오빌",
+   "count": 2,
+   "sales": 0,
+   "rents": 2,
+   "apt_seq": "",
+   "road": "백범로 199 199",
+   "build_year": 2005
+  },
+  {
+   "where": "마포구|합정동|376-5|그레이스3차",
+   "count": 2,
+   "sales": 0,
+   "rents": 2,
+   "apt_seq": "",
+   "road": "양화진길 37 37",
+   "build_year": 2005
   },
   {
    "where": "마포구|성산동|249-12|반트",
@@ -4215,193 +2316,202 @@
    "build_year": 2013
   },
   {
-   "where": "서대문구|북아현동|1-106|수목아이엠",
+   "where": "마포구|서교동|485-17|카라(카라)",
    "count": 2,
    "sales": 0,
    "rents": 2,
    "apt_seq": "",
-   "road": "북아현로20길 16 16",
-   "build_year": 2003
+   "road": "월드컵로8길 17 17",
+   "build_year": 2023
   },
   {
-   "where": "서대문구|홍은동|8-230|북한산삼부르네상스201동",
+   "where": "마포구|망원동|490|강변타운",
    "count": 2,
    "sales": 0,
    "rents": 2,
    "apt_seq": "",
-   "road": "포방터8길 25 25",
-   "build_year": 2024
-  },
-  {
-   "where": "서대문구|연희동|69-21|백광",
-   "count": 2,
-   "sales": 0,
-   "rents": 2,
-   "apt_seq": "",
-   "road": "연희로16길 4 4",
-   "build_year": 2004
-  },
-  {
-   "where": "서대문구|남가좌동|135-6|엠화일에이동",
-   "count": 2,
-   "sales": 0,
-   "rents": 2,
-   "apt_seq": "",
-   "road": "모래내로 179 179",
-   "build_year": 2005
-  },
-  {
-   "where": "서대문구|홍은동|8-351|북한산삼부르네상스105동106동",
-   "count": 2,
-   "sales": 0,
-   "rents": 2,
-   "apt_seq": "",
-   "road": "포방터8길 30 30",
-   "build_year": 2024
-  },
-  {
-   "where": "서대문구|연희동|712-25|파크빌",
-   "count": 2,
-   "sales": 0,
-   "rents": 2,
-   "apt_seq": "",
-   "road": "홍연길 60 60",
-   "build_year": 2003
-  },
-  {
-   "where": "서대문구|홍은동|265-54|서부사이버",
-   "count": 2,
-   "sales": 0,
-   "rents": 2,
-   "apt_seq": "",
-   "road": "연희로39길 21 21",
+   "road": "동교로3길 79 79",
    "build_year": 2000
   },
   {
-   "where": "서대문구|홍제동|312-44|동일3차",
+   "where": "마포구|합정동|468|두영이지안",
    "count": 2,
    "sales": 0,
    "rents": 2,
    "apt_seq": "",
-   "road": "통일로37나길 43 43",
-   "build_year": 2002
+   "road": "희우정로1길 48 48",
+   "build_year": 2005
   },
   {
-   "where": "서대문구|홍은동|437-2|G패밀리움",
+   "where": "마포구|망원동|502|함성월드빌",
    "count": 2,
    "sales": 0,
    "rents": 2,
    "apt_seq": "",
-   "road": "통일로 542 542",
-   "build_year": 2011
-  },
-  {
-   "where": "서대문구|홍제동|312-248|동일4차",
-   "count": 2,
-   "sales": 0,
-   "rents": 2,
-   "apt_seq": "",
-   "road": "통일로37나길 66 66",
+   "road": "망원로11길 73 73",
    "build_year": 2003
   },
   {
-   "where": "강서구|염창동|248-7|염창하이츠빌딩",
+   "where": "마포구|망원동|498|우림루미아트",
    "count": 2,
    "sales": 0,
    "rents": 2,
    "apt_seq": "",
-   "road": "양천로 677 677",
-   "build_year": 1995
+   "road": "월드컵로31길 77 77",
+   "build_year": 2003
   },
   {
-   "where": "동작구|상도동|126-31|진성그린",
+   "where": "마포구|신수동|455|경남아너스빌",
    "count": 2,
    "sales": 0,
    "rents": 2,
    "apt_seq": "",
-   "road": "상도로68길 31 31",
-   "build_year": 2004
+   "road": "창전로2길 42 42",
+   "build_year": 2005
   },
   {
-   "where": "동작구|대방동|393-71|신대방타워",
+   "where": "마포구|성산동|239-25|삼호빌라트",
    "count": 2,
    "sales": 0,
    "rents": 2,
    "apt_seq": "",
-   "road": "대방동길 10 10",
+   "road": "성미산로 72 72",
    "build_year": 2001
   },
   {
-   "where": "동작구|상도동|7-98|상도고구아파트",
+   "where": "마포구|망원동|500|한강1차대주피오레",
    "count": 2,
    "sales": 0,
    "rents": 2,
    "apt_seq": "",
-   "road": "매봉로4가길 42 42",
-   "build_year": 2019
-  },
-  {
-   "where": "동작구|신대방동|344-179|뉴홍현",
-   "count": 2,
-   "sales": 0,
-   "rents": 2,
-   "apt_seq": "",
-   "road": "보라매로7가길 9 9",
-   "build_year": 2002
-  },
-  {
-   "where": "동작구|상도1동|441-5|노블리움",
-   "count": 2,
-   "sales": 0,
-   "rents": 2,
-   "apt_seq": "",
-   "road": "상도로41길 43 43",
+   "road": "동교로3길 67 67",
    "build_year": 2003
   },
   {
-   "where": "마포구|서교동|380-44|대운",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11440-57",
-   "road": "양화로7안길 30",
+   "where": "마포구|합정동|355-1|에덴지우",
+   "count": 2,
+   "sales": 0,
+   "rents": 2,
+   "apt_seq": "",
+   "road": "어울마당로3길 19 19",
+   "build_year": 2006
+  },
+  {
+   "where": "서대문구|충정로3가|477|충림예하임",
+   "count": 2,
+   "sales": 0,
+   "rents": 2,
+   "apt_seq": "",
+   "road": "충정로5길 27 27",
+   "build_year": 2010
+  },
+  {
+   "where": "서대문구|북아현동|1-50|우민A",
+   "count": 2,
+   "sales": 0,
+   "rents": 2,
+   "apt_seq": "",
+   "road": "북아현로22길 82 82",
+   "build_year": 2001
+  },
+  {
+   "where": "서대문구|북아현동|1-46|문영센스빌",
+   "count": 2,
+   "sales": 0,
+   "rents": 2,
+   "apt_seq": "",
+   "road": "북아현로20길 68 68",
+   "build_year": 2002
+  },
+  {
+   "where": "서대문구|연희동|700|대림",
+   "count": 2,
+   "sales": 0,
+   "rents": 2,
+   "apt_seq": "",
+   "road": "연희로32길 20 20",
+   "build_year": 1993
+  },
+  {
+   "where": "서대문구|홍제동|315-7|서울맨션",
+   "count": 2,
+   "sales": 0,
+   "rents": 2,
+   "apt_seq": "",
+   "road": "통일로37길 30 30",
+   "build_year": 1972
+  },
+  {
+   "where": "강서구|염창동|301|염창3차보람",
+   "count": 2,
+   "sales": 0,
+   "rents": 2,
+   "apt_seq": "",
+   "road": "양천로71가길 21 21",
+   "build_year": 2006
+  },
+  {
+   "where": "강서구|염창동|303|강변코아루",
+   "count": 2,
+   "sales": 0,
+   "rents": 2,
+   "apt_seq": "",
+   "road": "양천로71길 54 54",
+   "build_year": 2007
+  },
+  {
+   "where": "강서구|염창동|313|염창역동문디이스트",
+   "count": 2,
+   "sales": 0,
+   "rents": 2,
+   "apt_seq": "",
+   "road": "공항대로81길 14 14",
+   "build_year": 2025
+  },
+  {
+   "where": "영등포구|양평동1가|273|영등포자이디그니티",
+   "count": 2,
+   "sales": 0,
+   "rents": 2,
+   "apt_seq": "",
+   "road": "영등포로11길 19 19",
+   "build_year": 2026
+  },
+  {
+   "where": "영등포구|양평동1가|270|창건애드웰",
+   "count": 2,
+   "sales": 0,
+   "rents": 2,
+   "apt_seq": "",
+   "road": "양산로 56 56",
+   "build_year": 2006
+  },
+  {
+   "where": "동작구|상도동|413|삼익",
+   "count": 2,
+   "sales": 0,
+   "rents": 2,
+   "apt_seq": "",
+   "road": "양녕로26나길 8 8",
+   "build_year": 1997
+  },
+  {
+   "where": "동작구|신대방동|717|신동아파밀리에",
+   "count": 2,
+   "sales": 0,
+   "rents": 2,
+   "apt_seq": "",
+   "road": "여의대방로10길 100 100",
+   "build_year": 2005
+  },
+  {
+   "where": "동작구|사당동|1016-42|삼성월드",
+   "count": 2,
+   "sales": 0,
+   "rents": 2,
+   "apt_seq": "",
+   "road": "동작대로11길 64 64",
    "build_year": 2003
-  },
-  {
-   "where": "마포구|합정동|400-6|삼성강변",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11440-62",
-   "road": "희우정로1길 21",
-   "build_year": 1998
-  },
-  {
-   "where": "마포구|서교동|453-14|엘림",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11440-59",
-   "road": "월드컵북로7길 40",
-   "build_year": 2002
-  },
-  {
-   "where": "마포구|성산동|271-23|상인파크빌",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11440-119",
-   "road": "성미산로1길 92",
-   "build_year": 2002
-  },
-  {
-   "where": "마포구|연남동|493-27|홍익하이빌",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11440-209",
-   "road": "연남로5길 44",
-   "build_year": 2004
   },
   {
    "where": "마포구|연남동|250-8|서암",
@@ -4413,12 +2523,57 @@
    "build_year": 2004
   },
   {
+   "where": "마포구|합정동|469|한국프라우드",
+   "count": 1,
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11440-3903",
+   "road": "희우정로 15",
+   "build_year": 2005
+  },
+  {
+   "where": "마포구|망원동|483-6|목화",
+   "count": 1,
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11440-158",
+   "road": "망원로 89",
+   "build_year": 2003
+  },
+  {
+   "where": "마포구|연남동|564-35|리츠",
+   "count": 1,
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11440-5032",
+   "road": "연남로1길 84",
+   "build_year": 2012
+  },
+  {
    "where": "마포구|창전동|6-31|대원파크빌",
    "count": 1,
    "sales": 1,
    "rents": 0,
    "apt_seq": "11440-220",
    "road": "와우산로30길 44",
+   "build_year": 2004
+  },
+  {
+   "where": "마포구|도화동|536|정우상가맨션",
+   "count": 1,
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11440-18",
+   "road": "토정로37길 46",
+   "build_year": 1983
+  },
+  {
+   "where": "마포구|성산동|199-15|한림201동",
+   "count": 1,
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11440-454",
+   "road": "새터산5길 11",
    "build_year": 2004
   },
   {
@@ -4440,6 +2595,15 @@
    "build_year": 2004
   },
   {
+   "where": "마포구|망원동|454-36|참존2차(102동)",
+   "count": 1,
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11440-3906",
+   "road": "망원로 14",
+   "build_year": 2005
+  },
+  {
    "where": "마포구|구수동|41-4|영풍",
    "count": 1,
    "sales": 1,
@@ -4447,6 +2611,24 @@
    "apt_seq": "11440-44",
    "road": "토정로 198",
    "build_year": 1997
+  },
+  {
+   "where": "마포구|연남동|246-8|현대하이츠",
+   "count": 1,
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11440-144",
+   "road": "성미산로23길 38",
+   "build_year": 2003
+  },
+  {
+   "where": "마포구|망원동|412-19|뉴서울",
+   "count": 1,
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11440-81",
+   "road": "월드컵로23길 46",
+   "build_year": 2002
   },
   {
    "where": "마포구|망원동|464-11|그린월드",
@@ -4458,121 +2640,13 @@
    "build_year": 2003
   },
   {
-   "where": "서대문구|홍은동|8-933|북한산삼부르네상스202동203동204동",
+   "where": "서대문구|홍제동|312-243|파크힐",
    "count": 1,
    "sales": 1,
    "rents": 0,
-   "apt_seq": "11410-5035",
-   "road": "포방터8길 25",
-   "build_year": 2024
-  },
-  {
-   "where": "서대문구|연희동|106-2|삼우장미",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11410-3869",
-   "road": "증가로 51",
-   "build_year": 2009
-  },
-  {
-   "where": "서대문구|연희동|105-16|충우",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11410-297",
-   "road": "연희로15길 131",
-   "build_year": 2003
-  },
-  {
-   "where": "서대문구|홍은동|265-281|동평늘푸른",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11410-3549",
-   "road": "연희로37길 77-23",
-   "build_year": 2005
-  },
-  {
-   "where": "서대문구|북가좌동|3-74|세라",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11410-111",
-   "road": "증가로24바길 13",
-   "build_year": 2002
-  },
-  {
-   "where": "서대문구|북가좌동|5-19|동림아파트",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11410-312",
-   "road": "증가로20나길 21",
-   "build_year": 2002
-  },
-  {
-   "where": "서대문구|홍은동|277-148|교수(B)",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11410-3590",
-   "road": "모래내로17길 65-16",
-   "build_year": 2006
-  },
-  {
-   "where": "서대문구|홍은동|8-294|북한산삼부르네상스304동305동",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11410-5032",
-   "road": "포방터8길 1",
-   "build_year": 2024
-  },
-  {
-   "where": "서대문구|홍제동|158-13|아름채",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11410-153",
-   "road": "통일로35길 40",
+   "apt_seq": "11410-186",
+   "road": "통일로37나길 65",
    "build_year": 2004
-  },
-  {
-   "where": "서대문구|북아현동|123-73|늘푸른",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11410-129",
-   "road": "북아현로6길 65-21",
-   "build_year": 2004
-  },
-  {
-   "where": "서대문구|홍은동|413-38|현대하이츠",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11410-303",
-   "road": "증가로6길 34",
-   "build_year": 2004
-  },
-  {
-   "where": "서대문구|북가좌동|273-12|동도하이츠에이동",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11410-127",
-   "road": "응암로 134",
-   "build_year": 2004
-  },
-  {
-   "where": "서대문구|홍은동|8-205|북한산삼부르네상스101동",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11410-5029",
-   "road": "포방터8길 30",
-   "build_year": 2024
   },
   {
    "where": "서대문구|홍제동|322-91|송도그린빌B동",
@@ -4584,6 +2658,24 @@
    "build_year": 2003
   },
   {
+   "where": "서대문구|남가좌동|345-4|백련미라보",
+   "count": 1,
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11410-100",
+   "road": "가재울로6길 53-87",
+   "build_year": 1992
+  },
+  {
+   "where": "서대문구|홍은동|산11-244|세한숲속마을",
+   "count": 1,
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11410-3755",
+   "road": "통일로 555",
+   "build_year": 2002
+  },
+  {
    "where": "서대문구|홍은동|398-6|명가",
    "count": 1,
    "sales": 1,
@@ -4591,6 +2683,15 @@
    "apt_seq": "11410-3865",
    "road": "가좌로 100-21",
    "build_year": 2009
+  },
+  {
+   "where": "서대문구|충정로2가|69-60|로얄패밀리아파트B동",
+   "count": 1,
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11410-286",
+   "road": "경기대로9길 11",
+   "build_year": 2004
   },
   {
    "where": "서대문구|홍제동|335-10|초원드림빌",
@@ -4602,6 +2703,51 @@
    "build_year": 2000
   },
   {
+   "where": "서대문구|연희동|171-10|제니스APT",
+   "count": 1,
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11410-4504",
+   "road": "모래내로 376",
+   "build_year": 2016
+  },
+  {
+   "where": "서대문구|홍제동|157-68|광산",
+   "count": 1,
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11410-45",
+   "road": "모래내로 455",
+   "build_year": 1973
+  },
+  {
+   "where": "서대문구|연희동|1-78|파크카운티",
+   "count": 1,
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11410-117",
+   "road": "모래내로20길 24-17",
+   "build_year": 2003
+  },
+  {
+   "where": "서대문구|합동|31-9|사랑채",
+   "count": 1,
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11410-142",
+   "road": "서소문로 43-30",
+   "build_year": 2003
+  },
+  {
+   "where": "서대문구|북가좌동|418-22|한울뉴타운",
+   "count": 1,
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11410-128",
+   "road": "응암로 42",
+   "build_year": 2004
+  },
+  {
    "where": "서대문구|홍은동|8-476|동림",
    "count": 1,
    "sales": 1,
@@ -4609,6 +2755,15 @@
    "apt_seq": "11410-79",
    "road": "포방터2길 59",
    "build_year": 2001
+  },
+  {
+   "where": "서대문구|연희동|218-16|일진아이윌",
+   "count": 1,
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11410-3485",
+   "road": "동교로 290",
+   "build_year": 2005
   },
   {
    "where": "서대문구|연희동|721-6|흥연",
@@ -4620,130 +2775,40 @@
    "build_year": 1981
   },
   {
-   "where": "동작구|대방동|381-6|푸른숲",
+   "where": "서대문구|홍제동|196-26|제니스뷰아파트",
    "count": 1,
    "sales": 1,
    "rents": 0,
-   "apt_seq": "11590-3500",
-   "road": "대방동27길 12",
-   "build_year": 2008
-  },
-  {
-   "where": "동작구|상도동|473|숭실골드",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11590-220",
-   "road": "상도로54길 24",
-   "build_year": 2001
-  },
-  {
-   "where": "동작구|사당동|138-3|이수프라자",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11590-136",
-   "road": "동작대로27다길 26",
-   "build_year": 2004
-  },
-  {
-   "where": "동작구|상도동|126-17|세레노",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11590-19",
-   "road": "상도로68길 27",
-   "build_year": 2003
-  },
-  {
-   "where": "동작구|상도동|283-73|상도타워B동",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11590-3873",
-   "road": "성대로6가길 149",
-   "build_year": 2005
-  },
-  {
-   "where": "동작구|상도1동|488-8|장원빌리지",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11590-164",
-   "road": "상도로47길 116-4",
-   "build_year": 2000
-  },
-  {
-   "where": "동작구|상도1동|428-7|방주샤인(428-7)",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11590-223",
-   "road": "상도로47가길 44",
-   "build_year": 2004
-  },
-  {
-   "where": "동작구|사당동|235-62|공감지음포레뷰아파트",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11590-5076",
-   "road": "솔밭로 74",
+   "apt_seq": "11410-4902",
+   "road": "홍제원길 51",
    "build_year": 2022
   },
   {
-   "where": "동작구|상도동|159-41|백촌빌라트",
+   "where": "강서구|염창동|242-10|여명",
    "count": 1,
    "sales": 1,
    "rents": 0,
-   "apt_seq": "11590-214",
-   "road": "상도로38길 57",
-   "build_year": 2003
-  },
-  {
-   "where": "동작구|사당동|212-3|남성골든빌A동B동",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11590-108",
-   "road": "사당로 164-1",
-   "build_year": 2003
-  },
-  {
-   "where": "동작구|신대방동|366-176|엘리스",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11590-80",
-   "road": "여의대방로22카길 81",
+   "apt_seq": "11500-294",
+   "road": "양천로67길 21",
    "build_year": 2002
   },
   {
-   "where": "동작구|상도동|279-515|태양아파트",
+   "where": "강서구|염창동|264-18|송촌",
    "count": 1,
    "sales": 1,
    "rents": 0,
-   "apt_seq": "11590-215",
-   "road": "성대로6가길 100",
-   "build_year": 2004
+   "apt_seq": "11500-5102",
+   "road": "공항대로71길 49",
+   "build_year": 2005
   },
   {
-   "where": "동작구|상도동|256-206|원아파트",
+   "where": "강서구|염창동|245-1|이너스내안에201동",
    "count": 1,
    "sales": 1,
    "rents": 0,
-   "apt_seq": "11590-3349",
-   "road": "성대로6다길 11",
+   "apt_seq": "11500-5247",
+   "road": "양천로67가길 49",
    "build_year": 2006
-  },
-  {
-   "where": "동작구|상도동|335-140|원명",
-   "count": 1,
-   "sales": 1,
-   "rents": 0,
-   "apt_seq": "11590-146",
-   "road": "상도로13나길 12",
-   "build_year": 2004
   },
   {
    "where": "동작구|사당동|64-264|라이즈1동",
@@ -4755,103 +2820,58 @@
    "build_year": 2003
   },
   {
-   "where": "마포구|공덕동|11-174|현대빌라",
+   "where": "동작구|상도1동|317-1|숭실그랜드",
    "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "효창원로95길 35 35",
-   "build_year": 2002
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11590-26",
+   "road": "상도로47다길 29",
+   "build_year": 2003
   },
   {
-   "where": "마포구|염리동|27-126|유풍",
+   "where": "동작구|상도1동|501-3|현진베스트빌",
    "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "마포대로11길 110 110",
-   "build_year": 2002
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11590-227",
+   "road": "강남초등길 23-3",
+   "build_year": 2003
   },
   {
-   "where": "마포구|망원동|382-3|해오름2차",
+   "where": "동작구|상도동|301-226|청운아파트",
    "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "월드컵로17길 67 67",
-   "build_year": 2007
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11590-216",
+   "road": "국사봉18길 24",
+   "build_year": 1994
   },
   {
-   "where": "마포구|성산동|23-1|해피존2",
+   "where": "동작구|상도동|7-92|종인아네스트",
    "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "월드컵북로12길 106 106",
-   "build_year": 2005
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11590-3769",
+   "road": "매봉로4가길 33",
+   "build_year": 2011
   },
   {
-   "where": "마포구|망원동|465-32|광남캐스빌D",
+   "where": "동작구|대방동|383-17|신호리치빌",
    "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "방울내로5길 39 39",
-   "build_year": 2002
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11590-92",
+   "road": "대방동길 99",
+   "build_year": 2003
   },
   {
-   "where": "마포구|성산동|254-7|벨로스",
+   "where": "동작구|사당동|449-28|닷컴캐슬",
    "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "월드컵로26길 23 23",
-   "build_year": 2006
-  },
-  {
-   "where": "마포구|서교동|381-4|광남푸른마을",
-   "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "양화로7안길 35 35",
-   "build_year": 2001
-  },
-  {
-   "where": "마포구|서교동|247-28|기정MAY(247-28)",
-   "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "월드컵북로7길 26-6 26-6",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|성산동|65-2|골든빌6차",
-   "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "월드컵북로15안길 13 13",
-   "build_year": 2004
-  },
-  {
-   "where": "마포구|서교동|478-4|청기와",
-   "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "월드컵로10길 50 50",
-   "build_year": 1999
-  },
-  {
-   "where": "마포구|망원동|455-2|리버뷰",
-   "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "희우정로21길 5 5",
-   "build_year": 2005
+   "sales": 1,
+   "rents": 0,
+   "apt_seq": "11590-112",
+   "road": "남부순환로255나길 8",
+   "build_year": 2003
   },
   {
    "where": "마포구|용강동|513|마포하늘채더리버",
@@ -4863,6 +2883,24 @@
    "build_year": 2026
   },
   {
+   "where": "마포구|망원동|436-6|천우",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "방울내로5길 8 8",
+   "build_year": 2002
+  },
+  {
+   "where": "마포구|합정동|389-16|대운행복",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "양화로1길 38 38",
+   "build_year": 2004
+  },
+  {
    "where": "마포구|망원동|464-5|현대그린",
    "count": 1,
    "sales": 0,
@@ -4870,6 +2908,123 @@
    "apt_seq": "",
    "road": "방울내로3길 51 51",
    "build_year": 2003
+  },
+  {
+   "where": "마포구|망원동|384-7|삼우월드",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "월드컵로11길 37 37",
+   "build_year": 2004
+  },
+  {
+   "where": "마포구|망원동|501|태청",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "포은로6길 34 34",
+   "build_year": 2003
+  },
+  {
+   "where": "마포구|망원동|508|강림스위트빌",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "방울내로11길 147 147",
+   "build_year": 2004
+  },
+  {
+   "where": "마포구|서교동|453-15|센트레",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "월드컵북로7길 42 42",
+   "build_year": 2002
+  },
+  {
+   "where": "마포구|망원동|465-34|광남캐스빌A",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "방울내로5길 41-1 41-1",
+   "build_year": 2002
+  },
+  {
+   "where": "마포구|망원동|418-29|예향",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "망원로2길 14 14",
+   "build_year": 2001
+  },
+  {
+   "where": "마포구|연남동|478-12|휴먼",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "연남로9길 20 20",
+   "build_year": 2003
+  },
+  {
+   "where": "마포구|성산동|81-106|성산힐아파트",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "성산로6길 37-10 37-10",
+   "build_year": 2011
+  },
+  {
+   "where": "마포구|합정동|357-3|두영이지안101동",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "토정로 67 67",
+   "build_year": 2007
+  },
+  {
+   "where": "마포구|공덕동|468|두영이지안",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "만리재로14길 27 27",
+   "build_year": 2008
+  },
+  {
+   "where": "마포구|도화동|544|고려",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "큰우물로 76 76",
+   "build_year": 1984
+  },
+  {
+   "where": "마포구|합정동|375-2|그레이스",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "양화진길 11 11",
+   "build_year": 2003
+  },
+  {
+   "where": "마포구|연남동|254-1|엘르빌2",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "동교로41길 35 35",
+   "build_year": 2002
   },
   {
    "where": "마포구|망원동|381-9|삼우하이뷰",
@@ -4881,112 +3036,175 @@
    "build_year": 2003
   },
   {
-   "where": "서대문구|북아현동|189-22|북아현3차",
+   "where": "마포구|합정동|467|한강동원아파트",
    "count": 1,
    "sales": 0,
    "rents": 1,
    "apt_seq": "",
-   "road": "북아현로23길 6 6",
-   "build_year": 2002
+   "road": "토정로2길 6-12 6-12",
+   "build_year": 2003
   },
   {
-   "where": "서대문구|홍은동|8-230|북한산삼부르네상스(21.9.17)",
+   "where": "마포구|상암동|1618|DMC상암센트럴파크2단지",
    "count": 1,
    "sales": 0,
    "rents": 1,
    "apt_seq": "",
-   "road": "포방터8길 30 30",
+   "road": "월드컵북로42가길 11 11",
+   "build_year": 2009
+  },
+  {
+   "where": "마포구|망원동|433-4|뉴성신아파트",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "포은로 143 143",
    "build_year": 2021
   },
   {
-   "where": "서대문구|북가좌동|378-15|선결",
+   "where": "마포구|성산동|255-11|유안",
    "count": 1,
    "sales": 0,
    "rents": 1,
    "apt_seq": "",
-   "road": "응암로 35 35",
+   "road": "성미산로3가길 6-8 6-8",
    "build_year": 2002
   },
   {
-   "where": "서대문구|북가좌동|304-10|청솔하이츠1동",
+   "where": "마포구|중동|30-28|수풍",
    "count": 1,
    "sales": 0,
    "rents": 1,
    "apt_seq": "",
-   "road": "거북골로18가길 24 24",
-   "build_year": 2004
+   "road": "월드컵북로38가길 22-5 22-5",
+   "build_year": 2009
   },
   {
-   "where": "서대문구|홍제동|466|홍제해성",
+   "where": "마포구|망원동|513|상암마젤란21",
    "count": 1,
    "sales": 0,
    "rents": 1,
    "apt_seq": "",
-   "road": "통일로37나길 12 12",
-   "build_year": 2002
+   "road": "방울내로11길 43 43",
+   "build_year": 2005
   },
   {
-   "where": "서대문구|충정로3가|250-5|충정",
+   "where": "서대문구|북아현동|1-122|그린빌",
    "count": 1,
    "sales": 0,
    "rents": 1,
    "apt_seq": "",
-   "road": "충정로 30 30",
-   "build_year": 1969
-  },
-  {
-   "where": "서대문구|홍은동|277-105|백련",
-   "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "모래내로17길 65-17 65-17",
-   "build_year": 2004
-  },
-  {
-   "where": "서대문구|창천동|511-5|래디앙",
-   "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "신촌로1길 29 29",
+   "road": "북아현로 72-4 72-4",
    "build_year": 2003
   },
   {
-   "where": "서대문구|홍은동|274-59|미주",
+   "where": "서대문구|충정로3가|30-9|장미",
    "count": 1,
    "sales": 0,
    "rents": 1,
    "apt_seq": "",
-   "road": "모래내로 344-7 344-7",
-   "build_year": 2006
+   "road": "경기대로3길 5 5",
+   "build_year": 2004
   },
   {
-   "where": "서대문구|홍제동|312-240|동일1차",
+   "where": "서대문구|홍제동|458|조한",
    "count": 1,
    "sales": 0,
    "rents": 1,
    "apt_seq": "",
-   "road": "통일로39길 104 104",
+   "road": "홍제내길 174 174",
    "build_year": 2000
   },
   {
-   "where": "서대문구|홍제동|312-237|동일2차",
+   "where": "서대문구|홍은동|189-9|미든푸르지",
    "count": 1,
    "sales": 0,
    "rents": 1,
    "apt_seq": "",
-   "road": "통일로39길 113-16 113-16",
+   "road": "연희로41라길 23 23",
+   "build_year": 2006
+  },
+  {
+   "where": "서대문구|창천동|368|엘르빌2차",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "연희로2길 51-5 51-5",
    "build_year": 2002
   },
   {
-   "where": "서대문구|홍은동|265-293|나눔스타빌",
+   "where": "서대문구|연희동|712-25|파크빌",
    "count": 1,
    "sales": 0,
    "rents": 1,
    "apt_seq": "",
-   "road": "연희로39길 9 9",
+   "road": "홍연길 60 60",
    "build_year": 2003
+  },
+  {
+   "where": "서대문구|북아현동|1-78|화신",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "북아현로22길 56 56",
+   "build_year": 2004
+  },
+  {
+   "where": "서대문구|남가좌동|380|쌍용스윗닷홈",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "거북골로 91-6 91-6",
+   "build_year": 2005
+  },
+  {
+   "where": "서대문구|홍제동|307-9|홍제맨션",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "통일로39길 25 25",
+   "build_year": 1971
+  },
+  {
+   "where": "서대문구|충정로3가|30-17|충정솔레디움(101동)",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "경기대로3길 7 7",
+   "build_year": 2005
+  },
+  {
+   "where": "서대문구|창천동|468|씨밀레",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "연희로2안길 7-18 7-18",
+   "build_year": 2004
+  },
+  {
+   "where": "서대문구|북아현동|1-342|대성",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "북아현로22길 45 45",
+   "build_year": 2004
+  },
+  {
+   "where": "서대문구|홍은동|281|로하스",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "모래내로17길 21 21",
+   "build_year": 2010
   },
   {
    "where": "서대문구|북가좌동|325-18|충우팰리스1",
@@ -5007,12 +3225,39 @@
    "build_year": 2000
   },
   {
-   "where": "강서구|염창동|266-3|노블레스아파트",
+   "where": "서대문구|홍은동|8-285|북한산삼부르네상스301동302동303동",
    "count": 1,
    "sales": 0,
    "rents": 1,
    "apt_seq": "",
-   "road": "공항대로65가길 17 17",
+   "road": "포방터8길 1 1",
+   "build_year": 2024
+  },
+  {
+   "where": "서대문구|대현동|145|예스에이피엠",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "이화여대1길 10 10",
+   "build_year": 2007
+  },
+  {
+   "where": "서대문구|홍은동|437-2|G패밀리움",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "통일로 542 542",
+   "build_year": 2011
+  },
+  {
+   "where": "강서구|염창동|241-24|엠그린",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "양천로65길 13 13",
    "build_year": 2006
   },
   {
@@ -5025,103 +3270,13 @@
    "build_year": 2005
   },
   {
-   "where": "동작구|상도동|488|강남(488)",
+   "where": "동작구|흑석동|97-2|명수대",
    "count": 1,
    "sales": 0,
    "rents": 1,
    "apt_seq": "",
-   "road": "상도로 357 357",
-   "build_year": 1972
-  },
-  {
-   "where": "동작구|사당동|180-26|삼성그린101동",
-   "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "사당로23아길 24 24",
-   "build_year": 2001
-  },
-  {
-   "where": "동작구|사당동|43-71|세림아파트(43-71)",
-   "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "동작대로35사길 2 2",
-   "build_year": 2006
-  },
-  {
-   "where": "동작구|상도1동|466|노블리움(466-0)",
-   "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "상도로41가길 8 8",
-   "build_year": 2003
-  },
-  {
-   "where": "동작구|상도동|472-24|숭실위드",
-   "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "상도로54길 18 18",
-   "build_year": 2002
-  },
-  {
-   "where": "동작구|대방동|402-32|현대",
-   "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "여의대방로26길 45 45",
-   "build_year": 2004
-  },
-  {
-   "where": "동작구|상도1동|328-11|백경",
-   "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "상도로47길 56-5 56-5",
-   "build_year": 2002
-  },
-  {
-   "where": "동작구|상도동|126-18|푸른솔",
-   "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "상도로68길 29 29",
-   "build_year": 2003
-  },
-  {
-   "where": "동작구|상도동|56-45|수정빌라트(56-45)",
-   "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "상도로47길 36 36",
-   "build_year": 2000
-  },
-  {
-   "where": "동작구|상도1동|311-1|한주에코",
-   "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "상도로47나길 11 11",
-   "build_year": 2003
-  },
-  {
-   "where": "동작구|상도동|301-4|초원",
-   "count": 1,
-   "sales": 0,
-   "rents": 1,
-   "apt_seq": "",
-   "road": "국사봉16길 26 26",
-   "build_year": 2003
+   "road": "서달로 158 158",
+   "build_year": 1976
   },
   {
    "where": "동작구|사당동|449-10|해맑은",
@@ -5131,6 +3286,51 @@
    "apt_seq": "",
    "road": "남부순환로255나길 18 18",
    "build_year": 2003
+  },
+  {
+   "where": "동작구|신대방동|395-69|보라매아카데미타워",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "보라매로5가길 16 16",
+   "build_year": 1998
+  },
+  {
+   "where": "동작구|상도동|460|상도팰리스",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "상도로47바길 40 40",
+   "build_year": 2006
+  },
+  {
+   "where": "동작구|동작동|329|이수교신동아아파트",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "동작대로43길 36 36",
+   "build_year": 2001
+  },
+  {
+   "where": "동작구|상도동|520|삼환나우빌(520-0)",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "상도로55길 25 25",
+   "build_year": 2007
+  },
+  {
+   "where": "동작구|대방동|99-1|(99-1)",
+   "count": 1,
+   "sales": 0,
+   "rents": 1,
+   "apt_seq": "",
+   "road": "여의대방로62길 24 24",
+   "build_year": 2001
   },
   {
    "where": "동작구|상도동|77-21|정호힐사이드",

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T22:20:12+09:00",
+ "generated_at": "2026-11-11T22:44:34+09:00",
  "count": 204,
  "listed": {
   "마포구": 144,
@@ -41,7 +41,9 @@
    "ho_count": null,
    "alt_lots": [
     "남가좌동|396"
-   ]
+   ],
+   "kakao_place_id": "400875043",
+   "kakao_place_name": "DMC금호리첸시아아파트"
   },
   {
    "kapt_code": "A12012202",
@@ -66,7 +68,9 @@
     "11410-102"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "8376394",
+   "kakao_place_name": "DMC래미안클라시스아파트"
   },
   {
    "kapt_code": "A10025976",
@@ -93,7 +97,9 @@
    "ho_count": null,
    "alt_lots": [
     "남가좌동|388"
-   ]
+   ],
+   "kakao_place_id": "1981676772",
+   "kakao_place_name": "DMC센트럴아이파크아파트"
   },
   {
    "kapt_code": "A12072801",
@@ -118,7 +124,9 @@
     "11410-3900"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11341439",
+   "kakao_place_name": "DMC센트레빌아파트"
   },
   {
    "kapt_code": "A10025130",
@@ -145,7 +153,9 @@
    "ho_count": null,
    "alt_lots": [
     "남가좌동|389"
-   ]
+   ],
+   "kakao_place_id": "1418511487",
+   "kakao_place_name": "DMC에코자이아파트"
   },
   {
    "kapt_code": "A10027817",
@@ -176,7 +186,9 @@
    "ho_count": null,
    "alt_lots": [
     "남가좌동|385"
-   ]
+   ],
+   "kakao_place_id": "1991743829",
+   "kakao_place_name": "DMC파크뷰자이아파트"
   },
   {
    "kapt_code": "A12012203",
@@ -201,7 +213,9 @@
     "11410-104"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11351080",
+   "kakao_place_name": "남가좌동현대아파트"
   },
   {
    "kapt_code": "A12012101",
@@ -226,7 +240,9 @@
     "11410-3524"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11050514",
+   "kakao_place_name": "래미안남가좌2차아파트"
   },
   {
    "kapt_code": "A10024938",
@@ -253,7 +269,9 @@
    "ho_count": null,
    "alt_lots": [
     "남가좌동|390"
-   ]
+   ],
+   "kakao_place_id": "484773719",
+   "kakao_place_name": "래미안루센티아아파트"
   },
   {
    "kapt_code": "A12070101",
@@ -278,7 +296,9 @@
     "11410-3906"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "10298361",
+   "kakao_place_name": "돈의문센트레빌아파트"
   },
   {
    "kapt_code": "A12017001",
@@ -303,7 +323,9 @@
     "11410-22"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11328259",
+   "kakao_place_name": "신촌럭키아파트"
   },
   {
    "kapt_code": "A12013003",
@@ -328,7 +350,9 @@
     "11410-4085"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11581949",
+   "kakao_place_name": "DMC래미안e편한세상아파트"
   },
   {
    "kapt_code": "A12013002",
@@ -353,7 +377,9 @@
     "11410-3856"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "20014353",
+   "kakao_place_name": "DMC아이파크아파트"
   },
   {
    "kapt_code": "A12081703",
@@ -378,7 +404,9 @@
     "11410-108"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "8158698",
+   "kakao_place_name": "DMC한양아파트"
   },
   {
    "kapt_code": "A12013202",
@@ -403,7 +431,9 @@
     "11410-106"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "23889772",
+   "kakao_place_name": "북가좌삼호아파트"
   },
   {
    "kapt_code": "A10026370",
@@ -431,7 +461,9 @@
     "11410-4617"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "",
+   "kakao_place_name": ""
   },
   {
    "kapt_code": "A12079501",
@@ -456,7 +488,9 @@
     "11410-13"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11089303",
+   "kakao_place_name": "두산아파트"
   },
   {
    "kapt_code": "A10027851",
@@ -483,7 +517,9 @@
    "ho_count": null,
    "alt_lots": [
     "북아현동|1011"
-   ]
+   ],
+   "kakao_place_id": "26785544",
+   "kakao_place_name": "신촌푸르지오아파트"
   },
   {
    "kapt_code": "A10024719",
@@ -508,7 +544,9 @@
     "11410-4846"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "27025605",
+   "kakao_place_name": "힐스테이트신촌아파트"
   },
   {
    "kapt_code": "A12011002",
@@ -533,7 +571,9 @@
     "11410-28"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11367525",
+   "kakao_place_name": "연희대우아파트"
   },
   {
    "kapt_code": "A12071101",
@@ -558,7 +598,9 @@
     "11410-30"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11315877",
+   "kakao_place_name": "성원아파트"
   },
   {
    "kapt_code": "A10025822",
@@ -583,7 +625,9 @@
     "11410-4767"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "1490294435",
+   "kakao_place_name": "연희파크푸르지오아파트"
   },
   {
    "kapt_code": "A12007001",
@@ -608,7 +652,9 @@
     "11410-9"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11360809",
+   "kakao_place_name": "독립문삼호아파트"
   },
   {
    "kapt_code": "A12004001",
@@ -633,7 +679,9 @@
     "11410-3569"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11236835",
+   "kakao_place_name": "천연뜨란채아파트"
   },
   {
    "kapt_code": "A12008003",
@@ -658,7 +706,9 @@
     "11410-10"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11357033",
+   "kakao_place_name": "독립문극동아파트"
   },
   {
    "kapt_code": "A10023449",
@@ -685,7 +735,9 @@
    "ho_count": null,
    "alt_lots": [
     "홍은동|469"
-   ]
+   ],
+   "kakao_place_id": "1250791154",
+   "kakao_place_name": "e편한세상서대문아파트"
   },
   {
    "kapt_code": "A10026604",
@@ -710,7 +762,9 @@
     "11410-4702"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "26870751",
+   "kakao_place_name": "북한산더샵아파트"
   },
   {
    "kapt_code": "A10025166",
@@ -735,7 +789,9 @@
     "11410-4813"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "1649893660",
+   "kakao_place_name": "북한산두산위브1차아파트"
   },
   {
    "kapt_code": "A10020562",
@@ -760,7 +816,9 @@
     "11410-5978"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "504823589",
+   "kakao_place_name": "서대문센트럴아이파크아파트"
   },
   {
    "kapt_code": "A12010203",
@@ -785,7 +843,9 @@
     "11410-77"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11360392",
+   "kakao_place_name": "극동아파트"
   },
   {
    "kapt_code": "A12071003",
@@ -810,7 +870,9 @@
     "11410-84"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "",
+   "kakao_place_name": ""
   },
   {
    "kapt_code": "A12010104",
@@ -835,7 +897,9 @@
     "11410-85"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11375810",
+   "kakao_place_name": "홍은벽산아파트"
   },
   {
    "kapt_code": "A12010103",
@@ -860,7 +924,9 @@
     "11410-93"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11221162",
+   "kakao_place_name": "풍림2차아파트"
   },
   {
    "kapt_code": "A12010202",
@@ -885,7 +951,9 @@
     "11410-96"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11220478",
+   "kakao_place_name": "홍은풍림아이원아파트"
   },
   {
    "kapt_code": "A12084504",
@@ -910,7 +978,9 @@
     "11410-95"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11260895",
+   "kakao_place_name": "현대아파트"
   },
   {
    "kapt_code": "A10023482",
@@ -937,7 +1007,9 @@
    "ho_count": null,
    "alt_lots": [
     "홍은동|470"
-   ]
+   ],
+   "kakao_place_id": "101479010",
+   "kakao_place_name": "힐스테이트서대문포레스트아파트"
   },
   {
    "kapt_code": "A12009305",
@@ -962,7 +1034,9 @@
     "11410-49"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11067375",
+   "kakao_place_name": "문화촌현대아파트"
   },
   {
    "kapt_code": "A10023560",
@@ -989,7 +1063,9 @@
    ],
    "alt_lots": [
     "홍제동|478"
-   ]
+   ],
+   "kakao_place_id": "1852794549",
+   "kakao_place_name": "서대문푸르지오센트럴파크아파트"
   },
   {
    "kapt_code": "A12009203",
@@ -1014,7 +1090,9 @@
     "11410-63"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11320519",
+   "kakao_place_name": "무악청구1차아파트"
   },
   {
    "kapt_code": "A12009202",
@@ -1039,7 +1117,9 @@
     "11410-71"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "10443222",
+   "kakao_place_name": "홍제삼성래미안아파트"
   },
   {
    "kapt_code": "A10025767",
@@ -1064,7 +1144,9 @@
    "apt_seqs": [
     "11410-4769"
    ],
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "115324422",
+   "kakao_place_name": "홍제센트럴아이파크아파트"
   },
   {
    "kapt_code": "A10023959",
@@ -1091,7 +1173,9 @@
    "ho_count": null,
    "alt_lots": [
     "홍제동|474"
-   ]
+   ],
+   "kakao_place_id": "1704580052",
+   "kakao_place_name": "홍제역해링턴플레이스아파트"
   },
   {
    "kapt_code": "A12078704",
@@ -1116,7 +1200,9 @@
     "11410-73"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "10968033",
+   "kakao_place_name": "홍제원현대아파트"
   },
   {
    "kapt_code": "A12009304",
@@ -1141,7 +1227,9 @@
     "11410-55"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11320594",
+   "kakao_place_name": "유원하나아파트"
   },
   {
    "kapt_code": "A12078705",
@@ -1166,7 +1254,9 @@
     "11410-60"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11334485",
+   "kakao_place_name": "인왕산현대아파트"
   },
   {
    "kapt_code": "A12085303",
@@ -1191,7 +1281,9 @@
     "11410-67"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11349273",
+   "kakao_place_name": "홍제한양아파트"
   },
   {
    "kapt_code": "A12009102",
@@ -1216,7 +1308,9 @@
     "11410-68"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11205888",
+   "kakao_place_name": "홍제현대아파트"
   },
   {
    "kapt_code": "A10024408",
@@ -1242,7 +1336,9 @@
     "11440-5910"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "1682274374",
+   "kakao_place_name": "공덕SK리더스뷰아파트"
   },
   {
    "kapt_code": "A12170603",
@@ -1267,7 +1363,9 @@
     "11440-4855"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "14879750",
+   "kakao_place_name": "래미안공덕5차아파트"
   },
   {
    "kapt_code": "A12180407",
@@ -1292,7 +1390,9 @@
     "11440-4"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "1201272518",
+   "kakao_place_name": "공덕삼성아파트(371-1)"
   },
   {
    "kapt_code": "A12180506",
@@ -1317,7 +1417,9 @@
     "11440-175"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "10157830",
+   "kakao_place_name": "래미안공덕3차아파트"
   },
   {
    "kapt_code": "A12102005",
@@ -1342,7 +1444,9 @@
     "11440-6"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11374458",
+   "kakao_place_name": "마포현대아파트"
   },
   {
    "kapt_code": "A12102008",
@@ -1367,7 +1471,9 @@
     "11440-7"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "8205770",
+   "kakao_place_name": "공덕삼성래미안2차아파트"
   },
   {
    "kapt_code": "A12170601",
@@ -1392,7 +1498,9 @@
     "11440-3934"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11326984",
+   "kakao_place_name": "래미안공덕4차아파트"
   },
   {
    "kapt_code": "A10020279",
@@ -1415,7 +1523,9 @@
    "lat": 37.5526314960012,
    "lng": 126.936810111997,
    "apt_seqs": [],
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "",
+   "kakao_place_name": ""
   },
   {
    "kapt_code": "A12172201",
@@ -1438,7 +1548,9 @@
    "lng": 126.942121723333,
    "apt_seqs": [],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "7981333",
+   "kakao_place_name": "신촌포스빌아파트"
   },
   {
    "kapt_code": "A10025003",
@@ -1466,7 +1578,9 @@
    "ho_count": null,
    "alt_lots": [
     "대흥동|807"
-   ]
+   ],
+   "kakao_place_id": "280246370",
+   "kakao_place_name": "마포그랑자이아파트"
   },
   {
    "kapt_code": "A12172401",
@@ -1491,7 +1605,9 @@
     "11440-5348"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "14584821",
+   "kakao_place_name": "마포자이2차아파트"
   },
   {
    "kapt_code": "A12181103",
@@ -1516,7 +1632,9 @@
     "11440-32"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11324345",
+   "kakao_place_name": "대흥동태영아파트"
   },
   {
    "kapt_code": "A12181406",
@@ -1544,7 +1662,9 @@
    "ho_count": null,
    "alt_lots": [
     "도화동|547"
-   ]
+   ],
+   "kakao_place_id": "11331266",
+   "kakao_place_name": "도화현대1차아파트"
   },
   {
    "kapt_code": "A12181404",
@@ -1569,7 +1689,9 @@
     "11440-19"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "8159099",
+   "kakao_place_name": "도화현대홈타운2차아파트"
   },
   {
    "kapt_code": "A12104007",
@@ -1594,7 +1716,9 @@
     "11440-17"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11343222",
+   "kakao_place_name": "도화3지구우성아파트"
   },
   {
    "kapt_code": "A12104005",
@@ -1619,7 +1743,9 @@
     "11440-15"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11322869",
+   "kakao_place_name": "마포삼성아파트"
   },
   {
    "kapt_code": "A12170402",
@@ -1644,7 +1770,9 @@
     "11440-177"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "10633370",
+   "kakao_place_name": "마포한화오벨리스크아파트"
   },
   {
    "kapt_code": "A12105001",
@@ -1669,7 +1797,9 @@
     "11440-30"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11115929",
+   "kakao_place_name": "마포쌍용황금아파트"
   },
   {
    "kapt_code": "A10026053",
@@ -1696,7 +1826,9 @@
    "ho_count": null,
    "alt_lots": [
     "망원동|521"
-   ]
+   ],
+   "kakao_place_id": "1764455078",
+   "kakao_place_name": "마포한강아이파크아파트"
   },
   {
    "kapt_code": "A12170702",
@@ -1721,7 +1853,9 @@
     "11440-5427"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "17545977",
+   "kakao_place_name": "래미안밤섬리베뉴II아파트"
   },
   {
    "kapt_code": "A10028177",
@@ -1746,7 +1880,9 @@
     "11440-5428"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "17545967",
+   "kakao_place_name": "래미안밤섬리베뉴1아파트"
   },
   {
    "kapt_code": "A12179508",
@@ -1771,7 +1907,9 @@
     "11440-4772"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11966378",
+   "kakao_place_name": "상암월드컵파크10단지아파트"
   },
   {
    "kapt_code": "A12179503",
@@ -1796,7 +1934,9 @@
     "11440-4755"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11966377",
+   "kakao_place_name": "상암월드컵파크11단지아파트"
   },
   {
    "kapt_code": "A12179505",
@@ -1821,7 +1961,9 @@
     "11440-4801"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11966379",
+   "kakao_place_name": "상암월드컵파크12단지아파트"
   },
   {
    "kapt_code": "A12127004",
@@ -1846,7 +1988,9 @@
     "11440-136"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11261671",
+   "kakao_place_name": "상암월드컵파크2단지아파트"
   },
   {
    "kapt_code": "A12127003",
@@ -1871,7 +2015,9 @@
     "11440-135"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11140771",
+   "kakao_place_name": "상암월드컵파크3단지아파트"
   },
   {
    "kapt_code": "A12127006",
@@ -1896,7 +2042,9 @@
     "11440-4038"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11140640",
+   "kakao_place_name": "상암월드컵파크4단지아파트"
   },
   {
    "kapt_code": "A12127001",
@@ -1921,7 +2069,9 @@
     "11440-3929"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11141396",
+   "kakao_place_name": "상암월드컵파크5단지아파트"
   },
   {
    "kapt_code": "A12127002",
@@ -1946,7 +2096,9 @@
     "11440-3928"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11432906",
+   "kakao_place_name": "상암월드컵파크6단지아파트"
   },
   {
    "kapt_code": "A12127005",
@@ -1971,7 +2123,9 @@
     "11440-3927"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11139009",
+   "kakao_place_name": "상암월드컵파크7단지아파트"
   },
   {
    "kapt_code": "A12179504",
@@ -1996,7 +2150,9 @@
     "11440-4800"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11966380",
+   "kakao_place_name": "상암월드컵파크9단지아파트"
   },
   {
    "kapt_code": "A12174601",
@@ -2019,7 +2175,9 @@
    "lng": 126.91395024016,
    "apt_seqs": [],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11363005",
+   "kakao_place_name": "메세나폴리스아파트"
   },
   {
    "kapt_code": "A12184201",
@@ -2044,7 +2202,9 @@
     "11440-3901"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "7820008",
+   "kakao_place_name": "서교동대우미래사랑아파트"
   },
   {
    "kapt_code": "A12185004",
@@ -2069,7 +2229,9 @@
     "11440-109"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "",
+   "kakao_place_name": ""
   },
   {
    "kapt_code": "A12125202",
@@ -2094,7 +2256,9 @@
     "11440-118"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11315146",
+   "kakao_place_name": "성산월드타운대림아파트"
   },
   {
    "kapt_code": "A12171101",
@@ -2119,7 +2283,9 @@
     "11440-4586"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11359902",
+   "kakao_place_name": "월드컵아이파크1차아파트"
   },
   {
    "kapt_code": "A12179004",
@@ -2144,7 +2310,9 @@
     "11440-4887"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "12025903",
+   "kakao_place_name": "공덕푸르지오펜트라우스아파트"
   },
   {
    "kapt_code": "A12185303",
@@ -2169,7 +2337,9 @@
     "11440-9"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "8376396",
+   "kakao_place_name": "신공덕삼성래미안1차아파트"
   },
   {
    "kapt_code": "A12185304",
@@ -2194,7 +2364,9 @@
     "11440-8"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "1199590925",
+   "kakao_place_name": "신공덕2차삼성래미안아파트(160)"
   },
   {
    "kapt_code": "A12103002",
@@ -2219,7 +2391,9 @@
     "11440-10"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "7918302",
+   "kakao_place_name": "신공덕삼성래미안3차아파트"
   },
   {
    "kapt_code": "A10024974",
@@ -2244,7 +2418,9 @@
     "11440-5823"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "630759463",
+   "kakao_place_name": "마포아이파크포레아파트"
   },
   {
    "kapt_code": "A12185606",
@@ -2269,7 +2445,9 @@
     "11440-40"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11145009",
+   "kakao_place_name": "신촌삼익아파트"
   },
   {
    "kapt_code": "A12171201",
@@ -2294,7 +2472,9 @@
     "11440-4706"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11387791",
+   "kakao_place_name": "밤섬경남아너스빌아파트"
   },
   {
    "kapt_code": "A10019978",
@@ -2321,7 +2501,9 @@
    "ho_count": null,
    "alt_lots": [
     "신수동|91-90"
-   ]
+   ],
+   "kakao_place_id": "2097498309",
+   "kakao_place_name": "힐스테이트마포더퍼스트아파트"
   },
   {
    "kapt_code": "A12114001",
@@ -2346,7 +2528,9 @@
     "11440-51"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11342411",
+   "kakao_place_name": "서강GS아파트"
   },
   {
    "kapt_code": "A10027906",
@@ -2371,7 +2555,9 @@
     "11440-5458"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "20149391",
+   "kakao_place_name": "공덕자이아파트"
   },
   {
    "kapt_code": "A10023508",
@@ -2396,7 +2582,9 @@
     "11440-6132"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "1772489328",
+   "kakao_place_name": "마포더클래시아파트"
   },
   {
    "kapt_code": "A12175203",
@@ -2426,7 +2614,9 @@
    "ho_count": null,
    "alt_lots": [
     "아현동|777"
-   ]
+   ],
+   "kakao_place_id": "17638211",
+   "kakao_place_name": "마포래미안푸르지오아파트"
   },
   {
    "kapt_code": "A10027090",
@@ -2451,7 +2641,9 @@
     "11440-5661"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "25774077",
+   "kakao_place_name": "마포센트럴아이파크아파트"
   },
   {
    "kapt_code": "A12186901",
@@ -2476,7 +2668,9 @@
     "11440-146"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "17287611",
+   "kakao_place_name": "코오롱하늘채아파트"
   },
   {
    "kapt_code": "A12109001",
@@ -2501,7 +2695,9 @@
     "11440-147"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "10994467",
+   "kakao_place_name": "마포자이1차아파트"
   },
   {
    "kapt_code": "A10026036",
@@ -2528,7 +2724,9 @@
    ],
    "alt_lots": [
     "염리동|533"
-   ]
+   ],
+   "kakao_place_id": "27276703",
+   "kakao_place_name": "마포자이더센트리지아파트"
   },
   {
    "kapt_code": "A10024347",
@@ -2555,7 +2753,9 @@
    "ho_count": null,
    "alt_lots": [
     "염리동|532"
-   ]
+   ],
+   "kakao_place_id": "44253327",
+   "kakao_place_name": "마포프레스티지자이아파트"
   },
   {
    "kapt_code": "A12109002",
@@ -2580,7 +2780,9 @@
     "11440-34"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "7919744",
+   "kakao_place_name": "염리삼성래미안아파트"
   },
   {
    "kapt_code": "A12187403",
@@ -2605,7 +2807,9 @@
     "11440-33"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "25981988",
+   "kakao_place_name": "염리상록아파트"
   },
   {
    "kapt_code": "A10028006",
@@ -2630,7 +2834,9 @@
     "11440-5449"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "18501711",
+   "kakao_place_name": "e편한세상마포리버파크아파트"
   },
   {
    "kapt_code": "A12187501",
@@ -2655,7 +2861,9 @@
     "11440-5455"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "17357275",
+   "kakao_place_name": "래미안마포리버웰아파트"
   },
   {
    "kapt_code": "A12187602",
@@ -2680,7 +2888,9 @@
     "11440-23"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "7919745",
+   "kakao_place_name": "래미안용강아파트"
   },
   {
    "kapt_code": "A12187904",
@@ -2705,7 +2915,9 @@
     "11440-123"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11238947",
+   "kakao_place_name": "DMC마포청구아파트"
   },
   {
    "kapt_code": "A12187905",
@@ -2730,7 +2942,9 @@
     "11440-122"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11200555",
+   "kakao_place_name": "현대아파트"
   },
   {
    "kapt_code": "A12187906",
@@ -2755,7 +2969,9 @@
     "11440-3996"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11304250",
+   "kakao_place_name": "월드컵참누리아파트"
   },
   {
    "kapt_code": "A12119006",
@@ -2780,7 +2996,9 @@
     "11440-4156"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11250094",
+   "kakao_place_name": "서강쌍용예가아파트"
   },
   {
    "kapt_code": "A12119004",
@@ -2805,7 +3023,9 @@
     "11440-4165"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11350950",
+   "kakao_place_name": "서강해모로아파트"
   },
   {
    "kapt_code": "A12188205",
@@ -2830,7 +3050,9 @@
     "11440-149"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11303817",
+   "kakao_place_name": "태영아파트"
   },
   {
    "kapt_code": "A12119007",
@@ -2855,7 +3077,9 @@
     "11440-47"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11140432",
+   "kakao_place_name": "창전삼성아파트"
   },
   {
    "kapt_code": "A12106001",
@@ -2880,7 +3104,9 @@
     "11440-26"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11347018",
+   "kakao_place_name": "한강삼성아파트"
   },
   {
    "kapt_code": "A12115001",
@@ -2905,7 +3131,9 @@
     "11440-4715"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11219543",
+   "kakao_place_name": "한강밤섬자이아파트"
   },
   {
    "kapt_code": "A10027714",
@@ -2930,7 +3158,9 @@
     "11440-5559"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "22043391",
+   "kakao_place_name": "래미안마포웰스트림아파트"
   },
   {
    "kapt_code": "A12112002",
@@ -2955,7 +3185,9 @@
     "11440-151"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11268973",
+   "kakao_place_name": "강변힐스테이트아파트"
   },
   {
    "kapt_code": "A10025600",
@@ -2982,7 +3214,9 @@
    "ho_count": null,
    "alt_lots": [
     "염창동|309"
-   ]
+   ],
+   "kakao_place_id": "1168746222",
+   "kakao_place_name": "e편한세상염창아파트"
   },
   {
    "kapt_code": "A15704023",
@@ -3007,7 +3241,9 @@
     "11500-466"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11316023",
+   "kakao_place_name": "강변힐스테이트아파트"
   },
   {
    "kapt_code": "A15704025",
@@ -3032,7 +3268,9 @@
     "11500-5105"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "8161455",
+   "kakao_place_name": "강변한솔솔파크아파트"
   },
   {
    "kapt_code": "A15786321",
@@ -3057,7 +3295,9 @@
     "11500-1"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "23893496",
+   "kakao_place_name": "관음삼성아파트"
   },
   {
    "kapt_code": "A15704028",
@@ -3082,7 +3322,9 @@
     "11500-6"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11370086",
+   "kakao_place_name": "염창동아1차아파트"
   },
   {
    "kapt_code": "A15786227",
@@ -3107,7 +3349,9 @@
     "11500-7"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11360157",
+   "kakao_place_name": "염창동아3차아파트"
   },
   {
    "kapt_code": "A15786420",
@@ -3132,7 +3376,9 @@
     "11500-21"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11117036",
+   "kakao_place_name": "염창신동아아파트"
   },
   {
    "kapt_code": "A15785919",
@@ -3157,7 +3403,9 @@
     "11500-495"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11189382",
+   "kakao_place_name": "염창우성1차아파트"
   },
   {
    "kapt_code": "A15786222",
@@ -3182,7 +3430,9 @@
     "11500-26"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11342596",
+   "kakao_place_name": "태진한솔아파트"
   },
   {
    "kapt_code": "A15786118",
@@ -3207,7 +3457,9 @@
     "11500-16"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11346997",
+   "kakao_place_name": "한마음삼성아파트"
   },
   {
    "kapt_code": "A15786424",
@@ -3232,7 +3484,9 @@
     "11500-465"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "8137974",
+   "kakao_place_name": "염창한화꿈에그린1차아파트"
   },
   {
    "kapt_code": "A15786426",
@@ -3257,7 +3511,9 @@
     "11500-28"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11363803",
+   "kakao_place_name": "현대1차아파트"
   },
   {
    "kapt_code": "A15086202",
@@ -3282,7 +3538,9 @@
     "11560-79"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11354750",
+   "kakao_place_name": "신동아아파트"
   },
   {
    "kapt_code": "A10024316",
@@ -3309,7 +3567,9 @@
    "ho_count": null,
    "alt_lots": [
     "양평동1가|271"
-   ]
+   ],
+   "kakao_place_id": "643173509",
+   "kakao_place_name": "영등포중흥S클래스아파트"
   },
   {
    "kapt_code": "A10020127",
@@ -3336,7 +3596,9 @@
    ],
    "alt_lots": [
     "양평동1가|265-1"
-   ]
+   ],
+   "kakao_place_id": "1554025568",
+   "kakao_place_name": "영등포자이디그니티아파트"
   },
   {
    "kapt_code": "A15010203",
@@ -3361,7 +3623,9 @@
     "11560-81"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11374826",
+   "kakao_place_name": "양평벽산블루밍아파트"
   },
   {
    "kapt_code": "A15010202",
@@ -3386,7 +3650,9 @@
     "11560-84"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "10422826",
+   "kakao_place_name": "양평동삼성래미안아파트"
   },
   {
    "kapt_code": "A15010306",
@@ -3411,7 +3677,9 @@
     "11560-85"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11044094",
+   "kakao_place_name": "거성파스텔아파트"
   },
   {
    "kapt_code": "A15010307",
@@ -3436,7 +3704,9 @@
     "11560-91"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11206466",
+   "kakao_place_name": "양평동6차현대아파트"
   },
   {
    "kapt_code": "A15010305",
@@ -3461,7 +3731,9 @@
     "11560-92"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "1409178995",
+   "kakao_place_name": "현대2차아파트"
   },
   {
    "kapt_code": "A15086603",
@@ -3486,7 +3758,9 @@
     "11560-95"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11362741",
+   "kakao_place_name": "성원아파트"
   },
   {
    "kapt_code": "A15010502",
@@ -3511,7 +3785,9 @@
     "11560-98"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "20559679",
+   "kakao_place_name": "양평동한신아파트"
   },
   {
    "kapt_code": "A15605002",
@@ -3536,7 +3812,9 @@
     "11590-5"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11189376",
+   "kakao_place_name": "우성아파트"
   },
   {
    "kapt_code": "A15603205",
@@ -3561,7 +3839,9 @@
     "11590-1"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "24013419",
+   "kakao_place_name": "건영아파트"
   },
   {
    "kapt_code": "A15605103",
@@ -3586,7 +3866,9 @@
     "11590-4"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "7973107",
+   "kakao_place_name": "신동아리버파크아파트"
   },
   {
    "kapt_code": "A10020222",
@@ -3613,7 +3895,9 @@
    ],
    "alt_lots": [
     "노량진동|336"
-   ]
+   ],
+   "kakao_place_id": "1558151351",
+   "kakao_place_name": "힐스테이트장승배기역아파트"
   },
   {
    "kapt_code": "A15602007",
@@ -3638,7 +3922,9 @@
     "11590-94"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "7818717",
+   "kakao_place_name": "대방1차e편한세상아파트"
   },
   {
    "kapt_code": "A15681110",
@@ -3663,7 +3949,9 @@
     "11590-57"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11244931",
+   "kakao_place_name": "대방대림아파트"
   },
   {
    "kapt_code": "A15681105",
@@ -3688,7 +3976,9 @@
     "11590-59"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11124210",
+   "kakao_place_name": "성원아파트"
   },
   {
    "kapt_code": "A15681108",
@@ -3713,7 +4003,9 @@
     "11590-63"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11155304",
+   "kakao_place_name": "대방2단지주공아파트"
   },
   {
    "kapt_code": "A15681106",
@@ -3738,7 +4030,9 @@
     "11590-84"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11354810",
+   "kakao_place_name": "대방현대1차아파트"
   },
   {
    "kapt_code": "A10023898",
@@ -3763,7 +4057,9 @@
     "11590-5037"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "1419520972",
+   "kakao_place_name": "이수스위첸포레힐즈아파트"
   },
   {
    "kapt_code": "A15608003",
@@ -3788,7 +4084,9 @@
     "11590-4023"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "15101318",
+   "kakao_place_name": "이수힐스테이트아파트"
   },
   {
    "kapt_code": "A15606007",
@@ -3813,7 +4111,9 @@
     "11590-3831"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11701316",
+   "kakao_place_name": "래미안트윈파크아파트"
   },
   {
    "kapt_code": "A15606003",
@@ -3838,7 +4138,9 @@
     "11590-130"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "9047063",
+   "kakao_place_name": "본동삼성래미안아파트"
   },
   {
    "kapt_code": "A15606004",
@@ -3863,7 +4165,9 @@
     "11590-29"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11333942",
+   "kakao_place_name": "본동신동아아파트"
   },
   {
    "kapt_code": "A15606002",
@@ -3888,7 +4192,9 @@
     "11590-30"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "9948659",
+   "kakao_place_name": "유원강변아파트"
   },
   {
    "kapt_code": "A15677501",
@@ -3913,7 +4219,9 @@
     "11590-3828"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "12618432",
+   "kakao_place_name": "두산위브트레지움아파트"
   },
   {
    "kapt_code": "A10026299",
@@ -3938,7 +4246,9 @@
     "11590-4827"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "27337123",
+   "kakao_place_name": "래미안로이파크아파트"
   },
   {
    "kapt_code": "A15609005",
@@ -3963,7 +4273,9 @@
     "11590-39"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11002430",
+   "kakao_place_name": "대림아파트"
   },
   {
    "kapt_code": "A15609303",
@@ -3988,7 +4300,9 @@
     "11590-40"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "23905714",
+   "kakao_place_name": "경남아너스빌아파트"
   },
   {
    "kapt_code": "A15681503",
@@ -4013,7 +4327,9 @@
     "11590-38"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11275808",
+   "kakao_place_name": "극동아파트"
   },
   {
    "kapt_code": "A15609306",
@@ -4038,7 +4354,9 @@
     "11590-54"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "7919743",
+   "kakao_place_name": "동작삼성래미안아파트"
   },
   {
    "kapt_code": "A10025013",
@@ -4063,7 +4381,9 @@
     "11590-4948"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "807959093",
+   "kakao_place_name": "사당롯데캐슬골든포레아파트"
   },
   {
    "kapt_code": "A15609305",
@@ -4088,7 +4408,9 @@
     "11590-97"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "7855654",
+   "kakao_place_name": "사당롯데캐슬1차아파트"
   },
   {
    "kapt_code": "A15677204",
@@ -4113,7 +4435,9 @@
     "11590-47"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "10529343",
+   "kakao_place_name": "신동아4차아파트"
   },
   {
    "kapt_code": "A15681501",
@@ -4138,7 +4462,9 @@
     "11590-89"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "10699187",
+   "kakao_place_name": "사당우성3단지아파트"
   },
   {
    "kapt_code": "A15681502",
@@ -4163,7 +4489,9 @@
     "11590-49"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11310824",
+   "kakao_place_name": "사당우성2단지아파트"
   },
   {
    "kapt_code": "A15609502",
@@ -4188,7 +4516,9 @@
     "11590-43"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11387764",
+   "kakao_place_name": "사당자이아파트"
   },
   {
    "kapt_code": "A15609003",
@@ -4213,7 +4543,9 @@
     "11590-3579"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11058737",
+   "kakao_place_name": "사당휴먼시아아파트"
   },
   {
    "kapt_code": "A15609006",
@@ -4238,7 +4570,9 @@
     "11590-88"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11116227",
+   "kakao_place_name": "신동아5차아파트"
   },
   {
    "kapt_code": "A15609007",
@@ -4263,7 +4597,9 @@
     "11590-4095"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "12784739",
+   "kakao_place_name": "이수역리가아파트"
   },
   {
    "kapt_code": "A10024245",
@@ -4290,7 +4626,9 @@
    "ho_count": null,
    "alt_lots": [
     "사당동|1161"
-   ]
+   ],
+   "kakao_place_id": "1169767101",
+   "kakao_place_name": "이수푸르지오더프레티움아파트"
   },
   {
    "kapt_code": "A15603502",
@@ -4315,7 +4653,9 @@
     "11590-102"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "8349619",
+   "kakao_place_name": "래미안상도2차아파트"
   },
   {
    "kapt_code": "A15603006",
@@ -4340,7 +4680,9 @@
     "11590-127"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "10443225",
+   "kakao_place_name": "래미안상도3차아파트"
   },
   {
    "kapt_code": "A15603002",
@@ -4365,7 +4707,9 @@
     "11590-3441"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "8395758",
+   "kakao_place_name": "상도브라운스톤아파트"
   },
   {
    "kapt_code": "A10022720",
@@ -4390,7 +4734,9 @@
    "apt_seqs": [
     "11590-5189"
    ],
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "820939919",
+   "kakao_place_name": "상도푸르지오클라베뉴아파트"
   },
   {
    "kapt_code": "A10027633",
@@ -4415,7 +4761,9 @@
     "11590-4495"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "645811059",
+   "kakao_place_name": "상도두산위브트레지움2차아파트"
   },
   {
    "kapt_code": "A15603206",
@@ -4440,7 +4788,9 @@
     "11590-3412"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11232606",
+   "kakao_place_name": "상도더샵1차아파트"
   },
   {
    "kapt_code": "A15683402",
@@ -4465,7 +4815,9 @@
     "11590-100"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "10774334",
+   "kakao_place_name": "중앙하이츠빌아파트"
   },
   {
    "kapt_code": "A15603204",
@@ -4490,7 +4842,9 @@
     "11590-22"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "1200210234",
+   "kakao_place_name": "상도래미안1차아파트(447)"
   },
   {
    "kapt_code": "A15678102",
@@ -4515,7 +4869,9 @@
    "apt_seqs": [
     "11590-13"
    ],
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11143582",
+   "kakao_place_name": "상도삼호아파트"
   },
   {
    "kapt_code": "A15683901",
@@ -4540,7 +4896,9 @@
     "11590-99"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11332176",
+   "kakao_place_name": "쌍용스윗닷홈아파트"
   },
   {
    "kapt_code": "A10024365",
@@ -4565,7 +4923,9 @@
     "11590-4993"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "1950694213",
+   "kakao_place_name": "상도역롯데캐슬파크엘아파트"
   },
   {
    "kapt_code": "A10027424",
@@ -4592,7 +4952,9 @@
    "ho_count": null,
    "alt_lots": [
     "상도동|900"
-   ]
+   ],
+   "kakao_place_id": "26139776",
+   "kakao_place_name": "상도파크자이아파트"
   },
   {
    "kapt_code": "A15603203",
@@ -4617,7 +4979,9 @@
     "11590-126"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11196326",
+   "kakao_place_name": "상도아이파크아파트"
   },
   {
    "kapt_code": "A10025768",
@@ -4642,7 +5006,9 @@
     "11590-4879"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "1651246571",
+   "kakao_place_name": "e편한세상상도노빌리티아파트"
   },
   {
    "kapt_code": "A15678103",
@@ -4667,7 +5033,9 @@
     "11590-3954"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11951329",
+   "kakao_place_name": "힐스테이트상도센트럴파크아파트"
   },
   {
    "kapt_code": "A15603008",
@@ -4692,7 +5060,9 @@
     "11590-4078"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11373951",
+   "kakao_place_name": "힐스테이트상도프레스티지아파트"
   },
   {
    "kapt_code": "A15670001",
@@ -4717,7 +5087,9 @@
     "11590-3351"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "554815387",
+   "kakao_place_name": "동작상떼빌아파트"
   },
   {
    "kapt_code": "A15601003",
@@ -4742,7 +5114,9 @@
     "11590-3743"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "7892910",
+   "kakao_place_name": "보라매e편한세상아파트"
   },
   {
    "kapt_code": "A15601104",
@@ -4767,7 +5141,9 @@
     "11590-103"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11349169",
+   "kakao_place_name": "보라매롯데낙천대아파트"
   },
   {
    "kapt_code": "A10024098",
@@ -4792,7 +5168,9 @@
    "apt_seqs": [
     "11590-5026"
    ],
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "25129918",
+   "kakao_place_name": "보라매자이더포레스트아파트"
   },
   {
    "kapt_code": "A15685503",
@@ -4817,7 +5195,9 @@
     "11590-83"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11063507",
+   "kakao_place_name": "보라매파크빌아파트"
   },
   {
    "kapt_code": "A15601103",
@@ -4842,7 +5222,9 @@
     "11590-81"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11046465",
+   "kakao_place_name": "경남아파트"
   },
   {
    "kapt_code": "A15685206",
@@ -4867,7 +5249,9 @@
     "11590-76"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11322016",
+   "kakao_place_name": "신대방우성1차아파트"
   },
   {
    "kapt_code": "A15601105",
@@ -4892,7 +5276,9 @@
     "11590-79"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11285021",
+   "kakao_place_name": "현대아파트"
   },
   {
    "kapt_code": "A15183001",
@@ -4917,7 +5303,9 @@
     "11590-3324"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11055230",
+   "kakao_place_name": "해태보라매타워아파트"
   },
   {
    "kapt_code": "A15679105",
@@ -4942,7 +5330,9 @@
     "11590-34"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11075274",
+   "kakao_place_name": "명수대현대아파트"
   },
   {
    "kapt_code": "A10025770",
@@ -4969,7 +5359,9 @@
    "ho_count": null,
    "alt_lots": [
     "흑석동|341"
-   ]
+   ],
+   "kakao_place_id": "1411247070",
+   "kakao_place_name": "아크로리버하임아파트"
   },
   {
    "kapt_code": "A15607001",
@@ -4994,7 +5386,9 @@
     "11590-106"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11089277",
+   "kakao_place_name": "흑석동양아파트"
   },
   {
    "kapt_code": "A10025867",
@@ -5019,7 +5413,9 @@
     "11590-4875"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "734185843",
+   "kakao_place_name": "롯데캐슬에듀포레아파트"
   },
   {
    "kapt_code": "A10023350",
@@ -5046,7 +5442,9 @@
    ],
    "alt_lots": [
     "흑석동|343"
-   ]
+   ],
+   "kakao_place_id": "1907158350",
+   "kakao_place_name": "흑석자이아파트"
   },
   {
    "kapt_code": "A15679104",
@@ -5071,7 +5469,9 @@
     "11590-35"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11239897",
+   "kakao_place_name": "청호아파트"
   },
   {
    "kapt_code": "A15679107",
@@ -5096,7 +5496,9 @@
     "11590-3773"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11247513",
+   "kakao_place_name": "흑석한강센트레빌1차아파트"
   },
   {
    "kapt_code": "A15679109",
@@ -5121,7 +5523,9 @@
     "11590-4002"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "12747756",
+   "kakao_place_name": "흑석한강센트레빌2차아파트"
   },
   {
    "kapt_code": "A15679108",
@@ -5146,7 +5550,9 @@
     "11590-3965"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11886017",
+   "kakao_place_name": "흑석한강푸르지오아파트"
   },
   {
    "kapt_code": "A15685702",
@@ -5171,7 +5577,9 @@
     "11590-36"
    ],
    "ho_count": null,
-   "alt_lots": []
+   "alt_lots": [],
+   "kakao_place_id": "11294942",
+   "kakao_place_name": "한강현대아파트"
   }
  ],
  "match_version": 2
