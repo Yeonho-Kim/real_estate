@@ -14,7 +14,7 @@ import threading
 from concurrent.futures import ThreadPoolExecutor
 
 from . import config
-from .geocode import find_kakao_place, geocode_complex
+from .geocode import GEO_VERSION, distance_m, find_kakao_place, geocode_complex
 from .http import QuotaExceeded
 from .kapt_api import fetch_basic, fetch_list
 from .store import now_iso, read_json, write_json
@@ -156,28 +156,16 @@ def build(service_key: str, kakao_rest_key: str | None, geocode: bool = True, fu
             record["apt_seqs"] = prev.get("apt_seqs", [])
         result.append(record)
 
-    # 4) 좌표
+    # 4) 좌표와 카카오맵 장소. 방식(GEO_VERSION)이 같고 이미 구한 단지는 건너뛴다.
     if geocode and kakao_rest_key:
-        for record in result:
-            if record.get("lat") is not None:
-                continue
-            coords = geocode_complex(kakao_rest_key, record["road_address"], record["address"], record["name"], record["sgg_name"])
-            if coords:
-                record["lat"], record["lng"] = coords
-            else:
-                log.warning("좌표 변환 실패: %s %s", record["name"], record["address"])
-
-        # 5) 카카오맵 장소 번호 (링크용). 한 번 찾아 본 단지는 다시 찾지 않는다 (full 이면 다시 찾음).
-        found = 0
-        for record in result:
-            if "kakao_place_id" in record and not full:
-                continue
-            place = find_kakao_place(kakao_rest_key, record["name"], record["road_address"], record.get("lat"), record.get("lng"))
-            record["kakao_place_id"] = place["id"] if place else ""
-            record["kakao_place_name"] = place["name"] if place else ""
-            found += bool(place)
-        with_place = sum(1 for r in result if r.get("kakao_place_id"))
-        log.info("카카오맵 장소: 이번에 %d곳 찾음, 전체 %d/%d", found, with_place, len(result))
+        todo_geo = [r for r in result if full or r.get("lat") is None or r.get("geo_v") != GEO_VERSION]
+        for record in todo_geo:
+            locate(kakao_rest_key, record)
+        sources = {}
+        for r in result:
+            sources[r.get("geo_source", "?")] = sources.get(r.get("geo_source", "?"), 0) + 1
+        log.info("좌표: 이번에 %d곳 다시 구함, 출처별 %s, 카카오 장소 %d/%d",
+                 len(todo_geo), sources, sum(1 for r in result if r.get("kakao_place_id")), len(result))
 
     skipped = dict.fromkeys(REASONS, 0)
     for item in skipped_items:
@@ -220,3 +208,37 @@ def remove_orphan_trades(valid_codes: set[str]) -> int:
             path.unlink()
             removed += 1
     return removed
+
+
+def locate(kakao_rest_key: str, record: dict) -> None:
+    """단지의 핀 좌표와 카카오맵 장소를 구해 record 에 적는다.
+
+    1) 주소로 좌표를 구한다 (도로명 → 지번 → 단지명, 돌아온 주소가 맞을 때만 인정).
+    2) 그 근처에서 카카오맵 장소를 찾는다.
+    3) 핀은 장소 좌표에 둔다. 주소 좌표는 주소가 붙은 건물 한 동을 가리키지만,
+       장소 좌표는 지도에 단지 이름이 표시되는 자리라 지도와 더 잘 맞는다. 장소가 없으면 주소 좌표.
+    두 좌표 사이 거리(place_dist)를 남겨 나중에 점검할 수 있게 한다.
+    """
+    addr = geocode_complex(kakao_rest_key, record)
+    if addr is None:
+        log.warning("좌표 변환 실패: %s %s", record["name"], record.get("road_address"))
+        record.setdefault("lat", None)
+        record.setdefault("lng", None)
+        record["geo_source"] = "none"
+        return
+    addr_lat, addr_lng, source = addr
+    place = find_kakao_place(kakao_rest_key, record["name"], record["road_address"], addr_lat, addr_lng)
+    record["addr_lat"], record["addr_lng"], record["addr_source"] = addr_lat, addr_lng, source
+    record["kakao_place_id"] = place["id"] if place else ""
+    record["kakao_place_name"] = place["name"] if place else ""
+    if place:
+        record["lat"], record["lng"] = place["lat"], place["lng"]
+        record["geo_source"] = "place" if place["same_road"] else "place_near"
+        record["place_dist"] = distance_m(addr_lat, addr_lng, place["lat"], place["lng"])
+    else:
+        record["lat"], record["lng"] = addr_lat, addr_lng
+        record["geo_source"] = source
+        record["place_dist"] = None
+    if source != "road":
+        log.warning("도로명 주소로 좌표를 못 구해 %s 로 대신함: %s %s", source, record["name"], record.get("road_address"))
+    record["geo_v"] = GEO_VERSION

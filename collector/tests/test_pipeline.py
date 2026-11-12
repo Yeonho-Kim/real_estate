@@ -239,14 +239,17 @@ def test_build_complexes_end_to_end_with_json_api(monkeypatch, tmp_data_dir):
             return Resp(KAPT_BASIC_JSON)
         if "address.json" in url:
             assert headers["Authorization"] == "KakaoAK REST"
-            return Resp("", payload={"documents": [{"x": "126.9561", "y": "37.5541"}]})
+            assert params["query"] == "서울 마포구 마포대로 195"          # 도로명과 건물번호만 뽑아 보낸다
+            return Resp("", payload={"documents": [{"x": "126.9561", "y": "37.5541", "road_address": {
+                "region_2depth_name": "마포구", "road_name": "마포대로", "main_building_no": "195", "sub_building_no": "",
+                "x": "126.9561", "y": "37.5541"}}]})
         if "keyword.json" in url:
             assert params["x"] == 126.9561 and params["y"] == 37.5541 and params["radius"] == 500
             return Resp("", payload={"documents": [
                 {"id": "111", "place_name": "마포래미안푸르지오 관리사무소", "category_name": "부동산 > 주거시설 > 아파트 > 아파트관리사무소",
-                 "road_address_name": "서울 마포구 마포대로 195", "distance": "20"},
+                 "road_address_name": "서울 마포구 마포대로 195", "distance": "20", "x": "126.9560", "y": "37.5540"},
                 {"id": "26338954", "place_name": "마포래미안푸르지오아파트", "category_name": "부동산 > 주거시설 > 아파트",
-                 "road_address_name": "서울 마포구 마포대로 195", "distance": "35"},
+                 "road_address_name": "서울 마포구 마포대로 195", "distance": "35", "x": "126.9545", "y": "37.5530"},
             ]})
         raise AssertionError(url)
 
@@ -254,8 +257,13 @@ def test_build_complexes_end_to_end_with_json_api(monkeypatch, tmp_data_dir):
     result = build_complexes.build("KEY", "REST")
 
     assert [c["kapt_code"] for c in result] == ["A13376001"]      # 120세대 단지 제외
-    assert result[0]["lat"] == 37.5541 and result[0]["lng"] == 126.9561 and result[0]["sgg_name"] == "마포구"
-    assert result[0]["kakao_place_id"] == "26338954" and result[0]["kakao_place_name"] == "마포래미안푸르지오아파트"
+    r = result[0]
+    assert r["sgg_name"] == "마포구"
+    assert r["kakao_place_id"] == "26338954" and r["kakao_place_name"] == "마포래미안푸르지오아파트"
+    # 핀은 카카오 장소 좌표, 주소 좌표는 따로 남기고 둘 사이 거리를 기록한다
+    assert (r["lat"], r["lng"]) == (37.5530, 126.9545) and r["geo_source"] == "place"
+    assert (r["addr_lat"], r["addr_lng"], r["addr_source"]) == (37.5541, 126.9561, "road")
+    assert 150 < r["place_dist"] < 200 and r["geo_v"] == 2
     saved = json.loads(config.COMPLEXES_FILE.read_text())
     assert saved["count"] == 1 and saved["skipped"]["households"] == 1 and saved["skipped"]["umd"] == 1
     assert saved["listed"]["마포구"] == 2 and saved["listed"]["강서구"] == 1
@@ -499,3 +507,108 @@ def test_pick_kakao_place():
     assert pick_place([dict(moved, distance="400")], "마포쌍용황금", road) is None
     assert pick_place([office, shop], "마포쌍용황금", road) is None
     assert pick_place([], "마포쌍용황금", road) is None
+
+
+def test_split_road_handles_dong_inside_address():
+    """K-apt 도로명 주소에 동 이름이 끼어 있어도 도로명과 건물번호를 뽑는다.
+
+    예전 코드는 '양평동1가' 의 숫자를 건물번호로 착각해 뒤를 잘라 냈고,
+    양평동 9개 단지의 핀이 동 중심점에 겹쳐 찍혔다.
+    """
+    from collector.geocode import split_road
+
+    assert split_road("서울특별시 영등포구 양평동1가 선유서로24길 6") == ("선유서로24길", "6")
+    assert split_road("서울특별시 영등포구 양평동3가 선유로 207") == ("선유로", "207")
+    assert split_road("서울특별시 서대문구 충정로3가 경기대로 26-26") == ("경기대로", "26-26")
+    assert split_road("서울특별시 마포구 마포대로4라길 30") == ("마포대로4라길", "30")
+    assert split_road("서울특별시 동작구 장승배기로11가길 11") == ("장승배기로11가길", "11")
+    assert split_road("서울특별시 마포구 아현동 777 마포래미안푸르지오") == ("", "")
+    assert split_road("") == ("", "")
+
+
+def test_geocode_accepts_only_matching_address(monkeypatch):
+    """카카오가 돌려준 주소의 구·도로명·건물번호가 같을 때만 좌표로 인정한다."""
+    from collector import geocode
+
+    def road_doc(gu, road, main, sub, x, y):
+        return {"x": "0", "y": "0", "road_address": {"region_2depth_name": gu, "road_name": road,
+                "main_building_no": main, "sub_building_no": sub, "x": str(x), "y": str(y)}}
+
+    def lot_doc(gu, dong, main, sub, x, y):
+        return {"x": str(x), "y": str(y), "address": {"region_2depth_name": gu, "region_3depth_name": dong,
+                "main_address_no": main, "sub_address_no": sub, "x": str(x), "y": str(y)}}
+
+    queries = []
+    answers = {}
+
+    def fake_search(rest_key, url, params):
+        queries.append(params["query"])
+        return answers.get(params["query"], [])
+
+    monkeypatch.setattr(geocode, "_search", fake_search)
+    rec = {"name": "영등포 중흥S-클래스", "sgg_name": "영등포구", "umd": "양평동1가", "jibun": "247",
+           "road_address": "서울특별시 영등포구 양평동1가 선유서로24길 6"}
+
+    # 1) 도로명: 다른 번호·다른 구의 결과는 건너뛰고 맞는 것을 고른다
+    answers["서울 영등포구 선유서로24길 6"] = [
+        road_doc("영등포구", "선유서로24길", "16", "", 1, 1),
+        road_doc("강서구", "선유서로24길", "6", "", 2, 2),
+        road_doc("영등포구", "선유서로24길", "6", "", 126.8885, 37.5262),
+    ]
+    assert geocode.geocode_complex("K", rec) == (37.5262, 126.8885, "road")
+    assert queries == ["서울 영등포구 선유서로24길 6"]      # '양평동1가' 에서 자르지 않는다
+
+    # 2) 도로명 결과가 맞지 않으면 지번으로
+    answers["서울 영등포구 선유서로24길 6"] = [road_doc("영등포구", "선유서로24길", "16", "", 1, 1)]
+    answers["서울 영등포구 양평동1가 247"] = [lot_doc("영등포구", "양평동2가", "247", "", 9, 9),
+                                         lot_doc("영등포구", "양평동1가", "247", "", 126.8880, 37.5260)]
+    assert geocode.geocode_complex("K", rec) == (37.5260, 126.8880, "lot")
+
+    # 3) 건물 부번이 있는 주소
+    rec2 = dict(rec, road_address="서울특별시 서대문구 충정로3가 경기대로 26-26", sgg_name="서대문구")
+    answers["서울 서대문구 경기대로 26-26"] = [road_doc("서대문구", "경기대로", "26", "26", 126.96, 37.56)]
+    assert geocode.geocode_complex("K", rec2) == (37.56, 126.96, "road")
+
+    # 4) 아무것도 맞지 않으면 None (엉뚱한 좌표를 쓰지 않는다)
+    answers.clear()
+    assert geocode.geocode_complex("K", rec) is None
+    assert 105 < geocode.distance_m(37.5262, 126.8885, 37.5262, 126.8897) < 107
+
+
+def test_locate_and_regeocode_on_version_change(monkeypatch, tmp_data_dir):
+    """핀 좌표 선택, 그리고 좌표 구하는 방식이 바뀌면 예전 좌표를 전부 다시 구하는지."""
+    from collector import build_complexes
+
+    place = {"id": "77", "name": "양평동6차현대아파트", "lat": 37.5301, "lng": 126.8921, "same_road": True}
+    monkeypatch.setattr(build_complexes, "geocode_complex", lambda key, rec: (37.5298, 126.8925, "road"))
+    monkeypatch.setattr(build_complexes, "find_kakao_place", lambda key, name, road, lat, lng: place if name != "장소없음" else None)
+
+    rec = {"name": "양평동6차현대아파트", "road_address": "서울특별시 영등포구 양평동3가 선유로 207", "lat": 37.529368, "lng": 126.891016}
+    build_complexes.locate("K", rec)
+    assert (rec["lat"], rec["lng"], rec["geo_source"]) == (37.5301, 126.8921, "place")
+    assert rec["kakao_place_id"] == "77" and 40 < rec["place_dist"] < 60 and rec["geo_v"] == 2
+
+    none = {"name": "장소없음", "road_address": "서울특별시 영등포구 선유로 1"}
+    build_complexes.locate("K", none)
+    assert (none["lat"], none["lng"], none["geo_source"]) == (37.5298, 126.8925, "road")
+    assert none["kakao_place_id"] == "" and none["place_dist"] is None
+
+    # 주소 좌표를 전혀 못 구하면 예전 좌표를 지우지 않고, 다음에 다시 시도하도록 버전을 적지 않는다
+    monkeypatch.setattr(build_complexes, "geocode_complex", lambda key, rec: None)
+    failed = {"name": "x", "road_address": "", "lat": 1.0, "lng": 2.0}
+    build_complexes.locate("K", failed)
+    assert (failed["lat"], failed["lng"]) == (1.0, 2.0) and "geo_v" not in failed and failed["geo_source"] == "none"
+
+    # 예전 방식으로 구한 좌표(geo_v 없음)는 다음 재생성에서 다시 구한다
+    monkeypatch.setattr(config, "REGIONS", (config.Region("11440", "마포구"),))
+    monkeypatch.setattr(build_complexes, "geocode_complex", lambda key, rec: (37.55, 126.95, "road"))
+    old = copy.deepcopy(COMPLEX)                       # lat 37.55, lng 126.95, geo_v 없음
+    old["lat"], old["lng"] = 37.0, 127.0               # 틀린 좌표
+    write_json(config.COMPLEXES_FILE, {"complexes": [old]})
+    monkeypatch.setattr(build_complexes, "fetch_list", lambda key, code: [{"kapt_code": "A13376001", "name": "x", "as3": "아현동"}])
+    result = build_complexes.build("KEY", "REST")
+    assert (result[0]["lat"], result[0]["lng"]) == (37.5301, 126.8921) and result[0]["geo_v"] == 2
+    calls = []
+    monkeypatch.setattr(build_complexes, "geocode_complex", lambda key, rec: calls.append(1) or (0.0, 0.0, "road"))
+    build_complexes.build("KEY", "REST")
+    assert calls == []                                 # 이미 새 방식으로 구했으면 다시 구하지 않는다
