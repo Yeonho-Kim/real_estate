@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T22:44:34+09:00",
+ "generated_at": "2026-11-12T09:22:07+09:00",
  "note": "단지 마스터에서 제외한 단지. reason: households=세대수 미달, rental=임대 단지, umd=대상 동이 아님, no_basic=기본정보 없음, not_fetched=일일 한도 초과로 아직 확인 못함(다음 실행에서 이어서 받음)",
  "min_households": 300,
  "exclude_sale_types": [
