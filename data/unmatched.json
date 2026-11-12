@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-12T12:51:04+09:00",
+ "updated_at": "2026-11-13T04:01:31+09:00",
  "note": "단지에 연결하지 못한 거래. 300세대 미만 단지면 정상(data/complexes_skipped.json 에서 확인). 300세대 이상인데 여기 있으면 collector/overrides.json 에 \"apt_seq 값\": \"단지코드\" 를 추가한다 (단지코드는 data/complexes.json). road 는 거래 자료의 도로명 주소.",
  "items": [
   {
@@ -31,8 +31,8 @@
   },
   {
    "where": "동작구|신대방동|686-48|동작협성휴포레시그니처",
-   "count": 52,
-   "sales": 10,
+   "count": 53,
+   "sales": 11,
    "rents": 42,
    "apt_seq": "11590-5055",
    "road": "시흥대로 606",
@@ -296,7 +296,7 @@
    "sales": 1,
    "rents": 13,
    "apt_seq": "11560-94",
-   "road": "선유로47길 34",
+   "road": "선유로47길 34 34",
    "build_year": 2000
   },
   {
@@ -849,6 +849,15 @@
    "build_year": 2004
   },
   {
+   "where": "동작구|신대방동|706|보라매우성",
+   "count": 8,
+   "sales": 3,
+   "rents": 5,
+   "apt_seq": "11590-71",
+   "road": "보라매로5길 5",
+   "build_year": 1995
+  },
+  {
    "where": "동작구|노량진동|330|삼익",
    "count": 8,
    "sales": 1,
@@ -982,15 +991,6 @@
    "apt_seq": "11560-157",
    "road": "선유로33길 23",
    "build_year": 2004
-  },
-  {
-   "where": "동작구|신대방동|706|보라매우성",
-   "count": 7,
-   "sales": 2,
-   "rents": 5,
-   "apt_seq": "11590-71",
-   "road": "보라매로5길 5",
-   "build_year": 1995
   },
   {
    "where": "동작구|사당동|1150|삼익그린뷰",
