@@ -1,3 +1,5 @@
+import json
+
 import pytest
 
 from collector import config
@@ -92,6 +94,10 @@ def test_kapt_json_list_and_basic():
     assert basic.households == 3885 and basic.dong_count == 44 and basic.approved == "2014-09-30"
     assert basic.umd == "아현동" and basic.jibun == "777" and basic.area_85 == 2000
     assert basic.road_address == "서울특별시 마포구 마포대로 195"
+    assert basic.apt_type == ""        # 응답에 분류가 없으면 빈 값
+    typed = json.loads(KAPT_BASIC_JSON)
+    typed["response"]["body"]["item"]["codeAptNm"] = "주상복합"
+    assert parse_basic(json.dumps(typed)).apt_type == "주상복합"
 
 
 def test_json_variants_and_errors():

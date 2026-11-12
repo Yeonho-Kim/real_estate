@@ -53,6 +53,10 @@ MIN_HOUSEHOLDS = int(os.environ.get("MIN_HOUSEHOLDS", "300"))
 # 분양과 임대가 섞인 "혼합"은 대부분 일반 단지라 남긴다. 쉼표로 여러 개, 빈 문자열이면 제외 없음.
 EXCLUDE_SALE_TYPES = tuple(t.strip() for t in os.environ.get("EXCLUDE_SALE_TYPES", "임대").split(",") if t.strip())
 
+# 제외할 단지 분류 (K-apt codeAptNm: 아파트 / 주상복합 / 연립주택 / 도시형 생활주택(주상복합) 등).
+# 분류에 이 글자가 들어 있으면 제외한다. 쉼표로 여러 개, 빈 문자열이면 제외 없음.
+EXCLUDE_APT_TYPES = tuple(t.strip() for t in os.environ.get("EXCLUDE_APT_TYPES", "주상복합").split(",") if t.strip())
+
 # 전용면적 범위(㎡). 59타입(59.9x) ~ 84타입(84.9x) 을 포함하도록 여유를 둠.
 AREA_MIN = float(os.environ.get("AREA_MIN", "58"))
 AREA_MAX = float(os.environ.get("AREA_MAX", "86"))  # 미만

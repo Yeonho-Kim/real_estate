@@ -19,6 +19,13 @@ def tmp_data_dir(tmp_path, monkeypatch):
     monkeypatch.setattr(config, "OVERRIDES_FILE", tmp_path / "overrides.json")
     monkeypatch.setattr(config, "WATCHLIST_FILE", tmp_path / "watchlist.json")
     monkeypatch.setattr(config, "REQUEST_SLEEP", 0)
+
+    def no_network(*args, **kwargs):
+        raise AssertionError(f"테스트에서 실제 네트워크 호출: {args[:1]}")
+
+    from collector import http
+    monkeypatch.setattr(http.requests, "get", no_network)
+    monkeypatch.setattr(http.time, "sleep", lambda s: None)
     return data
 
 
@@ -95,6 +102,6 @@ ERROR_XML = """<OpenAPI_ServiceResponse><cmmMsgHeader><errMsg>SERVICE ERROR</err
 COMPLEX = {
     "kapt_code": "A13376001", "name": "마포래미안푸르지오", "address": "서울특별시 마포구 아현동 777 마포래미안푸르지오",
     "road_address": "서울특별시 마포구 마포대로 195", "bjd_code": "1144012000", "households": 3885, "dong_count": 44,
-    "approved": "2014-09-30", "area_60": 1200, "area_85": 2000, "area_135": 400, "sale_type": "분양",
+    "approved": "2014-09-30", "area_60": 1200, "area_85": 2000, "area_135": 400, "sale_type": "분양", "apt_type": "아파트",
     "umd": "아현동", "jibun": "777", "sgg_code": "11440", "sgg_name": "마포구", "lat": 37.55, "lng": 126.95, "apt_seqs": [],
 }

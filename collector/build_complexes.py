@@ -21,8 +21,11 @@ from .store import now_iso, read_json, write_json
 
 log = logging.getLogger(__name__)
 
-REASONS = ("households", "rental", "umd", "no_basic", "not_fetched")
-CACHED_REASONS = ("households", "rental")  # 기본정보를 이미 받아 판단이 끝난 경우
+REASONS = ("households", "rental", "mixed_use", "umd", "no_basic", "not_fetched")
+CACHED_REASONS = ("households", "rental", "mixed_use")  # 기본정보를 이미 받아 판단이 끝난 경우
+# 기본정보를 다시 받아도 이어받는 값 (좌표, 카카오 장소, 거래 연결 정보)
+KEEP_KEYS = ("lat", "lng", "apt_seqs", "alt_lots", "kakao_place_id", "kakao_place_name",
+             "geo_v", "geo_source", "addr_lat", "addr_lng", "addr_source", "place_dist")
 _QUOTA = object()
 
 
@@ -35,6 +38,7 @@ def _skip(entry: dict, region, reason: str, basic=None) -> dict:
         "households": basic.households if basic else None,
         "ho_count": basic.ho_count if basic else None,
         "sale_type": basic.sale_type if basic else "",
+        "apt_type": basic.apt_type if basic else "",
         "address": basic.address if basic else "",
         "reason": reason,
     }
@@ -45,17 +49,25 @@ def _skip_record(record: dict, reason: str) -> dict:
     return {
         "kapt_code": record["kapt_code"], "name": record.get("name", ""), "sgg_name": record.get("sgg_name", ""),
         "umd": record.get("umd", ""), "households": record.get("households"), "ho_count": record.get("ho_count"),
-        "sale_type": record.get("sale_type", ""), "address": record.get("address", ""), "reason": reason,
+        "sale_type": record.get("sale_type", ""), "apt_type": record.get("apt_type", ""),
+        "address": record.get("address", ""), "reason": reason,
     }
 
 
-def exclusion_reason(households: int | None, sale_type: str) -> str | None:
-    """세대수·분양형태로 제외할지 판단. 제외하지 않으면 None."""
+def exclusion_reason(households: int | None, sale_type: str, apt_type: str = "", name: str = "") -> str | None:
+    """세대수·분양형태·단지 분류로 제외할지 판단. 제외하지 않으면 None."""
     if households is not None and households < config.MIN_HOUSEHOLDS:
         return "households"
     if (sale_type or "") in config.EXCLUDE_SALE_TYPES:
         return "rental"
+    # 분류가 주상복합이거나, 분류가 비어 있어도 이름에 적혀 있는 경우 (예: "동작상떼빌주상복합")
+    if any(t in (apt_type or "") or t in (name or "") for t in config.EXCLUDE_APT_TYPES):
+        return "mixed_use"
     return None
+
+
+def _reason_of(item: dict) -> str | None:
+    return exclusion_reason(item.get("households"), item.get("sale_type", ""), item.get("apt_type", ""), item.get("name", ""))
 
 
 def build(service_key: str, kakao_rest_key: str | None, geocode: bool = True, full: bool = False) -> list[dict]:
@@ -81,20 +93,20 @@ def build(service_key: str, kakao_rest_key: str | None, geocode: bool = True, fu
             code = entry["kapt_code"]
             if entry.get("as3") and not region.accepts_umd(entry["as3"]):
                 skipped_items.append(_skip(entry, region, "umd"))
-            elif code in existing:
+            elif code in existing and _reason_of(existing[code]):
+                skipped_items.append(_skip_record(existing[code], _reason_of(existing[code])))
+            elif code in existing and "apt_type" in existing[code]:
                 record = dict(existing[code])
                 record.setdefault("ho_count", None)
-                reason = exclusion_reason(record.get("households"), record.get("sale_type", ""))
-                if reason:
-                    skipped_items.append(_skip_record(record, reason))
-                else:
-                    result.append(record)
-            elif code in known_skipped and exclusion_reason(known_skipped[code]["households"], known_skipped[code].get("sale_type", "")):
+                result.append(record)
+            elif code in known_skipped and _reason_of(known_skipped[code]):
                 item = dict(known_skipped[code])
                 item.setdefault("sale_type", "")
-                item["reason"] = exclusion_reason(item["households"], item["sale_type"])
+                item.setdefault("apt_type", "")
+                item["reason"] = _reason_of(item)
                 skipped_items.append(item)
             else:
+                # 처음 보는 단지이거나, 예전에 받아 둔 정보에 단지 분류(apt_type)가 없는 단지 → 기본정보를 받는다
                 todo.append((region, entry))
     log.info("단지 목록 %s | 재사용 %d, 이미 확인된 제외 %d, 새로 조회 %d",
              listed, len(result), sum(1 for i in skipped_items if i["reason"] in CACHED_REASONS), len(todo))
@@ -133,7 +145,7 @@ def build(service_key: str, kakao_rest_key: str | None, geocode: bool = True, fu
             log.warning("기본정보 없음: %s %s", entry["kapt_code"], entry.get("name"))
             skipped_items.append(_skip(entry, region, "no_basic"))
             continue
-        reason = exclusion_reason(basic.households, basic.sale_type)
+        reason = exclusion_reason(basic.households, basic.sale_type, basic.apt_type, basic.name)
         if reason:
             skipped_items.append(_skip(entry, region, reason, basic))
             continue
@@ -152,8 +164,7 @@ def build(service_key: str, kakao_rest_key: str | None, geocode: bool = True, fu
         })
         prev = coords_cache.get(entry["kapt_code"])
         if prev:
-            record["lat"], record["lng"] = prev.get("lat"), prev.get("lng")
-            record["apt_seqs"] = prev.get("apt_seqs", [])
+            record.update({k: prev[k] for k in KEEP_KEYS if k in prev})
         result.append(record)
 
     # 4) 좌표와 카카오맵 장소. 방식(GEO_VERSION)이 같고 이미 구한 단지는 건너뛴다.
@@ -182,10 +193,11 @@ def build(service_key: str, kakao_rest_key: str | None, geocode: bool = True, fu
     skipped_items.sort(key=lambda i: (i["reason"], i["sgg_name"], -(i["households"] or 0), i["name"]))
     write_json(config.COMPLEXES_SKIPPED_FILE, {
         "generated_at": now_iso(),
-        "note": "단지 마스터에서 제외한 단지. reason: households=세대수 미달, rental=임대 단지, umd=대상 동이 아님, "
+        "note": "단지 마스터에서 제외한 단지. reason: households=세대수 미달, rental=임대 단지, mixed_use=주상복합, umd=대상 동이 아님, "
                 "no_basic=기본정보 없음, not_fetched=일일 한도 초과로 아직 확인 못함(다음 실행에서 이어서 받음)",
         "min_households": config.MIN_HOUSEHOLDS,
         "exclude_sale_types": list(config.EXCLUDE_SALE_TYPES),
+        "exclude_apt_types": list(config.EXCLUDE_APT_TYPES),
         "items": skipped_items,
     })
     log.info("마스터 %d개 저장 (제외: %s)", len(result), skipped)

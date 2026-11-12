@@ -27,7 +27,8 @@ class KaptBasic:
     area_60: int | None   # 전용 60㎡ 이하 세대수
     area_85: int | None   # 전용 60~85㎡ 세대수
     area_135: int | None  # 전용 85~135㎡ 세대수
-    sale_type: str      # 분양/임대 (codeSaleNm)
+    sale_type: str      # 분양/임대/혼합 (codeSaleNm)
+    apt_type: str       # 단지 분류: 아파트/주상복합/연립주택 등 (codeAptNm)
     umd: str            # 주소에서 뽑은 법정동명
     jibun: str          # 주소에서 뽑은 지번 (본번-부번)
 
@@ -102,6 +103,7 @@ def parse_basic(text: str) -> KaptBasic | None:
         area_85=_int(_text(item, "kaptMparea85")),
         area_135=_int(_text(item, "kaptMparea135")),
         sale_type=_text(item, "codeSaleNm"),
+        apt_type=_text(item, "codeAptNm"),
         umd=umd,
         jibun=jibun,
     )

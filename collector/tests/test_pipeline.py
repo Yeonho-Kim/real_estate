@@ -612,3 +612,59 @@ def test_locate_and_regeocode_on_version_change(monkeypatch, tmp_data_dir):
     monkeypatch.setattr(build_complexes, "geocode_complex", lambda key, rec: calls.append(1) or (0.0, 0.0, "road"))
     build_complexes.build("KEY", "REST")
     assert calls == []                                 # 이미 새 방식으로 구했으면 다시 구하지 않는다
+
+
+def test_mixed_use_complexes_are_excluded(monkeypatch, tmp_data_dir):
+    """주상복합은 마스터에서 빠진다. 예전에 받아 분류(apt_type)가 없는 단지는 기본정보를 다시 받아 판단한다."""
+    from collector import build_complexes
+    from collector.build_complexes import exclusion_reason
+    from collector.kapt_api import parse_basic
+
+    from .test_parsing import KAPT_BASIC_JSON
+
+    assert exclusion_reason(900, "분양", "주상복합") == "mixed_use"
+    assert exclusion_reason(900, "분양", "도시형 생활주택(주상복합)") == "mixed_use"
+    assert exclusion_reason(900, "분양", "", "동작상떼빌주상복합") == "mixed_use"      # 분류가 비어도 이름으로
+    assert exclusion_reason(900, "분양", "아파트", "마포래미안푸르지오") is None
+    assert exclusion_reason(900, "혼합", "아파트") is None
+    assert exclusion_reason(100, "분양", "주상복합") == "households"                  # 세대수 미달이 먼저
+
+    monkeypatch.setattr(config, "REGIONS", (config.Region("11440", "마포구"),))
+    legacy = copy.deepcopy(COMPLEX)                  # 예전 형식: apt_type 없음, 좌표·연결 정보는 있음
+    del legacy["apt_type"]
+    legacy.update(kapt_code="LEGACY_MIXED", name="메세나폴리스", apt_seqs=["S9"], alt_lots=["서교동|1"],
+                  kakao_place_id="55", geo_v=2, geo_source="place")
+    legacy_apt = copy.deepcopy(legacy)
+    legacy_apt.update(kapt_code="LEGACY_APT", name="일반단지")
+    current = copy.deepcopy(COMPLEX)                 # 새 형식: apt_type 있음 → 다시 받지 않는다
+    write_json(config.COMPLEXES_FILE, {"match_version": MATCH_VERSION, "complexes": [legacy, legacy_apt, current]})
+    write_json(config.TRADES_DIR / "LEGACY_MIXED.json", {"sales": [], "rents": []})
+    monkeypatch.setattr(build_complexes, "fetch_list", lambda key, code: [
+        {"kapt_code": c, "name": c, "as3": "아현동"} for c in ("LEGACY_MIXED", "LEGACY_APT", "A13376001")])
+    asked = []
+
+    def fake_basic(key, code):
+        asked.append(code)
+        data = json.loads(KAPT_BASIC_JSON)
+        data["response"]["body"]["item"].update(kaptCode=code, kaptName="메세나폴리스" if code == "LEGACY_MIXED" else "일반단지",
+                                                codeAptNm="주상복합" if code == "LEGACY_MIXED" else "아파트")
+        return parse_basic(json.dumps(data))
+
+    monkeypatch.setattr(build_complexes, "fetch_basic", fake_basic)
+    result = build_complexes.build("KEY", None)
+
+    assert sorted(asked) == ["LEGACY_APT", "LEGACY_MIXED"]                       # 분류가 없던 단지만 다시 받음
+    assert sorted(c["kapt_code"] for c in result) == ["A13376001", "LEGACY_APT"]
+    kept = next(c for c in result if c["kapt_code"] == "LEGACY_APT")
+    assert kept["apt_type"] == "아파트"
+    # 다시 받아도 좌표·카카오 장소·거래 연결 정보는 이어받는다
+    assert (kept["apt_seqs"], kept["alt_lots"], kept["kakao_place_id"], kept["geo_v"], kept["lat"]) == (["S9"], ["서교동|1"], "55", 2, 37.55)
+    skipped = json.loads(config.COMPLEXES_SKIPPED_FILE.read_text())["items"]
+    assert [(i["kapt_code"], i["reason"], i["apt_type"]) for i in skipped] == [("LEGACY_MIXED", "mixed_use", "주상복합")]
+    assert not (config.TRADES_DIR / "LEGACY_MIXED.json").exists()
+    assert json.loads(config.COMPLEXES_FILE.read_text())["match_version"] == MATCH_VERSION
+
+    # 다음 재생성에서는 아무것도 다시 받지 않는다
+    asked.clear()
+    build_complexes.build("KEY", None)
+    assert asked == []
