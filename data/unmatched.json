@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-12T09:39:12+09:00",
+ "updated_at": "2026-11-12T12:51:04+09:00",
  "note": "단지에 연결하지 못한 거래. 300세대 미만 단지면 정상(data/complexes_skipped.json 에서 확인). 300세대 이상인데 여기 있으면 collector/overrides.json 에 \"apt_seq 값\": \"단지코드\" 를 추가한다 (단지코드는 data/complexes.json). road 는 거래 자료의 도로명 주소.",
  "items": [
   {
