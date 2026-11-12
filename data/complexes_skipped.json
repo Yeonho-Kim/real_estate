@@ -1,9 +1,12 @@
 {
- "generated_at": "2026-11-12T09:22:07+09:00",
- "note": "단지 마스터에서 제외한 단지. reason: households=세대수 미달, rental=임대 단지, umd=대상 동이 아님, no_basic=기본정보 없음, not_fetched=일일 한도 초과로 아직 확인 못함(다음 실행에서 이어서 받음)",
+ "generated_at": "2026-11-12T09:35:34+09:00",
+ "note": "단지 마스터에서 제외한 단지. reason: households=세대수 미달, rental=임대 단지, mixed_use=주상복합, umd=대상 동이 아님, no_basic=기본정보 없음, not_fetched=일일 한도 초과로 아직 확인 못함(다음 실행에서 이어서 받음)",
  "min_households": 300,
  "exclude_sale_types": [
   "임대"
+ ],
+ "exclude_apt_types": [
+  "주상복합"
  ],
  "items": [
   {
@@ -15,7 +18,8 @@
    "ho_count": 297,
    "address": "서울특별시 강서구 염창동 295 염창강변성원",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15786116",
@@ -26,7 +30,8 @@
    "ho_count": 290,
    "address": "서울특별시 강서구 염창동 240-32 염창금호",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15704015",
@@ -37,7 +42,8 @@
    "ho_count": 284,
    "address": "서울특별시 강서구 염창동 272-11 염창롯데캐슬",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15786314",
@@ -48,7 +54,8 @@
    "ho_count": 277,
    "address": "서울특별시 강서구 염창동 270-1 염창태영송화",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15786213",
@@ -59,7 +66,8 @@
    "ho_count": 273,
    "address": "서울특별시 강서구 염창동 255 염창무학",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15786312",
@@ -70,7 +78,8 @@
    "ho_count": 256,
    "address": "서울특별시 강서구 염창동 280 염창극동상록수",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15786111",
@@ -81,7 +90,8 @@
    "ho_count": 249,
    "address": "서울특별시 강서구 염창동 246-23 염창극동",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15786510",
@@ -92,7 +102,8 @@
    "ho_count": 212,
    "address": "서울특별시 강서구 염창동 293 염창한강동아(2차)",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15786408",
@@ -103,7 +114,8 @@
    "ho_count": 206,
    "address": "서울특별시 강서구 염창동 282 삼정그린코아",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15704009",
@@ -114,7 +126,8 @@
    "ho_count": 206,
    "address": "서울특별시 강서구 염창동 290 염창벽산늘푸른",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15704007",
@@ -125,7 +138,8 @@
    "ho_count": 202,
    "address": "서울특별시 강서구 염창동 305 염창1차보람더하임아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15704006",
@@ -136,7 +150,8 @@
    "ho_count": 196,
    "address": "서울특별시 강서구 염창동 272-28 염창우성3차",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15786405",
@@ -147,7 +162,8 @@
    "ho_count": 186,
    "address": "서울특별시 강서구 염창동 287-1 염창우성2차",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15786104",
@@ -158,7 +174,8 @@
    "ho_count": 178,
    "address": "서울특별시 강서구 염창동 248-3 삼성하나로",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15704003",
@@ -169,7 +186,8 @@
    "ho_count": 168,
    "address": "서울특별시 강서구 염창동 297 염창월드메르디앙",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15704002",
@@ -180,7 +198,8 @@
    "ho_count": 166,
    "address": "서울특별시 강서구 염창동 298 염창 일신건영휴먼빌아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15776001",
@@ -191,7 +210,8 @@
    "ho_count": 164,
    "address": "서울특별시 강서구 염창동 240-1 염창강변월드메르디앙",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15704001",
@@ -202,7 +222,8 @@
    "ho_count": 163,
    "address": "서울특별시 강서구 염창동 302 염창2차한화꿈에그린",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10027541",
@@ -213,7 +234,8 @@
    "ho_count": 152,
    "address": "서울특별시 강서구 염창동 308 강서쌍용예가아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10021935",
@@ -224,7 +246,8 @@
    "ho_count": 140,
    "address": "서울특별시 강서구 염창동 264-27 염창삼성한아름아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10024353",
@@ -235,7 +258,8 @@
    "ho_count": 136,
    "address": "서울특별시 강서구 염창동 282-19 염창현대아이파크아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10022537",
@@ -246,7 +270,8 @@
    "ho_count": 135,
    "address": "서울특별시 강서구 염창동 306- 염창힐스테이트아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10022108",
@@ -257,7 +282,8 @@
    "ho_count": 130,
    "address": "서울특별시 강서구 염창동 303- 염창동강변코아루아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15776004",
@@ -268,7 +294,8 @@
    "ho_count": 127,
    "address": "서울특별시 강서구 염창동 291 현대3",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10022042",
@@ -279,7 +306,8 @@
    "ho_count": 122,
    "address": "서울특별시 강서구 염창동 262-2 염창대림아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10025049",
@@ -290,7 +318,8 @@
    "ho_count": 115,
    "address": "서울특별시 강서구 염창동 294 염창동길훈아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10021770",
@@ -301,7 +330,8 @@
    "ho_count": 106,
    "address": "서울특별시 강서구 염창동 249-11 염창현대2차아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15776003",
@@ -312,7 +342,8 @@
    "ho_count": 105,
    "address": "서울특별시 강서구 염창동 254-2 이너스내안에",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15776002",
@@ -323,7 +354,8 @@
    "ho_count": 65,
    "address": "서울특별시 강서구 염창동 296 태진드림피아",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15605003",
@@ -334,7 +366,8 @@
    "ho_count": 299,
    "address": "서울특별시 동작구 노량진동 332 노량진쌍용예가",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10022416",
@@ -345,7 +378,8 @@
    "ho_count": 305,
    "address": "서울특별시 동작구 노량진동 54-4 더써밋타워",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10027614",
@@ -356,7 +390,8 @@
    "ho_count": 298,
    "address": "서울특별시 동작구 상도동 363-164 상도 휴엔하임 도시형생횔주택",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15609501",
@@ -367,7 +402,8 @@
    "ho_count": 296,
    "address": "서울특별시 동작구 사당동 240-15 사당제일",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15601102",
@@ -378,7 +414,8 @@
    "ho_count": 295,
    "address": "서울특별시 동작구 신대방동 710 신대방경남교수",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15683601",
@@ -389,7 +426,8 @@
    "ho_count": 279,
    "address": "서울특별시 동작구 상도동 411 상도1동대림",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15681104",
@@ -400,7 +438,8 @@
    "ho_count": 278,
    "address": "서울특별시 동작구 대방동 506 대방2차현대",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15608002",
@@ -411,7 +450,8 @@
    "ho_count": 276,
    "address": "서울특별시 동작구 동작동 331 동작금강KCC",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10023551",
@@ -422,7 +462,8 @@
    "ho_count": 274,
    "address": "서울특별시 동작구 신대방동 686-48 동작협성휴포레시그니처아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15606001",
@@ -433,7 +474,8 @@
    "ho_count": 272,
    "address": "서울특별시 동작구 본동 484 경동윈츠리버",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10024524",
@@ -444,7 +486,8 @@
    "ho_count": 272,
    "address": "서울특별시 동작구 노량진동 37-1 더클래식동작",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15601202",
@@ -455,7 +498,8 @@
    "ho_count": 272,
    "address": "서울특별시 동작구 신대방동 470-8 신대방한성",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15681802",
@@ -466,7 +510,8 @@
    "ho_count": 265,
    "address": "서울특별시 동작구 사당동 169-32 사당현대아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15605102",
@@ -477,7 +522,8 @@
    "ho_count": 247,
    "address": "서울특별시 동작구 본동 487 본동한신휴플러스",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15672002",
@@ -488,7 +534,8 @@
    "ho_count": 246,
    "address": "서울특별시 동작구 신대방동 395-66 보라매삼성쉐르빌",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15601002",
@@ -499,7 +546,8 @@
    "ho_count": 225,
    "address": "서울특별시 동작구 신대방동 395-69 보라매아카데미타워아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15609301",
@@ -510,7 +558,8 @@
    "ho_count": 223,
    "address": "서울특별시 동작구 사당동 1149 사당롯데캐슬",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15609002",
@@ -521,7 +570,8 @@
    "ho_count": 211,
    "address": "서울특별시 동작구 사당동 1138 사당삼호그린",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10023966",
@@ -532,7 +582,8 @@
    "ho_count": 207,
    "address": "서울특별시 동작구 노량진동 333 어바니엘한강",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15681103",
@@ -543,7 +594,8 @@
    "ho_count": 206,
    "address": "서울특별시 동작구 대방동 505 대방우정",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15679103",
@@ -554,7 +606,8 @@
    "ho_count": 206,
    "address": "서울특별시 동작구 흑석동 329 우리유앤미",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10027472",
@@ -565,7 +618,8 @@
    "ho_count": 202,
    "address": "서울특별시 동작구 상도동 536 상도효성해링턴플레이스",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15602002",
@@ -576,7 +630,8 @@
    "ho_count": 200,
    "address": "서울특별시 동작구 대방동 509 보라매코오롱하늘채",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15672001",
@@ -587,7 +642,8 @@
    "ho_count": 199,
    "address": "서울특별시 동작구 신대방동 706 보라매우성",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15603401",
@@ -598,7 +654,8 @@
    "ho_count": 197,
    "address": "서울특별시 동작구 상도동 445 경향렉스빌아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15678101",
@@ -609,7 +666,8 @@
    "ho_count": 194,
    "address": "서울특별시 동작구 상도동 412 상도현대",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15671801",
@@ -620,7 +678,8 @@
    "ho_count": 199,
    "address": "서울특별시 동작구 상도동 529 상도두산위브",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15609401",
@@ -631,7 +690,8 @@
    "ho_count": 183,
    "address": "서울특별시 동작구 사당동 1150 사당삼익그린뷰",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15608001",
@@ -642,7 +702,8 @@
    "ho_count": 178,
    "address": "서울특별시 동작구 동작동 332 이수교스위첸",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15676702",
@@ -653,7 +714,8 @@
    "ho_count": 176,
    "address": "서울특별시 동작구 본동 490 본동SH-ville",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15605001",
@@ -664,7 +726,8 @@
    "ho_count": 175,
    "address": "서울특별시 동작구 노량진동 330 노량진삼익",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15685201",
@@ -675,7 +738,8 @@
    "ho_count": 174,
    "address": "서울특별시 동작구 신대방동 565-21 신대방우성2차",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15601201",
@@ -686,7 +750,8 @@
    "ho_count": 171,
    "address": "서울특별시 동작구 신대방동 360-17 신대방신동아",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15603007",
@@ -697,7 +762,8 @@
    "ho_count": 164,
    "address": "서울특별시 동작구 상도동 447 상도래미안1차제2",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15602001",
@@ -708,7 +774,8 @@
    "ho_count": 163,
    "address": "서울특별시 동작구 대방동 512 대방경남아너스빌",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15603001",
@@ -719,7 +786,8 @@
    "ho_count": 162,
    "address": "서울특별시 동작구 상도동 528 상도동원베네스트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10020085",
@@ -730,7 +798,8 @@
    "ho_count": 162,
    "address": "서울특별시 동작구 사당동 1008-1 스타팰리스 이수",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15606005",
@@ -741,7 +810,8 @@
    "ho_count": 161,
    "address": "서울특별시 동작구 본동 150 한강쌍용",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15679106",
@@ -752,7 +822,8 @@
    "ho_count": 154,
    "address": "서울특별시 동작구 흑석동 332 흑석해가든",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15609001",
@@ -763,7 +834,8 @@
    "ho_count": 151,
    "address": "서울특별시 동작구 사당동 1155 사당유니드",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10024777",
@@ -774,7 +846,8 @@
    "ho_count": 141,
    "address": "서울특별시 동작구 상도동 530 상도동 롯데캐슬 비엔",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10022230",
@@ -785,7 +858,8 @@
    "ho_count": 140,
    "address": "서울특별시 동작구 사당동 1141- 르메이에르",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10024642",
@@ -796,7 +870,8 @@
    "ho_count": 140,
    "address": "서울특별시 동작구 사당동 1142 사당진흥아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10027495",
@@ -807,7 +882,8 @@
    "ho_count": 140,
    "address": "서울특별시 동작구 사당동 147-29 이수자이 주상복합",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15603009",
@@ -818,7 +894,8 @@
    "ho_count": 138,
    "address": "서울특별시 동작구 상도동 534 상도더샵2차",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10022217",
@@ -829,7 +906,8 @@
    "ho_count": 135,
    "address": "서울특별시 동작구 신대방동 716- 현진에버빌아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15606006",
@@ -840,7 +918,8 @@
    "ho_count": 134,
    "address": "서울특별시 동작구 본동 488 본동한신휴플러스제2",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10024752",
@@ -851,7 +930,8 @@
    "ho_count": 134,
    "address": "서울특별시 동작구 대방동 41 신한토탈아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10021100",
@@ -862,7 +942,8 @@
    "ho_count": 132,
    "address": "서울특별시 동작구 신대방동 709- 신대방벽산아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10024811",
@@ -873,7 +954,8 @@
    "ho_count": 131,
    "address": "서울특별시 동작구 사당동 1143 남해오네뜨아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10021490",
@@ -884,7 +966,8 @@
    "ho_count": 130,
    "address": "서울특별시 동작구 상도동 211-1 건영약수맨션",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10023859",
@@ -895,7 +978,8 @@
    "ho_count": 130,
    "address": "서울특별시 동작구 대방동 510 대방동신일해피트리 아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10026873",
@@ -906,7 +990,8 @@
    "ho_count": 123,
    "address": "서울특별시 동작구 본동 148-2 극동강변아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10022916",
@@ -917,7 +1002,8 @@
    "ho_count": 123,
    "address": "서울특별시 동작구 상도동 458 상도1차갑을명가아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15609008",
@@ -928,7 +1014,8 @@
    "ho_count": 120,
    "address": "서울특별시 동작구 사당동 1135 사당대아2차",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10022456",
@@ -939,7 +1026,8 @@
    "ho_count": 119,
    "address": "서울특별시 동작구 상도동 459- 상도2차갑을명가아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10021807",
@@ -950,7 +1038,8 @@
    "ho_count": 113,
    "address": "서울특별시 동작구 사당동 1140- 사당삼성아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10022181",
@@ -961,7 +1050,8 @@
    "ho_count": 111,
    "address": "서울특별시 동작구 사당동 1153 사당kcc아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10022093",
@@ -972,7 +1062,8 @@
    "ho_count": 110,
    "address": "서울특별시 동작구 대방동 403-16 골든노블레스",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15601004",
@@ -983,7 +1074,8 @@
    "ho_count": 108,
    "address": "서울특별시 동작구 신대방동 705 신대방",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10025504",
@@ -994,7 +1086,8 @@
    "ho_count": 105,
    "address": "서울특별시 동작구 신대방동 717 숲속마을 신동아파밀리에 아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10022384",
@@ -1005,7 +1098,8 @@
    "ho_count": 100,
    "address": "서울특별시 동작구 대방동 507- 대방2차e편한세상아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10023324",
@@ -1016,7 +1110,8 @@
    "ho_count": 96,
    "address": "서울특별시 동작구 신대방동 395-73 캐릭터그린빌아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10024188",
@@ -1027,7 +1122,8 @@
    "ho_count": 0,
    "address": "서울특별시 동작구 신대방동 395-67 롯데타워아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10020109",
@@ -1038,7 +1134,8 @@
    "ho_count": 65,
    "address": "서울특별시 동작구 상도동 418 쌍용임대아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10026025",
@@ -1049,7 +1146,8 @@
    "ho_count": 63,
    "address": "서울특별시 동작구 사당동 1151 사당갑을명가아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10025175",
@@ -1060,7 +1158,8 @@
    "ho_count": 0,
    "address": "서울특별시 동작구 동작동 329 신동아갯마을아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10019890",
@@ -1071,7 +1170,8 @@
    "ho_count": 299,
    "address": "서울특별시 마포구 염리동 172-10 공덕역청년안심주택e.seo(이서)",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12179001",
@@ -1082,7 +1182,8 @@
    "ho_count": 290,
    "address": "서울특별시 마포구 신공덕동 170 브라운스톤공덕",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10027748",
@@ -1093,7 +1194,8 @@
    "ho_count": 288,
    "address": "서울특별시 마포구 공덕동 476 공덕파크자이 아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12187703",
@@ -1104,7 +1206,8 @@
    "ho_count": 282,
    "address": "서울특별시 마포구 중동 40-12 성산2차현대",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12185605",
@@ -1115,7 +1218,8 @@
    "ho_count": 279,
    "address": "서울특별시 마포구 신수동 453 대원칸타빌",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10025633",
@@ -1126,7 +1230,8 @@
    "ho_count": 276,
    "address": "서울특별시 마포구 창전동 449 마포 웨스트리버 태영데시앙아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12185504",
@@ -1137,7 +1242,8 @@
    "ho_count": 260,
    "address": "서울특별시 마포구 신수동 190 신수성원",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12182901",
@@ -1148,7 +1254,8 @@
    "ho_count": 258,
    "address": "서울특별시 마포구 상수동 396 상수두산위브",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12188202",
@@ -1159,7 +1266,8 @@
    "ho_count": 243,
    "address": "서울특별시 마포구 창전동 440 창전현대홈타운",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12103006",
@@ -1170,7 +1278,8 @@
    "ho_count": 242,
    "address": "서울특별시 마포구 신공덕동 167 대우메트로디오빌",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12182401",
@@ -1181,7 +1290,8 @@
    "ho_count": 240,
    "address": "서울특별시 마포구 망원동 497 망원2차대림",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10022941",
@@ -1192,7 +1302,8 @@
    "ho_count": 239,
    "address": "서울특별시 마포구 아현동 275-2 마포푸르지오더센트럴",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12188201",
@@ -1203,7 +1314,8 @@
    "ho_count": 239,
    "address": "서울특별시 마포구 창전동 438 신촌금호",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12180404",
@@ -1214,7 +1326,8 @@
    "ho_count": 226,
    "address": "서울특별시 마포구 공덕동 371-1 공덕삼성임대",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12112001",
@@ -1225,7 +1338,8 @@
    "ho_count": 219,
    "address": "서울특별시 마포구 현석동 220 밤섬현대",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12179502",
@@ -1236,7 +1350,8 @@
    "ho_count": 213,
    "address": "서울특별시 마포구 상암동 1630 DMC상암센트럴파크1단지",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12123001",
@@ -1247,7 +1362,8 @@
    "ho_count": 210,
    "address": "서울특별시 마포구 망원동 509 망원휴먼빌아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12185603",
@@ -1258,7 +1374,8 @@
    "ho_count": 210,
    "address": "서울특별시 마포구 신수동 445-5 신수현대",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12101001",
@@ -1269,7 +1386,8 @@
    "ho_count": 208,
    "address": "서울특별시 마포구 아현동 692 서서울삼성아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12187902",
@@ -1280,7 +1398,8 @@
    "ho_count": 206,
    "address": "서울특별시 마포구 중동 393 건영월드컵",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12172402",
@@ -1291,7 +1410,8 @@
    "ho_count": 239,
    "address": "서울특별시 마포구 대흥동 12-41 서희스타힐스",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10027951",
@@ -1302,7 +1422,8 @@
    "ho_count": 201,
    "address": "서울특별시 마포구 아현동 799 공덕자이(임대)",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12170602",
@@ -1313,7 +1434,8 @@
    "ho_count": 199,
    "address": "서울특별시 마포구 공덕동 43 공덕2삼성임대",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10027301",
@@ -1324,7 +1446,8 @@
    "ho_count": 198,
    "address": "서울특별시 마포구 합정동 473 마포한강2차푸르지오",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10027902",
@@ -1335,7 +1458,8 @@
    "ho_count": 198,
    "address": "서울특별시 마포구 합정동 472 마포한강푸르지오",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12104001",
@@ -1346,7 +1470,8 @@
    "ho_count": 196,
    "address": "서울특별시 마포구 도화동 547 도화현대",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12179005",
@@ -1357,7 +1482,8 @@
    "ho_count": 195,
    "address": "서울특별시 마포구 신공덕동 174 공덕아이파크",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12102002",
@@ -1368,7 +1494,8 @@
    "ho_count": 192,
    "address": "서울특별시 마포구 공덕동 460 공덕한화꿈에그린",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12177801",
@@ -1379,7 +1506,8 @@
    "ho_count": 192,
    "address": "서울특별시 마포구 창전동 442 서강한화오벨리스크스위트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12185602",
@@ -1390,7 +1518,8 @@
    "ho_count": 192,
    "address": "서울특별시 마포구 신수동 451 신수세양청마루",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12125001",
@@ -1401,7 +1530,8 @@
    "ho_count": 189,
    "address": "서울특별시 마포구 성산동 604 성산2차e-편한세상",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12179501",
@@ -1412,7 +1542,8 @@
    "ho_count": 184,
    "address": "서울특별시 마포구 상암동 1618 DMC상암센트럴파크2단지",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12180401",
@@ -1423,7 +1554,8 @@
    "ho_count": 183,
    "address": "서울특별시 마포구 공덕동 370-9 공덕현대",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12182101",
@@ -1434,7 +1566,8 @@
    "ho_count": 181,
    "address": "서울특별시 마포구 망원동 496 망원1차대림",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12187901",
@@ -1445,7 +1578,8 @@
    "ho_count": 180,
    "address": "서울특별시 마포구 중동 391 중동계룡",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12185001",
@@ -1456,7 +1590,8 @@
    "ho_count": 172,
    "address": "서울특별시 마포구 성산동 600 성사1차 풍림아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12170401",
@@ -1467,7 +1602,8 @@
    "ho_count": 167,
    "address": "서울특별시 마포구 도화동 564 마포동원베네스트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10024626",
@@ -1478,7 +1614,8 @@
    "ho_count": 166,
    "address": "서울특별시 마포구 공덕동 480 공덕SK리더스뷰 2단지",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12181101",
@@ -1489,7 +1626,8 @@
    "ho_count": 165,
    "address": "서울특별시 마포구 대흥동 803 마포더포레스트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12111001",
@@ -1500,7 +1638,8 @@
    "ho_count": 160,
    "address": "서울특별시 마포구 신수동 456 마포경남아너스빌",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10022963",
@@ -1511,7 +1650,8 @@
    "ho_count": 151,
    "address": "서울특별시 마포구 노고산동 56-74 맹그로브신촌",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10023755",
@@ -1522,7 +1662,8 @@
    "ho_count": 149,
    "address": "서울특별시 마포구 망원동 522 마포한강 J-SKY아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10021282",
@@ -1533,7 +1674,8 @@
    "ho_count": 141,
    "address": "서울특별시 마포구 용강동 501- 마포대림2차e-편한세상아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10024784",
@@ -1544,7 +1686,8 @@
    "ho_count": 136,
    "address": "서울특별시 마포구 서교동 486 서교푸르지오아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10024150",
@@ -1555,7 +1698,8 @@
    "ho_count": 134,
    "address": "서울특별시 마포구 망원동 489 망원성원2차아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10025672",
@@ -1566,7 +1710,8 @@
    "ho_count": 133,
    "address": "서울특별시 마포구 마포동 442 마포 보성 아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10027504",
@@ -1577,7 +1722,8 @@
    "ho_count": 132,
    "address": "서울특별시 마포구 신공덕동 173 월드마크마포아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10027572",
@@ -1588,7 +1734,8 @@
    "ho_count": 130,
    "address": "서울특별시 마포구 망원동 517 마포영화블렌하임",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10024587",
@@ -1599,7 +1746,8 @@
    "ho_count": 128,
    "address": "서울특별시 마포구 연남동 259-1 대명비발디아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12179006",
@@ -1610,7 +1758,8 @@
    "ho_count": 128,
    "address": "서울특별시 마포구 신공덕동 168 신공덕e-편한세상",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10022213",
@@ -1621,7 +1770,8 @@
    "ho_count": 127,
    "address": "서울특별시 마포구 성산동 597- 성산동성아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10021649",
@@ -1632,7 +1782,8 @@
    "ho_count": 126,
    "address": "서울특별시 마포구 대흥동 802- 대흥동 세양아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10022303",
@@ -1643,7 +1794,8 @@
    "ho_count": 123,
    "address": "서울특별시 마포구 용강동 500- 마포대림1차",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10024334",
@@ -1654,7 +1806,8 @@
    "ho_count": 122,
    "address": "서울특별시 마포구 신공덕동 171 마포KCC웰츠타워",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10022480",
@@ -1665,7 +1818,8 @@
    "ho_count": 120,
    "address": "서울특별시 마포구 아현동 738- 마포트라팰리스2",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10023665",
@@ -1676,7 +1830,8 @@
    "ho_count": 119,
    "address": "서울특별시 마포구 망원동 498 우림 루미아트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10019997",
@@ -1687,7 +1842,8 @@
    "ho_count": 114,
    "address": "서울특별시 마포구 염리동 161-1 염리동 중앙하이츠 A.P.T",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10022359",
@@ -1698,7 +1854,8 @@
    "ho_count": 105,
    "address": "서울특별시 마포구 망원동 433-9 망원미원2차아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12179003",
@@ -1709,7 +1866,8 @@
    "ho_count": 103,
    "address": "서울특별시 마포구 신공덕동 159 신공덕2삼성래미안제2",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10022429",
@@ -1720,7 +1878,8 @@
    "ho_count": 102,
    "address": "서울특별시 마포구 중동 395- 중동 동원월드타운아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10020640",
@@ -1731,7 +1890,8 @@
    "ho_count": 100,
    "address": "서울특별시 마포구 창전동 441- 마포창전쌍용스윗닷홈",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10019899",
@@ -1742,7 +1902,8 @@
    "ho_count": 94,
    "address": "서울특별시 마포구 신수동 457 벽산솔렌스힐아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10024597",
@@ -1753,7 +1914,8 @@
    "ho_count": 88,
    "address": "서울특별시 마포구 염리동 522 염리동세양청마루아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12084302",
@@ -1764,7 +1926,8 @@
    "ho_count": 299,
    "address": "서울특별시 서대문구 홍은동 22 유원홍은",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10024532",
@@ -1775,7 +1938,8 @@
    "ho_count": 296,
    "address": "서울특별시 서대문구 홍은동 468 북한산두산위브2차",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10027681",
@@ -1786,7 +1950,8 @@
    "ho_count": 296,
    "address": "서울특별시 서대문구 홍제동 451-13 홍제금호어울림아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12071001",
@@ -1797,7 +1962,8 @@
    "ho_count": 294,
    "address": "서울특별시 서대문구 홍은동 456 홍은두산",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12008001",
@@ -1808,7 +1974,8 @@
    "ho_count": 290,
    "address": "서울특별시 서대문구 현저동 1019 독립문파크빌",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10027019",
@@ -1819,7 +1986,8 @@
    "ho_count": 288,
    "address": "서울특별시 서대문구 남가좌동 387 상암DMC엘가",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10020267",
@@ -1830,7 +1998,8 @@
    "ho_count": 283,
    "address": "서울특별시 서대문구 남가좌동 289-54 DMC 가재울 아이파크",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12076601",
@@ -1841,7 +2010,8 @@
    "ho_count": 267,
    "address": "서울특별시 서대문구 북가좌동 449-1 북가좌삼호제2",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12070201",
@@ -1852,7 +2022,8 @@
    "ho_count": 258,
    "address": "서울특별시 서대문구 충정로3가 465 충정리시온",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12081602",
@@ -1863,7 +2034,8 @@
    "ho_count": 254,
    "address": "서울특별시 서대문구 북가좌동 371-1 월드컵현대",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12078201",
@@ -1874,7 +2046,8 @@
    "ho_count": 246,
    "address": "서울특별시 서대문구 홍제동 460-1 인왕산현대",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12009201",
@@ -1885,7 +2058,8 @@
    "ho_count": 242,
    "address": "서울특별시 서대문구 홍제동 456 홍제성원아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12009303",
@@ -1896,7 +2070,8 @@
    "ho_count": 240,
    "address": "서울특별시 서대문구 홍제동 455 홍제현대그린",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12005001",
@@ -1907,7 +2082,8 @@
    "ho_count": 237,
    "address": "서울특별시 서대문구 냉천동 260 냉천동부센트레빌",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12009302",
@@ -1918,7 +2094,8 @@
    "ho_count": 236,
    "address": "서울특별시 서대문구 홍제동 465 인왕산벽산아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12013201",
@@ -1929,7 +2106,8 @@
    "ho_count": 235,
    "address": "서울특별시 서대문구 북가좌동 459 DMC두산위브",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12078706",
@@ -1940,7 +2118,8 @@
    "ho_count": 228,
    "address": "서울특별시 서대문구 홍제동 462 홍제청구3차",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12071103",
@@ -1951,7 +2130,8 @@
    "ho_count": 220,
    "address": "서울특별시 서대문구 연희동 700 연희대림아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12086001",
@@ -1962,7 +2142,8 @@
    "ho_count": 214,
    "address": "서울특별시 서대문구 홍제동 373 홍제태영으뜸",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12013101",
@@ -1973,7 +2154,8 @@
    "ho_count": 213,
    "address": "서울특별시 서대문구 북가좌동 453 디엠씨현대",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12071102",
@@ -1984,7 +2166,8 @@
    "ho_count": 212,
    "address": "서울특별시 서대문구 연희동 738 연희임광아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12071002",
@@ -1995,7 +2178,8 @@
    "ho_count": 201,
    "address": "서울특별시 서대문구 홍은동 461 홍은동부센트레빌",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10019979",
@@ -2006,7 +2190,8 @@
    "ho_count": 199,
    "address": "서울특별시 서대문구 영천동 69-121 경희궁 유보라",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12013001",
@@ -2017,7 +2202,8 @@
    "ho_count": 197,
    "address": "서울특별시 서대문구 북가좌동 456 DMC휴먼빌",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12010001",
@@ -2028,7 +2214,8 @@
    "ho_count": 195,
    "address": "서울특별시 서대문구 홍은동 463 홍은동원베네스트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12009101",
@@ -2039,7 +2226,8 @@
    "ho_count": 192,
    "address": "서울특별시 서대문구 홍제동 457 홍제남양",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12071104",
@@ -2050,7 +2238,8 @@
    "ho_count": 186,
    "address": "서울특별시 서대문구 연희동 745 연희자이엘라",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12010101",
@@ -2061,7 +2250,8 @@
    "ho_count": 193,
    "address": "서울특별시 서대문구 홍은동 440-3 홍은풍림1차",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12003001",
@@ -2072,7 +2262,8 @@
    "ho_count": 180,
    "address": "서울특별시 서대문구 합동 118 충정로 skview 아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12009001",
@@ -2083,7 +2274,8 @@
    "ho_count": 150,
    "address": "서울특별시 서대문구 홍제동 454 홍제유원하나제2",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10023330",
@@ -2094,7 +2286,8 @@
    "ho_count": 141,
    "address": "서울특별시 서대문구 홍제동 464 무악재한화",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10021965",
@@ -2105,7 +2298,8 @@
    "ho_count": 136,
    "address": "서울특별시 서대문구 홍제동 156-200 고은맨숀아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10024620",
@@ -2116,7 +2310,8 @@
    "ho_count": 123,
    "address": "서울특별시 서대문구 홍제동 467 인왕산어울림 아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10020829",
@@ -2127,7 +2322,8 @@
    "ho_count": 0,
    "address": "서울특별시 서대문구 홍제동 342- 홍제중앙하이츠아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10020056",
@@ -2138,7 +2334,8 @@
    "ho_count": 120,
    "address": "서울특별시 서대문구 냉천동 261 돈의문센트레빌215동",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12076401",
@@ -2149,7 +2346,8 @@
    "ho_count": 119,
    "address": "서울특별시 서대문구 홍제동 468 홍제비콘드림힐",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12009002",
@@ -2160,7 +2358,8 @@
    "ho_count": 115,
    "address": "서울특별시 서대문구 홍제동 469 인왕산한신휴플러스",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10024428",
@@ -2171,7 +2370,8 @@
    "ho_count": 111,
    "address": "서울특별시 서대문구 북가좌동 455 북가좌 신일해피트리아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12012001",
@@ -2182,7 +2382,8 @@
    "ho_count": 110,
    "address": "서울특별시 서대문구 남가좌동 380 쌍용스윗닷홈",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10022194",
@@ -2193,7 +2394,8 @@
    "ho_count": 108,
    "address": "서울특별시 서대문구 충정로3가 466- 충정우리유앤미아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10023016",
@@ -2204,7 +2406,8 @@
    "ho_count": 106,
    "address": "서울특별시 서대문구 북아현동 1006 북아현경남아파트(101동)",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10023562",
@@ -2215,7 +2418,8 @@
    "ho_count": 101,
    "address": "서울특별시 서대문구 홍은동 457 홍은동일아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12071004",
@@ -2226,7 +2430,8 @@
    "ho_count": 90,
    "address": "서울특별시 서대문구 홍은동 459 진흥",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10023116",
@@ -2237,7 +2442,8 @@
    "ho_count": 83,
    "address": "서울특별시 서대문구 충정로2가 185-15 충정로현대아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15010602",
@@ -2248,7 +2454,8 @@
    "ho_count": 263,
    "address": "서울특별시 영등포구 양평동6가 100 양평동양",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15010601",
@@ -2259,7 +2466,8 @@
    "ho_count": 219,
    "address": "서울특별시 영등포구 양평동6가 99 양평한솔",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15086702",
@@ -2270,7 +2478,8 @@
    "ho_count": 216,
    "address": "서울특별시 영등포구 양평동4가 94 삼호한숲",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15010304",
@@ -2281,7 +2490,8 @@
    "ho_count": 213,
    "address": "서울특별시 영등포구 양평동3가 66 양평삼호",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15086601",
@@ -2292,7 +2502,8 @@
    "ho_count": 198,
    "address": "서울특별시 영등포구 양평동4가 51-1 양평경남2차아너스빌",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15010501",
@@ -2303,7 +2514,8 @@
    "ho_count": 184,
    "address": "서울특별시 영등포구 양평동5가 9-1 양평동보아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15010302",
@@ -2314,7 +2526,8 @@
    "ho_count": 179,
    "address": "서울특별시 영등포구 양평동3가 55-1 양평경남1차",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15010303",
@@ -2325,7 +2538,8 @@
    "ho_count": 179,
    "address": "서울특별시 영등포구 양평동3가 24 양평동삼천리아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15010201",
@@ -2336,7 +2550,8 @@
    "ho_count": 176,
    "address": "서울특별시 영등포구 양평동2가 45 양평상록수",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15010301",
@@ -2347,7 +2562,8 @@
    "ho_count": 170,
    "address": "서울특별시 영등포구 양평동3가 102 양평우림루미아트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15086201",
@@ -2358,7 +2574,8 @@
    "ho_count": 165,
    "address": "서울특별시 영등포구 양평동1가 14-1 양평서통한신",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10020758",
@@ -2369,7 +2586,8 @@
    "ho_count": 145,
    "address": "서울특별시 영등포구 양평동3가 79- 양평현대3차아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10026457",
@@ -2380,7 +2598,8 @@
    "ho_count": 128,
    "address": "서울특별시 영등포구 양평동3가 106 양평역미소지움아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10021291",
@@ -2391,7 +2610,8 @@
    "ho_count": 116,
    "address": "서울특별시 영등포구 양평동3가 19- 양평역월드메르디앙아파트",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10022708",
@@ -2402,7 +2622,176 @@
    "ho_count": 114,
    "address": "서울특별시 영등포구 양평동2가 39-1 오목교벽산블루밍",
    "reason": "households",
-   "sale_type": ""
+   "sale_type": "",
+   "apt_type": ""
+  },
+  {
+   "kapt_code": "A10024098",
+   "name": "보라매자이 더 포레스트",
+   "sgg_name": "동작구",
+   "umd": "신대방동",
+   "households": 959,
+   "ho_count": 959,
+   "sale_type": "혼합",
+   "apt_type": "주상복합",
+   "address": "서울특별시 동작구 신대방동 724 보라매자이 더 포레스트",
+   "reason": "mixed_use"
+  },
+  {
+   "kapt_code": "A10027633",
+   "name": "상도2차 두산위브트레지움 아파트",
+   "sgg_name": "동작구",
+   "umd": "상도동",
+   "households": 582,
+   "ho_count": 582,
+   "sale_type": "혼합",
+   "apt_type": "주상복합",
+   "address": "서울특별시 동작구 상도동 535 상도2차 두산위브트레지움 아파트",
+   "reason": "mixed_use"
+  },
+  {
+   "kapt_code": "A15670001",
+   "name": "동작상떼빌주상복합",
+   "sgg_name": "동작구",
+   "umd": "신대방동",
+   "households": 545,
+   "ho_count": null,
+   "sale_type": "분양",
+   "apt_type": "",
+   "address": "서울특별시 동작구 신대방동 719 동작상떼빌주상복합",
+   "reason": "mixed_use"
+  },
+  {
+   "kapt_code": "A15183001",
+   "name": "해태보라매타워",
+   "sgg_name": "동작구",
+   "umd": "신대방동",
+   "households": 387,
+   "ho_count": 256,
+   "sale_type": "분양",
+   "apt_type": "주상복합",
+   "address": "서울특별시 동작구 신대방동 708 해태보라매타워",
+   "reason": "mixed_use"
+  },
+  {
+   "kapt_code": "A12170402",
+   "name": "마포한화오벨리스크",
+   "sgg_name": "마포구",
+   "umd": "도화동",
+   "households": 662,
+   "ho_count": 662,
+   "sale_type": "분양",
+   "apt_type": "주상복합",
+   "address": "서울특별시 마포구 도화동 555 마포한화오벨리스크",
+   "reason": "mixed_use"
+  },
+  {
+   "kapt_code": "A12174601",
+   "name": "메세나폴리스",
+   "sgg_name": "마포구",
+   "umd": "서교동",
+   "households": 617,
+   "ho_count": 617,
+   "sale_type": "혼합",
+   "apt_type": "주상복합",
+   "address": "서울특별시 마포구 서교동 490 메세나폴리스",
+   "reason": "mixed_use"
+  },
+  {
+   "kapt_code": "A12184201",
+   "name": "서교동대우미래사랑",
+   "sgg_name": "마포구",
+   "umd": "서교동",
+   "households": 366,
+   "ho_count": 366,
+   "sale_type": "분양",
+   "apt_type": "주상복합",
+   "address": "서울특별시 마포구 서교동 487 서교동대우미래사랑",
+   "reason": "mixed_use"
+  },
+  {
+   "kapt_code": "A12172201",
+   "name": "신촌포스빌",
+   "sgg_name": "마포구",
+   "umd": "노고산동",
+   "households": 350,
+   "ho_count": 350,
+   "sale_type": "분양",
+   "apt_type": "주상복합",
+   "address": "서울특별시 마포구 노고산동 1-3 신촌포스빌",
+   "reason": "mixed_use"
+  },
+  {
+   "kapt_code": "A10020279",
+   "name": "빌리브 디에이블",
+   "sgg_name": "마포구",
+   "umd": "노고산동",
+   "households": 333,
+   "ho_count": 333,
+   "sale_type": "혼합",
+   "apt_type": "도시형 생활주택(주상복합)",
+   "address": "서울특별시 마포구 노고산동 129- 빌리브 디에이블",
+   "reason": "mixed_use"
+  },
+  {
+   "kapt_code": "A10024408",
+   "name": "공덕SK리더스뷰 1단지",
+   "sgg_name": "마포구",
+   "umd": "공덕동",
+   "households": 306,
+   "ho_count": 307,
+   "sale_type": "혼합",
+   "apt_type": "주상복합",
+   "address": "서울특별시 마포구 공덕동 479 공덕SK리더스뷰 1단지",
+   "reason": "mixed_use"
+  },
+  {
+   "kapt_code": "A12013003",
+   "name": "DMC래미안e편한세상",
+   "sgg_name": "서대문구",
+   "umd": "북가좌동",
+   "households": 3293,
+   "ho_count": 3297,
+   "sale_type": "혼합",
+   "apt_type": "주상복합",
+   "address": "서울특별시 서대문구 북가좌동 481 DMC래미안e편한세상",
+   "reason": "mixed_use"
+  },
+  {
+   "kapt_code": "A10023709",
+   "name": "DMC금호리첸시아",
+   "sgg_name": "서대문구",
+   "umd": "남가좌동",
+   "households": 450,
+   "ho_count": 450,
+   "sale_type": "분양",
+   "apt_type": "주상복합",
+   "address": "서울특별시 서대문구 남가좌동 286-1 DMC금호리첸시아",
+   "reason": "mixed_use"
+  },
+  {
+   "kapt_code": "A12013002",
+   "name": "DMC아이파크",
+   "sgg_name": "서대문구",
+   "umd": "북가좌동",
+   "households": 362,
+   "ho_count": 362,
+   "sale_type": "혼합",
+   "apt_type": "주상복합",
+   "address": "서울특별시 서대문구 북가좌동 458 DMC아이파크",
+   "reason": "mixed_use"
+  },
+  {
+   "kapt_code": "A10024316",
+   "name": "영등포 중흥S-클래스",
+   "sgg_name": "영등포구",
+   "umd": "양평동1가",
+   "households": 308,
+   "ho_count": 308,
+   "sale_type": "분양",
+   "apt_type": "주상복합",
+   "address": "서울특별시 영등포구 양평동1가 247 영등포 중흥S-클래스",
+   "reason": "mixed_use"
   },
   {
    "kapt_code": "A10024436",
@@ -2413,7 +2802,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 강서구 염창동 274-17 센터스퀘어등촌",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15603004",
@@ -2424,7 +2814,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 동작구 상도동 430 상도sh-ville",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15676512",
@@ -2435,7 +2826,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 동작구 대방동 503 대방주공1단지",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15676701",
@@ -2446,7 +2838,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 동작구 노량진동 326 신동아리버파크제2관리사무소",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15603003",
@@ -2457,7 +2850,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 동작구 상도동 414 상도건영제2 관리사무소",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10020786",
@@ -2468,7 +2862,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 동작구 신대방동 351-5 골드타워신대방청년주택",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12185003",
@@ -2479,7 +2874,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 마포구 성산동 595 SH성산아파트",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10024891",
@@ -2490,7 +2886,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 마포구 서교동 494 서교동 효성해링턴타워",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12127008",
@@ -2501,7 +2898,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 마포구 상암동 1674 상암월드컵8단지",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12127007",
@@ -2512,7 +2910,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 마포구 상암동 1634 상암월드컵1단지",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12181403",
@@ -2523,7 +2922,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 마포구 도화동 353-1 도화현대2차아파트(임대)",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10024425",
@@ -2534,7 +2934,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 마포구 창전동 19-8 이랜드PEER 신촌 청년주택",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12181102",
@@ -2545,7 +2946,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 마포구 대흥동 660 마포태영제2",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10019875",
@@ -2556,7 +2958,8 @@
    "ho_count": 499,
    "sale_type": "임대",
    "address": "서울특별시 마포구 염리동 534 리마크빌 마포",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12179002",
@@ -2567,7 +2970,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 마포구 신공덕동 157 신공덕삼성임대",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10027157",
@@ -2578,7 +2982,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 마포구 성산동 134-2 서울가좌행복주택",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10023118",
@@ -2589,7 +2994,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 마포구 공덕동 370-4 공덕동 크로시티 행복주택",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12177802",
@@ -2600,7 +3006,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 마포구 창전동 437 창전삼성임대",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12079601",
@@ -2611,7 +3018,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 서대문구 현저동 201 독립문극동임대",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A10024966",
@@ -2622,7 +3030,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 서대문구 충정로3가 480 더스타일하우스디센트럴",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12078707",
@@ -2633,7 +3042,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 서대문구 홍제동 459-1 홍제원현대임대",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12012201",
@@ -2644,7 +3054,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 서대문구 남가좌동 377-1 DMC래미안클라시스",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A12072802",
@@ -2655,7 +3066,8 @@
    "ho_count": null,
    "sale_type": "임대",
    "address": "서울특별시 서대문구 남가좌동 376-2 남가좌현대제2",
-   "reason": "rental"
+   "reason": "rental",
+   "apt_type": ""
   },
   {
    "kapt_code": "A15780605",
@@ -2665,6 +3077,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2676,6 +3089,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2687,6 +3101,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2698,6 +3113,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2709,6 +3125,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2720,6 +3137,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2731,6 +3149,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2742,6 +3161,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2753,6 +3173,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2764,6 +3185,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2775,6 +3197,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2786,6 +3209,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2797,6 +3221,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2808,6 +3233,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2819,6 +3245,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2830,6 +3257,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2841,6 +3269,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2852,6 +3281,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2863,6 +3293,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2874,6 +3305,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2885,6 +3317,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2896,6 +3329,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2907,6 +3341,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2918,6 +3353,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2929,6 +3365,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2940,6 +3377,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2951,6 +3389,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2962,6 +3401,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2973,6 +3413,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2984,6 +3425,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -2995,6 +3437,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3006,6 +3449,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3017,6 +3461,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3028,6 +3473,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3039,6 +3485,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3050,6 +3497,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3061,6 +3509,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3072,6 +3521,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3083,6 +3533,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3094,6 +3545,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3105,6 +3557,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3116,6 +3569,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3127,6 +3581,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3138,6 +3593,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3149,6 +3605,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3160,6 +3617,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3171,6 +3629,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3182,6 +3641,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3193,6 +3653,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3204,6 +3665,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3215,6 +3677,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3226,6 +3689,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3237,6 +3701,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3248,6 +3713,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3259,6 +3725,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3270,6 +3737,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3281,6 +3749,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3292,6 +3761,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3303,6 +3773,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3314,6 +3785,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3325,6 +3797,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3336,6 +3809,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3347,6 +3821,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3358,6 +3833,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3369,6 +3845,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3380,6 +3857,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3391,6 +3869,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3402,6 +3881,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3413,6 +3893,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3424,6 +3905,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3435,6 +3917,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3446,6 +3929,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3457,6 +3941,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3468,6 +3953,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3479,6 +3965,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3490,6 +3977,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3501,6 +3989,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3512,6 +4001,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3523,6 +4013,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3534,6 +4025,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3545,6 +4037,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3556,6 +4049,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3567,6 +4061,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3578,6 +4073,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3589,6 +4085,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3600,6 +4097,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3611,6 +4109,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3622,6 +4121,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3633,6 +4133,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3644,6 +4145,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3655,6 +4157,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3666,6 +4169,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3677,6 +4181,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3688,6 +4193,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3699,6 +4205,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3710,6 +4217,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3721,6 +4229,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3732,6 +4241,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3743,6 +4253,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3754,6 +4265,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3765,6 +4277,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3776,6 +4289,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3787,6 +4301,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3798,6 +4313,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3809,6 +4325,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3820,6 +4337,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3831,6 +4349,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3842,6 +4361,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3853,6 +4373,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3864,6 +4385,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3875,6 +4397,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3886,6 +4409,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3897,6 +4421,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3908,6 +4433,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3919,6 +4445,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3930,6 +4457,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3941,6 +4469,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3952,6 +4481,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3963,6 +4493,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3974,6 +4505,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3985,6 +4517,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -3996,6 +4529,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4007,6 +4541,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4018,6 +4553,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4029,6 +4565,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4040,6 +4577,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4051,6 +4589,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4062,6 +4601,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4073,6 +4613,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4084,6 +4625,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4095,6 +4637,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4106,6 +4649,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4117,6 +4661,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4128,6 +4673,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4139,6 +4685,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4150,6 +4697,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4161,6 +4709,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4172,6 +4721,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4183,6 +4733,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4194,6 +4745,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4205,6 +4757,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4216,6 +4769,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4227,6 +4781,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4238,6 +4793,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4249,6 +4805,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4260,6 +4817,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4271,6 +4829,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4282,6 +4841,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4293,6 +4853,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4304,6 +4865,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4315,6 +4877,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4326,6 +4889,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4337,6 +4901,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4348,6 +4913,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4359,6 +4925,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4370,6 +4937,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4381,6 +4949,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4392,6 +4961,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4403,6 +4973,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4414,6 +4985,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4425,6 +4997,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4436,6 +5009,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4447,6 +5021,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4458,6 +5033,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4469,6 +5045,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4480,6 +5057,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4491,6 +5069,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4502,6 +5081,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4513,6 +5093,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4524,6 +5105,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4535,6 +5117,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4546,6 +5129,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4557,6 +5141,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4568,6 +5153,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4579,6 +5165,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4590,6 +5177,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4601,6 +5189,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4612,6 +5201,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4623,6 +5213,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4634,6 +5225,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4645,6 +5237,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4656,6 +5249,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4667,6 +5261,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4678,6 +5273,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4689,6 +5285,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4700,6 +5297,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4711,6 +5309,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4722,6 +5321,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4733,6 +5333,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4744,6 +5345,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4755,6 +5357,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4766,6 +5369,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4777,6 +5381,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4788,6 +5393,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4799,6 +5405,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4810,6 +5417,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4821,6 +5429,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4832,6 +5441,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4843,6 +5453,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4854,6 +5465,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4865,6 +5477,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4876,6 +5489,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4887,6 +5501,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4898,6 +5513,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4909,6 +5525,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4920,6 +5537,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4931,6 +5549,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4942,6 +5561,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4953,6 +5573,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4964,6 +5585,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4975,6 +5597,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4986,6 +5609,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -4997,6 +5621,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5008,6 +5633,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5019,6 +5645,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5030,6 +5657,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5041,6 +5669,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5052,6 +5681,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5063,6 +5693,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5074,6 +5705,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5085,6 +5717,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5096,6 +5729,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5107,6 +5741,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5118,6 +5753,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5129,6 +5765,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5140,6 +5777,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5151,6 +5789,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5162,6 +5801,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5173,6 +5813,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5184,6 +5825,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5195,6 +5837,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5206,6 +5849,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5217,6 +5861,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5228,6 +5873,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5239,6 +5885,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5250,6 +5897,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5261,6 +5909,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5272,6 +5921,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5283,6 +5933,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5294,6 +5945,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5305,6 +5957,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5316,6 +5969,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5327,6 +5981,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5338,6 +5993,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5349,6 +6005,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5360,6 +6017,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5371,6 +6029,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5382,6 +6041,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5393,6 +6053,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5404,6 +6065,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5415,6 +6077,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5426,6 +6089,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5437,6 +6101,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5448,6 +6113,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5459,6 +6125,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5470,6 +6137,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5481,6 +6149,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5492,6 +6161,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5503,6 +6173,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5514,6 +6185,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5525,6 +6197,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5536,6 +6209,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5547,6 +6221,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5558,6 +6233,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5569,6 +6245,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5580,6 +6257,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5591,6 +6269,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5602,6 +6281,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5613,6 +6293,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5624,6 +6305,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5635,6 +6317,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5646,6 +6329,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5657,6 +6341,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5668,6 +6353,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5679,6 +6365,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5690,6 +6377,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5701,6 +6389,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5712,6 +6401,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5723,6 +6413,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5734,6 +6425,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5745,6 +6437,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5756,6 +6449,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5767,6 +6461,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5778,6 +6473,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5789,6 +6485,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5800,6 +6497,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5811,6 +6509,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5822,6 +6521,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5833,6 +6533,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5844,6 +6545,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5855,6 +6557,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5866,6 +6569,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5877,6 +6581,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5888,6 +6593,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5899,6 +6605,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5910,6 +6617,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5921,6 +6629,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5932,6 +6641,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5943,6 +6653,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5954,6 +6665,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5965,6 +6677,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5976,6 +6689,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5987,6 +6701,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -5998,6 +6713,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6009,6 +6725,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6020,6 +6737,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6031,6 +6749,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6042,6 +6761,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6053,6 +6773,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6064,6 +6785,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6075,6 +6797,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6086,6 +6809,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6097,6 +6821,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6108,6 +6833,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6119,6 +6845,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6130,6 +6857,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6141,6 +6869,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6152,6 +6881,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6163,6 +6893,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6174,6 +6905,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6185,6 +6917,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6196,6 +6929,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6207,6 +6941,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6218,6 +6953,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6229,6 +6965,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6240,6 +6977,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   },
@@ -6251,6 +6989,7 @@
    "households": null,
    "ho_count": null,
    "sale_type": "",
+   "apt_type": "",
    "address": "",
    "reason": "umd"
   }
