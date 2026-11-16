@@ -48,7 +48,9 @@ header .meta { color: var(--text-3); font-size: 12px; margin-left: auto; }
 .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
 
 /* 마커 */
-.marker { transform: translate(-50%, -100%); position: relative; cursor: pointer; }
+/* 핀: 꼬리 끝이 좌표에 오도록 가로는 가운데, 세로는 자기 높이 + 꼬리 길이(7px)만큼 올린다.
+   카카오 CustomOverlay 의 xAnchor/yAnchor 는 0 으로 두고 여기서만 맞춘다 (app.js buildMarkers 참고). */
+.marker { transform: translate(-50%, calc(-100% - 7px)); position: relative; cursor: pointer; }
 .marker .pill { display: inline-flex; align-items: center; gap: 4px; padding: 3px 8px; border-radius: 999px; background: var(--surface); color: var(--text); border: 1.5px solid var(--flat); box-shadow: var(--shadow); font-size: 12px; font-weight: 700; white-space: nowrap; line-height: 1.3; }
 .marker .pill .name { font-weight: 500; color: var(--text-2); max-width: 110px; overflow: hidden; text-overflow: ellipsis; }
 .marker.up .pill { border-color: var(--up); } .marker.up .delta { color: var(--up); }
@@ -106,6 +108,13 @@ tr.new td:first-child::before { content: "N"; display: inline-block; font-size: 
 #changes .item { padding: 8px 12px; border-bottom: 1px solid var(--line); cursor: pointer; font-size: 12px; }
 #changes .item:hover { background: var(--surface-2); }
 #changes .item b { display: block; }
+#changes .item .line { display: flex; align-items: baseline; gap: 8px; margin-top: 2px; }
+#changes .item .price { font-size: 14px; font-weight: 700; }
+#changes .item .chg { font-weight: 600; }
+#changes .item .chg.up { color: var(--up); } #changes .item .chg.down { color: var(--down); } #changes .item .chg.flat { color: var(--text-3); font-weight: 500; }
+#changes .item .meta2, #changes .item .prev { display: block; color: var(--text-2); margin-top: 1px; }
+#changes .item .prev { color: var(--text-3); }
+#changes .item.cancelled .price { text-decoration: line-through; color: var(--text-3); }
 #changes.collapsed .list { display: none; }
 
 /* 모달 */

@@ -54,10 +54,12 @@ def _skip_record(record: dict, reason: str) -> dict:
     }
 
 
-def exclusion_reason(households: int | None, sale_type: str, apt_type: str = "", name: str = "") -> str | None:
+def exclusion_reason(households: int | None, sale_type: str, apt_type: str = "", name: str = "", code: str = "") -> str | None:
     """세대수·분양형태·단지 분류로 제외할지 판단. 제외하지 않으면 None."""
     if households is not None and households < config.MIN_HOUSEHOLDS:
         return "households"
+    if code and code in config.ALWAYS_INCLUDE:
+        return None
     if (sale_type or "") in config.EXCLUDE_SALE_TYPES:
         return "rental"
     # 분류가 주상복합이거나, 분류가 비어 있어도 이름에 적혀 있는 경우 (예: "동작상떼빌주상복합")
@@ -67,7 +69,8 @@ def exclusion_reason(households: int | None, sale_type: str, apt_type: str = "",
 
 
 def _reason_of(item: dict) -> str | None:
-    return exclusion_reason(item.get("households"), item.get("sale_type", ""), item.get("apt_type", ""), item.get("name", ""))
+    return exclusion_reason(item.get("households"), item.get("sale_type", ""), item.get("apt_type", ""),
+                            item.get("name", ""), item.get("kapt_code", ""))
 
 
 def build(service_key: str, kakao_rest_key: str | None, geocode: bool = True, full: bool = False) -> list[dict]:
@@ -145,7 +148,7 @@ def build(service_key: str, kakao_rest_key: str | None, geocode: bool = True, fu
             log.warning("기본정보 없음: %s %s", entry["kapt_code"], entry.get("name"))
             skipped_items.append(_skip(entry, region, "no_basic"))
             continue
-        reason = exclusion_reason(basic.households, basic.sale_type, basic.apt_type, basic.name)
+        reason = exclusion_reason(basic.households, basic.sale_type, basic.apt_type, basic.name, entry["kapt_code"])
         if reason:
             skipped_items.append(_skip(entry, region, reason, basic))
             continue

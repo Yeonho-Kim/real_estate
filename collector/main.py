@@ -64,9 +64,9 @@ def cmd_collect(args) -> None:
     result = collect(_require("DATA_GO_KR_KEY"), months, rematch=rematch)
     complexes = load_complexes()
     events = [] if first_run else compute_events(state, result["sales_by"], result["rents_by"], complexes)
-    save_changes(events, first_run)
+    recent = save_changes(events, first_run, complexes)
     write_json(config.STATE_FILE, update_state(state, result["sales_by"], result["rents_by"]), compact=True)
-    build_summary(complexes, events)
+    build_summary(complexes, recent)
     log.info("변화 %d건 (첫 실행=%s)", len(events), first_run)
 
 

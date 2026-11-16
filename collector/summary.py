@@ -90,10 +90,11 @@ def short_address(road_address: str) -> str:
     return re.sub(r"^서울(특별시)?\s*", "", (road_address or "").strip())
 
 
-def build_summary(complexes: list[dict], events: list[dict]) -> dict:
+def build_summary(complexes: list[dict], recent_sale_events: list[dict]) -> dict:
+    """recent_sale_events: 최근 새로 발견한 매매 (diff.recent_sales 의 결과). 전월세는 세지 않는다."""
     new_counts: dict[str, int] = {}
-    for e in events:
-        if e["type"] in ("new_sale", "new_rent"):
+    for e in recent_sale_events:
+        if e["type"] in ("new_sale", "cancelled"):
             new_counts[e["kapt_code"]] = new_counts.get(e["kapt_code"], 0) + 1
     recent_cut = (now_kst().date() - timedelta(days=14)).isoformat()
     items = []

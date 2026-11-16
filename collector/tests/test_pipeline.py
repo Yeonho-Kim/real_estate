@@ -159,7 +159,7 @@ def test_collect_diff_summary_end_to_end(monkeypatch, tmp_data_dir):
 
     s = summary.build_summary(master["complexes"], events)
     item = s["complexes"][0]
-    assert item["new_events"] == 3 and item["sale_count"] == 1
+    assert item["new_events"] == 1 and item["sale_count"] == 1      # 핀의 새 거래 표시는 매매만 센다 (전월세 2건 제외)
     assert item["types"]["84"]["avg"] == 185000 and item["types"]["84"]["jeonse_avg"] == 95000
     assert item["types"]["84"]["jeonse_ratio"] == 51
     assert "59" not in item["types"]  # 해제건과 월세만 있어 통계 제외
@@ -668,3 +668,77 @@ def test_mixed_use_complexes_are_excluded(monkeypatch, tmp_data_dir):
     asked.clear()
     build_complexes.build("KEY", None)
     assert asked == []
+
+
+def test_always_include_overrides_type_exclusion(monkeypatch):
+    """사용자가 남기기로 한 단지는 주상복합·임대 분류여도 남는다. 세대수 기준은 그대로다."""
+    from collector.build_complexes import exclusion_reason
+
+    assert "A12013003" in config.ALWAYS_INCLUDE and "A10024098" in config.ALWAYS_INCLUDE
+    assert exclusion_reason(3293, "혼합", "주상복합", "DMC래미안e편한세상", "A12013003") is None
+    assert exclusion_reason(959, "분양", "주상복합", "보라매자이 더 포레스트", "A10024098") is None
+    assert exclusion_reason(3293, "혼합", "주상복합", "DMC래미안e편한세상", "OTHER") == "mixed_use"
+    assert exclusion_reason(100, "분양", "주상복합", "작은곳", "A12013003") == "households"
+    monkeypatch.setattr(config, "ALWAYS_INCLUDE", {})
+    assert exclusion_reason(3293, "혼합", "주상복합", "DMC래미안e편한세상", "A12013003") == "mixed_use"
+
+
+def _sale(key, date_, price, area=84.9, floor=10, cancelled=False):
+    return {"key": key, "date": date_, "price": price, "area": area, "floor": floor, "cancelled": cancelled}
+
+
+def test_recent_sales_list_with_price_change(tmp_data_dir):
+    """하단 '최근 변화': 매매만, 최근 14일 동안 발견한 것을 쌓아 보여 주고 직전 거래 대비 변동을 붙인다."""
+    from datetime import datetime
+
+    from collector import diff
+    from collector.store import KST
+
+    cx = [dict(copy.deepcopy(COMPLEX), kapt_code="A", name="단지A"), dict(copy.deepcopy(COMPLEX), kapt_code="B", name="단지B")]
+    write_json(config.TRADES_DIR / "A.json", {"sales": [
+        _sale("a4", "2026-11-10", 200000), _sale("a3", "2026-10-01", 190000), _sale("a2", "2026-09-01", 250000, cancelled=True),
+        _sale("a1", "2026-08-01", 185000), _sale("a59", "2026-10-20", 150000, area=59.9),
+    ]})
+    write_json(config.TRADES_DIR / "B.json", {"sales": [_sale("b1", "2026-11-05", 120000, area=59.9)]})
+    sales_a = diff._sales_of("A")
+
+    # 직전 거래: 같은 평형, 더 이른 날짜, 해제 건 제외
+    assert diff.previous_sale(sales_a, sales_a[0])["key"] == "a3"
+    assert diff.previous_sale(sales_a, sales_a[1])["key"] == "a1"          # 해제된 a2 는 건너뜀
+    assert diff.previous_sale(sales_a, sales_a[4]) is None                 # 59㎡ 는 첫 거래
+
+    now = datetime(2026, 11, 16, 9, 0, tzinfo=KST)
+    events = [
+        {"type": "new_sale", "kapt_code": "A", "name": "단지A", "record": sales_a[0]},
+        {"type": "new_rent", "kapt_code": "A", "name": "단지A", "record": {"key": "r1", "date": "2026-11-11", "deposit": 9, "monthly": 0, "area": 84.9}},
+        {"type": "new_sale", "kapt_code": "B", "name": "단지B", "record": diff._sales_of("B")[0]},
+    ]
+    recent = diff.recent_sales([], events, cx, now)
+    assert [e["record"]["key"] for e in recent] == ["a4", "b1"]            # 전월세는 빠진다
+    a4 = recent[0]
+    assert (a4["prev_price"], a4["prev_date"], a4["change"], a4["change_pct"]) == (190000, "2026-10-01", 10000, 5.3)
+    assert recent[1]["prev_price"] is None and recent[1]["change"] is None  # 직전 거래 없음
+    assert a4["detected_at"] == "2026-11-16T09:00:00+09:00"
+
+    # 다음 실행에 새 거래가 없어도 목록은 남고, 같은 거래가 다시 와도 겹치지 않는다
+    later = datetime(2026, 11, 20, 9, 0, tzinfo=KST)
+    again = diff.recent_sales(recent, [events[0]], cx, later)
+    assert [e["record"]["key"] for e in again] == ["a4", "b1"] and again[0]["detected_at"] == "2026-11-20T09:00:00+09:00"
+    assert [e["record"]["key"] for e in diff.recent_sales(recent, [], cx, later)] == ["a4", "b1"]
+    # 14일이 지나면 빠지고, 마스터에서 빠진 단지의 거래도 빠진다
+    assert diff.recent_sales(recent, [], cx, datetime(2026, 12, 1, 9, 0, tzinfo=KST)) == []
+    assert [e["kapt_code"] for e in diff.recent_sales(recent, [], cx[:1], later)] == ["A"]
+
+    # 처음 한 번(기록 없음)은 최근 14일 안에 계약된 매매로 채운다
+    seeded = diff.recent_sales(None, [], cx, now)
+    assert [e["record"]["key"] for e in seeded] == ["a4", "b1"] and seeded[0]["detected_at"] is None
+    assert seeded[0]["change"] == 10000
+
+    # 저장하고 다음 실행에서 이어받는다
+    saved = diff.save_changes(events, False, cx)
+    data = json.loads(config.LATEST_CHANGES_FILE.read_text())
+    assert data["count"] == 3 and len(data["events"]) == 3                 # 이번 실행의 전체 이벤트는 그대로 (알림용)
+    assert [e["record"]["key"] for e in data["recent_sales"]] == [e["record"]["key"] for e in saved]
+    assert all(e["type"] != "new_rent" for e in data["recent_sales"])
+    kept = diff.save_changes([], False, cx)
+    assert [e["record"]["key"] for e in kept] == [e["record"]["key"] for e in saved]

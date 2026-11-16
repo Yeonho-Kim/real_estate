@@ -93,7 +93,7 @@
     const [summary, changes] = await Promise.all([fetchJson("summary.json", true), fetchJson("changes/latest.json", true)]);
     state.summary = summary;
     state.changes = changes;
-    state.newKeys = new Set((changes?.events || []).map((e) => e.record.key));
+    state.newKeys = new Set([...(changes?.events || []), ...(changes?.recent_sales || [])].map((e) => e.record.key));
     if (summary) {
       const t = new Date(summary.generated_at);
       $("meta").textContent = `기준 ${t.toLocaleString("ko-KR", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })} · 단지 ${summary.complexes.length}개 · ${summary.filters.min_households}세대 이상 · ${summary.filters.area_min}~${summary.filters.area_max}㎡`;
@@ -156,7 +156,10 @@
       const el = document.createElement("div");
       el.innerHTML = markerHtml(c);
       el.addEventListener("click", () => openComplex(c.kapt_code));
-      const overlay = new kakao.maps.CustomOverlay({ position: new kakao.maps.LatLng(c.lat, c.lng), content: el, yAnchor: 1, zIndex: 2 });
+      // 위치 맞춤은 CSS(.marker 의 transform)에서만 한다. 카카오의 xAnchor/yAnchor 는 0 으로 꺼 둔다.
+      // 둘 다 쓰면 보정이 두 번 걸려 핀이 왼쪽 위로 밀린다. 또 카카오는 내용물 크기를 처음 한 번만 재기 때문에,
+      // 확대 단계나 평형에 따라 라벨 너비가 바뀌는 이 핀에는 맞지 않는다.
+      const overlay = new kakao.maps.CustomOverlay({ position: new kakao.maps.LatLng(c.lat, c.lng), content: el, xAnchor: 0, yAnchor: 0, zIndex: 2 });
       state.overlays.set(c.kapt_code, { overlay, el, c });
     }
     refreshMarkers();
@@ -328,16 +331,37 @@
   }
 
   // ---------- 최근 변화 ----------
+  // 하단 목록: 최근에 새로 신고된 매매만 보여 준다 (전월세 제외). 같은 평형의 직전 거래 대비 변동을 함께 적는다.
+  function recentSales() {
+    const c = state.changes || {};
+    // 예전 형식의 데이터(recent_sales 없음)면 마지막 수집의 이벤트에서 매매만 골라 쓴다
+    const list = Array.isArray(c.recent_sales) ? c.recent_sales : (c.events || []);
+    return list.filter((e) => e.type === "new_sale" || e.type === "cancelled");
+  }
+  function changeHtml(e) {
+    if (e.type === "cancelled") return `<span class="chg flat">계약 해제</span>`;
+    if (e.change == null) return `<span class="chg flat">직전 거래 없음</span>`;
+    const cls = e.change > 0 ? "up" : e.change < 0 ? "down" : "flat";
+    const arrow = e.change > 0 ? "▲" : e.change < 0 ? "▼" : "―";
+    const amount = e.change === 0 ? "변동 없음" : `${arrow} ${fmtMan(Math.abs(e.change))}`;
+    const pct = e.change !== 0 && e.change_pct != null ? ` (${e.change > 0 ? "+" : ""}${e.change_pct}%)` : "";
+    return `<span class="chg ${cls}">${amount}${pct}</span>`;
+  }
   function renderChanges() {
-    const events = state.changes?.events || [];
+    const events = recentSales();
+    const days = state.changes?.recent_days || 14;
     $("changesCount").textContent = events.length;
     $("changesList").innerHTML = events.length
       ? events.slice(0, 100).map((e) => {
           const r = e.record;
-          const what = e.type === "new_sale" ? `매매 ${fmtMan(r.price)}` : e.type === "cancelled" ? `해제 ${fmtMan(r.price)}` : `${r.monthly ? "월세" : "전세"} ${fmtMan(r.deposit)}${r.monthly ? ` / ${r.monthly}` : ""}`;
-          return `<div class="item" data-code="${e.kapt_code}"><b>${esc(e.name)} <span class="badge">${r.area.toFixed(0)}㎡</span></b>${what} · ${r.floor ?? "-"}층 · ${fmtDate(r.date)}</div>`;
+          const prev = e.type === "new_sale" && e.prev_price != null ? `<span class="prev">직전 ${fmtMan(e.prev_price)} · ${fmtDate(e.prev_date)}</span>` : "";
+          return `<div class="item${e.type === "cancelled" ? " cancelled" : ""}" data-code="${e.kapt_code}">
+            <b>${esc(e.name)} <span class="badge">${r.area.toFixed(0)}㎡</span></b>
+            <span class="line"><span class="price">${fmtMan(r.price)}</span>${changeHtml(e)}</span>
+            <span class="meta2">${r.floor ?? "-"}층 · ${fmtDate(r.date)} 계약${r.dealing === "직거래" ? " · 직거래" : ""}</span>${prev}
+          </div>`;
         }).join("")
-      : `<div class="item">${state.changes?.first_run ? "첫 수집입니다. 다음 실행부터 변화가 표시됩니다." : "마지막 수집에서 새 거래가 없었습니다."}</div>`;
+      : `<div class="item">최근 ${days}일 동안 새로 신고된 매매가 없습니다.</div>`;
     $("changesList").addEventListener("click", (e) => {
       const item = e.target.closest(".item[data-code]");
       if (item) openComplex(item.dataset.code, true);

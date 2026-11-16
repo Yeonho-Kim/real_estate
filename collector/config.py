@@ -68,6 +68,13 @@ TYPE_BUCKETS: tuple[tuple[str, float, float], ...] = (
     ("84", 80.0, 1000.0),
 )
 
+# 분양형태·단지 분류와 상관없이 항상 남길 단지 (단지코드: 설명). 세대수 기준과 대상 동 기준은 그대로 적용된다.
+# K-apt 는 단지 안에 상가 복합동이 있으면 일반 대단지도 "주상복합"으로 분류하는 경우가 있다.
+ALWAYS_INCLUDE = {
+    "A12013003": "DMC래미안e편한세상 (K-apt 분류는 주상복합)",
+    "A10024098": "보라매자이 더 포레스트 (K-apt 분류는 주상복합)",
+}
+
 # 최초 수집 시 과거 몇 개월까지 받을지, 매 실행마다 다시 받을 최근 개월 수
 BACKFILL_MONTHS = int(os.environ.get("BACKFILL_MONTHS", "24"))
 REFRESH_MONTHS = int(os.environ.get("REFRESH_MONTHS", "6"))
