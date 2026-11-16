@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T09:35:34+09:00",
+ "generated_at": "2026-11-16T11:04:02+09:00",
  "note": "단지 마스터에서 제외한 단지. reason: households=세대수 미달, rental=임대 단지, mixed_use=주상복합, umd=대상 동이 아님, no_basic=기본정보 없음, not_fetched=일일 한도 초과로 아직 확인 못함(다음 실행에서 이어서 받음)",
  "min_households": 300,
  "exclude_sale_types": [
@@ -2626,18 +2626,6 @@
    "apt_type": ""
   },
   {
-   "kapt_code": "A10024098",
-   "name": "보라매자이 더 포레스트",
-   "sgg_name": "동작구",
-   "umd": "신대방동",
-   "households": 959,
-   "ho_count": 959,
-   "sale_type": "혼합",
-   "apt_type": "주상복합",
-   "address": "서울특별시 동작구 신대방동 724 보라매자이 더 포레스트",
-   "reason": "mixed_use"
-  },
-  {
    "kapt_code": "A10027633",
    "name": "상도2차 두산위브트레지움 아파트",
    "sgg_name": "동작구",
@@ -2743,18 +2731,6 @@
    "sale_type": "혼합",
    "apt_type": "주상복합",
    "address": "서울특별시 마포구 공덕동 479 공덕SK리더스뷰 1단지",
-   "reason": "mixed_use"
-  },
-  {
-   "kapt_code": "A12013003",
-   "name": "DMC래미안e편한세상",
-   "sgg_name": "서대문구",
-   "umd": "북가좌동",
-   "households": 3293,
-   "ho_count": 3297,
-   "sale_type": "혼합",
-   "apt_type": "주상복합",
-   "address": "서울특별시 서대문구 북가좌동 481 DMC래미안e편한세상",
    "reason": "mixed_use"
   },
   {
@@ -5126,6 +5102,18 @@
    "name": "희훈리치파크아파트",
    "sgg_name": "강서구",
    "umd": "화곡동",
+   "households": null,
+   "ho_count": null,
+   "sale_type": "",
+   "apt_type": "",
+   "address": "",
+   "reason": "umd"
+  },
+  {
+   "kapt_code": "A10019837",
+   "name": "힐스테이트 등촌역 아파트",
+   "sgg_name": "강서구",
+   "umd": "등촌동",
    "households": null,
    "ho_count": null,
    "sale_type": "",

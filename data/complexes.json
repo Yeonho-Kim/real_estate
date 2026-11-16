@@ -1,18 +1,18 @@
 {
- "generated_at": "2026-11-12T09:35:34+09:00",
- "count": 190,
+ "generated_at": "2026-11-16T11:04:02+09:00",
+ "count": 192,
  "listed": {
   "마포구": 144,
   "서대문구": 96,
-  "강서구": 214,
+  "강서구": 215,
   "영등포구": 180,
   "동작구": 138
  },
  "skipped": {
   "households": 218,
   "rental": 23,
-  "mixed_use": 14,
-  "umd": 327,
+  "mixed_use": 12,
+  "umd": 328,
   "no_basic": 0,
   "not_fetched": 0
  },
@@ -368,6 +368,39 @@
    "addr_lng": 126.946519557644,
    "addr_source": "road",
    "place_dist": 127
+  },
+  {
+   "kapt_code": "A12013003",
+   "name": "DMC래미안e편한세상",
+   "address": "서울특별시 서대문구 북가좌동 481 DMC래미안e편한세상",
+   "road_address": "서울특별시 서대문구 수색로 100",
+   "bjd_code": "1141011900",
+   "households": 3293,
+   "ho_count": 3297,
+   "dong_count": 51,
+   "approved": "2012-10-05",
+   "area_60": 986,
+   "area_85": 1657,
+   "area_135": 504,
+   "sale_type": "혼합",
+   "apt_type": "주상복합",
+   "umd": "북가좌동",
+   "jibun": "481",
+   "sgg_code": "11410",
+   "sgg_name": "서대문구",
+   "lat": 37.573666935484006,
+   "lng": 126.91067768766229,
+   "apt_seqs": [
+    "11410-4085"
+   ],
+   "addr_lat": 37.5747334832097,
+   "addr_lng": 126.907916083955,
+   "addr_source": "road",
+   "kakao_place_id": "11581949",
+   "kakao_place_name": "DMC래미안e편한세상아파트",
+   "geo_source": "place",
+   "place_dist": 271,
+   "geo_v": 2
   },
   {
    "kapt_code": "A12081703",
@@ -6054,6 +6087,39 @@
    "addr_lng": 126.912565597097,
    "addr_source": "road",
    "place_dist": 154
+  },
+  {
+   "kapt_code": "A10024098",
+   "name": "보라매자이 더 포레스트",
+   "address": "서울특별시 동작구 신대방동 724 보라매자이 더 포레스트",
+   "road_address": "서울특별시 동작구 여의대방로22길 121",
+   "bjd_code": "1159010900",
+   "households": 959,
+   "ho_count": 959,
+   "dong_count": 8,
+   "approved": "2021-10-29",
+   "area_60": 0,
+   "area_85": 0,
+   "area_135": 0,
+   "sale_type": "혼합",
+   "apt_type": "주상복합",
+   "umd": "신대방동",
+   "jibun": "724",
+   "sgg_code": "11590",
+   "sgg_name": "동작구",
+   "lat": 37.49844834956893,
+   "lng": 126.92575255084692,
+   "apt_seqs": [
+    "11590-5026"
+   ],
+   "addr_lat": 37.4983517380993,
+   "addr_lng": 126.925286388344,
+   "addr_source": "road",
+   "kakao_place_id": "25129918",
+   "kakao_place_name": "보라매자이더포레스트아파트",
+   "geo_source": "place",
+   "place_dist": 43,
+   "geo_v": 2
   },
   {
    "kapt_code": "A15685503",
